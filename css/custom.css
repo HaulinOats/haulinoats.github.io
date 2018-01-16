@@ -1,0 +1,208 @@
+/* Custom CSS */
+#technologies{
+    width: 100%;
+    padding:0% 5% 0% 5%;
+    clear:both;
+}
+#technologies h2{
+    font-size:200%;
+    text-align: center;
+}
+#technologies p{
+    text-align: center;
+}
+.tech-cont{
+    width: 100%;
+    height: 100%;
+}
+#tech-container{
+    z-index: 5;
+    height:auto;
+}
+.tech-section{
+    float:left;
+    width:33%;
+    padding:1%;
+}
+.tech-section .left{
+    width:44%;
+    float:left;
+}
+.tech-section .right{
+    width:45%;
+    float:left;
+}
+/*.tech-section .left ul {
+    display:table;
+    width:100%;
+}
+.tech-section .left ul li {
+    display:table-cell;
+    vertical-align:middle;
+}*/
+.tech-section ul li{
+    padding-top:2%;
+    padding-bottom:2%;
+    overflow: hidden;
+    cursor: default;
+    min-height:25px;
+}
+.tech-section ul li div{
+    position: relative;
+    top:0px;
+}
+
+.tech-section h3{
+    margin: 1% 1% 0% 10%;
+}
+.tech-img{
+    float:left;
+    width:30px;
+}
+.tech-section ul{
+    list-style-type: none;
+    font-size: 115%;
+    padding-left: 6%;
+    margin-top: 10%;
+}
+.tech-section ul li:hover{
+    background-color:#21b799;
+    color:white;
+}
+
+.mini-project-container {
+width:31%;
+margin:1%;
+display:inline-block;
+}
+.mini-project-container a {
+text-align: center;
+font-size: 150%;
+margin: 0 auto;
+display: block;
+}
+.portfolio_miniProjectImg{
+width:100%;
+border-radius:5px;
+}
+
+#resume-point-cont{
+    position: fixed;
+    bottom: 5%;
+    right: 0;
+    width: 100px;
+    text-align:center;
+    padding-top: 4px;
+}
+#resume-point-cont p{
+    text-align: center;
+    padding:0;
+    margin:0;
+    color:white;
+    font-weight:bold;
+    text-shadow:0 0 1px black;
+}
+#pointer{
+    height: 60px;
+}
+#point-arrow{
+    position: relative;
+    font-size:200% !important;
+}
+#point-arrow.point{
+    -webkit-animation: point 2s; /* Chrome, Safari, Opera */
+    animation: point 2s;
+    animation-iteration-count:5;
+    animation-direction:alternate;
+    -webkit-animation-iteration-count:5; /*Safari and Chrome*/
+    -webkit-animation-direction:alternate; /* Safari and Chrome */
+}
+.skill-level{
+    width:0%;
+    height:100%;
+    background:lightgreen;
+    border-radius:5px;
+    transition:width linear 2s, height linear .5s;
+    -webkit-transition:width linear 2s, height linear .5s;
+}
+.skill-text{
+    color:white;
+    margin-left:5px;
+}
+.right ul li:hover .skill-level{
+    height:0;
+}
+#twitter b, #twitter i{
+    font-weight: 100;
+    font-size:250%;
+    line-height: 100%;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes point
+{
+0% {top: 0;}
+50% {top: 50%;}
+100% {top: 0;}
+}
+
+/* Standard syntax */
+@keyframes point
+{
+from {top: 0;}
+to {top: 50%;}
+}
+
+#resume-cont{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: 30px;
+    background: white;
+    text-align:center;
+    padding-top: 4px;
+}
+.document{
+    float:left;
+    width:20%;
+    margin-left:10%;
+}
+
+/*-----------------------
+------Media Queries------
+------------------------*/
+
+@media (max-width: 1270px) {
+
+.tech-section {
+width:50%;
+}
+
+}
+
+@media (max-width: 1199px) {
+
+
+}
+
+@media (max-width: 991px) {
+
+.tech-section {
+width:100%;
+}
+
+.tech-section ul li {
+padding-top:0;
+}
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 479px) {
+
+
+}
