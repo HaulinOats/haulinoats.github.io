@@ -4,6 +4,9 @@ var CLIENT_ID = '239131988494-bdeh799j6rm275f41eedllvjk0lfqapc.apps.googleuserco
 var SCOPES ='https://www.googleapis.com/auth/gmail.send';
 var DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/gmail/v1/rest"];
 
+var authorizeButton = document.getElementById('authorize-button');
+var signoutButton = document.getElementById('signout-button');
+
 function handleClientLoad() {
     gapi.load('client:auth2', initClient);
 }
