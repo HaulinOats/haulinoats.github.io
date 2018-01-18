@@ -14,6 +14,7 @@ function checkAuth() {
     }, handleAuthResult);
 }
 function handleAuthResult(authResult) {
+    console.log('authResult: ', authResult);
     if(authResult && !authResult.error) {
         loadGmailApi();
         $('#authorize-button').remove();
