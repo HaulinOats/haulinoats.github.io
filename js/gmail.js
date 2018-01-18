@@ -4,29 +4,5 @@ var apiKey = 'Q8Q-q0zGGfCucsyxt5mWgWHN';
 var scopes ='https://www.googleapis.com/auth/gmail.readonly https://www.googleapis.com/auth/gmail.send';
 function handleClientLoad() {
     console.log('handleClientLoad()');
-    gapi.client.setApiKey(apiKey);
-    window.setTimeout(checkAuth, 1);
-}
-function checkAuth() {
-    console.log('checkAuth()');
-    gapi.auth2.authorize({
-        client_id: clientId,
-        scope: scopes,
-        immediate: true
-    }, handleAuthResult);
-}
-function handleAuthResult(authResult) {
-    console.log('handleAuthResult()');
-    console.log('authResult: ', authResult);
-    if(authResult && !authResult.error) {
-        loadGmailApi();
-        $('#authorize-button').remove();
-        $('.table-inbox').removeClass("hidden");
-        $('#compose-button').removeClass("hidden");
-    } else {
-        $('#authorize-button').removeClass("hidden");
-        $('#authorize-button').on('click', function(){
-            handleAuthClick();
-        });
-    }
+    window.setTimeout(gapi.auth2.init, 1);
 }
