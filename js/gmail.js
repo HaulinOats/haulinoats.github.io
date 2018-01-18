@@ -4,5 +4,7 @@ var apiKey = 'Q8Q-q0zGGfCucsyxt5mWgWHN';
 var scopes ='https://www.googleapis.com/auth/gmail.readonly https://www.googleapis.com/auth/gmail.send';
 function handleClientLoad() {
     console.log('handleClientLoad()');
-    window.setTimeout(gapi.auth2.init, 1);
+    window.setTimeout(gapi.auth2.init({
+        client_id:clientId
+    }), 1);
 }
