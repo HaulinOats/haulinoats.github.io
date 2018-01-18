@@ -168,6 +168,16 @@ to {top: 50%;}
     width:20%;
     margin-left:10%;
 }
+#contact-sent {
+    opacity: 0;
+    background: white;
+    color: green;
+    padding: 3%;
+    margin-left: 10px;
+    border-radius: 5px;
+    font-size: 140%;
+    transition: 1s;
+}
 
 /*-----------------------
 ------Media Queries------

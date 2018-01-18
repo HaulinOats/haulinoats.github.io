@@ -12,10 +12,14 @@ $(document).ready(function() {
 			}
 		})
 		.done(function(resp){
-			console.log('mail sent!');
+			$('#contact-form input').val("");
+			$("#contact-sent").text('Message Sent!').css('opacity', '1');
+			setTimeout(function(){
+				$("#contact-sent").css('opacity', '0');
+			},3000);
 		})
 		.fail(function(err){
-			console.log('error on submit');
+			// $("#contact-sent").text('Message Sent!').css('opacity', '1');
 		});
 	});
 });
