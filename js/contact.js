@@ -19,13 +19,13 @@ $(document).ready(function() {
 			})
 			.done(function(resp){
 				$('#contact-form input').val("");
-				$("#contact-sent").text('Success: Message Sent!').css({'opacity':'1', 'color':'green'});
+				$("#contact-sent").text('Message Sent!').css({'opacity':'1', 'color':'green'});
 				setTimeout(function(){
 					$("#contact-sent").css({'opacity':'0'});
 				},3000);
 			})
 			.fail(function(err){
-				$("#contact-sent").text('Error: Message Not Sent').css({'opacity':'1', 'color':'red'});
+				$("#contact-sent").text('Message Not Sent').css({'opacity':'1', 'color':'red'});
 				setTimeout(function(){
 					$("#contact-sent").css({'opacity':'0'});
 				},3000);
