@@ -13,11 +13,9 @@ $(document).ready(function() {
 		})
 		.done(function(resp){
 			console.log('mail sent!');
-			console.log(resp);
 		})
 		.fail(function(err){
 			console.log('error on submit');
-			console.log(err);
 		});
 	});
 });
