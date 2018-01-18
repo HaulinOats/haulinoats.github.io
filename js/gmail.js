@@ -3,10 +3,12 @@ var clientId = '239131988494-bdeh799j6rm275f41eedllvjk0lfqapc.apps.googleusercon
 var apiKey = 'Q8Q-q0zGGfCucsyxt5mWgWHN';
 var scopes ='https://www.googleapis.com/auth/gmail.readonly https://www.googleapis.com/auth/gmail.send';
 function handleClientLoad() {
+    console.log('handleClientLoad()');
     gapi.client.setApiKey(apiKey);
     window.setTimeout(checkAuth, 1);
 }
 function checkAuth() {
+    console.log('checkAuth()');
     gapi.auth.authorize({
     client_id: clientId,
     scope: scopes,
@@ -14,6 +16,7 @@ function checkAuth() {
     }, handleAuthResult);
 }
 function handleAuthResult(authResult) {
+    console.log('handleAuthResult()');
     console.log('authResult: ', authResult);
     if(authResult && !authResult.error) {
         loadGmailApi();
