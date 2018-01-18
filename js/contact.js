@@ -3,6 +3,11 @@ $(document).ready(function() {
 		e.preventDefault();
 		console.log('send message attempting...');
 		if($("#contact-name").val() === "" || $("#contact-mail").val() === "" || $("#contact-message").val() === ""){
+			$("#contact-sent").text('Fill In All Fields!').css({'opacity':'1', 'color':'red'});
+			setTimeout(function(){
+				$("#contact-sent").css({'opacity':'0'});
+			},3000);
+		} else {
 			$.ajax({
 				url:'https://bdc-node-rest-api.herokuapp.com/email',
 				method:"POST",
@@ -25,11 +30,6 @@ $(document).ready(function() {
 					$("#contact-sent").css({'opacity':'0'});
 				},3000);
 			});
-		} else {
-			$("#contact-sent").text('Fill In All Fields!').css({'opacity':'1', 'color':'red'});
-			setTimeout(function(){
-				$("#contact-sent").css({'opacity':'0'});
-			},3000);
 		}
 	});
 });
