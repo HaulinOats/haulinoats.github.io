@@ -268,6 +268,7 @@
 							<li>Java</li>
 							<li>Ruby on Rails</li>
 							<li>Python</li>
+							<li>Go</li>
 						</ul>
 					</div>
 					<div class="right">
@@ -308,6 +309,10 @@
 								<div data-skill="1" class="skill-level"></div>
 								<div class="skill-text">Noob</div>
 							</li>
+							<li>
+								<div data-skill="1" class="skill-level"></div>
+								<div class="skill-text">Noob</div>
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -322,10 +327,10 @@
 							<li>Meteor.js</li>
 							<li>Laravel 4</li>
 							<li>Wordpress</li>
-							<li>Express</li>
+							<li>Express/Node</li>
 							<li>Webpack</li>
 							<li>Twitter Bootstrap</li>
-							<li>Angular(2++)</li>
+							<li>Angular(2+)</li>
 						</ul>
 					</div>
 					<div class="right">
@@ -379,7 +384,8 @@
 					<div class="left">
 						<ul>
 							<li>Visual Studio Code</li>
-							<li>ElectronJS</li>
+              <li>ElectronJS</li>
+              <li>Phonegap/Cordova</li>
 							<li>Adobe CC</li>
 							<li>MAMP</li>
 							<li>REST</li>
@@ -400,6 +406,11 @@
 								<div data-skill="5" class="skill-level"></div>
 								<div class="skill-text">Fluent</div>
 							</li>
+							<li>
+								<div data-skill="4" class="skill-level"></div>
+								<div class="skill-text">Advanced</div>
+							</li>
+							<li>
 							<li>
 								<div data-skill="4" class="skill-level"></div>
 								<div class="skill-text">Advanced</div>
@@ -477,16 +488,11 @@
 					SINGLE PROJECT ITEM
 					=============================================== -->	
 					<a class="project-item applications" href="https://www.marriottvacationclub.com" data-images="img/marriott-main.jpg, img/marriott-1.jpg, img/marriott-2.jpg, img/marriott-3.jpg">
-						
 						<img class="img-responsive project-image" src="img/marriott-main.jpg"  alt=""><!--Project thumb -->
-						
 						<div class="hover-mask">
 							<h2 class="project-title">Marriott Vacations Worldwide</h2><!--Project Title -->
 							<p>Sales Center Technology</p><!--Project Subtitle -->
 						</div>
-						
-						<!--==== Project Preview HTML ====-->
-						
 						<div class="sr-only project-description">
 							<p><b>Sales Center Technology</b></p>
 							<img class="img-responsive img-center" src="img/marriott-main.jpg" style="clear:both;" alt="">
@@ -494,14 +500,51 @@
 							<p>The application is built to work offline, thus, all assets are downloaded ahead of time to prevent internet connectivity issues while live selling in the field.  This application is built using a dynamic JSON structure (delivered via a Java-based server) that allows the company to create any number of presentations, including whichever modules they would like within those presentations, while also being adaptable to other language translations.</p>
 							<p>I primarly work in Javascript, while using HTML and CSS to mimic the mockups created by our designer.  I have personally built 2 modules from scratch (points calendar and weeks calculator) and refactored a previously existing module (the vacation planner) replacing 90% of the previous code with a much improved version allowing for greater code maintainability and run-time efficiency.</p>
 							<p>I have been tasked with coding a wide variety of functionality.  I've created scripts to build a 'print view' in a new window to be PDF compatible.  I have created modules that follow specific and complicated functionality based on strict business rules involving precise calculations from various data sources.  I have built my code to be maintainable and highly efficient, using CSS transitions for animations, whenever possible, and using coding best practices.</p>
+						</div>						
+          </a>
+
+          <a class="project-item applications" href="https://mej-online.herokuapp.com/" data-images="img/mej-main.jpg, img/mej-1.jpg, img/mej-2.jpg">
+						<img class="img-responsive project-image" src="img/mej-main.jpg"  alt="mej"><!--Project thumb -->
+						<div class="hover-mask">
+							<h2 class="project-title">MeJ</h2><!--Project Title -->
+							<p>Song Reqest App</p><!--Project Subtitle -->
 						</div>
-						
+						<div class="sr-only project-description">
+              <p>Ever been at your favorite club and want to request a song but don't want to interrupt the great time you're having with your friends or have to make the long trek across the club to scribble down your song on a piece of paper which the DJ may or may not ever see?</p>
+              <p>I created 'MeJ' (play on the acronym 'DJ') as a modern-day substitute for the archaic process of manually writing in song requests.</p>
+              <p>MeJ allows individual venues and DJs to create their own accounts and provide their users with a live request list by providing a unique URL for the current playlist.</p>
+              <p>Feature's of MeJ:</p>
+              <ul>
+                <li>Customers can search for nearly any song (MeJ leverages the Spotify API) and add them to the current playlist they are viewing</li>
+                <li>To prevent duplication, requests for a song that was already added will simply add a thumbs up or 'vote' to that song</li>
+                <li>User's/DJs can sort the list using a variety of criteria such as 'time added', 'song already played', and 'number of votes'</li>
+                <li>Venues/DJs have their own admin panel to give them full control over the playlist, such as adding/removing songs, marking songs as 'played', creating new playlists or switching to previously made ones, getting unique playlist URLs to post on websites or social media for patrons to easily access, and even inputting drink specials which will show in a pop-up to the user upon first visit each night.</li>
+              </ul>
+              <p>MeJ was built using the React Javascript framework, Node/Express, and MongoDB while also accessing the Spotify API for music search capabilities.</p>
+						</div>	
+					</a>
+          
+          <a class="project-item applications" href="https://play.google.com/store/apps/details?id=com.batesco.app" data-images="img/bates-main.jpg, img/bates-1.jpg, img/bates-2.jpg">
+						<img class="img-responsive project-image" src="img/bates-main.jpg"  alt="batesandcompany"><!--Project thumb -->
+						<div class="hover-mask">
+							<h2 class="project-title">Bates and Company</h2><!--Project Title -->
+							<p>Mobile App</p><!--Project Subtitle -->
+						</div>
+						<div class="sr-only project-description">
+              <p>Bates and Company's iOS and Android applications.</p>
+              <p>Built using Adobe Phonegap and the Apache Cordova for creating cross-platform web applications using HTML, CSS and Javascript.</p>
+              <p>Application leverages platform APIs to:</p>
+              <ul>
+                <li>Open address in user's default map/directions program</li>
+                <li>Open user's default email application with predefined email criteria</li>
+                <li>Open phone number in user's default phone application</li>
+                <li>Leverage the in-app-browser to allow user's access to company's Sharefile portal</li>
+              </ul>
+						</div>	
 					</a>
 
 					<a class="project-item applications" href="https://nodejs-brett84c.rhcloud.com/" data-images="img/chronoalbum-main.jpg">
-						
-						<img class="img-responsive project-image" src="img/chronoalbum-main.jpg"  alt=""><!--Project thumb -->
-						
+						<img class="img-responsive project-image" src="img/chronoalbum-main.jpg"  alt="chronoalbums"><!--Project thumb -->
 						<div class="hover-mask">
 							<h2 class="project-title">Chronoalbums</h2><!--Project Title -->
 							<p>Spotify App</p><!--Project Subtitle -->
@@ -520,20 +563,14 @@
 							<p><b>NOTE:</b>Rate limiting may cause the app to not work properly or take longer.  This is a known issue due to the limits of using a free developer account.</p>
 							<p>Also, </p>
 						</div>
-						
 					</a>
 
 					<a class="project-item applications" href="https://bc-react-playground.herokuapp.com/" data-images="img/reactjs.jpg">
-						
 						<img class="img-responsive project-image" src="img/reactjs.jpg"  alt=""><!--Project thumb -->
-						
 						<div class="hover-mask">
 							<h2 class="project-title">React.js</h2><!--Project Title -->
 							<p></p><!--Project Subtitle -->
 						</div>
-						
-						<!--==== Project Preview HTML ====-->
-						
 						<div class="sr-only project-description">
 							<p>React.js Playground</p>
 							<p>A place for me to experiment with React.js development.  Sub-page (components) include:</p>
@@ -544,20 +581,14 @@
 								<li>More to come...</li>
 							</ul>
 						</div>
-						
 					</a>
 
 					<a class="project-item applications" href="#" data-images="img/ltc2-main.jpg, img/ltc2-1.jpg, img/ltc2-2.jpg">
-						
 						<img class="img-responsive project-image" src="img/ltc2-main.jpg"  alt=""><!--Project thumb -->
-						
 						<div class="hover-mask">
 							<h2 class="project-title">LoveThroughChrist V2</h2><!--Project Title -->
 							<p>Dating Site</p><!--Project Subtitle -->
 						</div>
-						
-						<!--==== Project Preview HTML ====-->
-						
 						<div class="sr-only project-description">
 							<p>A free Christian dating website.</p>
 							<img class="img-responsive img-center" src="img/ltc-logo-long.svg"  alt="">
@@ -573,20 +604,14 @@
 							<p>This is the 2nd version of my dating website.  Originally built using the MEAN stack, I rebuilt the application from scratch using the Meteor Full-Stack Javascript Framework built on Node.  Uses MongoDB for database storage.  Meteor makes use of data subscriptions, predictive database updates, and leverages the use of web sockets to allow for a very fast and seamless experience for users with all data changes, relevant to a user, happening in real-time.</p>
 							<p>Use of Git for source code management, Mongolab for MongoDB hosting and Digital Ocean for app hosting.</p><p>NOTE:  I'm no longer hosting this application but can provide source code for inspection, if desired.</p>
 						</div>
-						
 					</a>
 
 					<a class="project-item applications" href="http://brettdavidconnolly.com/crazy_conveyor/" data-images="img/cc-main.jpg">
-						
 						<img class="img-responsive project-image" src="img/cc-main.jpg"  alt=""><!--Project thumb -->
-						
 						<div class="hover-mask">
 							<h2 class="project-title">Crazy Conveyor</h2><!--Project Title -->
 							<p>Physics-Based Web Game</p><!--Project Subtitle -->
 						</div>
-						
-						<!--==== Project Preview HTML ====-->
-						
 						<div class="sr-only project-description">
 							<p>A physics-based web game.</p>
 							<p style="clear:both">A web game that tasks users with throwing red blocks off the production line while leaving the green ones.  For each green block thrown off or for each red block that reaches the chute, the player loses a point.  For each green block that reaches the chute, the player earns a point.</p>
@@ -595,16 +620,11 @@
 					</a>
 
 					<a class="project-item applications" href="http://brettdavidconnolly.com/portfolio_physics_demo/" data-images="img/ppd-main.jpg">
-						
 						<img class="img-responsive project-image" src="img/ppd-main.jpg"  alt=""><!--Project thumb -->
-						
 						<div class="hover-mask">
 							<h2 class="project-title">Portfolio Physics Demo</h2><!--Project Title -->
 							<p>Physics Demo</p><!--Project Subtitle -->
 						</div>
-						
-						<!--==== Project Preview HTML ====-->
-						
 						<div class="sr-only project-description">
 							<p>A physics-based mini-project</p>
 							<p style="clear:both">An interactive, portfolio-based Javascript application.</p>
@@ -613,16 +633,11 @@
 					</a>
 
 					<a class="project-item applications" href="#" data-images="img/ltc-main.jpg, img/ltc-1.jpg, img/ltc-2.jpg, img/ltc-3.jpg, img/ltc-4.jpg">
-						
 						<img class="img-responsive project-image" src="img/ltc-main.jpg"  alt=""><!--Project thumb -->
-						
 						<div class="hover-mask">
 							<h2 class="project-title">LoveThroughChrist</h2><!--Project Title -->
 							<p>Dating Site</p><!--Project Subtitle -->
 						</div>
-						
-						<!--==== Project Preview HTML ====-->
-						
 						<div class="sr-only project-description">
 							<p>A free Christian dating website.</p>
 							<img class="img-responsive img-center" src="img/ltc-logo-long.svg"  alt="">
@@ -639,22 +654,14 @@
 							<p>Use of Git for source code management, Mongolab for Mongo hosting and Heroku for app hosting.</p>
 							<p><b>NOTE</b>: I am no longer hosting the Angular (MEAN stack) version of this site and have since rebuilt it using the Meteor framework.  The source still exists on Github if code inspection is desired.</p>
 						</div>
-						
 					</a>
-					<!-- ==============================================
-					SINGLE PROJECT ITEM
-					=============================================== -->	
+
 					<a class="project-item applications" href="http://www.google.com" data-images="img/einstein-main.png, img/einstein-listview.png, img/einstein-bisac.png">
-						
 						<img class="img-responsive project-image" src="img/einstein-main2.png"  alt=""><!--Project thumb -->
-						
 						<div class="hover-mask">
 							<h2 class="project-title">Einstein2</h2><!--Project Title -->
 							<p>Xulon Press</p><!--Project Subtitle -->
 						</div>
-						
-						<!--==== Project Preview HTML ====-->
-						
 						<div class="sr-only project-description">
 							<p>Xulon Press's spiritual successor to their original Einstein backend employee dashboard</p>
 							<img class="img-responsive img-center" src="img/xulon-logo.png"  alt="">
@@ -662,56 +669,37 @@
 							<p>I was personally responsible for various functionality including file uploading, AJAX enrichment, project note scripts, CRUD operations and database schema planning, along with maintaining a constant feedback loop with my supervisor and relevant employees.</p>
 							<p><b> ** Code and sample viewing unavailable due to project oonfidentiality agreement with Xulon Press ** </b></p>
 						</div>
-						
 					</a>
 
 					<a class="project-item applications" href="http://brettdavidconnolly.com/validation/" data-images="img/oop-main.jpg">
-						
 						<img class="img-responsive project-image" src="img/oop-main.jpg"  alt=""><!--Project thumb -->
-						
 						<div class="hover-mask">
 							<h2 class="project-title">Object-Oriented Javascript</h2><!--Project Title -->
 							<p>Form Validation</p><!--Project Subtitle -->
 						</div>
-						
-						<!--==== Project Preview HTML ====-->
-						
 						<div class="sr-only project-description">
 							<p>Simple form validation using object-oriented Javascript</p>
 						</div>
-						
 					</a>
-					<!-- ==============================================
-					END PROJECT ITEM
-					=============================================== -->						
 					
 					<a class="project-item websites" href="http://www.songrize.com" data-images="img/songrize_1.jpg, img/songrize_2.jpg">
-						
 						<img class="img-responsive project-image" src="img/songrize_main.jpg"  alt=""><!--Project thumb -->
-						
 						<div class="hover-mask">
 							<h2 class="project-title">Songrize - Splash Page</h2><!--Project Title -->
 							<p>Music Discovery App</p><!--Project Subtitle -->
 						</div>
-						
-						<!--==== Project Preview HTML ====-->
-						
 						<div class="sr-only project-description">
 							<p class="clearfix">Built this splash page for my client's application currently in beta.  Is 100% mobile responsive and makes use of CSS animations and transitions.</p>
 							<img class="img-responsive img-center" src="img/songrize_logo.png" style="max-width:30%" alt="">
 						</div>
-						
 					</a><!--End Project Item -->
 
 					<a class="project-item websites" href="http://www.ascentus.com/" data-images="img/ascentus-1.jpg, img/ascentus-2.jpg, img/ascentus-3.jpg">
-						
 						<img class="img-responsive project-image" src="img/ascentus-main.jpg"  alt="">
-						
 						<div class="hover-mask">
 							<h2 class="project-title">Responsive Custom Wordpress Theme</h2>
 							<p>Ascentus</p>
 						</div>
-						
 						<div class="sr-only project-description">
 							<p class="clearfix">A small project to recreate the Ascentus website using only Photoshop files for generating assets and as a point of reference for site design.  Development environment involved use of Node.js and Grunt.js for compiling SASS, linting HTML, and minifying scripts using Uglify.js and other relevant packages.</p>
 							<p class="clearfix">Site was converted to a custom Wordpress theme and provides different styles for both desktop and mobile (breakpoint at 699 pixels).</p>
@@ -719,319 +707,216 @@
 							<img class="img-responsive img-center" src="img/ascentus-main.jpg"  alt="">
 							<p><b>DISCLAIMER</b>: This was a test project for potential applicants based on a previous version of their website.  I did not build the current website nor do I claim ownership of any assets belonging to Ascentus and thus cannot personally host the project.</p>
 						</div>
-						
 					</a> <!--End Project Item -->
 
 					<a class="project-item applications" href="http://www.brettdavidconnolly.com/financial-forest/" data-images="img/financialforest.jpg, img/finfor1.jpg, img/finfor2.jpg">
-						
 						<img class="img-responsive project-image" src="img/financialforest.jpg"  alt=""><!--Project thumb -->
-						
 						<div class="hover-mask">
 							<h2 class="project-title">Financial Forest</h2><!--Project Title -->
 							<p>Fin Cap Dev</p><!--Project Subtitle -->
 						</div>
-						
-						<!--==== Project Preview HTML ====-->
-						
 						<div class="sr-only project-description">
 							<p class="clearfix">"<i>Leave paycheck-to-paycheck life behind with Financial Forest. This goal-setting app will help you save one month of expenses. Enter your average monthly spending and a target date. You'll receive your weekly savings assignment by text message. Save money and grow with us.</i>"</p>
 							<p>Worked with 3 other colleagues to build a financial planning phone application for the <b>Fin Cap Dev</b> competition held in <b>San Francisco, California</b> in the middle of June 2013, to compete against 12 other finalists.  We recieved <b>Honorable Mention</b> putting us in <b>4th place</b> and alotting our team a $5000 prize.</p>
 							<img class="img-responsive img-center" src="img/fincaplogo.jpg"  alt="">
 							<p>I was personally responsible for the back-end development of our application.  We employed extensive use of HTML5, CSS3, jQuery, PHP and MYSQL.  We deployed the application onto the Google Play store using the Adobe Phonegap Build framework.</p>
 						</div>
-						
 					</a><!--End Project Item -->
 
 					<a class="project-item applications" href="http://www.brettdavidconnolly.com/dpnc" data-images="img/dpnc-1.jpg, img/dpnc-2.jpg, img/dpnc-3.jpg">
-						
 						<img class="img-responsive project-image" src="img/dpnc-main.jpg"  alt=""><!--Project thumb -->
-						
 						<div class="hover-mask">
 							<h2 class="project-title">Digital Privacy Notice</h2><!--Project Title -->
 							<p>Web Application</p><!--Project Subtitle -->
 						</div>
-						
-						<!--==== Project Preview HTML ====-->
-						
 						<div class="sr-only project-description">
 							<p class="clearfix">Provides a scalable template for the display of a digital privacy notice.  Content is generated from an XML file which can be changed by the client and uploaded without the need of a web developer.</p>
 							<img class="img-responsive img-center" src="img/dpnc-main.jpg"  alt="">
 							<p>This application was built using HTML, CSS, Javascript/JQuery, A slider-based Javascript plugin, PHP and MySQL, along with a complimenting XML file which is needed for content.  The application is intended for use on mobile devices, as the user is expected to swipe through each slide.  All core code, animations and transitions are 100% custom built by me.</p>
 						</div>
-						
 					</a><!--End Project Item -->
 
-
 					<a class="project-item applications" href="http://midgitsuu.kd.io:3000/" data-images="img/express.jpg, img/node.jpg, img/mongo.jpg">
-						
 						<img class="img-responsive project-image" src="img/exp-node-js.jpg"  alt=""><!--Project thumb -->
-						
 						<div class="hover-mask">
 							<h2 class="project-title">Node + Express + MongoDB</h2><!--Project Title -->
 							<p>Brett Connolly</p><!--Project Subtitle -->
 						</div>
-						
-						<!--==== Project Preview HTML ====-->
-						
 						<div class="sr-only project-description">
 							<p class="clearfix">"<i>Node.JS application built using the Express.JS framework along with MongoDB for backend database storage.</i></p>
 							<img class="img-responsive img-center" src="img/enm.jpg"  alt="">
 							<p>Application showcases the Express.JS javascript framework which uses RESTful API procedures to apply all CRUD operations on the MongDB NoSQL document database using AJAX calls.  Allows users to create database records, read user information, update user information, and delete users from the database.</p>
 							<p>Viewing unavailable as I do not currently have a dedicated IP for hosting the site.  I can provide code, if needed.</p>
 						</div>
-						
 					</a><!--End Project Item -->
 
 					<a class="project-item applications" href="http://brettdavidconnolly.com/laravel/public/login" data-images="img/laravel-logo2.png">
-						
 						<img class="img-responsive project-image" src="img/laravel-logo.png"  alt="laravel4"><!--Project thumb -->
-						
 						<div class="hover-mask">
 							<h2 class="project-title">Image Upload App</h2><!--Project Title -->
 							<p>Laravel 4</p><!--Project Subtitle -->
 						</div>
-						
-						<!--==== Project Preview HTML ====-->
-						
 						<div class="sr-only project-description">
 							<p class="clearfix">"<i>A sample site built using the Laravel 4 PHP framework.</p>
 							<img class="img-responsive img-center" src="img/laravel-1.jpg"  alt="">
 							<p>Site handles user login and signup, along with authentication and allows users to upload and delete images (pending).</p>
 						</div>
-						
 					</a><!--End Project Item -->
 
 					<a class="project-item applications" href="http://www.brettdavidconnolly.com/code-quiz/" data-images="img/code1.jpg, img/code2.jpg">
-						
 						<img class="img-responsive project-image" src="img/code-icon.jpg"  alt=""><!--Project thumb -->
-						
 						<div class="hover-mask">
 							<h2 class="project-title">Code Quiz</h2><!--Project Title -->
 							<p>Brett Connolly</p><!--Project Subtitle -->
 						</div>
-						
-						<!--==== Project Preview HTML ====-->
-						
 						<div class="sr-only project-description">
 							<p class="clearfix">"<i>A simple responsive application that quizzes users on various programming languages.</i></p>
 							<img class="img-responsive img-center" src="img/code-icon.jpg"  alt="">
 							<p>Uses HTML5/CSS3, and jQuery.  Questions and answers are pulled from a dynamically changing JSON document.  Questions are rearranged so users don't get the exact same order of questions each time.</p>
 						</div>
-						
 					</a><!--End Project Item -->
 
 					<a class="project-item applications" href="http://www.brettdavidconnolly.com/apps/chep/" data-images="img/chepmain.jpg, img/chep1.jpg, img/chep2.jpg">
-						
 						<img class="img-responsive project-image" src="img/chepmain.jpg"  alt=""><!--Project thumb -->
-						
 						<div class="hover-mask">
 							<h2 class="project-title">CHEP Mobile App</h2><!--Project Title -->
 							<p>CHEP</p><!--Project Subtitle -->
 						</div>
-						
-						<!--==== Project Preview HTML ====-->
-						
 						<div class="sr-only project-description">
 							<p>Allows company executives the ability to browse confidential corporate data on or offline using a mobile device (although it was optimized for any viewing device).</p>
 							<img class="img-responsive img-center" src="img/cheplogo.jpg"  alt="">
 							<p>An application I built at my internship at CHEP. The purpose of this project was to build a jQuery mobile based web application that dynamically generates it's content through the parsing of an external JSON file. I employed use of the Local Storage function in HTML5 to allow for offline browsing of my application.</p>
 						</div>
-						
 					</a><!--End Project Item -->
 
 					<a class="project-item designs" href="img/new-logo-final.png" data-images="img/bdclogo.jpg">
-						
 						<img class="img-responsive project-image" src="img/bdclogo.jpg" alt=""><!--Project thumb -->
-						
 						<div class="hover-mask">
 							<h2 class="project-title">Personal Logo</h2><!--Project Title -->
 							<p>Brett Connolly</p><!--Project Subtitle -->
 						</div>
-						
-						<!--==== Project Preview HTML ====-->
-						
 						<div class="sr-only project-description">
 							<p class="clearfix">Most recent logo redesign.  Created using Adobe Illustrator.</p>
 							<img class="img-responsive img-center" src="img/icon-logo-final.jpg" alt="">
 						</div>
-						
 					</a><!--End Project Item -->
 
 					<a class="project-item applications" href="http://www.brettdavidconnolly.com/apps/scandit/" data-images="img/scandit-1.jpg, img/scandit-2.jpg, img/scandit-3.jpg">
-						
 						<img class="img-responsive project-image" src="img/scandit-main.jpg"  alt=""><!--Project thumb -->
-						
 						<div class="hover-mask">
 							<h2 class="project-title">Scandit</h2><!--Project Title -->
 							<p>University of Central Florida</p><!--Project Subtitle -->
 						</div>
-						
-						<!--==== Project Preview HTML ====-->
-						
 						<div class="sr-only project-description">
 							<p class="clearfix">Grabbing first place in my class competition, this shopping application allows users to scan products (native only) which are added onto a persistent application shopping cart which keeps an ongoing total of items added to the user's cart. Features include store specific pricing, product information updates allowed by the user, dynamic computations based on user input and coupon/discount entry.</p>
 							<img class="img-responsive img-center" src="img/scandit-main.jpg" alt="">
 							<p>I was the sole back-end developer for this project.  I used HTML5/CSS3, jQuery, PHP and MYSQL technologies along with parsing JSON via AJAX API calls to 2 different product APIs for data population.</p>
 						</div>
-						
 					</a><!--End Project Item -->
 
 					<a class="project-item applications" href="#somelink" data-images="img/scavenger-1.jpg, img/scavenger-2.jpg, img/scavenger-3.jpg">
-						
 						<img class="img-responsive project-image" src="img/scavenger-main.jpg"  alt=""><!--Project thumb -->
-						
 						<div class="hover-mask">
 							<h2 class="project-title">Knight Scavenger</h2><!--Project Title -->
 							<p>University of Central Florida</p><!--Project Subtitle -->
 						</div>
-						
-						<!--==== Project Preview HTML ====-->
-						
 						<div class="sr-only project-description">
 							<p class="clearfix">An application that aids UCF students with campus orientation by giving them a photo scavenger hunt to complete with their smartphones. Users must take photographs at the correct locations, aided by live GPS tracking. Scripts allow for individual user image uploads into their own personal, online folders. The application also allows for admin login in order to verify proper user submitted photos.</p>
 							<img class="img-responsive img-center" src="img/scavenger-logo.png"  alt="">
 							<p>Was 1 of 2 back-end developers, in which I handled all of the user-based operations and functionality.  We used HTML5/CSS3, jQuery, PHP and MYSQL.</p>
 						</div>
-						
 					</a><!--End Project Item -->
 
 					<a class="project-item designs" href="img/ConnollyBrettP3.jpg" data-images="img/typographic.jpg">
-						
 						<img class="img-responsive project-image" src="img/typographic.jpg"  alt=""><!--Project thumb -->
-						
 						<div class="hover-mask">
 							<h2 class="project-title">Typographic Portrait</h2><!--Project Title -->
 							<p>University of Central Florida</p><!--Project Subtitle -->
 						</div>
-						
-						<!--==== Project Preview HTML ====-->
-						
 						<div class="sr-only project-description">
 							<p>Created in Matthew Dombrowski's Typographic Design Class at the University of Central Florida</p>
 							<img class="img-responsive img-center" src="img/typographic-large.jpg"  alt="">
 						</div>
-						
 					</a><!--End Project Item -->
 
 					<a class="project-item websites" href="http://www.brettdavidconnolly.com/songrize/original" data-images="img/songrize-original-1.jpg">
-						
 						<img class="img-responsive project-image" src="img/songrize-original-main.jpg"  alt=""><!--Project thumb -->
-						
 						<div class="hover-mask">
 							<h2 class="project-title">Songrize - Original</h2><!--Project Title -->
 							<p>Custom CSS Animations</p><!--Project Subtitle -->
 						</div>
-						
-						<!--==== Project Preview HTML ====-->
-						
 						<div class="sr-only project-description">
 							<p class="clearfix">Custom site built using custom CSS animatons and transitions.  Design and animations all created by me.</p>
 							<img class="img-responsive img-center" src="img/songrize_logo.png" style="max-width:30%" alt="">
 						</div>
-						
 					</a><!--End Project Item -->
 					
 					<a class="project-item websites" href="http://www.leejamesfloral.com/cms/" data-images="img/leejames-1.jpg, img/leejames-2.jpg, img/leejames-3.jpg">
-						
 						<img class="img-responsive project-image" src="img/leejames.jpg"  alt=""><!--Project thumb -->
-						
 						<div class="hover-mask">
 							<h2 class="project-title">Lee James Floral</h2><!--Project Title -->
 							<p>VGlobalTech</p><!--Project Subtitle -->
 						</div>
-						
-						<!--==== Project Preview HTML ====-->
-						
 						<div class="sr-only project-description">
 							<p class="clearfix">Website built during my tenure at VGlobalTech.  The site was built using Wordpress and a pre-made template having heavily customized many of the images, jQuery/Javascript and HTML/CSS.</p>
 							<img class="img-responsive img-center" src="img/leejames-logo.jpg" alt="">
 						</div>
-						
 					</a><!--End Project Item -->
 					
 					<a class="project-item applications" href="http://www.brettdavidconnolly.com/apps/hulu/main.html" data-images="img/hulu-1.jpg, img/hulu-2.jpg, img/hulu-3.jpg">
-						
 						<img class="img-responsive project-image" src="img/hulu-main.jpg" alt=""><!--Project thumb -->
-						
 						<div class="hover-mask">
 							<h2 class="project-title">Hulu App</h2><!--Project Title -->
 							<p>University of Central Florida</p><!--Project Subtitle -->
 						</div>
-						
-						<!--==== Project Preview HTML ====-->
-						
 						<div class="sr-only project-description">
 							<p class="clearfix">The purpose of this project was to emulate the Hulu Ipad application by employing the use of DOM scripting WITHOUT the use of JQuery to better understand its core use syntax.</p>
 							<img class="img-responsive img-center" src="img/hulu-logo.jpg"  alt="">
 						</div>
-						
 					</a><!--End Project Item -->
 					
 					<a class="project-item websites" href="http://www.greenpathenergysolutions.com/cms/" data-images="img/greenpath-1.jpg, img/greenpath-2.jpg, img/greenpath-3.jpg">
-						
 						<img class="img-responsive project-image" src="img/greenpath-logo.jpg"  alt=""><!--Project thumb -->
-						
 						<div class="hover-mask">
 							<h2 class="project-title">Greenpath Energy Solutions</h2><!--Project Title -->
 							<p>VGlobalTech</p><!--Project Subtitle -->
 						</div>
-						
-						<!--==== Project Preview HTML ====-->
-						
 						<div class="sr-only project-description">
 							<p class="clearfix">Website built over the course of a month during my tenure at <b>VGlobalTech</b> using the Joomla content management system.  Site was built using a Rocketheme template but contains a very large amount of custom code and self created content.</p>
 							<img class="img-responsive img-center" src="img/greenpath-logo.jpg" alt="">
 						</div>
-						
 					</a><!--End Project Item -->
 					
 					<a class="project-item websites" href="http://brettdavidconnolly.com/joomla-portfolio/" data-images="img/portfolio-1.jpg, img/portfolio-main.jpg, img/portfolio-2.jpg">
-						
 						<img class="img-responsive project-image" src="img/portfolio-main.jpg"  alt=""><!--Project thumb -->
-						
 						<div class="hover-mask">
 							<h2 class="project-title">Joomla Portfolio</h2><!--Project Title -->
 							<p>Brett Connolly</p><!--Project Subtitle -->
 						</div>
-						
-						<!--==== Project Preview HTML ====-->
-						
 						<div class="sr-only project-description">
 							<p class="clearfix">My previous porfolio design built using the <b>Joomla</b> content management system and the Leviathan template from Rockettheme.  All artistic assets outside of the template are self created.</p>
 							<img class="img-responsive img-center" src="img/joomla-logo.png" alt="">
 						</div>
-						
 					</a><!--End Project Item -->
 					
 					<a class="project-item websites" href="http://www.guardianwaterservices.com/wp/" data-images="img/guardian-1.jpg, img/guardian-2.jpg, img/guardian-3.jpg">
-						
 						<img class="img-responsive project-image" src="img/guardian-logo.jpg"  alt=""><!--Project thumb -->
-						
 						<div class="hover-mask">
 							<h2 class="project-title">Guardian Water Services</h2><!--Project Title -->
 							<p>VGlobalTech</p><!--Project Subtitle -->
 						</div>
-						
-						<!--==== Project Preview HTML ====-->
-						
 						<div class="sr-only project-description">
 							<p class="clearfix">Website built during my tenure at <b>VGlobalTech</b> using the Wordpress content management system.  Site was built using an elegant theme template.  Did a fair amount of customization of html and css.</p>
 							<img class="img-responsive img-center" src="img/otherdesigns.jpg" alt="">
 						</div>
-						
 					</a><!--End Project Item -->
 					
 					<a class="project-item designs" href="#" data-images="img/otherdesigns.jpg">
-						
 						<img class="img-responsive project-image" src="img/otherdesigns.jpg"  alt=""><!--Project thumb -->
-						
 						<div class="hover-mask">
 							<h2 class="project-title">Other Designs</h2><!--Project Title -->
 							<p>Brett Connolly</p><!--Project Subtitle -->
 						</div>
-						
-						<!--==== Project Preview HTML ====-->
-						
 						<div class="sr-only project-description">
 							<p class="clearfix">Other designs created throughout the years:</p>
 							<img class="img-responsive img-center" src="img/look.jpg" alt="">
@@ -1040,39 +925,27 @@
 							<img class="img-responsive img-center" src="img/box.jpg" alt="">
 							<img class="img-responsive img-center" src="img/shield.jpg" alt="">
 						</div>
-						
 					</a><!--End Project Item -->
 					
 					<a class="project-item applications" href="#" data-images="img/proxevents-1.jpg, img/proxevents-2.jpg, img/proxevents-logo.jpg">
-						
 						<img class="img-responsive project-image" src="img/proxevents-logo.jpg"  alt=""><!--Project thumb -->
-						
 						<div class="hover-mask">
 							<h2 class="project-title">ProxEvents</h2><!--Project Title -->
 							<p>Brett Connolly</p><!--Project Subtitle -->
 						</div>
-						
-						<!--==== Project Preview HTML ====-->
-						
 						<div class="sr-only project-description">
 							<p class="clearfix">This application searches A user's Last.FM account then finds shows for those artists in whichever zipcode is entered by the user. Connects to Last.FM and SongKick APIs to dynamically generate concert list.</p>
 							<img class="img-responsive img-center" src="img/proxevents-logo.jpg" alt="">
 							<p>Project uses HTML5/CSS3, jQuery, AJAX and PHP.</p>
 						</div>
-						
 					</a><!--End Project Item -->
 					
 					<a class="project-item websites" href="#" data-images="img/othersites.jpg">
-						
 						<img class="img-responsive project-image" src="img/othersites.jpg"  alt=""><!--Project thumb -->
-						
 						<div class="hover-mask">
 							<h2 class="project-title">Other Websites</h2><!--Project Title -->
 							<p>Brett Connolly</p><!--Project Subtitle -->
 						</div>
-						
-						<!--==== Project Preview HTML ====-->
-						
 						<div class="sr-only project-description">
 							<p class="clearfix">Other websites i've built, either while I was at VGlobalTech or freelancing: </p>
 							<img class="img-responsive img-center" src="img/pediatrics.jpg" alt="">
@@ -1086,11 +959,8 @@
 							<img class="img-responsive img-center" src="img/msr.jpg" alt="">
 							<p>http://www.martinscottrealty.com/</p>
 						</div>
-						
 					</a><!--End Project Item -->
-						
 				</div><!-- End projects --> 
-				
 			</div><!-- End container --> 
 			
 			<!-- ==============================================
