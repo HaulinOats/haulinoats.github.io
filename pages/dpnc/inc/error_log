@@ -1,0 +1,20 @@
+[16-Feb-2016 20:30:18 America/Denver] PHP Notice:  Undefined index: name in /home6/brettdav/public_html/dpnc/inc/store_info.php on line 3
+[16-Feb-2016 20:30:18 America/Denver] PHP Notice:  Undefined index: type in /home6/brettdav/public_html/dpnc/inc/store_info.php on line 4
+[16-Feb-2016 20:30:18 America/Denver] PHP Notice:  Undefined index: notes in /home6/brettdav/public_html/dpnc/inc/store_info.php on line 5
+[16-Feb-2016 20:30:18 America/Denver] PHP Notice:  Undefined index: notice_date in /home6/brettdav/public_html/dpnc/inc/store_info.php on line 6
+[29-May-2016 22:41:41 America/Denver] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'brettdav_admin'@'localhost' (using password: YES) in /home6/brettdav/public_html/dpnc/inc/dpn_db_connect.php on line 2
+[29-May-2016 22:41:41 America/Denver] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home6/brettdav/public_html/dpnc/inc/dpn_db_connect.php on line 2
+[13-Jun-2016 06:19:40 America/Denver] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'brettdav_admin'@'localhost' (using password: YES) in /home6/brettdav/public_html/dpnc/inc/dpn_db_connect.php on line 2
+[13-Jun-2016 06:19:40 America/Denver] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home6/brettdav/public_html/dpnc/inc/dpn_db_connect.php on line 2
+[13-Jun-2016 16:20:49 America/Denver] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'brettdav_admin'@'localhost' (using password: YES) in /home6/brettdav/public_html/dpnc/inc/dpn_db_connect.php on line 2
+[13-Jun-2016 16:20:49 America/Denver] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home6/brettdav/public_html/dpnc/inc/dpn_db_connect.php on line 2
+[28-Jun-2016 14:20:59 America/Denver] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'brettdav_admin'@'localhost' (using password: YES) in /home6/brettdav/public_html/dpnc/inc/dpn_db_connect.php on line 2
+[28-Jun-2016 14:20:59 America/Denver] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home6/brettdav/public_html/dpnc/inc/dpn_db_connect.php on line 2
+[04-Sep-2016 11:31:46 America/Denver] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'brettdav_admin'@'localhost' (using password: YES) in /home6/brettdav/public_html/dpnc/inc/dpn_db_connect.php on line 2
+[04-Sep-2016 11:31:46 America/Denver] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home6/brettdav/public_html/dpnc/inc/dpn_db_connect.php on line 2
+[20-Oct-2016 02:47:22 America/Denver] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'brettdav_admin'@'localhost' (using password: YES) in /home6/brettdav/public_html/dpnc/inc/dpn_db_connect.php on line 2
+[20-Oct-2016 02:47:22 America/Denver] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home6/brettdav/public_html/dpnc/inc/dpn_db_connect.php on line 2
+[20-Oct-2016 16:42:24 America/Denver] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'brettdav_admin'@'localhost' (using password: YES) in /home6/brettdav/public_html/dpnc/inc/dpn_db_connect.php on line 2
+[20-Oct-2016 16:42:24 America/Denver] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home6/brettdav/public_html/dpnc/inc/dpn_db_connect.php on line 2
+[04-Dec-2016 13:32:33 America/Denver] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'brettdav_admin'@'localhost' (using password: YES) in /home6/brettdav/public_html/dpnc/inc/dpn_db_connect.php on line 2
+[04-Dec-2016 13:32:33 America/Denver] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home6/brettdav/public_html/dpnc/inc/dpn_db_connect.php on line 2

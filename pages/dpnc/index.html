@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+	<script src="js/divPeek.min.js"></script>
+	<script src="js/jquery.scrolling-parallax.js"></script>
+	<script src="js/fittext.js"></script>
+	<script src="js/custom.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<title>Digital Privacy Notice Challenge</title>
+</head>
+<body>
+	<div id="dpn_opener">
+		<div class="opener_button" id="opener_top">
+			<div class="main_title_div">
+				<p>select</p>
+				<img src="img/mainHeart.png" id="top_plus_icon" alt="title-icon" class="title-icon"/>
+				<h2>HEALTHCARE PROVIDER</h2>
+			</div>
+			<div class="opener_form" id="provider_form_cont">
+				<label>Please enter Covered Entity Name:</label>
+				<input id="prov_name" type="text" placeholder="" />
+				<label>Please Insert any special notes that apply to your entity’s practices:</label>
+				<textarea id="prov_notes"></textarea>
+				<label>Please Insert Effective Date of Notice here:</label>
+				<input id="prov_date" type="text" placeholder="" />
+				<div>
+					<img src="img/check_white.png" class="form_button" alt="confirm-icon" data-type="1" id="provider_confirm"/>
+					<img src="img/cancel_white.png" class="form_button" alt="cancel-icon" id="provider_cancel"/>
+				</div>
+			</div>
+		</div>
+		<div class="opener_button" id="opener_bottom">
+			<div class="main_title_div">
+				<p>select</p>
+				<img src="img/mainFiles.png" alt="title-icon" class="title-icon"/>
+				<h2>HEALTHCARE PLAN</h2>
+			</div>
+			<div class="opener_form" id="plan_form_cont">
+				<label>Please Insert the Health Plan’s Name (optional)</label>
+				<input id="plan_name" type="text" placeholder="" />
+				<label>Please Insert any special notes that apply to your entity’s practices (optional)</label>
+				<textarea id="plan_notes"></textarea>
+				<label>Please Insert Effective Date of Notice here (optional)</label>
+				<input id="plan_date" type="text" placeholder="" />
+				<div>
+					<img src="img/check_red.png" class="form_button" alt="confirm-icon" data-type="2" id="plan_confirm"/>
+					<img src="img/cancel_red.png" class="form_button" alt="cancel-icon" id="plan_cancel"/>
+				</div>
+			</div>
+		</div>
+	</div>
+	<main id="dpn_main_container">
+		<section id="dpn_content">
+		</section>
+		<footer id="dpn_footer">
+			<div id="category_highlight"></div>
+			<p class="swipe-text">Please swipe (click &amp; drag) to the left</p>
+		</footer>
+		<div id="ajaxLoader"><img src="img/ajax.gif" alt="ajax-loader"/><p>Loading Content...</p></div>
+	</main>
+</body>
+</html>

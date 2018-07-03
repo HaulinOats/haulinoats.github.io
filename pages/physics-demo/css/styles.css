@@ -1,0 +1,21 @@
+.outerCanvasContainer {
+	position: relative;
+	font-family: 'Cabin Sketch', cursive;
+}
+.outerCanvasContainer canvas {
+	background:white;
+}
+#boxLinkContainer {
+	position: absolute;
+	bottom: 9%;
+	left: 2.5%;
+	width:20%;
+}
+#boxLink {
+	font-size: 16px;
+	text-decoration: none;
+}
+#boxLink:visited {
+	text-decoration: none;	
+	color:black;
+}

@@ -1,0 +1,229 @@
+<xml>
+	<intro-title>YOUR INFORMATION.YOUR RIGHTS.OUR RESPONSIBILITIES.</intro-title>
+	<intro-info>This notice describes how medical information about you may be used and disclosed 
+and how you can get access to this information. Please review carefully.</intro-info>
+	<main-category>
+		<category-number>1</category-number>
+		<main-title>Your Rights</main-title>
+		<main-title-sub>You have the right to:</main-title-sub>
+		<main-info>For certain health information, you can tell us your choices about what we share. 
+		If you have a clear preference for how we share your information in the situations described below, 
+		talk to us. Tell us what you want us to do, and we will follow your instructions. </main-info>
+		<main-image>paper.png</main-image>
+		<sub-category>
+			<sub-title>Get a copy of your health and claims records</sub-title>
+			<sub-description>You can ask to see or get a copy of your health and claims records and other health information we have about you. Ask us how to do this. </sub-description>
+			<sub-description>We will provide a copy or a summary of your health and claims records, usually within 30 days of your request. We may charge a reasonable, cost-based fee.</sub-description>
+			<additional-info></additional-info>
+			<animation-image>person1.png</animation-image>
+			<animation-image>editCircle.png</animation-image>
+			<animation-image>simpleFile.png</animation-image>
+		</sub-category>
+		<sub-category>
+			<sub-title>Ask us to correct health and claims records</sub-title>
+			<sub-description>You can ask us to correct your health and claims records if you think they are incorrect or incomplete. Ask us how to do this.</sub-description>
+			<sub-description>We may say “no” to your request, but we’ll tell you why in writing within 60 days.</sub-description>
+			<additional-info></additional-info>
+		</sub-category>
+		<sub-category>
+			<sub-title>Request confidential communications</sub-title>
+			<sub-description>You can ask us to contact you in a specific way (for example, home or office phone) or to send mail to a different address. </sub-description>
+			<sub-description>We will consider all reasonable requests, and must say “yes” if you tell us you would be in danger if we do not.</sub-description>
+			<additional-info></additional-info>
+		</sub-category>
+		<sub-category>
+			<sub-title>Ask us to limit what we use or share</sub-title>
+			<sub-description>You can ask us not to use or share certain health information for treatment, payment, or our operations. </sub-description>
+			<sub-description>We are not required to agree to your request, and we may say “no” if it would affect your care.</sub-description>
+			<additional-info></additional-info>
+		</sub-category>
+	</main-category>
+    <main-category>
+		<category-number>1</category-number>
+		<main-title>Your Rights</main-title>
+		<main-title-sub>You have the right to:</main-title-sub>
+		<main-info>For certain health information, you can tell us your choices about what we share. 
+            If you have a clear preference for how we share your information in the situations described below, 
+            talk to us. Tell us what you want us to do, and we will follow your instructions. </main-info>
+		<main-image>paper.png</main-image>
+		<sub-category>
+			<sub-title>Get a list of those with whom we’ve shared information</sub-title>
+			<sub-description>You can ask for a list (accounting) of the times we’ve shared your health information for six years prior to the date you ask, who we shared it with, and why.</sub-description>
+			<sub-description>We will include all the disclosures except for those about treatment, payment, and health care operations, and certain other disclosures (such as any you asked us to make). We’ll provide one accounting a year for free but will charge a reasonable, cost-based fee if you ask for another one within 12 months.</sub-description>
+			<additional-info></additional-info>
+			<animation-image>peopleFolderCircle.png</animation-image>
+			<animation-image>folderTransfer.png</animation-image>
+			<animation-image>person1.png</animation-image>
+		</sub-category>
+		<sub-category>
+			<sub-title>Get a copy of this privacy notice</sub-title>
+			<sub-description> You can ask for a paper copy of this notice at any time, even if you have agreed to receive the notice electronically. We will provide you with a paper copy promptly.</sub-description>
+			<additional-info></additional-info>
+			<animation-image>peopleFolderCircle.png</animation-image>
+			<animation-image>folderTransfer.png</animation-image>
+			<animation-image>person1.png</animation-image>
+		</sub-category>
+		<sub-category>
+			<sub-title>Choose someone to act for you</sub-title>
+			<sub-description>If you have given someone medical power of attorney or if someone is your legal guardian, that person can exercise your rights and make choices about your health information. </sub-description>
+			<sub-description>We will make sure the person has this authority and can act for you before we take any action.</sub-description>
+			<additional-info></additional-info>
+			<animation-image>peopleFolderCircle.png</animation-image>
+			<animation-image>folderTransfer.png</animation-image>
+			<animation-image>person1.png</animation-image>
+		</sub-category>
+		<sub-category>
+			<sub-title>File a complaint if you feel your rights are violated</sub-title>
+			<sub-description>You can complain if you feel we have violated your rights by contacting us using the information on page 1.</sub-description>
+			<sub-description>You can file a complaint with the U.S. Department of Health and Human Services Office for Civil Rights by sending a letter to 200 Independence Avenue, S.W., Washington, D.C. 20201, calling 1-877-696-6775, or visiting www.hhs.gov/ocr/privacy/hipaa/complaints/.</sub-description>
+            <sub-description>We will not retaliate against you for filing a complaint.</sub-description>
+			<additional-info></additional-info>
+			<animation-image>peopleFolderCircle.png</animation-image>
+			<animation-image>folderTransfer.png</animation-image>
+			<animation-image>person1.png</animation-image>
+		</sub-category>
+	</main-category>
+	<main-category>
+		<category-number>2</category-number>
+		<main-title>YOUR CHOICES</main-title>
+		<main-info>For certain health information, you can tell us your choices about what we share. 
+		If you have a clear preference for how we share your information in the situations described below, 
+		talk to us. Tell us what you want us to do, and we will follow your instructions. </main-info>
+		<main-image>yourChoices.png</main-image>
+		<main-title-sub>You may choose:</main-title-sub>
+		<sub-category>
+			<sub-title>In these cases, you have both the right and choice to tell us to:</sub-title>
+			<sub-description>Share information with your family, close friends, or others involved in payment for your care</sub-description>
+			<sub-description>Share information in a disaster relief situation</sub-description>
+			<sub-description>Include your information in a hospital directory</sub-description>
+			<additional-info>If you are not able to tell us your preference, for example if you are unconscious, 
+			we may go ahead and share your information if we believe it is in your best interest. 
+			We may also share your information when needed to lessen a serious and imminent 
+			threat to health or safety</additional-info>
+			<animation-image>family.png</animation-image>
+			<animation-image>houseFire.png</animation-image>
+			<animation-image>hospitalPhoneBook.png</animation-image>
+		</sub-category>
+		<sub-category>
+			<sub-title>In these cases we never share your information unless you give us written permission</sub-title>
+			<sub-description>Marketing purposes</sub-description>
+			<sub-description>Sale of your information</sub-description>
+			<sub-description>Most sharing of psychotherapy notes</sub-description>
+			<additional-info></additional-info>
+			<animation-image>family.png</animation-image>
+			<animation-image>houseFire.png</animation-image>
+			<animation-image>hospitalPhoneBook.png</animation-image>
+		</sub-category>
+	</main-category>
+	<main-category>
+		<category-number>3</category-number>
+		<main-title>OUR USES AND DISCLOSURES</main-title>
+		<main-title-sub>How do we typically use or share your health information? </main-title-sub>
+		<main-info>We typically use or share your health information in the following ways.</main-info>
+        <main-image>ourDisclosures.png</main-image>
+		<sub-category>
+			<sub-title>Help manage the health care treatment you receive</sub-title>
+			<sub-description>We can use your health information and share it with professionals who are treating you.</sub-description>
+			<sub-example>A doctor sends us information about your diagnosis and treatment plan so we can arrange additional services.</sub-example>
+			<additional-info></additional-info>
+            <animation-image>person1.png</animation-image>
+			<animation-image>ambulance2.png</animation-image>
+			<animation-image>corporate.png</animation-image>
+		</sub-category>
+		<sub-category>
+			<sub-title>Run our Organization</sub-title>
+			<sub-description>We can use and disclose your information to run our organization and contact you when necessary. </sub-description>
+            <sub-description>We are not allowed to use genetic information to decide whether we will give you coverage and the price of that coverage. This does not apply to long term care plans. </sub-description>
+			<sub-example>We use health information about you to develop better services for you.</sub-example>
+			<additional-info></additional-info>
+		</sub-category>
+		<sub-category>
+			<sub-title>Pay for your health services</sub-title>
+			<sub-description>We can use and disclose your health information as we pay for your health services.</sub-description>
+			<sub-example>We share information about you with your dental plan to coordinate payment for your dental work.</sub-example>
+			<additional-info></additional-info>
+		</sub-category>
+        <sub-category>
+			<sub-title>Administer your plan</sub-title>
+			<sub-description>We may disclose your health information to your health plan sponsor for plan administration.</sub-description>
+			<sub-example>Your company contracts with us to provide a health plan, and we provide your company with certain statistics to explain the premiums we charge.</sub-example>
+			<additional-info></additional-info>
+		</sub-category>
+    </main-category>
+    <main-category>
+            <category-number>3</category-number>
+            <main-title>OUR USES AND DISCLOSURES</main-title>
+            <main-title-sub>How else can we use or share your health information?  </main-title-sub>
+            <main-info>We are allowed or required to share your information in other ways – usually in ways that contribute to the public good, such as public health and research. We have to meet many conditions in the law before we can share your information for these purposes. For more information see: www.hhs.gov/ocr/privacy/hipaa/understanding/consumers/index.html.</main-info>
+            <sub-category>
+                <sub-title>Help with public health and safety issues</sub-title>
+                <sub-description> We can share health information about you for certain situations such as:</sub-description>
+                <sub-list>
+                    <list-item>Preventing disease</list-item>
+                    <list-item>Helping with product recalls</list-item>
+                    <list-item>Reporting adverse reactions to medications</list-item>
+                    <list-item>Reporting suspected abuse, neglect, or domestic violence</list-item>
+                    <list-item>Preventing or reducing a serious threat to anyone’s health or safety</list-item>
+                </sub-list>
+                <animation-image>healthBox.png</animation-image>
+                <animation-image>beaker.png</animation-image>
+                <animation-image>ambulance.png</animation-image>
+            </sub-category>
+            <sub-category>
+                <sub-title>Do research</sub-title>
+                <sub-description>We can use or share your information for health research.</sub-description>
+                <additional-info></additional-info>
+            </sub-category>
+            <sub-category>
+                <sub-title>Comply with the law</sub-title>
+                <sub-description>We will share information about you if state or federal laws require it, including with the Department of Health and Human Services if it wants to see that we’re complying with federal privacy law.</sub-description>
+                <additional-info></additional-info>
+            </sub-category>
+    </main-category>
+    <main-category>
+        <category-number>3</category-number>
+        <main-title>OUR USES AND DISCLOSURES</main-title>
+        <main-title-sub>How else can we use or share your health information?  </main-title-sub>
+        <main-info>We are allowed or required to share your information in other ways – usually in ways that contribute to the public good, such as public health and research. We have to meet many conditions in the law before we can share your information for these purposes. For more information see: www.hhs.gov/ocr/privacy/hipaa/understanding/consumers/index.html.</main-info>
+        <sub-category>
+            <sub-title>Respond to organ and tissue donation requests</sub-title>
+            <sub-description>We can share health information about you with organ procurement organizations.</sub-description>
+            <additional-info></additional-info>
+            <animation-image>doctor.png</animation-image>
+            <animation-image>worldWide.png</animation-image>
+            <animation-image>legalTeam.png</animation-image>
+        </sub-category>
+        <sub-category>
+            <sub-title>Work with a medical examiner or funeral director</sub-title>
+            <sub-description>We can share health information with a coroner, medical examiner, or funeral director when an individual dies.</sub-description>
+            <additional-info></additional-info>
+        </sub-category>
+        <sub-category>
+            <sub-title>Address workers’ compensation, law enforcement, and other government requests</sub-title>
+            <sub-description> We can use or share health information about you:</sub-description>
+            <sub-list>
+                <list-item>For workers’ compensation claims</list-item>
+                <list-item>For law enforcement purposes or with a law enforcement official</list-item>
+                <list-item>With health oversight agencies for activities authorized by law</list-item>
+                <list-item>Reporting suspected abuse, neglect, or domestic violence</list-item>
+                <list-item>For special government functions such as military, national security, and presidential protective services</list-item>
+            </sub-list>
+        </sub-category>
+        <sub-category>
+            <sub-title>Respond to lawsuits and legal actions</sub-title>
+            <sub-description>We can share health information about you in response to a court or administrative order, or in response to a subpoena.</sub-description>
+            <additional-info></additional-info>
+        </sub-category>
+    </main-category>
+	<outro-title>OUR RESPONSIBILITIES</outro-title>
+	<outro-info>We are required by law to maintain the privacy and security of your protected 
+	health information.</outro-info>
+	<outro-info>We will let you know promptly if a breach occurs that may have compromised 
+	the privacy or security of your information.</outro-info>
+	<outro-info>We must follow the duties and privacy practices described in this notice and 
+	give you a copy of it.</outro-info>
+	<outro-info>We will not use or share your information other than as described here unless
+	you tell us we can in writing. If you tell us we can, you may change your mind 
+	at any time. Let us know in writing if you change your mind.</outro-info>
+    <outro-info>For more information see: www.hhs.gov/ocr/privacy/hipaa/understanding/consumers/noticepp.html.</outro-info>
+</xml>

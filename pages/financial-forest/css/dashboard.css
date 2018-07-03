@@ -1,0 +1,27 @@
+table{
+	border:solid thin black;
+}
+table td{
+	border:solid thin black;
+	padding:5px;
+}
+table input{
+	display: block;
+	border-radius: 15px;
+	min-height: 40px;
+	width: 50%;
+	margin: 0 auto;
+	margin-top: 15px;
+	color: white;
+	background: rgb(100,150,100);
+}
+.t-header{
+	font-weight: bold;
+}
+.msg{
+	text-align: center;
+color: green;
+font-size: 20px;
+margin-top: 10px;
+margin-bottom: 5px;
+}

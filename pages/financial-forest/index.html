@@ -1,0 +1,674 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+		<title>Financial Forest</title> 
+    	<meta name="viewport" content="width=device-width" /> 
+    	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0-beta.1/jquery.mobile-1.2.0-beta.1.min.css" />
+    	<link rel="stylesheet" href="css/reset.css" />
+    	<link rel="stylesheet" href="css/financial_forest.min.css" />
+    	<link rel="stylesheet" href="css/custom.css" />
+    	<script src="phonegap.js"></script>
+    	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    	<script type="text/javascript" src="js/jquery.mobile-1.2.0-beta.1.min.js"></script>
+		<script type="text/javascript" src="js/PushNotification.js"></script>
+		<script type="text/javascript" src="js/pushwoosh.js"></script>
+		<script type="text/javascript" src="js/home.js"></script>
+	</head> 
+	<body>
+
+		<!-- Login Page -->
+		<div data-role="page" class="page" id="login-page">
+			<div class="sky-blue-container">
+				<div id="header">
+					<a href="#about-the-app-page" class="header-button">Tap to Learn About Us</a>
+		        </div> 
+		        <div class="clouds"><img src="img/background_clouds_small-2.png" alt="clouds" class="day" /></div>
+			    <div class="login-page-main-content-container"> 
+			    	<div class="logo">
+						<img src="img/logo_image.png" alt="Financial Forest" id="logo_image" />
+						<p class="tagline">Grow with us</p>
+					</div>
+						<p id="login-msg"></p>
+						<input type="text" name="login_username" id="login_username" placeholder="User Name" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset" />
+						<input type="password" name="login_password" id="login_password" placeholder="Password" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset" />
+						<input id="login" name="login" type="submit" value="Login" data-role="button" data-theme="a" />
+				    <div>
+				    	<a href="#sign-up-page" data-role="button" id="signup_button" data-theme="a">Sign Up</a>
+				    </div>
+				</div>
+		        <div class="background-trees-footer"></div>
+		    </div>
+		</div>
+
+		<!-- Account Balance -->
+		<div data-role="page" class="page" id="account-balance-page">
+			<div class="sky-blue-container">
+				<div id="header">
+					<a class="header-button">Financial Forest</a>
+		        </div> 
+		        <div class="clouds"><img src="img/background_clouds_small-2.png" alt="clouds" class="day" /></div>
+			    <div class="login-page-main-content-container"> 
+			    	<div class="logo">
+						<img src="img/logo_image.png" alt="Financial Forest" id="logo_image" />
+						<p class="tagline">Grow with us</p>
+					</div>
+						
+						<label for="account-balance" id="balance-label" class="reg-labels">Enter Savings Account Balance</label>
+						<input type="number" name="account-balance" id="account-balance" placeholder="$" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset" />
+				    <div>
+				    	<a data-role="button" id="account-balance-submit" data-theme="a">Continue</a>
+				    </div>
+				</div>
+		        <div class="background-trees-footer"></div>
+		    </div>
+		</div>
+
+		<!-- About the App Page -->
+        <div data-role="page" class="page" id="about-the-app-page">
+            <div class="sky-blue-container">
+                <div id="header">
+                    <a href="#login-page" class="header-button">Tap to Return to Login</a>
+                </div> 
+                <div class="about-the-app-page-main-content-container"> 
+                    <div class="about-info-container">
+                        <div class="cloud-notification-banner">
+                            <div class="notification-banner-container">
+                                <p>What is Financial Forest?</p>
+                            </div>
+                            <img src="img/banner_arrow.png" alt="banner arrow" />
+                        </div>
+                        <p class="about-paragraph">Financial Forest turns goals into habits. Enter a longterm savings goal and we'll tell you what to do on a weekly basis. Your tree grows as you save and meet your goals.</p>
+                    </div>
+                    <div class="padding"></div>
+                    <div class="about-info-container">
+                        <div class="cloud-notification-banner">
+                            <div class="notification-banner-container">
+                                <p>How it Helps You</p>
+                            </div>
+                            <img src="img/banner_arrow.png" alt="banner arrow" />
+                        </div>
+                        <p class="about-paragraph">Financial Forest makes saving easy. There are no spreadsheets, budgets or math. Just simple guidance to get you from this week to next week.We'll tell you what to deposit in your savings account and when. We'll also help you get through the week with motivational tips.</p>
+                    </div>
+                    <div class="padding"></div>
+                    <div class="about-info-container">
+                        <div class="cloud-notification-banner">
+                            <div class="notification-banner-container">
+                                <p>How to Get Started</p>
+                            </div>
+                            <img src="img/banner_arrow.png" alt="banner arrow" />
+                        </div>
+                        <ul class="about-list">
+                            <li>It's as easy as 1-2-3.</li>
+                            <li>1. Enter a savings goal</li>
+                            <li>2. Enter a target date</li>
+                            <li>3. Make your weekly savings deposit</li>
+                        </ul>
+                        <p class="about-paragraph">After that, you&apos;ll receive push notifications to help keep you motivated and on track. Get started and grow with us!</p>
+                    </div>
+                    <div class="padding"></div>
+                    <div>
+                        <a href="#sign-up-page" data-role="button" id="signup_button" data-theme="a">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+		<!-- Getting Started Page -->
+        <div data-role="page" class="page" id="about-page-1">
+            <header>
+                <h1 class="header-title">Financial Forest</h1>
+                <div class="clear"></div>
+            </header>
+            <div class="page-container">
+                <div class="money-tree-container">
+                    <div class="clouds"><img src="img/background_clouds_small-2.png" alt="clouds" class="day" /></div>
+                    <div class="cloud-notification-banner">
+                        <div class="notification-banner-container">
+                            <p>Build Your Emergency Fund.</p>
+                        </div>
+                        <img src="img/banner_arrow.png" alt="banner arrow" />
+                    </div>
+                    <div class="current-money-tree-container">
+                        <img src="img/tree_0.png" alt="current money tree" class="seed"/>
+                    </div>
+                </div>
+                <div class="ground-container">
+                    <div class="ground-information-container">
+                        <div class="ground-information-container">
+                            <div class="ground-information-header-container">
+                                <img src="img/savings_goal_icon.png" alt="goal progress icon" />
+                                <p class="information-header">Your First Goal:</p>
+                            </div>
+                            <div class="ground-information">
+                                <p id="started-p">Save up one month of expenses. This is your savings seed. Plant it and grow with us.</p>
+                            </div>
+                        </div>
+                        <div class="ground-input-form-container">
+                            <div class="ground-information-header-container">
+                                <img src="img/savings_goal_icon.png" alt="goal progress icon" />
+                                <p class="information-header">Monthly Expenses:</p>
+                            </div>
+                            <div class="ground-input-box">
+                            	 <label for="cushion_total" class="reg-labels">Estimate Your Average Monthly Expenses (this is the amount of money you need each month to pay your bills, eat, drive, etc.)</label>
+                                <input type="number" name="cushion_total" id="cushion_total" placeholder="Estimate Your Average Monthly Expenses (this is the amount of money you need each month to pay your bills, eat, drive, etc.)" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset reg_form" />
+                            </div>
+                            <div class="ground-information-header-container">
+                                <img src="img/goal_deadline_icon.png" alt="goal progress icon" />
+                                <p class="information-header">Goal Deadline:</p>
+                            </div>
+                            <div class="ground-input-box">
+                            	<p>We&#39;re going to help you leave paycheck-to-paycheck living behind by saving up one month of expenses.</p>
+                            	<p style="margin-top: 20px">I want to save one month of expenses in:</p>
+                            	<select id="month-select" data-theme="a">
+									<option value="3">3 Months</option>
+									<option value="6">6 Months</option>
+									<option value="9">9 Months</option>
+									<option value="12">12 Months</option>
+								</select>
+                            </div>             
+                            <div class="ground-input-box">
+                                <a href="#goals" data-role="button" id="final-instructions" data-theme="a">Set Your First Savings Goal</a>
+                                <div id="started-modal"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+		<!-- Sign Up Page -->
+		<div data-role="page" class="page" id="sign-up-page">
+			<div class="sky-blue-container">
+				<div id="header">
+					<a href="#login-page" class="header-button">Return to Login</a>
+		        </div> 
+		        <div class="clouds"><img src="img/background_clouds_small-2.png" alt="clouds" class="day" /></div>
+			    <div class="sign-up-page-main-content-container"> 
+			    	<div class="logo">
+						<img src="img/logo_image.png" alt="Financial Forest" id="logo_image" />
+						<p class="tagline">Grow with us</p>
+					</div>
+						<label for="username" class="reg-labels"></label>
+						<input type="text" name="username" id="username" placeholder="User Name" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset reg_form" />
+						<label for="first_name" id="fname" class="reg-labels"></label>
+		                <input type="text" name="first_name" id="first_name" placeholder="First Name" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset reg_form" />
+						<label for="last_name" class="reg-labels"></label>
+		                <input type="text" name="last_name" id="last_name" placeholder="Last Name" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset reg_form" />
+			    		<label for="s_email" class="reg-labels"></label>
+		                <input type="email" name="sign_up_email" id="s_email" placeholder="Email" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset reg_form"/>
+			    		<label for="phone" class="reg-labels"></label>
+		                <input type="number" name="sign_up_phone" id="phone" placeholder="Phone Number" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset reg_form" />
+			    		<select name="sign_up_carrier" id="carrier" data-theme="a">
+			    			<option value="att">AT&amp;T</option>
+			    			<option value="verizon">Verizon</option>
+			    			<option value="t-mobile">T-Mobile</option>
+			    			<option value="sprint">Sprint</option>
+			    			<option value="nextel">Nextel</option>
+			    		</select>
+						<label for="password" class="reg-labels"></label>
+		                <input type="password" name="password" id="password" placeholder="Password" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset reg_form" />
+						<label for="password_confirmation" class="reg-labels"></label>
+		                <input type="password" name="password_confirmation" id="password_confirmation" placeholder="Password Confirmation" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset reg_form" />   
+		                
+						<br />
+						<input id="signup" name="signup" type="submit" value="Sign Up" data-role="button" data-theme="a" /><br /> 
+					<div id="error"><p id="registration_error"></p></div>
+				</div>
+		        <div class="background-trees-footer"></div>
+		    </div>
+		</div>
+        
+        
+        <!-- Bank Info page -->
+        <div data-role="page" id="bankInfoPage" data-url="bankInfoPage" data-theme="a">
+        	<div data-role="header">
+        		<h1>Financial Forest</h1>
+        	</div>
+        	<div>
+        		<div class="clouds"><img src="img/background_clouds_small-2.png" alt="clouds" class="day" /></div>
+        	</div>
+        	<div class="page_body_container">
+        		<div data-role="content" data-theme="a">	 
+        			<div class="logo">
+        				<h2>We need your banking info</h2>
+        				<h4>We promise we'll keep it safe</h4>
+        			</div>
+        			<form method="post" action="#">
+        				<input type="text" name="bank_username" id="bank_username" placeholder="Bank Username" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset" />
+        				<input type="password" name="bank_password" id="bank_password" placeholder="Bank Password" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset" />
+        				<br />
+        				<input id="bank_signup" name="bank_signup" type="submit" value="Sign Up" data-role="button" data-theme="a" /><br />
+                        <a id="skip" type="submit" href="#about-page-1" data-role="button" data-theme="a">Skip For Now</a>
+        			</form>    
+        		</div>
+        	</div>
+
+        	<div class="pre_footer">
+        		<div class="background_image"></div>
+        	</div>
+        	<div data-role="footer" data-theme="a">
+        		<h4> </h4>
+        	</div>
+        </div>
+        
+
+		<!-- Money Tree Page -->
+		<div data-role="page" class="page" id="money-tree-page">
+			<header>
+				<a href="#" class="drop-down-menu-button">
+					<img src="img/drop_down_menu_icon.png" alt="drop down menu icon" />
+				</a>
+				<h1 class="header-title">Financial Forest</h1>
+				<a href="#login-page" class="log-out-button">
+					<img src="img/log_out_icon.png" alt="log out icon" />
+				</a>
+				<div class="clear"></div>
+				<div class="drop-down-menu-container">
+				</div>
+			</header>
+			<div class="page-container">
+				<div class="money-tree-container">
+					<div class="clouds"><img src="img/background_clouds_small-2.png" alt="clouds" class="day" /></div>
+					<div class="cloud-notification-banner">
+						<div class="notification-banner-container">
+							<p>Your tree is growing.</p>
+						</div>
+						<img src="img/banner_arrow.png" alt="banner arrow" />
+					</div>
+					<div class="current-money-tree-container">
+						<img class="seed" src="img/tree_0.png" alt="current money tree" />
+					</div>
+				</div>
+				<div class="ground-container">
+					<div class="ground-information-container">
+						<div class="ground-information-header-container">
+							<img src="img/goal_progress_icon.png" alt="goal progress icon" />
+							<p class="information-header">Goal Progress:</p>
+                            <p id="tree_goal_progress_data"></p>
+						</div>
+                        <div class="ground-information">
+							<div id="tree_goal_progress"><div></div></div>
+                            <div id="completion-modal">
+                                <h2>Congratulations</h2>
+                                <h3>You've Reached Your Goal</h3>
+                                <p id="complete-p">Click The Button to Set a New Goal</p>
+                                <a id="goal-complete" href="#edit-goal-page" data-role="button" data-theme="a">Set New Goal</a>
+                            </div>
+						</div>
+					</div>
+					 <div class="ground-information-container">
+						<div class="ground-information-header-container">
+							<img src="img/savings_goal_icon.png" alt="goal progress icon" />
+							<p class="information-header">Goal Description</p>
+						</div>
+						<div class="ground-information">
+							<p id="tree_goal_description"></p>
+						</div>
+					</div>
+					<div class="ground-information-container">
+						<div class="ground-information-header-container">
+							<img src="img/savings_goal_icon.png" alt="goal progress icon" />
+							<p class="information-header">Savings Balance</p>
+						</div>
+						<div class="ground-information">
+							<p id="tree-savings-balance"></p>
+						</div>
+					</div>
+                	<div class="ground-information-container">
+						<div class="ground-information-header-container">
+							<img src="img/savings_goal_icon.png" alt="goal progress icon" />
+							<p class="information-header">Total Savings Goal</p>
+						</div>
+						<div class="ground-information">
+							<p id="tree_savings_goal"></p>
+						</div>
+					</div>
+					<!-- <div class="ground-information-container">
+						<div class="ground-information-header-container">
+							<img src="img/goal_deadline_icon.png" alt="goal progress icon" />
+							<p class="information-header">Goal Timespan</p>
+						</div>
+						<div class="ground-information">
+							<p id="tree_goal_timespan"></p>
+						</div>
+					</div> -->
+					<div class="ground-information-container">
+						<div class="ground-information-header-container">
+							<img src="img/goal_deadline_icon.png" alt="goal progress icon" />
+							<p class="information-header">Goal Deadline</p>
+						</div>
+						<div class="ground-information">
+							<p id="tree_goal_deadline"></p>
+						</div>
+					</div>
+					<div class="ground-information-container">
+						<div class="ground-information-header-container">
+							<img src="img/goal_progress_icon.png" alt="goal progress icon" />
+							<p class="information-header">Daily Savings Amount</p>
+						</div>
+                        <div class="ground-information">
+							<p id="tree_daily_savings"></p>
+						</div>
+					</div>
+					<div class="ground-information-container">
+						<div class="ground-information-header-container">
+							<img src="img/goal_progress_icon.png" alt="goal progress icon" />
+							<p class="information-header">Weekly Savings To Goal</p>
+						</div>
+                        <div class="ground-information">
+							<p id="tree_weekly_savings"></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Notifications Page -->
+		<div data-role="page" class="page" id="notifications-page">
+			<header>
+				<a href="#" class="drop-down-menu-button">
+					<img src="img/drop_down_menu_icon.png" alt="drop down menu icon" />
+				</a>
+				<h1 class="header-title">Financial Forest</h1>
+				<a href="#login-page" class="log-out-button">
+					<img src="img/log_out_icon.png" alt="log out icon" />
+				</a>
+				<div class="clear"></div>
+				<div class="drop-down-menu-container">
+				</div>
+			</header>
+			<div class="page-container">
+				<div class="money-tree-container">
+					<div class="clouds"><img src="img/background_clouds_small-2.png" alt="clouds" class="day" /></div>
+					<div class="cloud-notification-banner">
+						<div class="notification-banner-container">
+							<p>Get Inspired.</p>
+						</div>
+						<img src="img/banner_arrow.png" alt="banner arrow" />
+					</div>
+					<div class="current-money-tree-container">
+						<img class="seed" src="img/tree_0.png" alt="current money tree" />
+					</div>
+				</div>
+				<div class="ground-container">
+					<div class="ground-information-container">
+						<div class="ground-input-form-container">
+							<form method="post" data-ajax="false">
+								<div class="ground-information-header-container">
+									<img src="img/notification_history_icon.png" alt="goal progress icon" />
+									<p class="information-header">Notification History</p>
+								</div>
+								<div class="ground-input-box">
+                                        <select id="n-month" data-theme="a">
+    										<option value="1">January</option>
+    										<option value="2">February</option>
+    										<option value="3">March</option>
+    										<option value="4">April</option>
+    										<option value="5">May</option>
+    										<option value="6">June</option>
+    										<option value="7">July</option>
+    										<option value="8">August</option>
+    										<option value="9">September</option>
+    										<option value="10">October</option>
+    										<option value="11">November</option>
+    										<option value="12">December</option>
+    									</select>
+    									<select id="n-year" data-theme="a">
+    										<option value="2013">2013</option>
+    										<option value="2014">2014</option>
+    										<option value="2015">2015</option>
+    									</select>
+									<a id="notification-submit" data-role="button" data-theme="a">Show Notifications</a>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="ground-information-container">
+						<div class="ground-information-header-container">
+							<img src="img/notifications_icon.png" alt="goal progress icon" />
+							<p class="information-header">Notifications</p>
+						</div>
+						<div class="ground-information">
+							<div id="notification"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+        
+        <!-- Edit Goal Page -->
+        
+        <div data-role="page" class="page" id="edit-goal-page">
+			<header>
+				<a href="#" class="drop-down-menu-button">
+					<img src="img/drop_down_menu_icon.png" alt="drop down menu icon" />
+				</a>
+				<h1 class="header-title">Financial Forest</h1>
+				<a href="#login-page" class="log-out-button">
+					<img src="img/log_out_icon.png" alt="log out icon" />
+				</a>
+				<div class="clear"></div>
+				<div class="drop-down-menu-container">
+				</div>
+			</header>
+			<div class="page-container">
+				<div class="money-tree-container">
+					<div class="clouds"><img src="img/background_clouds_small-2.png" alt="clouds" class="day" /></div>
+					<div class="cloud-notification-banner">
+						<div class="notification-banner-container">
+							<p>Invest in You.</p>
+						</div>
+						<img src="img/banner_arrow.png" alt="banner arrow" />
+					</div>
+					<div class="current-money-tree-container">
+						<img class="seed" src="img/tree_0.png" alt="current money tree" />
+					</div>
+				</div>
+				<div class="ground-container">
+					<div class="ground-information-container">
+						<div class="ground-input-form-container">
+							<div class="ground-information-header-container">
+								<img src="img/savings_goal_icon.png" alt="goal progress icon" />
+								<p class="information-header">New Savings Goal</p>
+							</div>
+							<div class="ground-input-box">
+								<input type="number" name="goal_total" id="edit_cushion_total" placeholder="Goal Total" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset" />
+							</div>
+							 <div class="ground-information-header-container">
+								<img src="img/savings_goal_icon.png" alt="goal progress icon" />
+								<p class="information-header">Months To Reach Savings Goal</p>
+							</div>
+							<div class="ground-input-box">
+								<select id="edit-month-select" data-theme="a">
+									<option value="3">3 Months</option>
+									<option value="6">6 Months</option>
+									<option value="9">9 Months</option>
+									<option value="12">12 Months</option>
+								</select>
+							</div>
+		                    <a data-role="button" id="update_goal" data-theme="a">Update Savings Goal</a>
+                            <div id="edit-modal"></div>
+		                    </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+		<!-- My Info Page -->
+		<div data-role="page" class="page" id="my-info-page">
+			<header>
+				<a href="#" class="drop-down-menu-button">
+					<img src="img/drop_down_menu_icon.png" alt="drop down menu icon" />
+				</a>
+				<h1 class="header-title">Financial Forest</h1>
+				<a href="#login-page" class="log-out-button">
+					<img src="img/log_out_icon.png" alt="log out icon" />
+				</a>
+				<div class="clear"></div>
+				<div class="drop-down-menu-container">
+				</div>
+			</header>
+			<div class="page-container">
+				<div class="ground-container">
+					<div class="ground-information-container">
+						<div class="ground-information-header-container">
+							<img src="img/my_information_icon.png" alt="goal progress icon" />
+							<p class="information-header">My Information</p>
+						</div>
+						<div class="ground-information-header-my-info-container">
+							<p class="information-header">First Name</p>
+							<p class="information-subheader" id="account_first_name"></p>
+						</div>
+                        <div class="ground-information-header-my-info-container">
+							<p class="information-header">Last Name</p>
+							<p class="information-subheader" id="account_last_name"></p>
+						</div>
+						<div class="ground-information-header-my-info-container">
+							<p class="information-header">Email</p>
+							<p class="information-subheader" id="account_email"></p>
+						</div>
+                        	<div class="ground-information-header-my-info-container">
+							<p class="information-header">Phone Carrier</p>
+							<p class="information-subheader" id="account_carrier"></p>
+                        </div>
+                        <div class="ground-information-header-my-info-container">
+							<p class="information-header">Cell Number</p>
+							<p class="information-subheader" id="account_cell_number"></p>
+						</div>
+                        <div class="ground-information-header-my-info-container">
+                            <p class="information-header">Bi-Weekly Text Reminders</p>
+                            <p class="information-subheader" id="text-opt"></p>
+                        </div>
+                        <div class="ground-information-header-my-info-container">
+                        	<a href="#edit-info-page" data-role="button" data-theme="a">Edit Account Info</a>
+						</div>
+                        <!--<div class="ground-information-header-my-info-container">
+                        	<a class="information-header" href="#edit-bank-info">Change Bank Info</a>
+						</div>-->
+                        <div class="ground-information-header-my-info-container">
+							<a id="change-login-password" data-role="button" data-theme="a">Change Login Password</a>
+						</div>   
+                        <div class="ground-information-header-my-info-container new_pass">
+                        </div>                     
+					</div>
+				</div>
+			</div>
+		</div>
+        
+        <!-- Edit Info Page -->
+		<div data-role="page" class="page" id="edit-info-page">
+			<header>
+				<a href="#" class="drop-down-menu-button">
+					<img src="img/drop_down_menu_icon.png" alt="drop down menu icon" />
+				</a>
+				<h1 class="header-title">Financial Forest</h1>
+				<a href="#login-page" class="log-out-button">
+					<img src="img/log_out_icon.png" alt="log out icon" />
+				</a>
+				<div class="clear"></div>
+				<div class="drop-down-menu-container">
+				</div>
+			</header>
+			<div class="page-container">
+				<div class="ground-container">
+					<div class="ground-information-container">
+						<div class="ground-information-header-container">
+							<img src="img/my_information_icon.png" alt="goal progress icon" />
+							<p class="information-header">Update Information</p>
+						</div>
+						<div class="ground-information-header-my-info-container">
+							<p class="information-header">First Name</p>
+							<input type='text' id="edit_account_first_name">
+						</div>
+                        <div class="ground-information-header-my-info-container">
+							<p class="information-header">Last Name</p>
+							<input type='text' id="edit_account_last_name">
+						</div>
+						<div class="ground-information-header-my-info-container">
+							<p class="information-header">Email</p>
+							<input type='email' id="edit_account_email">
+						</div>
+                        <div class="ground-information-header-my-info-container">
+							<p class="information-header">Carrier</p>
+                            <select name="sign_up_carrier" id="edit_account_carrier" data-theme="a">
+                                <option value="att">AT&amp;T</option>
+                                <option value="verizon">Verizon</option>
+                                <option value="t-mobile">T-Mobile</option>
+                                <option value="sprint">Sprint</option>
+                                <option value="nextel">Nextel</option>
+			    			</select>
+						</div>
+                        <div class="ground-information-header-my-info-container">
+							<p class="information-header">Cell Number</p>
+							<input type='email' id="edit_account_cell_number">
+						</div>
+                        <div class="ground-information-header-my-info-container">
+                            <p class="information-header">Daily Text Reminders</p>
+                            <select id="edit-text-opt">
+                                <option value="1">Yes</option>
+                                <option value="2">No</option>
+                            </select>
+                        </div>
+                        <div class="ground-information-header-my-info-container">
+                        	<a href="#" id="account_save" data-role="button" data-theme="a">Save Changes</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Edit Bank Info Page -->
+        <div data-role="page" class="page" id="edit-bank-info">
+			<header>
+				<a href="#" class="drop-down-menu-button">
+					<img src="img/drop_down_menu_icon.png" alt="drop down menu icon" />
+				</a>
+				<h1 class="header-title">Financial Forest</h1>
+				<a href="#login-page" class="log-out-button">
+					<img src="img/log_out_icon.png" alt="log out icon" />
+				</a>
+				<div class="clear"></div>
+				<div class="drop-down-menu-container">
+				</div>
+			</header>
+			<div class="page-container">
+				<div class="ground-container">
+					<div class="ground-information-container">
+						<div class="ground-information-header-container">
+							<img src="img/my_information_icon.png" alt="goal progress icon" />
+							<p class="information-header">Update Information</p>
+						</div>
+						<div class="ground-information-header-my-info-container">
+							<p class="information-header">Bank Name</p>
+							<input type='text' id="edit_bank_name" />
+						</div>
+                        <div class="ground-information-header-my-info-container">
+							<p class="information-header">Account Type</p>
+							<input type='text' id="edit_account_type" />
+						</div>
+                        <div class="ground-information-header-my-info-container">
+							<p class="information-header">Bank Username</p>
+							<input type='text' id="edit_bank_username" />
+						</div>
+                        <div class="ground-information-header-my-info-container">
+							<p class="information-header">Bank Password</p>
+							<input type='password' id="edit_bank_password_1" />
+						</div>
+                        <div class="ground-information-header-my-info-container">
+							<p class="information-header">Retype Bank Password:</p>
+							<input type='password' id="edit_bank_password_2" />
+						</div>
+                        <div class="ground-information-header-my-info-container">
+							<a href="#" id="bank_info_submit" data-role="button" data-theme="a">Save Changes</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+        
+	</body>
+</html>

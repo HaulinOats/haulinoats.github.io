@@ -1,0 +1,42 @@
+/* CSS Document */
+
+  #main{
+
+  width: 100%;
+
+  background-color: #6c94f4;
+
+  }
+
+
+  #left{ 
+    background-color: #2f9444;
+    height: 195px;
+    width: 30%;
+    margin: 5%;
+    float:left;
+
+      }
+
+  #right{
+    background-color: #2f9444;
+    height: 195px;
+    width: 30%;
+    margin: 5%;
+    float:right;
+      }
+
+  #progressbar {
+      background-color: #000;
+      border-radius: 13px; /* (height of inner div) / 2 + padding */
+      padding: 3px;
+      width: 75%;
+    
+    }
+    
+    #progressbar div {
+       background-color: #24d821;
+       width: 0;    /* Adjust with php/JS!!! */
+       height: 30px;
+       border-radius: 10px;
+    }

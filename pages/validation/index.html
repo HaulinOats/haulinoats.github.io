@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>OOP Javascript Validation</title>
+	<link href='http://fonts.googleapis.com/css?family=Tauri' rel='stylesheet' type='text/css'>
+	<style type="text/css">
+		/*
+		colors
+		dark-blue:      rgb(11,72,107)
+		blue-teal:      rgb(59,134,134)
+		emerald-green:  rgb(121,189,154)
+		faded-green:    rgb(168,219,168)
+		light-green:    rgb(207,240,158) 
+		*/
+		body{
+			background-color:rgb(11,72,107);
+			color:rgb(168,219,168);
+			font-family: 'Tauri', sans-serif;
+		}
+		header{
+			width:50%;
+			margin:0 auto;
+		}
+		#js-logo{
+			float:left;
+			height:85px;
+			margin-right:2%;
+		}
+		h1{
+			font-size: 1.5em;
+			padding-top: 4%;
+		}
+		#form-cont{
+			width:60%;
+			margin:0 auto;
+		}
+		#js-form{
+			float:left;
+			width:60%;
+		}
+		input{
+			display: block;
+			width: 90%;
+			height: 35px;
+			border-radius: 5px;
+			border: none;
+			margin: 2% 1%;
+			font-family: 'Tauri', sans-serif;
+			padding-left:2%;
+			color:rgb(59,134,134);
+		}
+		#form-submit{
+			width:50%;
+			float:right;
+			background:rgb(121,189,154);
+			color:rgb(11,72,107);
+		}
+		#error-cont{
+			float:right;
+			width:40%;
+			color:rgb(207,240,158);
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<img id="js-logo" src="img/js-icon.png" alt="js-icon" />
+		<h1>Object-Oriented Javascript Validation</h1>
+		<div style="clear:both"></div>
+	</header>
+	<div id="form-cont">
+		<p style="text-align:center;font-size:1.2em">Registration Form</p>
+		<form id="js-form">
+			<label>Username (6 - 20 characters)</label>
+			<input type="text" name="username" placeholder="Enter Username" />
+			<label>Password (6 - 25 characters)</label>
+			<input type="password" name="password" placeholder="Enter Password" />
+			<label>Retype Password</label>
+			<input type="password" name="r_password" placeholder="Retype Password" />
+			<label>Email</label>
+			<input type="email" name="email" placeholder="Enter Email" />
+			<label>Phone</label>
+			<input type="text" name="phone" placeholder="Enter Phone Number" />
+			<label>Address (Requires a period following abbreviations)</label>
+			<input type="text" name="address" placeholder="Enter Address" />
+			<input type="submit" id="form-submit" value="submit" />
+		</form>
+		<section id="error-cont">
+		</section>
+	</div>
+	<script>
+		window.onload = function(){
+		//create Form object using JSON format
+		 var Form = {
+		     
+		    username : {
+		        minLength : 6,      
+		        maxLength : 20, 
+		        fieldName : 'Username'
+		    },
+		     
+		    password : {
+		        minLength : 6,      
+		        maxLength : 25,
+		        fieldName : 'Password'
+		    },
+		     
+		    validateLength : function(formEl, type){
+		        if(formEl.value.length > type.maxLength || formEl.value.length < type.minLength ){
+		        	errors_array.push(type.fieldName+" Too Long/Short");
+		        }
+		    },
+		     
+		     
+		    validateEmail : function(formEl){
+		        var regEx = /^([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$/;
+		        var emailTest = regEx.test(formEl.value);        
+		        if (!emailTest) {
+		            errors_array.push("Email Not Correct Format");
+		        }           
+		    },   
+		     
+		    validatePassword : function(formEl, formEl2){
+				if(formEl.value != formEl2.value){
+					errors_array.push("Passwords Do Not Match");
+				}             
+		    },   
+		     
+		    validatePhone : function(formEl){
+		        var pRegEx = /^(?:(?:\+?1\s*(?:[.-]\s*)?)?(?:\(\s*([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9])\s*\)|([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9]))\s*(?:[.-]\s*)?)?([2-9]1[02-9]|[2-9][02-9]1|[2-9][02-9]{2})\s*(?:[.-]\s*)?([0-9]{4})(?:\s*(?:#|x\.?|ext\.?|extension)\s*(\d+))?$/;
+		        var phoneTest = pRegEx.test(formEl.value);
+		        if (!phoneTest) {
+		            errors_array.push("Invalid Phone Number");
+		        }
+		    },   
+		     
+		    validateAddress : function(formEl){
+		        var aRegEx = /\d{1,5}\s\w.\s(\b\w*\b\s){1,2}\w*\./;
+		        var addressTest = aRegEx.test(formEl.value);
+		        if (!addressTest) {
+		            errors_array.push("Invalid Address Format");
+		        }
+		    },      
+		     
+		    getSubmit : function(formID){    
+		        var inputs = document.getElementById(formID).getElementsByTagName('input');
+		        for(var i = 0; i < inputs.length; i++){
+		            if(inputs[i].type == 'submit'){
+		                return inputs[i];
+		            }       
+		        }       
+		        return false;
+		    }           
+		         
+		};
+
+		var ourForm 	  = document.getElementById('js-form');
+		var submit_button = Form.getSubmit('js-form');
+
+		function checkForm(e){
+			e.preventDefault();
+			errors_array   = [];
+			var username   = document.getElementsByName('username');
+			var password   = document.getElementsByName('password');
+			var r_password = document.getElementsByName('r_password');
+			var email 	   = document.getElementsByName('email');
+			var phone 	   = document.getElementsByName('phone');
+			var address    = document.getElementsByName('address');
+
+			Form.validateLength(username[0], Form.username);
+			Form.validateLength(password[0], Form.password);
+			Form.validatePassword(password[0], r_password[0]);
+			Form.validateEmail(email[0]);
+			Form.validatePhone(phone[0]);
+			Form.validateAddress(address[0]);
+
+		    var error_container = document.getElementById('error-cont');
+		    error_container.innerHTML = "";
+		    
+		    if(errors_array.length < 1){
+		        var successElement = document.createElement('p');
+		        var successText = document.createTextNode('Validation: Success');
+		        successElement.appendChild(successText)
+		        error_container.appendChild(successElement);
+		    } else{
+		        for(i=0;i<errors_array.length;i++){
+		            var errorElement = document.createElement('p');
+		            var errorText = document.createTextNode(errors_array[i]);
+		            errorElement.appendChild(errorText)
+		            error_container.appendChild(errorElement);
+		        }
+		    }
+		}
+
+		submit_button.onclick = checkForm;
+
+		};
+	</script>
+</body>
+</html>

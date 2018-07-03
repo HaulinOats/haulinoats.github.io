@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+    xmlns:gap = "http://phonegap.com/ns/1.0"
+    id        = "com.brettdavidconnolly.financialforest"
+    version   = "1.0.0">
+
+<name>Financial Forest</name>
+
+<description>
+Helps people save money
+</description>
+
+<author href="https://build.phonegap.com/apps/342703/builds" email="brett84c@yahoo.com">
+Financial Forest
+</author>
+
+<preference name="phonegap-version" value="2.5.0" />
+<preference name="orientation" value="portrait" />
+<preference name="target-device" value="universal" />
+<preference name="fullscreen" value="false" />
+<preference name="show-splash-screen-spinner" value="true" />
+
+
+<!-- Icons -->
+
+<icon src="launcher_icon_xhdpi.png" />
+<icon src="launcher_icon_xhdpi.png" width="57" height="57" />
+
+<!-- Splash Page -->
+<gap:splash src="img/splash/splashscreen_ldpi.png" gap:platform="android" gap:density="ldpi" />
+<gap:splash src="img/splash/splashscreen_mdpi.png" gap:platform="android" gap:density="mdpi" />
+<gap:splash src="img/splash/splashscreen_hdpi.png" gap:platform="android" gap:density="hdpi" />
+<gap:splash src="img/splash/splashscreen_xhdpi.png" gap:platform="android" gap:density="xhdpi" />
+
+<!-- Features -->
+<feature name="http://api.phonegap.com/1.0/network"/>
+<feature name="http://api.phonegap.com/1.0/device" />
+<feature name="http://api.phonegap.com/1.0/notification"/>
+
+<!-- Access -->
+<access origin="*" />
+
+<!-- Plug-In -->
+<gap:plugin name="PushPlugin" />
+<gap:plugin name="GenericPush" /> 
+
+<access origin="*.pushwoosh.com"/>
+
+</widget>

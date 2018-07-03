@@ -1,0 +1,586 @@
+/* Setting up all the cool fonts*/
+@font-face {
+    font-family: 'governorregular';
+    src: url('../fonts/governor-webfont.eot');
+    src: url('../fonts/governor-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/governor-webfont.woff') format('woff'),
+         url('../fonts/governor-webfont.ttf') format('truetype'),
+         url('../fonts/governor-webfont.svg#governorregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* All of the base CSS setup */
+body {
+	width: 100%;
+	height: 100%;
+	font-size: 38px;
+}
+
+h1,
+p,
+a {
+	color: #ffffff;
+	font-family: helvetica;
+	text-decoration: none;
+	font-size: .75em;
+}
+
+#header a.header-button,
+.ui-link,
+.ui-body-c .ui-link:visited,
+.information-header {
+	color: #ffffff;
+	text-decoration: none;
+} 
+
+.clear {
+	clear: both;
+}
+
+.page {
+	height: 100%;
+}
+
+.page-container {
+	height: 100%;
+	margin-top: 53px;
+}
+
+.reg-labels {
+	color: white;
+	text-shadow:none !important;
+	font-weight: bold;
+
+}
+
+/* All of the custom page CSS */
+
+/* Splash Page CSS */
+.sky-blue-container {
+	background-color: #c5e2e2;
+	min-height: 100%;
+}
+
+.splash-main-container {
+	padding-top: 25%;
+	position: relative;
+	z-index: 100;
+	text-align: center;
+}
+
+/* Login Page CSS */
+
+.header-button{
+	background-color: #237446;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	width: 100%;
+	position: fixed;
+	z-index: 300;
+	top: 0;
+	text-align: center;
+	color: #ffffff;
+}
+
+.logo img {
+	width: 100%;
+}
+
+.login-page-main-content-container,
+.sign-up-page-main-content-container {
+	text-align: center;
+	position: relative;
+	z-index: 99;
+	margin: 0 auto;
+	width: 75%;
+	padding-bottom: 50px;
+}
+
+.tagline {
+	font-family: 'governorregular';
+	color: #247446;
+	padding: 30px;
+	font-size: .75em;
+	text-shadow:none;
+}
+
+/* About the App Page CSS */
+.about-info-container {
+	background-image: url("../img/about_clouds.png");
+	background-repeat: repeat-x;
+	background-size:contain;
+	background-position:center;
+}
+
+.about-the-app-page-main-content-container {
+	padding-top: 60px;
+	padding-bottom: 100px;
+	background-color: #c5e2e2;
+}
+
+.about-the-app-page-main-content-container div #signup_button {
+	width: 75%;
+	margin: 0 auto;
+	margin-bottom: 15px;
+}
+
+.about-list {
+	color: #474747;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 15px;
+	font-size: .7em;
+}
+
+.about-paragraph {
+	color: #474747;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 15px;
+	padding-bottom: 100px;
+	font-size: .7em;
+}
+
+.padding {
+	padding-bottom: 50px;
+}
+
+/* Getting Started Page CSS */
+
+#about-page-1 .sky-blue-container {
+	background-image: url("../img/background_clouds_small.png");
+	background-repeat: repeat-x;
+}
+
+.about-page-contents-container {
+	width: 75%;
+	margin: 0 auto;
+	padding-top: 50px;
+	text-align: center;
+}
+
+.about-page-contents-container h2 {
+	color: #247446;
+	font-size: 1.25em;
+}
+
+.about-page-contents-container p {
+	color: #474747;
+	font-size: .75em;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#about-page-1 label {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#about-page-1 div a {
+	margin-top: 20px;
+}
+
+/* css for background clouds and trees taken from previous version */
+
+.background-trees-footer {
+	background-image: url("../img/background_trees_small.png");
+	width: 100%;
+	background-repeat: repeat-x;
+	position: fixed;
+	height: 100px;
+	bottom: 0px;
+}
+
+/* Header CSS (Once user is logged in) */
+header {
+	width: 100%;
+	background-color: #2b8a54;
+	border-bottom: 3px solid #247446;
+	text-align: center;
+	position: fixed;
+	top: 0;
+	z-index: 300;
+}
+
+.drop-down-menu-button {
+	display: inline;
+	float: left;
+}
+
+.header-title {
+	font-family: 'governorregular';
+	padding-top: 18px;
+	display: inline-block;
+}
+
+.log-out-button {
+	display: inline;
+	float: right !important;
+	border-left: 3px solid #247446;
+}
+
+/* Drop Down Menu CSS (Once user is logged in) */
+
+.drop-down-menu-container {
+	text-align: left;
+	position: absolute;
+	z-index: 100;
+	background-color: #000000;
+}
+
+.drop-down-menu-container nav ul li {
+	padding: 20px;
+	padding-left: 0px;
+	padding-right: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+.drop-down-menu-container nav ul li a {
+	padding: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+	width: 100%;
+	height: 100%;
+	font-family: 'governorregular';
+}
+
+/* Form Submit Button CSS (Once user is logged in) */
+
+.submit-button {
+	font-family: 'governorregular';
+}
+
+.edit-name-button,
+.edit-email-button,
+.change-login-password-button,
+.edit-bank-button,
+.edit-account-button,
+.change-bank-login-password-button {
+	font-family: 'governorregular';
+	font-size: .90em;
+	color: #ffffff;
+	text-decoration: none;
+	padding-left: 10px;
+} 
+
+/* Money Tree Container CSS (Once user is logged in) */
+
+.money-tree-container {
+	background-color: #c5e2e2;
+	width: 100%;
+}
+
+.clouds {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	margin-top: 41px;
+	padding-top: 10px;
+}
+
+.day{
+	position: relative;
+	width:200%;
+	height:auto;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.notification-banner-container {
+	background-color: #237446;
+	display: inline;
+	padding-top: 6px;
+	padding-bottom: 14px;
+	position: relative;
+	z-index: 100;
+}
+
+.notification-banner-container p {
+	font-family: 'governorregular';
+	font-size: .75em;
+	padding: 10px;
+	display: inline;
+}
+
+.notification-banner-container img {
+	display: inline;
+	position: relative;
+	z-index: 100;
+}
+
+.current-money-tree-container {
+	text-align: center;
+	background-image: url("../img/background_trees_small.png");
+	width: 100%;
+	background-repeat: repeat-x;
+	background-position: left bottom;
+	min-height:70px;
+	padding-top: 50px;
+}
+
+/* Ground Container CSS: Money Tree Page (Once user is logged in) */
+
+.ground-container {
+	background-image: url("../img/dirt_texture.png");
+	width: 100%;
+	background-repeat: repeat;
+	padding-top: 20px;
+}
+
+.ground-information-container {
+	padding-bottom: 30px;
+}
+
+.ground-information-header-container {
+	background-image: url("../img/ground_header.png");
+	background-repeat: repeat-x;
+	padding: 10px;
+}
+
+.ground-information-header-container img {
+	width: 65px;
+	height: 65px;
+	display: inline;
+}
+
+.information-subheader {
+	display: inline;
+}
+
+.ground-information-header-my-info-container {
+	background-image: url("../img/ground_header.png");
+	background-repeat: repeat-x;
+	padding: 10px;
+	padding-left: 20px;
+	margin-bottom: 30px;
+}
+
+.information-header {
+	font-family: 'governorregular';
+	font-size: .75em;
+	display: inline;
+}
+
+.ground-information p {
+	
+	padding:0 0 0 10%;
+	font-size: .75em;
+}
+
+/* Ground Container CSS: My Forest Page (Once user is logged in) */
+
+.ground-information-reward-trees-container {
+	text-align: center;
+}
+
+.reward-tree,
+.reward-tree-value {
+	width: 50%;
+	float: left;
+}
+
+.ground-information-reward-trees-information-container {
+	background-image: url("../img/ground_header.png");
+	background-repeat: repeat-x;
+	text-align: center;
+	margin-top: -10px;
+	padding: 10px;
+	position: relative;
+	z-index: 2;
+}
+
+/* Ground Container CSS: Set New Goal Page (Once user is logged in) */
+
+.ground-input-box {
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-bottom: 30px;
+}
+
+#about-page-1 .page-container .money-tree-container .current-money-tree-container img {
+    padding: 50px;
+    width: 64px;
+    height: 64px;
+ 	margin-bottom:-70px;
+}
+#money-tree-page .clouds, #notifications-page .clouds, #edit-goal-page .clouds{
+	padding-top: 40px;
+}{
+	padding-top: 40px;
+}{
+	padding-top: 40px;
+}
+
+#change-login-password,
+.information-header .ui-link,
+#save_login_password {
+	color: #ffffff;
+	cursor: pointer;
+}
+.shootingstar{
+	width:75px;
+	height:25px;
+	position:absolute;
+	right:120%;
+	margin-top:50px;
+	margin-left:-100px;
+	overflow: hidden;
+}
+/* CSS for Smartphones in portrait and landscape views */
+@media (max-width: 575px) {
+	body {
+		width: 100%;
+		height: 100%;
+		font-size: 18px;
+	}
+
+	.cloud-notification-banner img {
+		height: 64px;
+		position: relative;
+		z-index: 100;
+	}
+
+	.notification-banner-container {
+		background-color: #237446;
+		display: inline;
+		padding-top: 20px;
+		padding-bottom: 23px;
+	}
+
+	.page-container {
+		margin-top: 30px;
+	}
+
+	.splash-main-container {
+		padding-top: 35%;
+		position: relative;
+		z-index: 100;
+		text-align: center;
+	}
+
+	.splash-main-container img {
+		width: 60%;
+	}
+
+	/* Header CSS (Once user is logged in) */
+	.drop-down-menu-button,
+	.log-out-button {
+		width: 15%;
+	}
+
+	.header-title {
+		padding-top: 5%;
+	}
+
+	.drop-down-menu-button img,
+	.log-out-button img {
+		width: 100%;
+	}
+
+	/* Money Tree Container CSS (Once user is logged in) */
+	.my-tree{
+		width: 64px;
+		height: 64px;
+		margin: 0 auto;
+	}
+
+	/* Ground Container CSS (Once user is logged in) */
+	.ground-information p {
+		padding-left: 80px;
+	}
+
+	.padding {
+		padding-bottom: 0px;
+	}
+
+}
+
+/* Brett CSS */
+.clouds .stars {
+	width: 100%;
+}
+
+.alert_modal {
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.alert_modal p {
+	color: red;	
+}
+
+#tree_goal_progress {
+	display: block;
+	margin-top: 20px;r
+	margin-left: 15%;
+	margin-right: 15%;
+	height: 40px;
+	width:70%;
+	background: rgb(100,100,100);
+	border-radius: 5px;
+	margin:0 auto;
+}
+
+#tree_goal_progress div{
+	height: 40px;
+	width:1px;
+	background: #008000;
+	border-radius: 5px;
+	border:none
+	;
+}
+
+#tree_goal_progress_data {
+	display: inline;
+}
+
+#started-p {
+	padding:0 10% 0 10%;
+	text-align: center;
+}
+
+.single-notification{
+	padding:0 !important;
+	padding-top:15px;
+	margin:0 auto;
+	margin-left:10%;
+	margin-right:10%;
+}
+
+#login-msg {
+	color: #247446;
+}
+
+#update_goal {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.tree {
+	margin: 0 auto;
+	width: 90%;
+}
+
+.seed {
+	width: 64px;
+	height: 64px;
+	margin: 0 auto;
+	margin-bottom:-87px;
+}
+#completion-modal{
+	display: none;
+	margin: 0 auto;
+	margin-top: 7px;
+	border-radius: 10px;
+	width: 70%;
+	text-align: center;
+	color: white;
+}
+#completion-modal p{
+	padding: 0;
+	margin-top: 15px;
+}
+/* Remember to add the "seed" class to the seed img */
