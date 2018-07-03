@@ -1,0 +1,35 @@
+//cURL request to Last.FM API for username</br>
+$username=$_POST['username'];</br>
+$url="http://ws.audioscrobbler.com/2.0/?method=user.gettopartists";</br>
+$url.="&user=".$username;</br>
+$url.="&api_key=e16677780c2f53ecdd98c13e8684136b";</br></br>
+
+$ch = curl_init();</br>
+curl_setopt($ch, CURLOPT_URL, $url);</br>
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);</br>
+$contents = curl_exec ($ch);</br>
+curl_close ($ch);</br></br>
+
+$xmlObject=simplexml_load_string($contents);</br>
+header('Content-Type: text/xml');</br>	     
+print $xmlObject->asXML();</br></br>
+
+//cURL request to Eventful API for concert information based on location entered by user</br>
+$location=$_POST['location'];</br>
+$name=$_POST['name'];</br></br>
+
+$url="api.eventful.com/rest/events/search";</br>
+$url.="?app_key=Cfxsx2VQK5Cp2bGc";</br>
+$url.="&keywords=".$_POST['name'];</br>
+$url.="&location=".$_POST['location'];</br>
+$url.="&date=Future";</br></br>
+
+$ch = curl_init();</br>
+curl_setopt($ch, CURLOPT_URL, $url);</br>
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);</br>
+$contents = curl_exec ($ch);</br>
+curl_close ($ch);</br></br>
+
+$xmlObject=simplexml_load_string($contents);</br>
+header('Content-Type: text/xml');</br>	     
+print $xmlObject->asXML();</br>

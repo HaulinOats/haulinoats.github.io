@@ -1,0 +1,99 @@
+@font-face{
+	font-family: 'Beba';
+	src:url('../fonts/BebasNeue.otf');
+}
+@font-face{
+	font-family: 'anti';
+	src:url('../fonts/Antipasto_regular.otf');
+}
+@font-face{
+	font-family: 'purpose';
+	src:url('../fonts/telegrafico.ttf');
+}
+#content{
+	margin-top:0px;
+	margin-bottom:20px;
+}
+
+h3 .ui-btn-text{
+	font-size: 20px;
+}
+h2{
+	font-family: 'purpose';
+}
+h3{
+	font-family: 'purpose';
+	font-size:20px;
+}
+h1{
+	font-family: 'Montserrat Alternates', sans-serif;
+	text-shadow:none;
+}
+ins{
+	text-decoration: none;
+	margin-left:10px;
+	font-family: 'anti';
+}
+.project_description{
+	margin-left:0;
+}
+.category{
+	color:black;
+	font-style: bold;
+	font-size: 24px;
+	font-family: 'purpose';
+}
+ins{
+	font-size:22px;
+	color:darkblue;
+}
+.goal{
+	margin-left:30px;
+	margin-top:27px;
+	font-size:19px;
+	color:darkblue;
+}
+.icon_img{
+	height:25px;
+	margin-top:5px;
+	float:left;
+	margin-left:10px;
+	margin-right:10px;
+}
+.program_img{
+	height:20px;
+	margin-top:5px;
+
+	margin-left:10px;
+	margin-right:10px;
+}
+.ui-btn{
+	margin-left:20px;
+	margin-right:20px;
+}
+#project_menu_header{
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+#project_menu{
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+.project_grid{
+	border:solid thin lightgray;
+	background:rgba(0,0,0,.1);
+}
+.ui-body-d{
+	background:#E6EBF2;
+}
+.info_header{
+	border:solid thin lightgray;
+	background:rgba(0,0,0,.2);
+}
+.info_header h3{
+	margin-left:15px;
+}
+canvas{
+	margin:20px;
+	display:block;
+}

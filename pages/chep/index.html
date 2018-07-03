@@ -1,0 +1,74 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>My Page</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+	<script src="https://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<link rel="stylesheet" href="css/themes/brambles.min.css" />
+	<link rel='stylesheet' href='css/styles.css'/>
+	<script src="https://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+  <script src="js/jcanvas.min.js"></script>
+	<script src="js/home.js"></script>
+	<script src="js/RGraph.common.core.js" ></script>
+    <script src="js/RGraph.common.dynamic.js" ></script>
+    <script src="js/RGraph.common.key.js" ></script>
+    <script src="js/RGraph.line.js" ></script>
+
+</head> 
+<body> 
+
+<div id="home" data-role="page" data-theme="a">
+
+	<div data-role="header">
+		<h1><a href='index.html' style="text-decoration:none">Brambles Strategy</a></h1>
+
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<div id="internal">
+			<div data-role="header" data-inset="false"><h2 style="font-size:22px">Internal</h2></div>
+		</div>
+		<div id="external">
+			<div data-role="header" data-inset="false"><h2 style="font-size:22px">External</h2></div>
+			<div class="ui-grid-c">
+			<div class="ui-block-a"><div class="ui-bar ui-bar-a" style="height:120px">People</div></div>
+			<div class="ui-block-b"><div class="ui-bar ui-bar-a" style="height:120px">Industry Trends</div></div>
+			<div class="ui-block-c"><div class="ui-bar ui-bar-a" style="height:120px">Business Priorities</div></div>
+			<div class="ui-block-d"><div class="ui-bar ui-bar-a" style="height:120px">Communications</div></div>
+		</div>
+		</div>
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+
+<div id='program' data-role="page" data-theme="a">
+	<div data-role="header">
+		<h1><a href='index.html' data-transition="reverse slide" style="text-decoration:none">Brambles Strategy</a></h1>
+		<a href="index.html"  data-transition="reverse slide" data-icon="home">Home</a>
+		
+	</div>
+	<div data-role="content" data-theme="a">
+		<div id="program_content">
+		</div>
+		
+		</div>
+	</div>
+</div>
+
+
+<div id="project" data-role="page" data-theme="a">
+	<div data-role="header">
+		<h1><a href='index.html' data-transition="reverse slide" style="text-decoration:none">Brambles Strategy</a></h1>
+		<a href="index.html" data-transition="reverse slide" data-icon="home">Home</a>
+		<a href="#program" id="back" data-transition="reverse slide" data-icon="back">Back</a>
+	</div>
+	<div data-role="content" data-theme="a">
+		<div id="project_content">
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

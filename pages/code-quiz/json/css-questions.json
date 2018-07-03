@@ -1,0 +1,196 @@
+{
+  "quiz": {
+    "questionItem": [
+      {
+        "question": "What does 'CSS' stand for?",
+        "panswer": [
+          "Creative Style Sheets",
+          "Computer Styling Syntax",
+          "Cascading Style Sheets",
+          "Colorful Style Sheets"
+        ],
+        "aanswer": "Cascading Style Sheets"
+      },
+      {
+        "question": "What is the proper HTML for referring to an external style sheet?",
+        "panswer": [
+          "<link rel='stylesheet' type='text/css' href='mystyle.css'>",
+          "<style src='mystyle.css'>",
+          "<stylesheet>mystyle.css</stylesheet>",
+          "<script src='mystyle.css'></script>"
+        ],
+        "aanswer": "<link rel='stylesheet' type='text/css' href='mystyle.css'>"
+      },
+      {
+        "question": "Where in an HTML document is the correct place to refer to an external style sheet?",
+        "panswer": [
+          "In the 'body' section",
+          "At the end of the document",
+          "In the 'head' section",
+          "At the top of the document"
+        ],
+        "aanswer": "In the 'head' section"
+      },
+      {
+        "question": "Which HTML element is used to define an internal stylesheet?",
+        "panswer": [
+          "<css>",
+          "<style>",
+          "<script>",
+          "<cascade>"
+        ],
+        "aanswer": "<style>"
+      },
+      {
+        "question": "Which HTML attribute is used to define inline styles?",
+        "panswer": [
+          "styles",
+          "class",
+          "font",
+          "style"
+        ],
+        "aanswer": "style"
+      },
+      {
+        "question": "Which is the correct CSS syntax?",
+        "panswer": [
+          "body:color=black;",
+          "{body:color=black;}",
+          "{body;color:black;}",
+          "body {color: black;}"
+        ],
+        "aanswer": "body {color: black;}"
+      },
+      {
+        "question": "How do you insert a comment in a CSS file?",
+        "panswer": [
+          "// this is a comment //",
+          "// this is a comment",
+          "/* this is a comment */",
+          "' this is a comment"
+        ],
+        "aanswer": "/* this is a comment */"
+      },
+      {
+        "question": "Which property is used to change the background color?",
+        "panswer": [
+          "color",
+          "background-color",
+          "bgcolor",
+          "bg-color"
+        ],
+        "aanswer": "background-color"
+      },
+      {
+        "question": "How do you add a background color for all 'h1' elements?",
+        "panswer": [
+          "all.h1 {background-color:#FFFFFF;}",
+          "h1.all {background-color:#FFFFFF;}",
+          "h1 {background-color:#FFFFFF;}",
+          "h1 {bg-color:#FFFFFF;}"
+        ],
+        "aanswer": "h1 {background-color:#FFFFFF;}"
+      },
+      {
+        "question": "Which CSS property is used to change the text color of an element?",
+        "panswer": [
+          "text-color",
+          "color",
+          "fgcolor",
+          "font-color"
+        ],
+        "aanswer": "color"
+      },
+      {
+        "question": "Which CSS property controls the text size?",
+        "panswer": [
+          "text-style",
+          "font-size",
+          "font-style",
+          "text-size"
+        ],
+        "aanswer": "font-size"
+      },
+      {
+        "question": "What is the correct CSS syntax for making all the <p> elements bold?",
+        "panswer": [
+          "<p style='font-size:bold;'>",
+          "<p style='text-size:bold;'>",
+          "p {text-size:bold;}",
+          "p {font-weight:bold;}"
+        ],
+        "aanswer": "p {font-weight:bold;}"
+      },
+      {
+        "question": "How do you display hyperlinks without an underline?",
+        "panswer": [
+          "a {text-decoration:no-underline;}",
+          "a {text-decoration:none;}",
+          "a {underline:none;}",
+          "a {decoration:no-underline;}"
+        ],
+        "aanswer": "a {text-decoration:none;}"
+      },
+      {
+        "question": "How do you make each word in a text start with a capital letter?",
+        "panswer": [
+          "You can't do that with CSS",
+          "text-transform:capitalize",
+          "text-transform:uppercase",
+          "font-style:uppercase"
+        ],
+        "aanswer": "text-transform:capitalize"
+      },
+      {
+        "question": "Which property is used to change the font of an element?",
+        "panswer": [
+          "Both font-family and font can be used",
+          "font",
+          "font-family",
+          "font-type"
+        ],
+        "aanswer": "Both font-family and font can be used"
+      },
+      {
+        "question": "How do you make the text bold?",
+        "panswer": [
+          "font-weight:bold;",
+          "font:bold;",
+          "style:bold;",
+          "font-bold:true"
+        ],
+        "aanswer": "font-weight:bold;"
+      },
+      {
+        "question": "How do you display a border like this: The top border = 10 pixels, the bottom border = 5 pixels, the left border = 20 pixels, the right border = 1pixel?",
+        "panswer": [
+          "border-width:10px 1px 5px 20px;",
+          "border-width:10px 5px 20px 1px;",
+          "border-width:5px 20px 10px 1px;",
+          "border-width:10px 20px 5px 1px;"
+        ],
+        "aanswer": "border-width:10px 1px 5px 20px;"
+      },
+      {
+        "question": "Which property is used to change the left margin of an element?",
+        "panswer": [
+          "margin-left",
+          "indent",
+          "padding-left",
+          "left-margin"
+        ],
+        "aanswer": "margin-left"
+      },
+      {
+        "question": "How do you make a list that lists its items with squares?",
+        "panswer": [
+          "list-style-type: square;",
+          "list-type: square;",
+          "list: square;",
+          "list: box"
+        ],
+        "aanswer": "list-style-type: square;"
+      }
+    ]
+  }
+}

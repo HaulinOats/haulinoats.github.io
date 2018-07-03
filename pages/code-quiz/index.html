@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Code Quiz</title>
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.0.min.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script type="text/javascript" src="js/jquery-2.0.3.js"></script>
+	<script type="text/javascript" src="js/jquery.mobile-1.4.0.js"></script>
+	<script src="js/jquery.fittext.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+</head>
+<body>
+<div id="home-page" data-role="page">
+	<div data-role="header">
+		<h1>Code Quiz</h1>
+	</div>
+	<div data-role="content">
+		<h2>Select A Language</h2>
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+				<a href="#html5-page"><img class="l-icon" src="img/html5-icon.png" alt="html5" data-p-language="html5" /></a>
+				<p class="icon-lang">HTML5</p>
+			</div>
+			<div class="ui-block-b">
+				<a href="#css3-page"><img class="l-icon" src="img/css3-icon.png" alt="css3" data-p-language="css3"/></a>
+				<p class="icon-lang">CSS3</p>
+			</div>
+		</div>
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+				<a href="#jquery-page"><img class="l-icon" src="img/jquery-icon.png" alt="jquery" data-p-language="jquery" /></a>
+				<p class="icon-lang">jQuery</p>
+			</div>
+			<div class="ui-block-b">
+				<a href="#php-page"><img class="l-icon" src="img/php-icon.png" alt="php" data-p-language="php" /></a>
+				<p class="icon-lang">PHP</p>
+			</div>
+		</div>
+    		
+	</div>
+	<div data-role="footer">
+
+	</div>
+</div>
+<!-- #homepage -->
+
+<div id="html5-page" data-role="page">
+	<div data-role="header">
+	<a href="#home-page" data-icon="home">Home</a>
+		<h1>HTML5 Quiz</h1>
+	</div>
+	<div data-role="content">
+		<h2 class="question-asked"></h2>
+		<div class="question-box qb-0">
+			<p></p>
+		</div>
+		<div class="question-box qb-1">
+			<p></p>
+		</div>
+		<div class="question-box qb-2">
+			<p></p>
+		</div>
+		<div class="question-box qb-3">
+			<p></p>
+		</div>
+	</div>
+	<div data-role="footer">
+
+	</div>
+</div>
+<!-- #html5-page -->
+
+<div id="css3-page" data-role="page">
+	<div data-role="header">
+	<a href="#home-page" data-icon="home">Home</a>
+		<h1>CSS3 Quiz</h1>
+	</div>
+	<div data-role="content">
+		<h2 class="question-asked"></h2>
+		<div class="question-box qb-0">
+			<p></p>
+		</div>
+		<div class="question-box qb-1">
+			<p></p>
+		</div>
+		<div class="question-box qb-2">
+			<p></p>
+		</div>
+		<div class="question-box qb-3">
+			<p></p>
+		</div>
+	</div>
+	<div data-role="footer">
+
+	</div>
+</div>
+<!-- #css3-page -->
+
+<div id="jquery-page" data-role="page">
+	<div data-role="header">
+	<a href="#home-page" data-icon="home">Home</a>
+		<h1>jQuery Quiz</h1>
+	</div>
+	<div data-role="content">
+		<h2 class="question-asked"></h2>
+		<div class="question-box qb-0">
+			<p></p>
+		</div>
+		<div class="question-box qb-1">
+			<p></p>
+		</div>
+		<div class="question-box qb-2">
+			<p></p>
+		</div>
+		<div class="question-box qb-3">
+			<p></p>
+		</div>
+	</div>
+	<div data-role="footer">
+
+	</div>
+</div>
+<!-- #jquery-page -->
+
+<div id="php-page" data-role="page">
+
+	<div data-role="header">
+		<a href="#home-page" data-icon="home">Home</a>
+		<h1>PHP Quiz</h1>
+	</div>
+	<div data-role="content">
+		<h2 class="question-asked"></h2>
+		<div class="question-box qb-0">
+			<p></p>
+		</div>
+		<div class="question-box qb-1">
+			<p></p>
+		</div>
+		<div class="question-box qb-2">
+			<p></p>
+		</div>
+		<div class="question-box qb-3">
+			<p></p>
+		</div>
+	</div>
+	<div data-role="footer">
+
+	</div>
+</div>
+<!-- #php-page -->
+
+<div class="q-modal">
+	<!-- <img class='modal-close' src="img/close.png" alt="close"> -->
+	<h3 class='modal-msg'></h3>
+	<p class="modal-msg-title">You Chose:</p>
+	<p class="modal-chosen"></p>
+	<p class="modal-msg-title">Answer:</p>
+	<p class="modal-correct"></p>
+	<input type="button" class="modal-close" value="Next Question" />
+</div>
+
+</body>
+</html>

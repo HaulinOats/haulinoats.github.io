@@ -1,0 +1,196 @@
+{
+  "quiz": {
+    "questionItem": [
+      {
+        "question": "What is the previous version of HTML, prior to HTML5?",
+        "panswer": [
+          "HTML 4.1",
+          "HTML 4",
+          "HTML 4.01",
+          "HTML 4.9"
+        ],
+        "aanswer": "HTML 4.01"
+      },
+      {
+        "question": "Which doctype is correct for HTML5?",
+        "panswer": [
+          "!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 5.0//EN' 'http://www.w3.org/TR/html5/strict.dtd'",
+          "!DOCTYPE HTML5",
+          "!DOCTYPE html",
+          "!DOCTYPE html5.0"
+        ],
+        "aanswer": "!DOCTYPE html"
+      },
+      {
+        "question": "In HTML5, which element is used to group heading elements?",
+        "panswer": [
+          "hgroup",
+          "group",
+          "headings",
+          "header"
+        ],
+        "aanswer": "header"
+      },
+      {
+        "question": "Which of the following elements is no longer supported in HTML5?",
+        "panswer": [
+          "q",
+          "menu",
+          "font",
+          "ins"
+        ],
+        "aanswer": "font"
+      },
+      {
+        "question": "Which of the following elements is no longer supported in HTML5?",
+        "panswer": [
+          "base",
+          "cite",
+          "acronym",
+          "abbr"
+        ],
+        "aanswer": "acronym"
+      },
+      {
+        "question": "In HTML5, onblur and onfocus are:",
+        "panswer": [
+          "Style attributes",
+          "HTML elements",
+          "Event attributes",
+          "Element attributes"
+        ],
+        "aanswer": "Event attributes"
+      },
+      {
+        "question": "What is the correct HTML5 element for playing video files?",
+        "panswer": [
+          "media",
+          "video",
+          "movie",
+          "mpeg4"
+        ],
+        "aanswer": "video"
+      },
+      {
+        "question": "What is the correct HTML5 element for playing audio files?",
+        "panswer": [
+          "mp3",
+          "sound",
+          "audio",
+          "wav"
+        ],
+        "aanswer": "audio"
+      },
+      {
+        "question": "Which attribute for 'script' elements is no longer required in HTML5?",
+        "panswer": [
+          "src",
+          "type",
+          "href",
+          "rel"
+        ],
+        "aanswer": "type"
+      },
+      {
+        "question": "In HTML5, which method is used to get the current location of a user?",
+        "panswer": [
+          "getPosition()",
+          "getCurrentPosition()",
+          "getUserPosition()",
+          "getCoordinates()"
+        ],
+        "aanswer": "getCurrentPosition()"
+      },
+      {
+        "question": "The new HTML5 global attribute, 'contenteditable' is used to:",
+        "panswer": [
+          "Update content from the server",
+          "Specifies a context menu for an element. The menu appears when a user right-clicks on the element",
+          "Return the position of the first found occurrence of content inside a string",
+          "Specify whether the content of an element should be editable or not"
+        ],
+        "aanswer": "Specify whether the content of an element should be editable or not"
+      },
+      {
+        "question": "In HTML5, contextmenu and spellcheck are:",
+        "panswer": [
+          "Event attributes",
+          "HTML elements",
+          "HTML attributes",
+          "Style attributes"
+        ],
+        "aanswer": "HTML attributes"
+      },
+      {
+        "question": "Graphics defined by SVG is in which format?",
+        "panswer": [
+          "HTML",
+          "CSS",
+          "XML",
+          "JSON"
+        ],
+        "aanswer": "CSS"
+      },
+      {
+        "question": "The 'canvas' element in HTML5 is used to:",
+        "panswer": [
+          "create draggable elements",
+          "draw graphics",
+          "manipulate data in MySQL",
+          "display database records"
+        ],
+        "aanswer": "draw graphics"
+      },
+      {
+        "question": "Which built-in HTML5 object is used to draw on the canvas?",
+        "panswer": [
+          "getContent",
+          "getCanvas",
+          "getContext",
+          "getGraphics"
+        ],
+        "aanswer": "getContext"
+      },
+      {
+        "question": "In HTML5, which attribute is used to specify that an input field must be filled out?",
+        "panswer": [
+          "required",
+          "formvalidate",
+          "validate",
+          "placeholder"
+        ],
+        "aanswer": "required"
+      },
+      {
+        "question": "Which input type defines a slider control?",
+        "panswer": [
+          "slider",
+          "controls",
+          "search",
+          "range"
+        ],
+        "aanswer": "range"
+      },
+      {
+        "question": "Which input type defines a week and year control (no time zone)?",
+        "panswer": [
+          "week",
+          "date",
+          "year",
+          "month"
+        ],
+        "aanswer": "week"
+      },
+      {
+        "question": "Which HTML5 element is used to display a scalar measurement within a known range?",
+        "panswer": [
+          "range",
+          "gauge",
+          "meter",
+          "measure"
+        ],
+        "aanswer": "meter"
+      }
+    ]
+  }
+}

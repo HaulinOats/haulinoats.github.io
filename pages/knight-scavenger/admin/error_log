@@ -1,0 +1,342 @@
+[23-Mar-2013 08:12:05 America/Denver] PHP Notice:  Undefined index: nid in /home6/brettdav/public_html/apps/knight-scavenger/admin/pics.php on line 4
+[23-Mar-2013 08:12:05 America/Denver] PHP Warning:  mysql_connect(): Access denied for user '4104a'@'localhost' (using password: YES) in /home6/brettdav/public_html/apps/knight-scavenger/admin/pics.php on line 6
+[23-Mar-2013 08:12:05 America/Denver] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/pics.php on line 9
+[23-Mar-2013 08:12:05 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/pics.php on line 13
+[23-Mar-2013 08:12:05 America/Denver] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home6/brettdav/public_html/apps/knight-scavenger/admin/pics.php on line 16
+[23-Mar-2013 08:12:05 America/Denver] PHP Notice:  Undefined offset: 1 in /home6/brettdav/public_html/apps/knight-scavenger/admin/pics.php on line 24
+[23-Mar-2013 08:12:05 America/Denver] PHP Notice:  Undefined offset: 2 in /home6/brettdav/public_html/apps/knight-scavenger/admin/pics.php on line 24
+[23-Mar-2013 08:12:05 America/Denver] PHP Notice:  Undefined offset: 3 in /home6/brettdav/public_html/apps/knight-scavenger/admin/pics.php on line 24
+[23-Mar-2013 08:12:05 America/Denver] PHP Notice:  Undefined offset: 4 in /home6/brettdav/public_html/apps/knight-scavenger/admin/pics.php on line 24
+[23-Mar-2013 08:12:05 America/Denver] PHP Notice:  Undefined offset: 5 in /home6/brettdav/public_html/apps/knight-scavenger/admin/pics.php on line 24
+[23-Mar-2013 08:12:05 America/Denver] PHP Notice:  Undefined offset: 6 in /home6/brettdav/public_html/apps/knight-scavenger/admin/pics.php on line 24
+[23-Mar-2013 08:12:05 America/Denver] PHP Notice:  Undefined offset: 7 in /home6/brettdav/public_html/apps/knight-scavenger/admin/pics.php on line 24
+[23-Mar-2013 08:12:05 America/Denver] PHP Notice:  Undefined offset: 8 in /home6/brettdav/public_html/apps/knight-scavenger/admin/pics.php on line 24
+[23-Mar-2013 08:12:05 America/Denver] PHP Notice:  Undefined offset: 9 in /home6/brettdav/public_html/apps/knight-scavenger/admin/pics.php on line 24
+[23-Mar-2013 08:12:05 America/Denver] PHP Notice:  Undefined offset: 10 in /home6/brettdav/public_html/apps/knight-scavenger/admin/pics.php on line 24
+[23-Mar-2013 08:12:05 America/Denver] PHP Notice:  Undefined offset: 11 in /home6/brettdav/public_html/apps/knight-scavenger/admin/pics.php on line 24
+[23-Mar-2013 08:12:05 America/Denver] PHP Notice:  Undefined offset: 12 in /home6/brettdav/public_html/apps/knight-scavenger/admin/pics.php on line 24
+[23-Mar-2013 08:12:05 America/Denver] PHP Notice:  Undefined offset: 13 in /home6/brettdav/public_html/apps/knight-scavenger/admin/pics.php on line 24
+[23-Mar-2013 08:12:05 America/Denver] PHP Notice:  Undefined offset: 14 in /home6/brettdav/public_html/apps/knight-scavenger/admin/pics.php on line 24
+[23-Mar-2013 08:12:05 America/Denver] PHP Notice:  Undefined offset: 15 in /home6/brettdav/public_html/apps/knight-scavenger/admin/pics.php on line 24
+[23-Mar-2013 08:24:45 America/Denver] PHP Notice:  Undefined index: nid in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 4
+[23-Mar-2013 08:24:45 America/Denver] PHP Notice:  Use of undefined constant console - assumed 'console' in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 5
+[23-Mar-2013 08:24:45 America/Denver] PHP Notice:  Undefined index: notes in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 7
+[23-Mar-2013 08:24:45 America/Denver] PHP Notice:  Use of undefined constant console - assumed 'console' in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 8
+[23-Mar-2013 08:24:45 America/Denver] PHP Warning:  mysql_connect(): Access denied for user '4104a'@'localhost' (using password: YES) in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 10
+[23-Mar-2013 08:24:45 America/Denver] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 13
+[23-Mar-2013 08:24:45 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 18
+[23-Mar-2013 08:24:45 America/Denver] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 38
+[23-Mar-2013 11:03:31 America/Denver] PHP Warning:  mysql_connect(): Access denied for user '4104a'@'localhost' (using password: YES) in /home6/brettdav/public_html/apps/knight-scavenger/admin/denied.php on line 4
+[23-Mar-2013 11:03:31 America/Denver] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/denied.php on line 7
+[23-Mar-2013 11:03:31 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/denied.php on line 11
+[23-Mar-2013 11:03:31 America/Denver] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home6/brettdav/public_html/apps/knight-scavenger/admin/denied.php on line 16
+[23-Mar-2013 16:16:30 America/Denver] PHP Notice:  Undefined index: nid in /home6/brettdav/public_html/apps/knight-scavenger/admin/approve.php on line 4
+[23-Mar-2013 16:16:30 America/Denver] PHP Warning:  mysql_connect(): Access denied for user '4104a'@'localhost' (using password: YES) in /home6/brettdav/public_html/apps/knight-scavenger/admin/approve.php on line 7
+[23-Mar-2013 16:16:30 America/Denver] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/approve.php on line 10
+[23-Mar-2013 16:16:30 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/approve.php on line 14
+[23-Mar-2013 16:16:30 America/Denver] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home6/brettdav/public_html/apps/knight-scavenger/admin/approve.php on line 29
+[23-Mar-2013 18:40:09 America/Denver] PHP Warning:  mysql_connect(): Access denied for user '4104a'@'localhost' (using password: YES) in /home6/brettdav/public_html/apps/knight-scavenger/admin/approved.php on line 4
+[23-Mar-2013 18:40:09 America/Denver] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/approved.php on line 7
+[23-Mar-2013 18:40:09 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/approved.php on line 11
+[23-Mar-2013 18:40:09 America/Denver] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home6/brettdav/public_html/apps/knight-scavenger/admin/approved.php on line 16
+[23-Mar-2013 19:44:48 America/Denver] PHP Notice:  Undefined index: nid in /home6/brettdav/public_html/apps/knight-scavenger/admin/emailDeny.php on line 4
+[23-Mar-2013 19:44:48 America/Denver] PHP Warning:  mysql_connect(): Access denied for user '4104a'@'localhost' (using password: YES) in /home6/brettdav/public_html/apps/knight-scavenger/admin/emailDeny.php on line 6
+[23-Mar-2013 19:44:48 America/Denver] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/emailDeny.php on line 9
+[23-Mar-2013 19:44:48 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/emailDeny.php on line 13
+[23-Mar-2013 19:44:48 America/Denver] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home6/brettdav/public_html/apps/knight-scavenger/admin/emailDeny.php on line 16
+[23-Mar-2013 22:29:21 America/Denver] PHP Notice:  Undefined index: nid in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 4
+[23-Mar-2013 22:29:21 America/Denver] PHP Notice:  Undefined index: deleteNum in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 5
+[23-Mar-2013 22:29:21 America/Denver] PHP Notice:  Use of undefined constant console - assumed 'console' in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 6
+[23-Mar-2013 22:29:21 America/Denver] PHP Warning:  mysql_connect(): Access denied for user '4104a'@'localhost' (using password: YES) in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 8
+[23-Mar-2013 22:29:21 America/Denver] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 11
+[23-Mar-2013 22:29:21 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 15
+[23-Mar-2013 22:29:21 America/Denver] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 18
+[23-Mar-2013 22:29:21 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 28
+[24-Mar-2013 03:32:01 America/Denver] PHP Notice:  Undefined index: nid in /home6/brettdav/public_html/apps/knight-scavenger/admin/emailApprove.php on line 4
+[24-Mar-2013 03:32:01 America/Denver] PHP Warning:  mysql_connect(): Access denied for user '4104a'@'localhost' (using password: YES) in /home6/brettdav/public_html/apps/knight-scavenger/admin/emailApprove.php on line 6
+[24-Mar-2013 03:32:01 America/Denver] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/emailApprove.php on line 9
+[24-Mar-2013 03:32:01 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/emailApprove.php on line 13
+[24-Mar-2013 03:32:01 America/Denver] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home6/brettdav/public_html/apps/knight-scavenger/admin/emailApprove.php on line 16
+[07-Apr-2013 19:19:26 America/Denver] PHP Notice:  Undefined index: nid in /home6/brettdav/public_html/apps/knight-scavenger/admin/approve.php on line 4
+[07-Apr-2013 19:19:26 America/Denver] PHP Warning:  mysql_connect(): Access denied for user '4104a'@'localhost' (using password: YES) in /home6/brettdav/public_html/apps/knight-scavenger/admin/approve.php on line 7
+[07-Apr-2013 19:19:26 America/Denver] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/approve.php on line 10
+[07-Apr-2013 19:19:26 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/approve.php on line 14
+[07-Apr-2013 19:19:26 America/Denver] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home6/brettdav/public_html/apps/knight-scavenger/admin/approve.php on line 29
+[07-Apr-2013 19:19:32 America/Denver] PHP Warning:  mysql_connect(): Access denied for user '4104a'@'localhost' (using password: YES) in /home6/brettdav/public_html/apps/knight-scavenger/admin/approved.php on line 4
+[07-Apr-2013 19:19:32 America/Denver] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/approved.php on line 7
+[07-Apr-2013 19:19:32 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/approved.php on line 11
+[07-Apr-2013 19:19:32 America/Denver] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home6/brettdav/public_html/apps/knight-scavenger/admin/approved.php on line 16
+[07-Apr-2013 19:19:36 America/Denver] PHP Notice:  Undefined index: nid in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 4
+[07-Apr-2013 19:19:36 America/Denver] PHP Notice:  Undefined index: deleteNum in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 5
+[07-Apr-2013 19:19:36 America/Denver] PHP Notice:  Use of undefined constant console - assumed 'console' in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 6
+[07-Apr-2013 19:19:36 America/Denver] PHP Warning:  mysql_connect(): Access denied for user '4104a'@'localhost' (using password: YES) in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 8
+[07-Apr-2013 19:19:36 America/Denver] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 11
+[07-Apr-2013 19:19:36 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 15
+[07-Apr-2013 19:19:36 America/Denver] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 18
+[07-Apr-2013 19:19:36 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 28
+[07-Apr-2013 19:19:39 America/Denver] PHP Warning:  mysql_connect(): Access denied for user '4104a'@'localhost' (using password: YES) in /home6/brettdav/public_html/apps/knight-scavenger/admin/denied.php on line 4
+[07-Apr-2013 19:19:39 America/Denver] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/denied.php on line 7
+[07-Apr-2013 19:19:39 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/denied.php on line 11
+[07-Apr-2013 19:19:39 America/Denver] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home6/brettdav/public_html/apps/knight-scavenger/admin/denied.php on line 16
+[07-Apr-2013 19:19:41 America/Denver] PHP Notice:  Undefined index: nid in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 4
+[07-Apr-2013 19:19:41 America/Denver] PHP Notice:  Use of undefined constant console - assumed 'console' in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 5
+[07-Apr-2013 19:19:41 America/Denver] PHP Notice:  Undefined index: notes in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 7
+[07-Apr-2013 19:19:41 America/Denver] PHP Notice:  Use of undefined constant console - assumed 'console' in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 8
+[07-Apr-2013 19:19:41 America/Denver] PHP Warning:  mysql_connect(): Access denied for user '4104a'@'localhost' (using password: YES) in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 10
+[07-Apr-2013 19:19:41 America/Denver] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 13
+[07-Apr-2013 19:19:41 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 18
+[07-Apr-2013 19:19:41 America/Denver] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 38
+[07-Apr-2013 19:19:45 America/Denver] PHP Notice:  Undefined index: nid in /home6/brettdav/public_html/apps/knight-scavenger/admin/emailApprove.php on line 4
+[07-Apr-2013 19:19:45 America/Denver] PHP Warning:  mysql_connect(): Access denied for user '4104a'@'localhost' (using password: YES) in /home6/brettdav/public_html/apps/knight-scavenger/admin/emailApprove.php on line 6
+[07-Apr-2013 19:19:45 America/Denver] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/emailApprove.php on line 9
+[07-Apr-2013 19:19:45 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/emailApprove.php on line 13
+[07-Apr-2013 19:19:45 America/Denver] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home6/brettdav/public_html/apps/knight-scavenger/admin/emailApprove.php on line 16
+[17-Jun-2013 01:43:03 America/Denver] PHP Notice:  Undefined index: nid in /home6/brettdav/public_html/apps/knight-scavenger/admin/approve.php on line 4
+[17-Jun-2013 01:43:03 America/Denver] PHP Warning:  mysql_connect(): Access denied for user '4104a'@'localhost' (using password: YES) in /home6/brettdav/public_html/apps/knight-scavenger/admin/approve.php on line 7
+[17-Jun-2013 01:43:03 America/Denver] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/approve.php on line 10
+[17-Jun-2013 01:43:03 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/approve.php on line 14
+[17-Jun-2013 01:43:03 America/Denver] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home6/brettdav/public_html/apps/knight-scavenger/admin/approve.php on line 29
+[07-Sep-2013 23:33:40 America/Denver] PHP Notice:  Undefined index: nid in /home6/brettdav/public_html/apps/knight-scavenger/admin/pics.php on line 4
+[07-Sep-2013 23:33:40 America/Denver] PHP Warning:  mysql_connect(): Access denied for user '4104a'@'localhost' (using password: YES) in /home6/brettdav/public_html/apps/knight-scavenger/admin/pics.php on line 6
+[07-Sep-2013 23:33:40 America/Denver] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/pics.php on line 9
+[07-Sep-2013 23:33:40 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/pics.php on line 13
+[07-Sep-2013 23:33:40 America/Denver] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home6/brettdav/public_html/apps/knight-scavenger/admin/pics.php on line 16
+[07-Sep-2013 23:33:40 America/Denver] PHP Notice:  Undefined offset: 1 in /home6/brettdav/public_html/apps/knight-scavenger/admin/pics.php on line 24
+[07-Sep-2013 23:33:40 America/Denver] PHP Notice:  Undefined offset: 2 in /home6/brettdav/public_html/apps/knight-scavenger/admin/pics.php on line 24
+[07-Sep-2013 23:33:40 America/Denver] PHP Notice:  Undefined offset: 3 in /home6/brettdav/public_html/apps/knight-scavenger/admin/pics.php on line 24
+[07-Sep-2013 23:33:40 America/Denver] PHP Notice:  Undefined offset: 4 in /home6/brettdav/public_html/apps/knight-scavenger/admin/pics.php on line 24
+[07-Sep-2013 23:33:40 America/Denver] PHP Notice:  Undefined offset: 5 in /home6/brettdav/public_html/apps/knight-scavenger/admin/pics.php on line 24
+[07-Sep-2013 23:33:40 America/Denver] PHP Notice:  Undefined offset: 6 in /home6/brettdav/public_html/apps/knight-scavenger/admin/pics.php on line 24
+[07-Sep-2013 23:33:40 America/Denver] PHP Notice:  Undefined offset: 7 in /home6/brettdav/public_html/apps/knight-scavenger/admin/pics.php on line 24
+[07-Sep-2013 23:33:40 America/Denver] PHP Notice:  Undefined offset: 8 in /home6/brettdav/public_html/apps/knight-scavenger/admin/pics.php on line 24
+[07-Sep-2013 23:33:40 America/Denver] PHP Notice:  Undefined offset: 9 in /home6/brettdav/public_html/apps/knight-scavenger/admin/pics.php on line 24
+[07-Sep-2013 23:33:40 America/Denver] PHP Notice:  Undefined offset: 10 in /home6/brettdav/public_html/apps/knight-scavenger/admin/pics.php on line 24
+[07-Sep-2013 23:33:40 America/Denver] PHP Notice:  Undefined offset: 11 in /home6/brettdav/public_html/apps/knight-scavenger/admin/pics.php on line 24
+[07-Sep-2013 23:33:40 America/Denver] PHP Notice:  Undefined offset: 12 in /home6/brettdav/public_html/apps/knight-scavenger/admin/pics.php on line 24
+[07-Sep-2013 23:33:40 America/Denver] PHP Notice:  Undefined offset: 13 in /home6/brettdav/public_html/apps/knight-scavenger/admin/pics.php on line 24
+[07-Sep-2013 23:33:40 America/Denver] PHP Notice:  Undefined offset: 14 in /home6/brettdav/public_html/apps/knight-scavenger/admin/pics.php on line 24
+[07-Sep-2013 23:33:40 America/Denver] PHP Notice:  Undefined offset: 15 in /home6/brettdav/public_html/apps/knight-scavenger/admin/pics.php on line 24
+[08-Sep-2013 00:24:51 America/Denver] PHP Notice:  Undefined index: nid in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 4
+[08-Sep-2013 00:24:51 America/Denver] PHP Notice:  Use of undefined constant console - assumed 'console' in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 5
+[08-Sep-2013 00:24:51 America/Denver] PHP Notice:  Undefined index: notes in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 7
+[08-Sep-2013 00:24:51 America/Denver] PHP Notice:  Use of undefined constant console - assumed 'console' in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 8
+[08-Sep-2013 00:24:51 America/Denver] PHP Warning:  mysql_connect(): Access denied for user '4104a'@'localhost' (using password: YES) in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 10
+[08-Sep-2013 00:24:51 America/Denver] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 13
+[08-Sep-2013 00:24:51 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 18
+[08-Sep-2013 00:24:51 America/Denver] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 38
+[08-Sep-2013 01:33:49 America/Denver] PHP Warning:  mysql_connect(): Access denied for user '4104a'@'localhost' (using password: YES) in /home6/brettdav/public_html/apps/knight-scavenger/admin/denied.php on line 4
+[08-Sep-2013 01:33:49 America/Denver] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/denied.php on line 7
+[08-Sep-2013 01:33:49 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/denied.php on line 11
+[08-Sep-2013 01:33:49 America/Denver] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home6/brettdav/public_html/apps/knight-scavenger/admin/denied.php on line 16
+[08-Sep-2013 03:55:23 America/Denver] PHP Notice:  Undefined index: nid in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 4
+[08-Sep-2013 03:55:23 America/Denver] PHP Notice:  Undefined index: deleteNum in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 5
+[08-Sep-2013 03:55:23 America/Denver] PHP Notice:  Use of undefined constant console - assumed 'console' in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 6
+[08-Sep-2013 03:55:23 America/Denver] PHP Warning:  mysql_connect(): Access denied for user '4104a'@'localhost' (using password: YES) in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 8
+[08-Sep-2013 03:55:23 America/Denver] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 11
+[08-Sep-2013 03:55:23 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 15
+[08-Sep-2013 03:55:23 America/Denver] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 18
+[08-Sep-2013 03:55:23 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 28
+[08-Sep-2013 12:42:04 America/Denver] PHP Notice:  Undefined index: nid in /home6/brettdav/public_html/apps/knight-scavenger/admin/emailApprove.php on line 4
+[08-Sep-2013 12:42:04 America/Denver] PHP Warning:  mysql_connect(): Access denied for user '4104a'@'localhost' (using password: YES) in /home6/brettdav/public_html/apps/knight-scavenger/admin/emailApprove.php on line 6
+[08-Sep-2013 12:42:04 America/Denver] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/emailApprove.php on line 9
+[08-Sep-2013 12:42:04 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/emailApprove.php on line 13
+[08-Sep-2013 12:42:04 America/Denver] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home6/brettdav/public_html/apps/knight-scavenger/admin/emailApprove.php on line 16
+[23-Sep-2013 16:23:09 America/Denver] PHP Warning:  mysql_connect(): Access denied for user '4104a'@'localhost' (using password: YES) in /home6/brettdav/public_html/apps/knight-scavenger/admin/denied.php on line 4
+[23-Sep-2013 16:23:09 America/Denver] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/denied.php on line 7
+[23-Sep-2013 16:23:09 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/denied.php on line 11
+[23-Sep-2013 16:23:09 America/Denver] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home6/brettdav/public_html/apps/knight-scavenger/admin/denied.php on line 16
+[29-Sep-2013 23:30:53 America/Denver] PHP Warning:  mysql_connect(): Access denied for user '4104a'@'localhost' (using password: YES) in /home6/brettdav/public_html/apps/knight-scavenger/admin/denied.php on line 4
+[29-Sep-2013 23:30:53 America/Denver] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/denied.php on line 7
+[29-Sep-2013 23:30:53 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/denied.php on line 11
+[29-Sep-2013 23:30:53 America/Denver] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home6/brettdav/public_html/apps/knight-scavenger/admin/denied.php on line 16
+[01-Oct-2013 20:26:37 America/Denver] PHP Notice:  Undefined index: nid in /home6/brettdav/public_html/apps/knight-scavenger/admin/emailDeny.php on line 4
+[01-Oct-2013 20:26:37 America/Denver] PHP Warning:  mysql_connect(): Access denied for user '4104a'@'localhost' (using password: YES) in /home6/brettdav/public_html/apps/knight-scavenger/admin/emailDeny.php on line 6
+[01-Oct-2013 20:26:37 America/Denver] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/emailDeny.php on line 9
+[01-Oct-2013 20:26:37 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/emailDeny.php on line 13
+[01-Oct-2013 20:26:37 America/Denver] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home6/brettdav/public_html/apps/knight-scavenger/admin/emailDeny.php on line 16
+[07-Dec-2013 04:27:32 America/Denver] PHP Notice:  Undefined index: nid in /home6/brettdav/public_html/apps/knight-scavenger/admin/approve.php on line 4
+[07-Dec-2013 04:27:32 America/Denver] PHP Warning:  mysql_connect(): Access denied for user '4104a'@'localhost' (using password: YES) in /home6/brettdav/public_html/apps/knight-scavenger/admin/approve.php on line 7
+[07-Dec-2013 04:27:32 America/Denver] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/approve.php on line 10
+[07-Dec-2013 04:27:32 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/approve.php on line 14
+[07-Dec-2013 04:27:32 America/Denver] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home6/brettdav/public_html/apps/knight-scavenger/admin/approve.php on line 29
+[30-Jan-2014 16:45:16 America/Denver] PHP Notice:  Undefined index: nid in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 4
+[30-Jan-2014 16:45:16 America/Denver] PHP Notice:  Use of undefined constant console - assumed 'console' in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 5
+[30-Jan-2014 16:45:16 America/Denver] PHP Notice:  Undefined index: notes in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 7
+[30-Jan-2014 16:45:16 America/Denver] PHP Notice:  Use of undefined constant console - assumed 'console' in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 8
+[30-Jan-2014 16:45:16 America/Denver] PHP Warning:  mysql_connect(): Access denied for user '4104a'@'localhost' (using password: YES) in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 10
+[30-Jan-2014 16:45:16 America/Denver] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 13
+[30-Jan-2014 16:45:16 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 18
+[30-Jan-2014 16:45:16 America/Denver] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 38
+[05-Feb-2014 06:05:30 America/Denver] PHP Warning:  mysql_connect(): Access denied for user '4104a'@'localhost' (using password: YES) in /home6/brettdav/public_html/apps/knight-scavenger/admin/approved.php on line 4
+[05-Feb-2014 06:05:30 America/Denver] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/approved.php on line 7
+[05-Feb-2014 06:05:30 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/approved.php on line 11
+[05-Feb-2014 06:05:30 America/Denver] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home6/brettdav/public_html/apps/knight-scavenger/admin/approved.php on line 16
+[05-Feb-2014 08:53:46 America/Denver] PHP Notice:  Undefined index: nid in /home6/brettdav/public_html/apps/knight-scavenger/admin/emailApprove.php on line 4
+[05-Feb-2014 08:53:46 America/Denver] PHP Warning:  mysql_connect(): Access denied for user '4104a'@'localhost' (using password: YES) in /home6/brettdav/public_html/apps/knight-scavenger/admin/emailApprove.php on line 6
+[05-Feb-2014 08:53:46 America/Denver] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/emailApprove.php on line 9
+[05-Feb-2014 08:53:46 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/emailApprove.php on line 13
+[05-Feb-2014 08:53:46 America/Denver] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home6/brettdav/public_html/apps/knight-scavenger/admin/emailApprove.php on line 16
+[02-Mar-2014 12:52:35 America/Denver] PHP Notice:  Undefined index: nid in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 4
+[02-Mar-2014 12:52:35 America/Denver] PHP Notice:  Undefined index: deleteNum in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 5
+[02-Mar-2014 12:52:35 America/Denver] PHP Notice:  Use of undefined constant console - assumed 'console' in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 6
+[02-Mar-2014 12:52:35 America/Denver] PHP Warning:  mysql_connect(): Access denied for user '4104a'@'localhost' (using password: YES) in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 8
+[02-Mar-2014 12:52:35 America/Denver] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 11
+[02-Mar-2014 12:52:35 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 15
+[02-Mar-2014 12:52:35 America/Denver] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 18
+[02-Mar-2014 12:52:35 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 28
+[02-Mar-2014 14:41:56 America/Denver] PHP Notice:  Undefined index: nid in /home6/brettdav/public_html/apps/knight-scavenger/admin/approve.php on line 4
+[02-Mar-2014 14:41:56 America/Denver] PHP Warning:  mysql_connect(): Access denied for user '4104a'@'localhost' (using password: YES) in /home6/brettdav/public_html/apps/knight-scavenger/admin/approve.php on line 7
+[02-Mar-2014 14:41:56 America/Denver] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/approve.php on line 10
+[02-Mar-2014 14:41:56 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/approve.php on line 14
+[02-Mar-2014 14:41:56 America/Denver] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home6/brettdav/public_html/apps/knight-scavenger/admin/approve.php on line 29
+[09-Mar-2014 14:39:23 America/Denver] PHP Notice:  Undefined index: nid in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 4
+[09-Mar-2014 14:39:23 America/Denver] PHP Notice:  Use of undefined constant console - assumed 'console' in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 5
+[09-Mar-2014 14:39:23 America/Denver] PHP Notice:  Undefined index: notes in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 7
+[09-Mar-2014 14:39:23 America/Denver] PHP Notice:  Use of undefined constant console - assumed 'console' in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 8
+[09-Mar-2014 14:39:23 America/Denver] PHP Warning:  mysql_connect(): Access denied for user '4104a'@'localhost' (using password: YES) in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 10
+[09-Mar-2014 14:39:23 America/Denver] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 13
+[09-Mar-2014 14:39:23 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 18
+[09-Mar-2014 14:39:23 America/Denver] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 38
+[21-May-2014 09:53:42 America/Denver] PHP Notice:  Undefined index: nid in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 4
+[21-May-2014 09:53:42 America/Denver] PHP Notice:  Undefined index: deleteNum in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 5
+[21-May-2014 09:53:42 America/Denver] PHP Notice:  Use of undefined constant console - assumed 'console' in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 6
+[21-May-2014 09:53:42 America/Denver] PHP Warning:  mysql_connect(): Access denied for user '4104a'@'localhost' (using password: YES) in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 8
+[21-May-2014 09:53:42 America/Denver] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 11
+[21-May-2014 09:53:42 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 15
+[21-May-2014 09:53:42 America/Denver] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 18
+[21-May-2014 09:53:42 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 28
+[16-Sep-2014 18:45:55 America/Denver] PHP Notice:  Undefined index: nid in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 4
+[16-Sep-2014 18:45:55 America/Denver] PHP Notice:  Undefined index: deleteNum in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 5
+[16-Sep-2014 18:45:55 America/Denver] PHP Notice:  Use of undefined constant console - assumed 'console' in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 6
+[16-Sep-2014 18:45:55 America/Denver] PHP Warning:  mysql_connect(): Access denied for user '4104a'@'localhost' (using password: YES) in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 8
+[16-Sep-2014 18:45:55 America/Denver] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 11
+[16-Sep-2014 18:45:55 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 15
+[16-Sep-2014 18:45:55 America/Denver] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 18
+[16-Sep-2014 18:45:55 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 28
+[17-Sep-2014 01:46:58 America/Denver] PHP Notice:  Undefined index: nid in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 4
+[17-Sep-2014 01:46:58 America/Denver] PHP Notice:  Undefined index: deleteNum in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 5
+[17-Sep-2014 01:46:58 America/Denver] PHP Notice:  Use of undefined constant console - assumed 'console' in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 6
+[17-Sep-2014 01:46:58 America/Denver] PHP Warning:  mysql_connect(): Access denied for user '4104a'@'localhost' (using password: YES) in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 8
+[17-Sep-2014 01:46:58 America/Denver] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 11
+[17-Sep-2014 01:46:58 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 15
+[17-Sep-2014 01:46:58 America/Denver] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 18
+[17-Sep-2014 01:46:58 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 28
+[17-Sep-2014 23:59:49 America/Denver] PHP Notice:  Undefined index: nid in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 4
+[17-Sep-2014 23:59:49 America/Denver] PHP Notice:  Undefined index: deleteNum in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 5
+[17-Sep-2014 23:59:49 America/Denver] PHP Notice:  Use of undefined constant console - assumed 'console' in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 6
+[17-Sep-2014 23:59:49 America/Denver] PHP Warning:  mysql_connect(): Access denied for user '4104a'@'localhost' (using password: YES) in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 8
+[17-Sep-2014 23:59:49 America/Denver] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 11
+[17-Sep-2014 23:59:49 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 15
+[17-Sep-2014 23:59:49 America/Denver] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 18
+[17-Sep-2014 23:59:49 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 28
+[19-Sep-2014 08:03:26 America/Denver] PHP Notice:  Undefined index: nid in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 4
+[19-Sep-2014 08:03:26 America/Denver] PHP Notice:  Undefined index: deleteNum in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 5
+[19-Sep-2014 08:03:26 America/Denver] PHP Notice:  Use of undefined constant console - assumed 'console' in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 6
+[19-Sep-2014 08:03:26 America/Denver] PHP Warning:  mysql_connect(): Access denied for user '4104a'@'localhost' (using password: YES) in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 8
+[19-Sep-2014 08:03:26 America/Denver] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 11
+[19-Sep-2014 08:03:26 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 15
+[19-Sep-2014 08:03:26 America/Denver] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 18
+[19-Sep-2014 08:03:26 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 28
+[01-Oct-2014 23:25:16 America/Denver] PHP Notice:  Undefined index: nid in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 4
+[01-Oct-2014 23:25:16 America/Denver] PHP Notice:  Undefined index: deleteNum in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 5
+[01-Oct-2014 23:25:16 America/Denver] PHP Notice:  Use of undefined constant console - assumed 'console' in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 6
+[01-Oct-2014 23:25:16 America/Denver] PHP Warning:  mysql_connect(): Access denied for user '4104a'@'localhost' (using password: YES) in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 8
+[01-Oct-2014 23:25:16 America/Denver] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 11
+[01-Oct-2014 23:25:16 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 15
+[01-Oct-2014 23:25:16 America/Denver] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 18
+[01-Oct-2014 23:25:16 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 28
+[23-Oct-2014 08:15:27 America/Denver] PHP Notice:  Undefined index: nid in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 4
+[23-Oct-2014 08:15:27 America/Denver] PHP Notice:  Use of undefined constant console - assumed 'console' in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 5
+[23-Oct-2014 08:15:27 America/Denver] PHP Notice:  Undefined index: notes in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 7
+[23-Oct-2014 08:15:27 America/Denver] PHP Notice:  Use of undefined constant console - assumed 'console' in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 8
+[23-Oct-2014 08:15:27 America/Denver] PHP Warning:  mysql_connect(): Access denied for user '4104a'@'localhost' (using password: YES) in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 10
+[23-Oct-2014 08:15:27 America/Denver] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 13
+[23-Oct-2014 08:15:27 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 18
+[23-Oct-2014 08:15:27 America/Denver] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 38
+[24-Oct-2014 14:43:46 America/Denver] PHP Notice:  Undefined index: nid in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 4
+[24-Oct-2014 14:43:46 America/Denver] PHP Notice:  Use of undefined constant console - assumed 'console' in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 5
+[24-Oct-2014 14:43:46 America/Denver] PHP Notice:  Undefined index: notes in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 7
+[24-Oct-2014 14:43:46 America/Denver] PHP Notice:  Use of undefined constant console - assumed 'console' in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 8
+[24-Oct-2014 14:43:46 America/Denver] PHP Warning:  mysql_connect(): Access denied for user '4104a'@'localhost' (using password: YES) in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 10
+[24-Oct-2014 14:43:46 America/Denver] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 13
+[24-Oct-2014 14:43:46 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 18
+[24-Oct-2014 14:43:46 America/Denver] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 38
+[25-Oct-2014 04:08:23 America/Denver] PHP Notice:  Undefined index: nid in /home6/brettdav/public_html/apps/knight-scavenger/admin/approve.php on line 4
+[25-Oct-2014 04:08:23 America/Denver] PHP Warning:  mysql_connect(): Access denied for user '4104a'@'localhost' (using password: YES) in /home6/brettdav/public_html/apps/knight-scavenger/admin/approve.php on line 7
+[25-Oct-2014 04:08:23 America/Denver] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/approve.php on line 10
+[25-Oct-2014 04:08:23 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/approve.php on line 14
+[25-Oct-2014 04:08:23 America/Denver] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home6/brettdav/public_html/apps/knight-scavenger/admin/approve.php on line 29
+[27-Oct-2014 01:13:04 America/Denver] PHP Notice:  Undefined index: nid in /home6/brettdav/public_html/apps/knight-scavenger/admin/approve.php on line 4
+[27-Oct-2014 01:13:04 America/Denver] PHP Warning:  mysql_connect(): Access denied for user '4104a'@'localhost' (using password: YES) in /home6/brettdav/public_html/apps/knight-scavenger/admin/approve.php on line 7
+[27-Oct-2014 01:13:04 America/Denver] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/approve.php on line 10
+[27-Oct-2014 01:13:04 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/approve.php on line 14
+[27-Oct-2014 01:13:04 America/Denver] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home6/brettdav/public_html/apps/knight-scavenger/admin/approve.php on line 29
+[30-Oct-2014 09:15:11 America/Denver] PHP Notice:  Undefined index: nid in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 4
+[30-Oct-2014 09:15:11 America/Denver] PHP Notice:  Undefined index: deleteNum in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 5
+[30-Oct-2014 09:15:11 America/Denver] PHP Notice:  Use of undefined constant console - assumed 'console' in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 6
+[30-Oct-2014 09:15:11 America/Denver] PHP Warning:  mysql_connect(): Access denied for user '4104a'@'localhost' (using password: YES) in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 8
+[30-Oct-2014 09:15:11 America/Denver] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 11
+[30-Oct-2014 09:15:11 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 15
+[30-Oct-2014 09:15:11 America/Denver] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 18
+[30-Oct-2014 09:15:11 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 28
+[28-Dec-2014 14:43:34 America/Denver] PHP Notice:  Undefined index: nid in /home6/brettdav/public_html/apps/knight-scavenger/admin/approve.php on line 4
+[28-Dec-2014 14:43:34 America/Denver] PHP Warning:  mysql_connect(): Access denied for user '4104a'@'localhost' (using password: YES) in /home6/brettdav/public_html/apps/knight-scavenger/admin/approve.php on line 7
+[28-Dec-2014 14:43:34 America/Denver] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/approve.php on line 10
+[28-Dec-2014 14:43:34 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/approve.php on line 14
+[28-Dec-2014 14:43:34 America/Denver] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home6/brettdav/public_html/apps/knight-scavenger/admin/approve.php on line 29
+[29-Dec-2014 06:37:19 America/Denver] PHP Notice:  Undefined index: nid in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 4
+[29-Dec-2014 06:37:19 America/Denver] PHP Notice:  Use of undefined constant console - assumed 'console' in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 5
+[29-Dec-2014 06:37:19 America/Denver] PHP Notice:  Undefined index: notes in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 7
+[29-Dec-2014 06:37:19 America/Denver] PHP Notice:  Use of undefined constant console - assumed 'console' in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 8
+[29-Dec-2014 06:37:20 America/Denver] PHP Warning:  mysql_connect(): Access denied for user '4104a'@'localhost' (using password: YES) in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 10
+[29-Dec-2014 06:37:20 America/Denver] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 13
+[29-Dec-2014 06:37:20 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 18
+[29-Dec-2014 06:37:20 America/Denver] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deny.php on line 38
+[05-Jan-2015 09:00:42 America/Denver] PHP Notice:  Undefined index: nid in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 4
+[05-Jan-2015 09:00:42 America/Denver] PHP Notice:  Undefined index: deleteNum in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 5
+[05-Jan-2015 09:00:42 America/Denver] PHP Notice:  Use of undefined constant console - assumed 'console' in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 6
+[05-Jan-2015 09:00:42 America/Denver] PHP Warning:  mysql_connect(): Access denied for user '4104a'@'localhost' (using password: YES) in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 8
+[05-Jan-2015 09:00:42 America/Denver] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 11
+[05-Jan-2015 09:00:42 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 15
+[05-Jan-2015 09:00:42 America/Denver] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 18
+[05-Jan-2015 09:00:42 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 28
+[30-Mar-2015 17:26:26 America/Denver] PHP Notice:  Undefined index: nid in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 4
+[30-Mar-2015 17:26:26 America/Denver] PHP Notice:  Undefined index: deleteNum in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 5
+[30-Mar-2015 17:26:26 America/Denver] PHP Notice:  Use of undefined constant console - assumed 'console' in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 6
+[30-Mar-2015 17:26:26 America/Denver] PHP Warning:  mysql_connect(): Access denied for user '4104a'@'localhost' (using password: YES) in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 8
+[30-Mar-2015 17:26:26 America/Denver] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 11
+[30-Mar-2015 17:26:26 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 15
+[30-Mar-2015 17:26:26 America/Denver] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 18
+[30-Mar-2015 17:26:26 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 28
+[27-Apr-2015 01:29:56 America/Denver] PHP Notice:  Undefined index: nid in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 4
+[27-Apr-2015 01:29:56 America/Denver] PHP Notice:  Undefined index: deleteNum in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 5
+[27-Apr-2015 01:29:56 America/Denver] PHP Notice:  Use of undefined constant console - assumed 'console' in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 6
+[27-Apr-2015 01:29:56 America/Denver] PHP Warning:  mysql_connect(): Access denied for user '4104a'@'localhost' (using password: YES) in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 8
+[27-Apr-2015 01:29:56 America/Denver] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 11
+[27-Apr-2015 01:29:56 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 15
+[27-Apr-2015 01:29:56 America/Denver] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 18
+[27-Apr-2015 01:29:56 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 28
+[29-Apr-2015 18:10:42 America/Denver] PHP Notice:  Undefined index: nid in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 4
+[29-Apr-2015 18:10:42 America/Denver] PHP Notice:  Undefined index: deleteNum in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 5
+[29-Apr-2015 18:10:42 America/Denver] PHP Notice:  Use of undefined constant console - assumed 'console' in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 6
+[29-Apr-2015 18:10:42 America/Denver] PHP Warning:  mysql_connect(): Access denied for user '4104a'@'localhost' (using password: YES) in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 8
+[29-Apr-2015 18:10:42 America/Denver] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 11
+[29-Apr-2015 18:10:42 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 15
+[29-Apr-2015 18:10:42 America/Denver] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 18
+[29-Apr-2015 18:10:42 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 28
+[06-Jul-2015 08:49:00 America/Denver] PHP Notice:  Undefined index: nid in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 4
+[06-Jul-2015 08:49:00 America/Denver] PHP Notice:  Undefined index: deleteNum in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 5
+[06-Jul-2015 08:49:00 America/Denver] PHP Notice:  Use of undefined constant console - assumed 'console' in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 6
+[06-Jul-2015 08:49:00 America/Denver] PHP Warning:  mysql_connect(): Access denied for user '4104a'@'localhost' (using password: YES) in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 8
+[06-Jul-2015 08:49:00 America/Denver] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 11
+[06-Jul-2015 08:49:00 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 15
+[06-Jul-2015 08:49:00 America/Denver] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 18
+[06-Jul-2015 08:49:00 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 28
+[05-Sep-2015 10:15:07 America/Denver] PHP Notice:  Undefined index: nid in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 4
+[05-Sep-2015 10:15:07 America/Denver] PHP Notice:  Undefined index: deleteNum in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 5
+[05-Sep-2015 10:15:07 America/Denver] PHP Notice:  Use of undefined constant console - assumed 'console' in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 6
+[05-Sep-2015 10:15:07 America/Denver] PHP Warning:  mysql_connect(): Access denied for user '4104a'@'localhost' (using password: YES) in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 8
+[05-Sep-2015 10:15:07 America/Denver] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 11
+[05-Sep-2015 10:15:07 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 15
+[05-Sep-2015 10:15:07 America/Denver] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 18
+[05-Sep-2015 10:15:07 America/Denver] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home6/brettdav/public_html/apps/knight-scavenger/admin/deletePic.php on line 28

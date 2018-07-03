@@ -1,0 +1,156 @@
+{
+  "quiz": {
+    "questionItem": [
+      {
+        "question": "Which does jQuery use as a shortcut for jQuery?",
+        "panswer": [
+          "the % sign",
+          "the ? Sign",
+          "the $ sign",
+          "the jQ sign"
+        ],
+        "aanswer": "the $ sign"
+      },
+      {
+        "question": "With jQuery, look at the following selector: $('div'). What does it select?",
+        "panswer": [
+          "All div elements",
+          "The first div element",
+          "The last div element",
+          "nothing"
+        ],
+        "aanswer": "All div elements"
+      },
+      {
+        "question": "jQuery is a library for:",
+        "panswer": [
+          "home scripting",
+          "server scripting",
+          "TPS scripting",
+          "client scripting"
+        ],
+        "aanswer": "client scripting"
+      },
+      {
+        "question": "What code sets all 'p' elements background color to red?",
+        "panswer": [
+          "$('p').css('background-color','red');",
+          "$('p').style('background-color','red');",
+          "$('p').layout('background-color','red');",
+          "$('p').manipulate('background-color','red');"
+        ],
+        "aanswer": "$('p').css('background-color','red');"
+      },
+      {
+        "question": "With jQuery, look at the following selector: $('div.intro'). What does it select?",
+        "panswer": [
+          "All div elements with class='intro'",
+          "The first div element with class='intro'",
+          "All div elements with id='intro'",
+          "The first div element with id='intro'"
+        ],
+        "aanswer": "All div elements with class='intro'"
+      },
+      {
+        "question": "Which jQuery method is used to hide selected elements?",
+        "panswer": [
+          "visible(false)",
+          "hidden()",
+          "hide()",
+          "display(none)"
+        ],
+        "aanswer": "hide()"
+      },
+      {
+        "question": "Which jQuery method is used to set one or more style properties for selected elements?",
+        "panswer": [
+          "html()",
+          "style()",
+          "css()",
+          "styles()"
+        ],
+        "aanswer": "css()"
+      },
+      {
+        "question": "Which jQuery method is used to perform an asynchronous HTTP request?",
+        "panswer": [
+          "jQuery.ajax()",
+          "jQuery.ajaxAsync()",
+          "jQuery.ajaxSetup()",
+          "jQuery.AJAX()"
+        ],
+        "aanswer": "jQuery.ajax()"
+      },
+      {
+        "question": "What is the correct jQuery code for making all div elements 100 pixels high?",
+        "panswer": [
+          "$('div').yPos(100)",
+          "$('div').height(100)",
+          "$('div').height='100'",
+          "$('div').xPos(100)"
+        ],
+        "aanswer": "$('div').height(100)"
+      },
+      {
+        "question": "Which is true:",
+        "panswer": [
+          "To use jQuery, you do not have to do anything. Most browsers (Internet Explorer, Chrome, Firefox and Opera) have the jQuery library built in the browser",
+          "To use jQuery, you can refer to a hosted jQuery library at Google",
+          "To use jQuery, you must buy the jQuery library at www.jquery.com",
+          "jQuery is built into core Javascript"
+        ],
+        "aanswer": "To use jQuery, you can refer to a hosted jQuery library at Google"
+      },
+      {
+        "question": "What scripting language is jQuery written in?",
+        "panswer": [
+          "Javascript",
+          "C#",
+          "C++",
+          "VBScript"
+        ],
+        "aanswer": "Javascript"
+      },
+      {
+        "question": "Which jQuery function is used to prevent code from running, before the document is finished loading?",
+        "panswer": [
+          "$(document).load()",
+          "$(document).ready()",
+          "$(body).onload()",
+          "$(body).ready()"
+        ],
+        "aanswer": "$(document).ready()"
+      },
+      {
+        "question": "Which jQuery method should be used to deal with name conflicts?",
+        "panswer": [
+          "conflict()",
+          "noConflict()",
+          "noNameConflict()",
+          "nameConflict()"
+        ],
+        "aanswer": "noConflict()"
+      },
+      {
+        "question": "Which jQuery method is used to switch between adding/removing one or more classes (for CSS) from selected elements?",
+        "panswer": [
+          "switch()",
+          "switchClass()",
+          "toggleClass()",
+          "altClass()"
+        ],
+        "aanswer": "toggleClass()"
+      },
+      {
+        "question": "Look at the following jQuery selector: $('div#intro .head'). What does it select?",
+        "panswer": [
+          "All div elements with id='intro' or class='head'",
+          "All elements with class='head' inside the first div element with id='intro'",
+          "The first element with id='head' inside any div element with class='intro'",
+          "All div elements with a parent of 'head'"
+        ],
+        "aanswer": "All elements with class='head' inside the first div element with id='intro'"
+      }
+    ]
+  }
+}

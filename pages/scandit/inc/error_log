@@ -1,0 +1,56 @@
+[17-May-2013 20:07:41 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/scandit/inc/dbconnect.php on line 2
+[17-May-2013 20:07:43 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/scandit/inc/dbconnect.php on line 2
+[15-Jul-2013 15:37:48 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/scandit/inc/dbconnect.php on line 2
+[15-Dec-2013 11:47:34 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/scandit/inc/dbconnect.php on line 2
+[16-Dec-2013 10:16:00 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/scandit/inc/dbconnect.php on line 2
+[20-Dec-2013 10:48:28 America/Denver] PHP Warning:  mysql_query(): Access denied for user 'brettdav'@'localhost' (using password: NO) in /home6/brettdav/public_html/apps/scandit/inc/login.php on line 9
+[20-Dec-2013 10:48:28 America/Denver] PHP Warning:  mysql_query(): A link to the server could not be established in /home6/brettdav/public_html/apps/scandit/inc/login.php on line 9
+[20-Dec-2013 10:48:28 America/Denver] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home6/brettdav/public_html/apps/scandit/inc/login.php on line 10
+[20-Dec-2013 10:48:43 America/Denver] PHP Warning:  mysql_query(): Access denied for user 'brettdav'@'localhost' (using password: NO) in /home6/brettdav/public_html/apps/scandit/inc/registration.php on line 25
+[20-Dec-2013 10:48:43 America/Denver] PHP Warning:  mysql_query(): A link to the server could not be established in /home6/brettdav/public_html/apps/scandit/inc/registration.php on line 25
+[20-Dec-2013 10:49:03 America/Denver] PHP Warning:  mysql_query(): Access denied for user 'brettdav'@'localhost' (using password: NO) in /home6/brettdav/public_html/apps/scandit/inc/login.php on line 9
+[20-Dec-2013 10:49:03 America/Denver] PHP Warning:  mysql_query(): A link to the server could not be established in /home6/brettdav/public_html/apps/scandit/inc/login.php on line 9
+[20-Dec-2013 10:49:03 America/Denver] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home6/brettdav/public_html/apps/scandit/inc/login.php on line 10
+[20-Dec-2013 10:49:04 America/Denver] PHP Warning:  mysql_query(): Access denied for user 'brettdav'@'localhost' (using password: NO) in /home6/brettdav/public_html/apps/scandit/inc/login.php on line 9
+[20-Dec-2013 10:49:04 America/Denver] PHP Warning:  mysql_query(): A link to the server could not be established in /home6/brettdav/public_html/apps/scandit/inc/login.php on line 9
+[20-Dec-2013 10:49:04 America/Denver] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home6/brettdav/public_html/apps/scandit/inc/login.php on line 10
+[20-Dec-2013 10:49:05 America/Denver] PHP Warning:  mysql_query(): Access denied for user 'brettdav'@'localhost' (using password: NO) in /home6/brettdav/public_html/apps/scandit/inc/login.php on line 9
+[20-Dec-2013 10:49:05 America/Denver] PHP Warning:  mysql_query(): A link to the server could not be established in /home6/brettdav/public_html/apps/scandit/inc/login.php on line 9
+[20-Dec-2013 10:49:05 America/Denver] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home6/brettdav/public_html/apps/scandit/inc/login.php on line 10
+[20-Dec-2013 10:51:20 America/Denver] PHP Warning:  mysql_query(): Access denied for user 'brettdav'@'localhost' (using password: NO) in /home6/brettdav/public_html/apps/scandit/inc/login.php on line 9
+[20-Dec-2013 10:51:20 America/Denver] PHP Warning:  mysql_query(): A link to the server could not be established in /home6/brettdav/public_html/apps/scandit/inc/login.php on line 9
+[20-Dec-2013 10:51:20 America/Denver] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home6/brettdav/public_html/apps/scandit/inc/login.php on line 10
+[20-Dec-2013 10:51:22 America/Denver] PHP Warning:  mysql_query(): Access denied for user 'brettdav'@'localhost' (using password: NO) in /home6/brettdav/public_html/apps/scandit/inc/login.php on line 9
+[20-Dec-2013 10:51:22 America/Denver] PHP Warning:  mysql_query(): A link to the server could not be established in /home6/brettdav/public_html/apps/scandit/inc/login.php on line 9
+[20-Dec-2013 10:51:22 America/Denver] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home6/brettdav/public_html/apps/scandit/inc/login.php on line 10
+[20-Dec-2013 10:51:23 America/Denver] PHP Warning:  mysql_query(): Access denied for user 'brettdav'@'localhost' (using password: NO) in /home6/brettdav/public_html/apps/scandit/inc/login.php on line 9
+[20-Dec-2013 10:51:23 America/Denver] PHP Warning:  mysql_query(): A link to the server could not be established in /home6/brettdav/public_html/apps/scandit/inc/login.php on line 9
+[20-Dec-2013 10:51:23 America/Denver] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home6/brettdav/public_html/apps/scandit/inc/login.php on line 10
+[20-Dec-2013 10:51:37 America/Denver] PHP Warning:  mysql_query(): Access denied for user 'brettdav'@'localhost' (using password: NO) in /home6/brettdav/public_html/apps/scandit/inc/registration.php on line 25
+[20-Dec-2013 10:51:37 America/Denver] PHP Warning:  mysql_query(): A link to the server could not be established in /home6/brettdav/public_html/apps/scandit/inc/registration.php on line 25
+[20-Dec-2013 11:03:11 America/Denver] PHP Warning:  SimpleXMLElement::addChild(): unterminated entity reference  Deodorant, Roll On, Unscented, 2.5 fl oz (73 ml) 1 piece in /home6/brettdav/public_html/apps/scandit/inc/load_cart.php on line 19
+[20-Dec-2013 11:28:17 America/Denver] PHP Warning:  SimpleXMLElement::addChild(): unterminated entity reference               9 in /home6/brettdav/public_html/apps/scandit/inc/load_cart.php on line 19
+[16-Feb-2016 20:23:59 America/Denver] PHP Notice:  Undefined index: upc in /home6/brettdav/public_html/apps/scandit/inc/insert_product.php on line 4
+[16-Feb-2016 20:23:59 America/Denver] PHP Notice:  Undefined index: scan_item in /home6/brettdav/public_html/apps/scandit/inc/insert_product.php on line 5
+[16-Feb-2016 20:23:59 America/Denver] PHP Notice:  Undefined index: scan_img in /home6/brettdav/public_html/apps/scandit/inc/insert_product.php on line 7
+[16-Feb-2016 20:23:59 America/Denver] PHP Notice:  Undefined index: scan_price in /home6/brettdav/public_html/apps/scandit/inc/insert_product.php on line 8
+[16-Feb-2016 20:23:59 America/Denver] PHP Notice:  Undefined index: store in /home6/brettdav/public_html/apps/scandit/inc/insert_product.php on line 9
+[16-Feb-2016 20:23:59 America/Denver] PHP Notice:  Undefined index: username in /home6/brettdav/public_html/apps/scandit/inc/insert_product.php on line 10
+[16-Feb-2016 20:24:00 America/Denver] PHP Notice:  Undefined index: username in /home6/brettdav/public_html/apps/scandit/inc/load_cart.php on line 3
+[16-Feb-2016 20:24:00 America/Denver] PHP Notice:  Undefined index: store in /home6/brettdav/public_html/apps/scandit/inc/load_cart.php on line 4
+[16-Feb-2016 20:24:00 America/Denver] PHP Notice:  Undefined variable: arraykey in /home6/brettdav/public_html/apps/scandit/inc/load_cart.php on line 21
+[16-Feb-2016 20:24:00 America/Denver] PHP Notice:  Undefined index:  in /home6/brettdav/public_html/apps/scandit/inc/load_cart.php on line 21
+[16-Feb-2016 20:24:00 America/Denver] PHP Notice:  Undefined index: username in /home6/brettdav/public_html/apps/scandit/inc/login.php on line 3
+[16-Feb-2016 20:24:00 America/Denver] PHP Notice:  Undefined index: password in /home6/brettdav/public_html/apps/scandit/inc/login.php on line 4
+[16-Feb-2016 20:24:01 America/Denver] PHP Notice:  Undefined index: r_username in /home6/brettdav/public_html/apps/scandit/inc/registration.php on line 2
+[16-Feb-2016 20:24:01 America/Denver] PHP Notice:  Undefined index: password in /home6/brettdav/public_html/apps/scandit/inc/registration.php on line 3
+[16-Feb-2016 20:24:01 America/Denver] PHP Notice:  Undefined index: password2 in /home6/brettdav/public_html/apps/scandit/inc/registration.php on line 4
+[16-Feb-2016 20:24:01 America/Denver] PHP Notice:  Undefined index: email in /home6/brettdav/public_html/apps/scandit/inc/registration.php on line 5
+[16-Feb-2016 20:24:02 America/Denver] PHP Notice:  Undefined index: upc in /home6/brettdav/public_html/apps/scandit/inc/upcfind.php on line 2
+[16-Feb-2016 20:24:03 America/Denver] PHP Notice:  Undefined index: description in /home6/brettdav/public_html/apps/scandit/inc/update_description.php on line 4
+[16-Feb-2016 20:24:03 America/Denver] PHP Notice:  Undefined index: id in /home6/brettdav/public_html/apps/scandit/inc/update_description.php on line 5
+[16-Feb-2016 20:24:04 America/Denver] PHP Notice:  Undefined index: new_price in /home6/brettdav/public_html/apps/scandit/inc/update_price.php on line 4
+[16-Feb-2016 20:24:04 America/Denver] PHP Notice:  Undefined index: id in /home6/brettdav/public_html/apps/scandit/inc/update_price.php on line 5
+[16-Feb-2016 20:24:04 America/Denver] PHP Notice:  Undefined index: store in /home6/brettdav/public_html/apps/scandit/inc/update_price.php on line 6
+[04-Sep-2016 11:35:57 America/Denver] PHP Notice:  Undefined index: username in /home6/brettdav/public_html/apps/scandit/inc/login.php on line 3
+[04-Sep-2016 11:35:57 America/Denver] PHP Notice:  Undefined index: password in /home6/brettdav/public_html/apps/scandit/inc/login.php on line 4

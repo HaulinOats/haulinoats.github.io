@@ -1,0 +1,172 @@
+@charset "UTF-8";
+/* CSS Document */
+
+header{
+float:left;
+	background:black;
+	width: 100%;
+}
+header img{
+	height:40px;
+	margin: 5px;
+	margin-left:20px;
+	float:left;
+}
+body{
+	margin: 0;
+}
+header ul{
+	float:right;
+	margin-right:20px;
+margin-top:15px;
+}
+header ul li{
+	float:left;
+	margin-left:10px;
+	margin-right: 10px;
+	text-decoration: none;
+	color:white;
+	font-family: 'Oxygen Mono', sans-serif;
+}
+
+a:link{
+text-decoration: none;
+color:#9230FF;
+}
+a:visited{
+text-decoration: none;	
+color:#9230FF;
+}
+a:active{
+text-decoration: none;	
+
+}
+a:hover{
+text-decoration: none;	
+}
+body{
+background:#000;	
+}
+#header{
+background:url(../img/proxbg.jpg);
+height:300px;
+width:960px;
+}
+h1{
+font-family: 'Press Start 2P', cursive;
+font-size:80px;
+padding:30px;
+text-shadow: 2px 2px 10px #000;
+
+}
+.headphones{
+height:50px;
+width:50px;
+float:left;
+}
+#content{
+float:left;
+}
+#content p{
+float:left;
+margin-top:8px;
+margin-left:5px;
+font-family: 'Fredoka One', cursive;
+color:#3DE2FF;
+font-size:25px;
+}
+#content input{
+float:left;
+margin-top:12px;
+margin-left:10px;
+border-radius:5px;
+height:20px;
+
+}
+#content div{
+float:left;	
+}
+#main{
+float:left;
+padding-top:20px;
+}
+.artists{
+float:left;
+width:440px;
+height:auto;
+color:#FFF;
+margin:15px;
+border-radius:15px;
+border:#3DE2FF 3px solid;
+}
+.artists h2{
+font-family: 'Press Start 2P', cursive;	
+color:#9230FF;
+padding-left:15px;
+padding-top:30px;
+font-size:23px;
+
+}
+.artists img{
+float:left;
+margin:15px;
+border:solid #FFF medium;
+}
+.artists p{
+font-family: 'Fugaz One', cursive;
+}
+.info p{
+float:left;
+clear:both;
+padding-left:15px;
+}
+.info{
+float:left;
+width:415px;
+height:auto;
+background:#39F;
+border-radius:10px;
+margin:10px;
+border:#9230FF solid medium;
+
+}
+h3{
+padding-left:10px;
+font-size:16px;
+color:#3DE2FF;
+font-family: 'Fugaz One', cursive;
+}
+.code{
+float:right;
+font-family: 'Fredoka One', cursive;
+margin-right:15px;
+font-size:24px;
+color:#FFF;
+}
+.code:hover{
+color:#F00;	
+}
+#frame{
+position:absolute;
+left:0px;
+top:0px;
+margin:10px;
+background:#FFF;
+border-radius:10px;
+width:900px;
+height:660px;
+border:#999 solid medium;
+}
+#frame img{
+float:right;
+margin-right:5px;
+}
+#frame h2{
+float:left;
+font-family:futura;
+padding:15px;
+font-size:24px;
+}
+#php{
+float:left;	
+}

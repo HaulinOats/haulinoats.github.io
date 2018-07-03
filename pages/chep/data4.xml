@@ -1,0 +1,4148 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+	<internal>
+		<strategy>
+			<icon>img/strategy.png</icon>
+			<name>Diversification</name>
+			<path>Top-level</path>
+			<type>Strategy</type>
+			<id>322023</id>
+			<description></description>
+			<program>
+				<icon>img/program.png</icon>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>28</completion_percentage>
+					<actual_start_date>04-Apr-2012</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>673.500000</actual_resources>
+					<phase>Active</phase>
+					<id>320830</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>40300.000000</planned_cost>
+					<name>Smart Track Phase III - Deployment</name>
+					<last_modified>2012-08-20T14:15:27.824Z</last_modified>
+					<description>
+						This project is a step within a Brambles Innovation Learning Plan, for which the purpose is to learn whether Smart Pallets can be used as a tool to provide meaningful and actionable data to the business about what happens to our pallets when they exit our control, to be used in loss reduction, cycle time impairments and damage reduction solutions.
+						
+					</description>
+					<manager>Kyle, Lauren</manager>
+					<planned_finish_date>04-Apr-2014</planned_finish_date>
+					<planned_resources>853.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>33675.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>04-Apr-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date>07-Jul-2012</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>58.500000</actual_resources>
+					<phase>Idea</phase>
+					<id>321416</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>SAP CHINA</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>ERP FOR SEA (WITH CHINA)</description>
+					<manager>Gupta, Anirban</manager>
+					<planned_finish_date>07-Jul-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>2965.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>07-Jul-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>100</completion_percentage>
+					<actual_start_date>02-Feb-2012</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>928.500000</actual_resources>
+					<phase>Complete</phase>
+					<id>321232</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>27463.330000</planned_cost>
+					<name>AM_LATAM Application Roll out  PreProject Assessment</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>Analysis of the feasibility of rolling out applications in Latin America</description>
+					<manager>Cheney, Christian</manager>
+					<planned_finish_date>05-May-2012</planned_finish_date>
+					<planned_resources>677.000000</planned_resources>
+					<actual_finish_date>05-May-2012</actual_finish_date>
+					<actual_cost>46425.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>02-Feb-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>100</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>5.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>320816</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>250.000000</planned_cost>
+					<name>Project Webber</name>
+					<last_modified>2012-09-17T14:44:42.070Z</last_modified>
+					<description></description>
+					<manager>Rothstein, Marc</manager>
+					<planned_finish_date>09-Sep-2012</planned_finish_date>
+					<planned_resources>5.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>250.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>09-Sep-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>81</completion_percentage>
+					<actual_start_date>11-Nov-2011</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>5541.950000</actual_resources>
+					<phase>Active</phase>
+					<id>321365</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>1220370.000000</planned_cost>
+					<name>EU Geographic Expansion Programme - 6 Countries</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>
+						Roll out all core CHEP IS systems to the following new countries:-
+						
+					Bulgaria, Serbia, Croatia,  Lithuania, Latvia and Estonia.</description>
+					<manager>Matos, Héctor</manager>
+					<planned_finish_date>02-Feb-2013</planned_finish_date>
+					<planned_resources>22284.200000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>277097.500000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>11-Nov-2011</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>103.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>320936</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>AM_LA LATAM Rollout of ERP and peripheral systems</name>
+					<last_modified>2012-08-20T14:15:30.450Z</last_modified>
+					<description>AM_LA LATAM Rollout of ERP and peripheral systems</description>
+					<manager>Halfon, Leon</manager>
+					<planned_finish_date>07-Jul-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>5150.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>07-Jul-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>320761</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>New SAP General Ledger</name>
+					<last_modified>2012-08-20T14:15:27.824Z</last_modified>
+					<description>New SAP General Ledger</description>
+					<manager>Clark, Holly</manager>
+					<planned_finish_date>03-Mar-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>02-Feb-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>55</completion_percentage>
+					<actual_start_date>09-Sep-2011</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>2536.750000</actual_resources>
+					<phase>Active</phase>
+					<id>320753</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>7950.000000</planned_cost>
+					<name>IFCO Global IS Workstream - Integration</name>
+					<last_modified>2012-08-20T14:15:27.824Z</last_modified>
+					<description>Identifying and Documenting Synergies between IFCO and CHEP IS Systems</description>
+					<manager>Meier, Harvey</manager>
+					<planned_finish_date>09-Sep-2014</planned_finish_date>
+					<planned_resources>2561.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>126837.500000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>09-Sep-2011</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>100</completion_percentage>
+					<actual_start_date>08-Aug-2011</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>332.530000</actual_resources>
+					<phase>Complete</phase>
+					<id>320998</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>4000.000000</planned_cost>
+					<name>P&amp;G EU Contract Expansion</name>
+					<last_modified>2012-08-20T14:15:30.450Z</last_modified>
+					<description>
+						Subject to final approval from P&amp;G, the aim is for CHEP to provide a full service offer for Central and Eastern Europe at a price level that provides outstanding value to P&amp;G.  This provides an opportunity for P&amp;G to convert their remaining white pallet production to CHEP in order to support their integration sustainability and standardisation strategy.  The remaining business equates to around 2 million tED transfers per annum to be converted to CHEP B1208A (Euro Pallet) equipment.
+						
+						
+						
+					The aim of this Project is to support the full service offer and pricing which has been agreed with P&amp;G.</description>
+					<manager>Thompson, Sian</manager>
+					<planned_finish_date>03-Mar-2012</planned_finish_date>
+					<planned_resources>220.000000</planned_resources>
+					<actual_finish_date>03-Mar-2012</actual_finish_date>
+					<actual_cost>3175.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>07-Jul-2011</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>100</completion_percentage>
+					<actual_start_date>04-Apr-2012</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>674.000000</actual_resources>
+					<phase>Complete</phase>
+					<id>321487</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>20002.500000</planned_cost>
+					<name>Webber Evaluation</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>Finance System Evaluation</description>
+					<manager>Perry, Laura</manager>
+					<planned_finish_date>06-Jun-2012</planned_finish_date>
+					<planned_resources>401.000000</planned_resources>
+					<actual_finish_date>06-Jun-2012</actual_finish_date>
+					<actual_cost>33700.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>04-Apr-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>20.500000</actual_resources>
+					<phase>Idea</phase>
+					<id>321456</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>SAP SEA</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>ERP FOR CHINA (WITH SEA)</description>
+					<manager>Gupta, Anirban</manager>
+					<planned_finish_date>07-Jul-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>1025.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>07-Jul-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date>08-Aug-2012</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>2281.000000</actual_resources>
+					<phase>Active</phase>
+					<id>322498</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>87504.170000</planned_cost>
+					<name>Webber</name>
+					<last_modified>2012-09-17T14:44:24.178Z</last_modified>
+					<description>Project Webber</description>
+					<manager>Rothstein, Marc</manager>
+					<planned_finish_date>12-Dec-2013</planned_finish_date>
+					<planned_resources>1750.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>114050.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>07-Jul-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>99</completion_percentage>
+					<actual_start_date>02-Feb-2012</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>1498.500000</actual_resources>
+					<phase>Active</phase>
+					<id>320771</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>234450.000000</planned_cost>
+					<name>Atlas</name>
+					<last_modified>2012-08-20T14:15:27.824Z</last_modified>
+					<description>Atlas Imported from MS Project</description>
+					<manager>Colon, Elisa</manager>
+					<planned_finish_date>11-Nov-2012</planned_finish_date>
+					<planned_resources>3871.500000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>74925.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>02-Feb-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>1</completion_percentage>
+					<actual_start_date>12-Dec-2011</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>258.000000</actual_resources>
+					<phase>Cancelled</phase>
+					<id>321491</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>38435.000000</planned_cost>
+					<name>CHEP Aerospace IT Integration</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>IT Integration of Driessen Services, JMI Aerospace Solutions and Unitpool IT into a single consolidated CHEP Aerospace Solutions IT infrastructure and program </description>
+					<manager>Kleijn, Floris</manager>
+					<planned_finish_date>11-Nov-2012</planned_finish_date>
+					<planned_resources>749.730000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>12900.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>12-Dec-2011</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>12</completion_percentage>
+					<actual_start_date>08-Aug-2012</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>76.000000</actual_resources>
+					<phase>Active</phase>
+					<id>322502</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>5650.000000</planned_cost>
+					<name>Aerospace Integration</name>
+					<last_modified>2012-09-17T14:44:24.178Z</last_modified>
+					<description>Integration of Driessen Services, JMI Aerospace Solutions and Unitpool IT with CHEP through AD &amp; networks.</description>
+					<manager>Raulerson, Cappy</manager>
+					<planned_finish_date>01-Jan-2013</planned_finish_date>
+					<planned_resources>220.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>3800.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>08-Aug-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>60</completion_percentage>
+					<actual_start_date>07-Jul-2012</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>14.000000</actual_resources>
+					<phase>Active</phase>
+					<id>320817</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>4550.000000</planned_cost>
+					<name>Brambles Small Entities ERP Evaluation</name>
+					<last_modified>2012-08-20T14:15:27.824Z</last_modified>
+					<description>Brambles Small Entities ERP Evaluation</description>
+					<manager>Hussein, Imtihaz</manager>
+					<planned_finish_date>10-Oct-2012</planned_finish_date>
+					<planned_resources>99.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>700.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>07-Jul-2012</planned_start_date>
+				</project>
+				<name>Global Functions</name>
+				<path>Top-level</path>
+				<description>Global Functions</description>
+				<goal>
+					<icon>img/goal.png</icon>
+					<name>Extend ERP to Latin America, China &amp; South East Asia</name>
+					<path>Top-level</path>
+					<type>Goal</type>
+					<id>322324</id>
+					<description></description>
+				</goal>
+				<goal>
+					<icon>img/goal.png</icon>
+					<name>Develop Strategy to integrate and support CHEP Aerospace</name>
+					<path>Top-level</path>
+					<type>Goal</type>
+					<id>322325</id>
+					<description></description>
+				</goal>
+				<goal>
+					<icon>img/goal.png</icon>
+					<name>Support Project Webber </name>
+					<path>Top-level</path>
+					<type>Goal</type>
+					<id>322334</id>
+					<description></description>
+				</goal>
+				<goal>
+					<icon>img/goal.png</icon>
+					<name>Support Smart Track project</name>
+					<path>Top-level</path>
+					<type>Goal</type>
+					<id>322298</id>
+					<description></description>
+				</goal>
+				<goal>
+					<icon>img/goal.png</icon>
+					<name>Establish Atlanta Office as CHEP USA headquarters</name>
+					<path>Top-level</path>
+					<type>Goal</type>
+					<id>322274</id>
+					<description></description>
+				</goal>
+				<id>320912</id>
+				<type>Program</type>
+			</program>
+		</strategy>
+		<strategy>
+			<icon>img/strategy.png</icon>
+			<name>People and Leadership</name>
+			<path>Top-level</path>
+			<type>Strategy</type>
+			<id>322024</id>
+			<description></description>
+			<program>
+				<icon>img/program.png</icon>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>99</completion_percentage>
+					<actual_start_date>03-Mar-2012</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>586.000000</actual_resources>
+					<phase>Active</phase>
+					<id>321495</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>174646.960000</planned_cost>
+					<name>Unified Communication &amp; Collaboration (UCC)</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>Provide the integration of real-time communication services such as instant messaging (chat), presence information, telephony (including IP telephony), video conferencing, data sharing (including web connected electronic whiteboards, call control and speech recognition with non-real-time communication services such as unified messaging (integrated voicemail, e-mail, SMS and fax). UCC is not a single product, but a set of products that provides a consistent unified user interface and user experience across multiple devices and media types</description>
+					<manager>Colon, Elisa</manager>
+					<planned_finish_date>10-Oct-2012</planned_finish_date>
+					<planned_resources>634.500000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>29340.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>03-Mar-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Rejected</phase>
+					<id>321070</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>Unified Communication Phase II - United States</name>
+					<last_modified>2012-08-20T14:15:30.450Z</last_modified>
+					<description>Continue deploying Video Conference Units.</description>
+					<manager>Camacho, Louis</manager>
+					<planned_finish_date>07-Jul-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>07-Jul-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Rejected</phase>
+					<id>321313</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>Unified Communication Phase II - Middle East-Africa</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>Continue deploying Video Conference Units.</description>
+					<manager>Camacho, Louis</manager>
+					<planned_finish_date>07-Jul-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>07-Jul-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>321118</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>Telephony Systems - Australia/NZ</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>Unified Communication Expansion</description>
+					<manager>Camacho, Louis</manager>
+					<planned_finish_date>07-Jul-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>07-Jul-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>321146</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>10750.000000</planned_cost>
+					<name>LATAM - Telephony &amp; Network Upgrade Phase II</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>Expand Call Center Capabilities from USA to LATAM</description>
+					<manager>Camacho, Louis</manager>
+					<planned_finish_date>03-Mar-2012</planned_finish_date>
+					<planned_resources>297.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>12-Dec-2011</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>321023</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>Telephony Systems - Middle East-Africa</name>
+					<last_modified>2012-08-20T14:15:30.450Z</last_modified>
+					<description>Unified Communication Expansion</description>
+					<manager>Camacho, Louis</manager>
+					<planned_finish_date>07-Jul-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>07-Jul-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>321166</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>Telephony Systems - Latin America</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>Unified Communication Expansion Phase II</description>
+					<manager>Camacho, Louis</manager>
+					<planned_finish_date>07-Jul-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>07-Jul-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>321148</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>10750.000000</planned_cost>
+					<name>Telephony Systems</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>Telephony Improvements</description>
+					<manager>Camacho, Louis</manager>
+					<planned_finish_date>03-Mar-2012</planned_finish_date>
+					<planned_resources>297.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>12-Dec-2011</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Rejected</phase>
+					<id>321031</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>Unified Communication Phase II - Europe</name>
+					<last_modified>2012-08-20T14:15:30.450Z</last_modified>
+					<description>Continue deploying Video Conference Units.</description>
+					<manager>Camacho, Louis</manager>
+					<planned_finish_date>07-Jul-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>07-Jul-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>321026</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>TRANSPORT OFFICE PHONE SYSTEM</name>
+					<last_modified>2012-08-20T14:15:30.450Z</last_modified>
+					<description>AUST:Implement transport phone system with full KPI measurement, queue times, integrated with Customer Service, Credit and Head office.</description>
+					<manager>Gupta, Anirban</manager>
+					<planned_finish_date>07-Jul-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>07-Jul-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Rejected</phase>
+					<id>321076</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>Unified Communication Phase II - Australia/NZ</name>
+					<last_modified>2012-08-20T14:15:30.450Z</last_modified>
+					<description>Continue deploying Video Conference Units.</description>
+					<manager>Camacho, Louis</manager>
+					<planned_finish_date>07-Jul-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>07-Jul-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>92</completion_percentage>
+					<actual_start_date>01-Jan-2011</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>15439.000000</actual_resources>
+					<phase>Active</phase>
+					<id>321363</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>736791.670000</planned_cost>
+					<name>Windows 7 and Office 2010</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description></description>
+					<manager>Simington, David</manager>
+					<planned_finish_date>02-Feb-2013</planned_finish_date>
+					<planned_resources>13409.820000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>775770.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>01-Jan-2011</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>321168</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>Telephony Systems - Canada</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>Unified Communication Expansion</description>
+					<manager>Camacho, Louis</manager>
+					<planned_finish_date>07-Jul-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>07-Jul-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Rejected</phase>
+					<id>321073</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>Unified Communication Phase II - Global-Business</name>
+					<last_modified>2012-08-20T14:15:30.450Z</last_modified>
+					<description>Continue deploying Video Conference Units also start building the infrastructure to support the integration with Phone systems.</description>
+					<manager>Camacho, Louis</manager>
+					<planned_finish_date>07-Jul-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>07-Jul-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>321113</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>Telephony Systems - Global-Business</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>Unified Communication Expansion</description>
+					<manager>Camacho, Louis</manager>
+					<planned_finish_date>07-Jul-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>07-Jul-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>91</completion_percentage>
+					<actual_start_date>02-Feb-2011</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>8376.500000</actual_resources>
+					<phase>Active</phase>
+					<id>321399</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>481225.833333</planned_cost>
+					<name>Walter 2.0</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>Migrate Walter from Google to Microsoft SharePoint platform - for Intranet, collaboration sites, document shares and document collaboration.</description>
+					<manager>Goalen, Tim</manager>
+					<planned_finish_date>11-Nov-2012</planned_finish_date>
+					<planned_resources>6832.500000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>419435.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>07-Jul-2011</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>77</completion_percentage>
+					<actual_start_date>10-Oct-2011</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>482.000000</actual_resources>
+					<phase>Live (In PRD)</phase>
+					<id>321374</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>24860.000000</planned_cost>
+					<name>External Website Project (chep.com)</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>This project is to rebuild chep.com. The solution will be hosted by Sunguard and managed by Mass Media from AU.</description>
+					<manager>Raulerson, Cappy</manager>
+					<planned_finish_date>02-Feb-2013</planned_finish_date>
+					<planned_resources>374.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>24100.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>10-Oct-2011</planned_start_date>
+				</project>
+				<name>Unified Communications and Collaboration (UCC) </name>
+				<path>Top-level</path>
+				<description>Unified Communications and Collaboration</description>
+				<goal>
+					<icon>img/goal.png</icon>
+					<name>Build IT Communication Strategy</name>
+					<path>Top-level</path>
+					<type>Goal</type>
+					<id>322328</id>
+					<description></description>
+				</goal>
+				<goal>
+					<icon>img/goal.png</icon>
+					<name>Leverage SharePoint as a platform for all internal and non-IT communication</name>
+					<path>Top-level</path>
+					<type>Goal</type>
+					<id>322279</id>
+					<description></description>
+				</goal>
+				<goal>
+					<icon>img/goal.png</icon>
+					<name>Continue the rollout of video conferencing capabilities for the UCC strategy; Develop roadmap for Phase 2 of UCC</name>
+					<path>Top-level</path>
+					<type>Goal</type>
+					<id>322323</id>
+					<description></description>
+				</goal>
+				<id>320921</id>
+				<type>Program</type>
+			</program>
+			<program>
+				<icon>img/program.png</icon>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>320990</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>AM_US Human Resource Software</name>
+					<last_modified>2012-08-20T14:15:30.450Z</last_modified>
+					<description>AM_US Human Resource Software</description>
+					<manager>Halfon, Leon</manager>
+					<planned_finish_date>07-Jul-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>07-Jul-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>100</completion_percentage>
+					<actual_start_date>03-Mar-2012</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>309.000000</actual_resources>
+					<phase>Complete</phase>
+					<id>321083</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>0.000000</planned_cost>
+					<name>MEA HR Information System</name>
+					<last_modified>2012-08-20T14:15:30.450Z</last_modified>
+					<description>
+						CHEP MEA at present has no formal HR system.  The point has now been reached where a suitable HR information system is urgently required to both deliver on the legislative requirements and also improve the service requirements of the HR department.
+						
+						
+						
+					A study of suitable product offerings has now been concluded, and the best candidate, SCubed Human Capital Management Software, has now been selected. This business case then proposes the purchase and implementation of this software to the MEA HR department.</description>
+					<manager>Trollip, Wayne</manager>
+					<planned_finish_date>03-Mar-2012</planned_finish_date>
+					<planned_resources>0.000000</planned_resources>
+					<actual_finish_date>03-Mar-2012</actual_finish_date>
+					<actual_cost>700.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>09-Sep-2011</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>3.000000</actual_resources>
+					<phase>Discovery</phase>
+					<id>320976</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>Health and Safety Reporting Solution </name>
+					<last_modified>2012-08-20T14:15:30.450Z</last_modified>
+					<description>Data gathered on numerous Excel spreadsheets from around the region.  Stored on T drive and manually consolidated each month to report to Global.  Should investigate how the other regions report and store their data</description>
+					<manager>Kalidas, Sajit</manager>
+					<planned_finish_date>10-Oct-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>150.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>09-Sep-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>321035</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>Personnel Administration system</name>
+					<last_modified>2012-08-20T14:15:30.450Z</last_modified>
+					<description>INDIA: Manage HR records excluding Payroll</description>
+					<manager>Gupta, Anirban</manager>
+					<planned_finish_date>07-Jul-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>07-Jul-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Rejected</phase>
+					<id>321058</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>10700.000000</planned_cost>
+					<name>FY12 PDP Release</name>
+					<last_modified>2012-08-20T14:15:30.450Z</last_modified>
+					<description>Yearly project to enhance the PDP tool for next cycle and to meet next year's HR requirements</description>
+					<manager>Casado, Daniel</manager>
+					<planned_finish_date>02-Feb-2012</planned_finish_date>
+					<planned_resources>296.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>11-Nov-2011</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>170.000000</actual_resources>
+					<phase>Active</phase>
+					<id>320767</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>HR Strategy &amp; Evaluation</name>
+					<last_modified>2012-08-20T14:15:27.824Z</last_modified>
+					<description></description>
+					<manager>Halfon, Leon</manager>
+					<planned_finish_date>10-Oct-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>8500.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>09-Sep-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Discovery</phase>
+					<id>322671</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2550.000000</planned_cost>
+					<name>Test Project - DLT</name>
+					<last_modified>2012-09-27T07:31:19.450Z</last_modified>
+					<description></description>
+					<manager>Trenary, Dan</manager>
+					<planned_finish_date>10-Oct-2012</planned_finish_date>
+					<planned_resources>59.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>09-Sep-2012</planned_start_date>
+				</project>
+				<name>Human Resource Information System (HRIS) </name>
+				<path>Top-level</path>
+				<description>Human Resource Information System (HRIS) </description>
+				<id>320916</id>
+				<type>Program</type>
+			</program>
+		</strategy>
+		<strategy>
+			<icon>img/strategy.png</icon>
+			<name>Go to Market</name>
+			<path>Top-level</path>
+			<type>Strategy</type>
+			<id>322025</id>
+			<description></description>
+			<program>
+				<icon>img/program.png</icon>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>86.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>321185</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>10700.000000</planned_cost>
+					<name>Retriever replacement</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>Retriever is the tool used by quality and operation team to manage plant quality audits &amp; customer complaints</description>
+					<manager>Casado, Daniel</manager>
+					<planned_finish_date>03-Mar-2013</planned_finish_date>
+					<planned_resources>296.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>4300.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>08-Aug-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>320985</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>Order Entry Application</name>
+					<last_modified>2012-08-20T14:15:30.450Z</last_modified>
+					<description>Mobile Quick Order Application for Mobile </description>
+					<manager>Tuck, Dale</manager>
+					<planned_finish_date>07-Jul-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>07-Jul-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>321234</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>Global Operations 'Smartphone' Technology</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>
+						provide/expand for the use of 'smartphone' technology into the Ops Portal and/or SAP - Pixus technology potentially
+						
+					</description>
+					<manager>Dean, John</manager>
+					<planned_finish_date>04-Apr-2013</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>04-Apr-2013</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>17</completion_percentage>
+					<actual_start_date>04-Apr-2012</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>392.500000</actual_resources>
+					<phase>Active</phase>
+					<id>320760</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>97149.170000</planned_cost>
+					<name>AM_US Mobile Ordering app</name>
+					<last_modified>2012-08-20T14:15:27.824Z</last_modified>
+					<description>Create a mobile app that allows customers to order products. Business Lead is Ian Farrington. </description>
+					<manager>Fisher, Eric</manager>
+					<planned_finish_date>06-Jun-2013</planned_finish_date>
+					<planned_resources>1509.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>19625.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>04-Apr-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>321266</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>10700.000000</planned_cost>
+					<name>EU EPASS  (STARGATE translation for EU)</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>European pilot of the SAP yard management functionality.</description>
+					<manager>Casado, Daniel</manager>
+					<planned_finish_date>02-Feb-2012</planned_finish_date>
+					<planned_resources>296.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>11-Nov-2011</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Rejected</phase>
+					<id>320852</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>Paperless BOL</name>
+					<last_modified>2012-08-20T14:15:27.824Z</last_modified>
+					<description>Currently Bill of Lading is hardcopy. Want to move to paperless - mobile app. Plus access to Siebel and other functionality</description>
+					<manager>Tuck, Dale</manager>
+					<planned_finish_date>07-Jul-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>07-Jul-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>99</completion_percentage>
+					<actual_start_date>06-Jun-2011</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>5996.500000</actual_resources>
+					<phase>Active</phase>
+					<id>321394</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>220474.170000</planned_cost>
+					<name>Blue Code</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>A new Blue Code system replacing the current one in Vignette System in a new platfrom</description>
+					<manager>Gill, Peter</manager>
+					<planned_finish_date>12-Dec-2012</planned_finish_date>
+					<planned_resources>4426.480000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>299825.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>06-Jun-2011</planned_start_date>
+				</project>
+				<name>Mobility</name>
+				<path>Top-level</path>
+				<description>Mobility</description>
+				<goal>
+					<icon>img/goal.png</icon>
+					<name>Finalize Mobility Strategy</name>
+					<path>Top-level</path>
+					<type>Goal</type>
+					<id>322310</id>
+					<description></description>
+				</goal>
+				<goal>
+					<icon>img/goal.png</icon>
+					<name>Establish MEAP approach and validate Pyxis as the development platform</name>
+					<path>Top-level</path>
+					<type>Goal</type>
+					<id>322333</id>
+					<description></description>
+				</goal>
+				<goal>
+					<icon>img/goal.png</icon>
+					<name>Provide Telecom expense management visibility to Business</name>
+					<path>Top-level</path>
+					<type>Goal</type>
+					<id>322292</id>
+					<description></description>
+				</goal>
+				<goal>
+					<icon>img/goal.png</icon>
+					<name>Determine Mobile Device Management platform to support all regions</name>
+					<path>Top-level</path>
+					<type>Goal</type>
+					<id>322306</id>
+					<description></description>
+				</goal>
+				<id>320918</id>
+				<type>Program</type>
+			</program>
+			<program>
+				<icon>img/program.png</icon>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>18.000000</actual_resources>
+					<phase>Undefined</phase>
+					<id>321286</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>EU Automotive Inbound Communication</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>Implement a better, faster, more reliable and efficient way to handle our customer inbound communication (e-mails, Letters and phone calls). This includes integration with the CRM system and a reliable system to report communication volume and important KPIs such as volume of calls, lines needed, missed calls and waiting (ring) times for customers.</description>
+					<manager>Hussein, Imtihaz</manager>
+					<planned_finish_date>12-Dec-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>900.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>12-Dec-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>44</completion_percentage>
+					<actual_start_date>04-Apr-2012</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>30.000000</actual_resources>
+					<phase>Active</phase>
+					<id>320829</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>9600.000000</planned_cost>
+					<name>Siebel 7.22.1 Release</name>
+					<last_modified>2012-08-20T14:15:27.824Z</last_modified>
+					<description>Siebel &quot;dot&quot; release to support zipcode (5+4) designation for SAP Vertex Upgrade</description>
+					<manager>Torre, Carlos</manager>
+					<planned_finish_date>10-Oct-2012</planned_finish_date>
+					<planned_resources>192.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>1500.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>04-Apr-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Rejected</phase>
+					<id>321316</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>AU Implementation of Call Center (CTI)</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>Install/Configure CTI integration to support Australian call center.</description>
+					<manager>Curry, Jacqueline</manager>
+					<planned_finish_date>07-Jul-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>07-Jul-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>321453</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>Transaction process moved to Portal</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>Siebel is not the natural home for </description>
+					<manager>Tuck, Dale</manager>
+					<planned_finish_date>07-Jul-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>07-Jul-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>34</completion_percentage>
+					<actual_start_date>07-Jul-2011</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>9804.000000</actual_resources>
+					<phase>Active</phase>
+					<id>321040</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>1190942.490000</planned_cost>
+					<name>Quicksilver (Commercial Excellence)</name>
+					<last_modified>2012-08-20T14:15:30.450Z</last_modified>
+					<description>Provide to the field team the right system to reduce their administrative tasks and therefore to facilitate the planning, managing and reporting of the day to day field activity. The system should give them full visibility (in terms of visit planning, KPIs, customer snapshot, oriented actions, routing intelligence), a simple/easy to use platform to capture information during the visits (scripts, check lists, templates) and an easy/automatic way of report back the information to the core system (or in a way that can be easily managed by the back office team). Finally the core system should provide an accurate reporting.</description>
+					<manager>Gill, Peter</manager>
+					<planned_finish_date>04-Apr-2013</planned_finish_date>
+					<planned_resources>18008.020000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>645055.100000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>07-Jul-2011</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>320986</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>Plant Audit - revamp</name>
+					<last_modified>2012-08-20T14:15:30.450Z</last_modified>
+					<description>Plant Operations - Move all Audit functionality to mobile and take administrative work away from the Service reps in the field </description>
+					<manager>Tuck, Dale</manager>
+					<planned_finish_date>07-Jul-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>07-Jul-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date>01-Jan-2010</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>2141.750000</actual_resources>
+					<phase>Active</phase>
+					<id>321436</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>45650.000000</planned_cost>
+					<name>Better Everyday - Total Account Management (TAM)</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>Develop and execute a set of interface strategies and tactics designed to deeply imbed CHEP within given customer cultures by successfully expanding existing positive transactional customer relationships into long term strategic partnerships.</description>
+					<manager>Jesus, Ed</manager>
+					<planned_finish_date>06-Jun-2013</planned_finish_date>
+					<planned_resources>915.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>107087.500000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>01-Jan-2010</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>50.500000</actual_resources>
+					<phase>Idea</phase>
+					<id>321292</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2550.000000</planned_cost>
+					<name>AM_US - Supply Chain Global Std ABC Report</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>Standardize the ABC report across CBUs to provide one-to-one analysis of the supply chain's most important metrics.</description>
+					<manager>Wines, Christopher</manager>
+					<planned_finish_date>04-Apr-2012</planned_finish_date>
+					<planned_resources>59.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>2525.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>04-Apr-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>3.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>320828</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2550.000000</planned_cost>
+					<name>CRM on Demand</name>
+					<last_modified>2012-08-20T14:15:27.824Z</last_modified>
+					<description></description>
+					<manager>Boyd, Jeffrey</manager>
+					<planned_finish_date>05-May-2012</planned_finish_date>
+					<planned_resources>59.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>150.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>04-Apr-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>1.500000</actual_resources>
+					<phase>Live (In PRD)</phase>
+					<id>321305</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>0.000000</planned_cost>
+					<name>NPS LATAM</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>
+						Encuesta Satisfacción p LATAM
+						
+						Aplicación de la encuesta vía Siebel info.
+						
+						
+						
+					Satisfaction survey for LATAM. Survey via SIEBEL information, all contacts where updated and survey sent.</description>
+					<manager>Vazquez, Beatriz</manager>
+					<planned_finish_date>09-Sep-2012</planned_finish_date>
+					<planned_resources>0.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>75.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>09-Sep-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>321306</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>10700.000000</planned_cost>
+					<name>CSO Siebel e-mail Integration</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>Integrade e-mails sent to CSO mailboxes with Siebel so auto generated Service Requests are sent back to customers and all communation chain is visible from customer profile in Siebel.</description>
+					<manager>Hussein, Imtihaz</manager>
+					<planned_finish_date>03-Mar-2012</planned_finish_date>
+					<planned_resources>296.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>01-Jan-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>321106</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>10700.000000</planned_cost>
+					<name>Customer Profiles for Single Fee</name>
+					<last_modified>2012-08-20T14:15:30.450Z</last_modified>
+					<description>Capture Single Fee customer profiles and make available in BW for the monitoring tool.</description>
+					<manager>Hussein, Imtihaz</manager>
+					<planned_finish_date>09-Sep-2013</planned_finish_date>
+					<planned_resources>296.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>07-Jul-2013</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>321034</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>Dashboard Enhancments</name>
+					<last_modified>2012-08-20T14:15:30.450Z</last_modified>
+					<description>Stream line field visit reports with new metrics. (Likley covered with Quick Silver Project).</description>
+					<manager>Sampaio, Patricia</manager>
+					<planned_finish_date>07-Jul-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>07-Jul-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>321067</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>Portfolio Plus (Trinity) - in Arabic (Unicode)</name>
+					<last_modified>2012-08-20T14:15:30.450Z</last_modified>
+					<description>Middle East has requested that we offer PP+ in Arabic</description>
+					<manager>Kalidas, Sajit</manager>
+					<planned_finish_date>07-Jul-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>07-Jul-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>100</completion_percentage>
+					<actual_start_date>05-May-2011</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>640.500000</actual_resources>
+					<phase>Complete</phase>
+					<id>321360</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>36480.830000</planned_cost>
+					<name>AIM Enhancements</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>AIM - Enhance European AIM monitors to make them Product Variable capable, Enable E-mail Archive in Siebel and enhance Portfolio to reflect the changes on the AIM monitors.</description>
+					<manager>Gill, Peter</manager>
+					<planned_finish_date>10-Oct-2011</planned_finish_date>
+					<planned_resources>741.670000</planned_resources>
+					<actual_finish_date>10-Oct-2011</actual_finish_date>
+					<actual_cost>150.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>05-May-2011</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date>12-Dec-2011</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>981.500000</actual_resources>
+					<phase>Active</phase>
+					<id>321081</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>1650.000000</planned_cost>
+					<name>EDI Solutions Enhancement - FY12</name>
+					<last_modified>2012-08-20T14:15:30.450Z</last_modified>
+					<description>This will be work that we identify as needed on any of our general processes and not necessarily as a request from the customers/business</description>
+					<manager>Jesus, Ed</manager>
+					<planned_finish_date>10-Oct-2012</planned_finish_date>
+					<planned_resources>35.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>30175.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>05-May-2011</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>21</completion_percentage>
+					<actual_start_date>12-Dec-2011</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>303.500000</actual_resources>
+					<phase>Active</phase>
+					<id>321258</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>10250.000000</planned_cost>
+					<name>e-Xtreme Makeover - MEA EDI</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>As more customers are choosing to move to EDI, we need to find a strategy for the business to support this service.  The business needs training and better tools to be able to handle the number of queries that can result from EDI movements.  This project will also include Corrections and Reversals</description>
+					<manager>Kalidas, Sajit</manager>
+					<planned_finish_date>03-Mar-2014</planned_finish_date>
+					<planned_resources>296.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>15175.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>12-Dec-2011</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>321341</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>Transactions enhancment for Unlisted Locations</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>Add functionality for unlisted locations to collect new data points including phone number.</description>
+					<manager>Sampaio, Patricia</manager>
+					<planned_finish_date>07-Jul-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>07-Jul-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>321387</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>BOE deployed across the enterprise</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>Implement BOE as part of self-service reporting for global business</description>
+					<manager>Beatty, Thomas</manager>
+					<planned_finish_date>07-Jul-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>07-Jul-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>321392</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>Audit Application</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>Convert iphone audit app to any smartphone</description>
+					<manager>Tuck, Dale</manager>
+					<planned_finish_date>07-Jul-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>07-Jul-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>321431</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>Audit Migration to Portal</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>Siebel is not the natural home for </description>
+					<manager>Tuck, Dale</manager>
+					<planned_finish_date>07-Jul-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>07-Jul-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>320796</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>AIM Management System to Portal</name>
+					<last_modified>2012-08-20T14:15:27.824Z</last_modified>
+					<description>Siebel is not the natural home for </description>
+					<manager>Hussein, Imtihaz</manager>
+					<planned_finish_date>07-Jul-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>07-Jul-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>320853</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>Orders Migration to Portal</name>
+					<last_modified>2012-08-20T14:15:27.824Z</last_modified>
+					<description>Siebel is not the natural home for </description>
+					<manager>Tuck, Dale</manager>
+					<planned_finish_date>07-Jul-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>07-Jul-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>321107</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>BOEA upgrade to 2.0</name>
+					<last_modified>2012-08-20T14:15:30.450Z</last_modified>
+					<description>Patching Business Objects Explorer Accelerated to Patch to newer version (Blade 2.0)</description>
+					<manager>Beatty, Thomas</manager>
+					<planned_finish_date>07-Jul-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>07-Jul-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>100</completion_percentage>
+					<actual_start_date>10-Oct-2011</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>464.500000</actual_resources>
+					<phase>Complete</phase>
+					<id>321213</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>30150.000000</planned_cost>
+					<name>FY12 Siebel Smart Scripts</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>As a continuation of the Smart Script (Resolve It!) project, this project will focus on completing any remaining scripts not addressed in FY11 along with newly requested one. Some of these scripts will require custom templates to support the process. Others will leverage the existing standard templates which require no development. </description>
+					<manager>Starks, Ryan</manager>
+					<planned_finish_date>09-Sep-2012</planned_finish_date>
+					<planned_resources>605.000000</planned_resources>
+					<actual_finish_date>09-Sep-2012</actual_finish_date>
+					<actual_cost>23225.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>10-Oct-2011</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>26.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>320772</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>0.000000</planned_cost>
+					<name>Siebel 7.24.1 Point Release</name>
+					<last_modified>2012-08-20T14:15:27.824Z</last_modified>
+					<description></description>
+					<manager>Torre, Carlos</manager>
+					<planned_finish_date>08-Aug-2012</planned_finish_date>
+					<planned_resources>0.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>1300.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>08-Aug-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>321385</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>FY13 BI Global Deployment/Strategy</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>New Dashboards for Business-Global</description>
+					<manager>Beatty, Thomas</manager>
+					<planned_finish_date>07-Jul-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>07-Jul-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date>07-Jul-2012</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>34.000000</actual_resources>
+					<phase>Discovery</phase>
+					<id>322499</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2550.000000</planned_cost>
+					<name>AM_US Opportunity Management project</name>
+					<last_modified>2012-09-17T14:44:24.178Z</last_modified>
+					<description>Create a new hierarchy for the Opportunity Management to support the new org structure..</description>
+					<manager>Boyd, Jeffrey</manager>
+					<planned_finish_date>11-Nov-2012</planned_finish_date>
+					<planned_resources>59.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>1700.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>07-Jul-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>320848</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>MEA Portfolio - Automate Report Scheduling</name>
+					<last_modified>2012-08-20T14:15:27.824Z</last_modified>
+					<description>Manual process to be automated</description>
+					<manager>Tuck, Dale</manager>
+					<planned_finish_date>07-Jul-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>07-Jul-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>100</completion_percentage>
+					<actual_start_date>03-Mar-2012</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>260.500000</actual_resources>
+					<phase>Complete</phase>
+					<id>321277</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2550.000000</planned_cost>
+					<name>EU Smartscripts</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>Implement Siebel Smartscripts across Europe for the creation of Siebel Service Requests and associated Activities (Business tasks) in response to customer contact through the CSO.</description>
+					<manager>Lockett, Chris</manager>
+					<planned_finish_date>08-Aug-2012</planned_finish_date>
+					<planned_resources>59.000000</planned_resources>
+					<actual_finish_date>08-Aug-2012</actual_finish_date>
+					<actual_cost>13025.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>03-Mar-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date>05-May-2011</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>1876.250000</actual_resources>
+					<phase>Active</phase>
+					<id>321400</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>1650.000000</planned_cost>
+					<name>EDI Implementation - FY12</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>one sub-task for each customer we implement</description>
+					<manager>Jesus, Ed</manager>
+					<planned_finish_date>12-Dec-2012</planned_finish_date>
+					<planned_resources>35.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>73150.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>05-May-2011</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>28.000000</actual_resources>
+					<phase>Active</phase>
+					<id>321294</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>0.000000</planned_cost>
+					<name>FY13 Smart Scripts</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>As a continuation of FY12 Smart Scripts, this project will serve to keep time spent on configuration and development efforts done by the Siebel Team and associated Analysts.</description>
+					<manager>Starks, Ryan</manager>
+					<planned_finish_date>09-Sep-2013</planned_finish_date>
+					<planned_resources>0.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>1400.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>09-Sep-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>53</completion_percentage>
+					<actual_start_date>12-Dec-2011</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>339.500000</actual_resources>
+					<phase>Active</phase>
+					<id>320824</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>164160.000000</planned_cost>
+					<name>Siebel 7.23 Project Plan</name>
+					<last_modified>2012-08-20T14:15:27.824Z</last_modified>
+					<description>Siebel 7.23 Project Plan Imported from MS Project</description>
+					<manager>Torre, Carlos</manager>
+					<planned_finish_date>11-Nov-2012</planned_finish_date>
+					<planned_resources>3355.200000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>16975.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>12-Dec-2011</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Cancelled</phase>
+					<id>320956</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2550.000000</planned_cost>
+					<name>Siebel 8.1 Upgrade</name>
+					<last_modified>2012-08-20T14:15:30.450Z</last_modified>
+					<description>Siebel Technical Upgrade to 8.1 along with Unicode Migration</description>
+					<manager>Badli, Shivakumar</manager>
+					<planned_finish_date>08-Aug-2012</planned_finish_date>
+					<planned_resources>59.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>08-Aug-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>99</completion_percentage>
+					<actual_start_date>01-Jan-2012</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>5.000000</actual_resources>
+					<phase>Live (In PRD)</phase>
+					<id>321303</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>10450.000000</planned_cost>
+					<name>AM_US - Send To SAP</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>Activate the &quot;Send to SAP&quot; button within Siebel to send customer audit counts to SAP while populating the ref2 and ref3 fields appropriately.</description>
+					<manager>Wines, Christopher</manager>
+					<planned_finish_date>10-Oct-2012</planned_finish_date>
+					<planned_resources>291.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>250.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>01-Jan-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>321351</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>FY13 SAP BWA Patch SP2X.1</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>FY13 BWA Patch to newer version (2nd Half)</description>
+					<manager>Beatty, Thomas</manager>
+					<planned_finish_date>01-Jan-2013</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>01-Jan-2013</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>321376</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>French Corrections Service Request Enhancments</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>Creation of service requests within specific rules set a sub status of &quot;Assigned&quot;</description>
+					<manager>Sampaio, Patricia</manager>
+					<planned_finish_date>07-Jul-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>07-Jul-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>321077</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>Hyperion System 11 Upgrade</name>
+					<last_modified>2012-08-20T14:15:30.450Z</last_modified>
+					<description>Release existing Hyperion Toolset all migrated to Hyperion System 11 and HW requirements.</description>
+					<manager>Beatty, Thomas</manager>
+					<planned_finish_date>07-Jul-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>07-Jul-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>11</completion_percentage>
+					<actual_start_date>06-Jun-2011</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>307.000000</actual_resources>
+					<phase>Live (In PRD)</phase>
+					<id>321475</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>12356.670000</planned_cost>
+					<name>Customer On-Boarding Project</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>
+						The Customer On-Boarding project is aimed to address the current Orderâto-Cash process at CHEP Australia &amp; New Zealand operations. The process is primarily reliant on several manual steps which involve data entry of Customer Orders and update of Inventory records.
+						
+					The On-Boarding solution aims to adopt Electronic Data Interchange (EDI) technology to facilitate the automatic creation of Customer Orders and Transfer Movements in the CHEP SAP systems. This would result in real-time capturing of customer orders and inventory record updates.</description>
+					<manager>Abdul-Raouf, Bruce</manager>
+					<planned_finish_date>11-Nov-2012</planned_finish_date>
+					<planned_resources>311.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>4780.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>06-Jun-2011</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>321028</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>US On Time Performance (OTP) </name>
+					<last_modified>2012-08-20T14:15:30.450Z</last_modified>
+					<description>Project adds functionality to PP+ to force delivery time windows, and enhances order preferences</description>
+					<manager>Tevek, Bahadir</manager>
+					<planned_finish_date>07-Jul-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>07-Jul-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Live (In PRD)</phase>
+					<id>321237</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>EU Geoghrapich Expansion - Portfolio Plus Transalation fo new CEE Countries</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>
+						Portfolio Plus - Transalation for all the new CEE  countries.
+						
+					</description>
+					<manager>Hussein, Imtihaz</manager>
+					<planned_finish_date>01-Jan-2013</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>01-Jan-2013</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date>12-Dec-2011</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>208.500000</actual_resources>
+					<phase>Active</phase>
+					<id>321472</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>1650.000000</planned_cost>
+					<name>EDI Global Integration Solution Design - FY12</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>This will be used for changes we have to make to existing EDI processes based on customer/business requests (e.g. Kraft EDI invoices, Smuckers ASN, etc)</description>
+					<manager>Jesus, Ed</manager>
+					<planned_finish_date>10-Oct-2012</planned_finish_date>
+					<planned_resources>35.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>6200.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>05-May-2011</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>100</completion_percentage>
+					<actual_start_date>10-Oct-2011</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>1962.500000</actual_resources>
+					<phase>Live (In PRD)</phase>
+					<id>320814</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>1650.000000</planned_cost>
+					<name>Siebel Release 7.20</name>
+					<last_modified>2012-08-20T14:15:27.824Z</last_modified>
+					<description>Siebel release for planned projects, misc enhancements and application fixes</description>
+					<manager>Badli, Shivakumar</manager>
+					<planned_finish_date>10-Oct-2011</planned_finish_date>
+					<planned_resources>35.000000</planned_resources>
+					<actual_finish_date>10-Oct-2011</actual_finish_date>
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>04-Apr-2011</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>509.000000</actual_resources>
+					<phase>Undefined</phase>
+					<id>321295</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>450.000000</planned_cost>
+					<name>PnP Solution Re-launch</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>MEA has done business with PnP for 3 years now and there are some fundemantal problems in the model, system and service.  This project is run by the business and aims at improving the business model</description>
+					<manager>Glennie, Fay</manager>
+					<planned_finish_date>07-Jul-2013</planned_finish_date>
+					<planned_resources>17.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>25450.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>09-Sep-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>321358</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>Enter Transaction Confirmation Notice</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>Request from PPUG to give some type of confirmation notice after an order is entered.</description>
+					<manager>Tevek, Bahadir</manager>
+					<planned_finish_date>07-Jul-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>07-Jul-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>321375</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>Costco BOL Changes in Request Collections</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>Project will allow BOL users to interface orders with SAP, and flow to Lean. Print history will also be supported.</description>
+					<manager>Tevek, Bahadir</manager>
+					<planned_finish_date>07-Jul-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>07-Jul-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>320795</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>US Self Correction change non-informer</name>
+					<last_modified>2012-08-20T14:15:27.824Z</last_modified>
+					<description>Request from the US business is to allow non-informers to request correction for the non-informer.</description>
+					<manager>Tevek, Bahadir</manager>
+					<planned_finish_date>07-Jul-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>07-Jul-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>320797</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>Team Haven (part of QuickSilver project)</name>
+					<last_modified>2012-08-20T14:15:27.824Z</last_modified>
+					<description>Integration between Siebel and Team Haven for site visits &amp; audits</description>
+					<manager>Sampaio, Patricia</manager>
+					<planned_finish_date>07-Jul-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>07-Jul-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>320850</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>Planning software</name>
+					<last_modified>2012-08-20T14:15:27.824Z</last_modified>
+					<description>INDIA: Demand planning for operation team</description>
+					<manager>Gupta, Anirban</manager>
+					<planned_finish_date>07-Jul-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>07-Jul-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date>07-Jul-2012</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>3.000000</actual_resources>
+					<phase>On Hold</phase>
+					<id>320773</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>100.000000</planned_cost>
+					<name>AM_LA Electronic Invoices</name>
+					<last_modified>2012-08-20T14:15:27.824Z</last_modified>
+					<description>Implementación de Facturas Electrónicas en CHEP Argentina</description>
+					<manager>Listorti, Mauro</manager>
+					<planned_finish_date>09-Sep-2012</planned_finish_date>
+					<planned_resources>0.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>150.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>07-Jul-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>5</completion_percentage>
+					<actual_start_date>07-Jul-2012</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>1.000000</actual_resources>
+					<phase>Undefined</phase>
+					<id>320821</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>7350.000000</planned_cost>
+					<name>Portal Upgrade Group Cleanup</name>
+					<last_modified>2012-08-20T14:15:27.824Z</last_modified>
+					<description>reorg of group assignments in portal working with Web Admins</description>
+					<manager>Vose, Denise</manager>
+					<planned_finish_date>12-Dec-2012</planned_finish_date>
+					<planned_resources>324.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>50.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>07-Jul-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>321342</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>AIM Enhancements - Phase 7 (align with Quicksilver)</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>Adding new alerts to Siebel, BW and Portfolio+Plus and enabling business to add future alerts without development work</description>
+					<manager>Tevek, Bahadir</manager>
+					<planned_finish_date>07-Jul-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>07-Jul-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>321356</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>FY13 SAP BWA Patch SP2X </name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>FY13 BWA Patch to newer version (1st Half)</description>
+					<manager>Beatty, Thomas</manager>
+					<planned_finish_date>07-Jul-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>07-Jul-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>18</completion_percentage>
+					<actual_start_date>10-Oct-2011</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>481.000000</actual_resources>
+					<phase>Undefined</phase>
+					<id>321445</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>126400.000000</planned_cost>
+					<name>AIM Enhancements - Phase 2</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>This is the Phase 2 of the AIM Enhancements Project. The objective is to implementing Account Intelligence Monitors with the ability to have product variable capability. The aim is to trigger alerts that are product specific and then communicate the alerts to customers via e-mail and also display the same alerts in Portfolio Plus.</description>
+					<manager>Gill, Peter</manager>
+					<planned_finish_date>05-May-2013</planned_finish_date>
+					<planned_resources>2628.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>23900.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>10-Oct-2011</planned_start_date>
+				</project>
+				<name>Customer Relationship Management (CRM)</name>
+				<path>Top-level</path>
+				<description>CRM</description>
+				<goal>
+					<icon>img/goal.png</icon>
+					<name>Enhance sales &amp; marketing capabilities across all Brambles business divisions</name>
+					<path>Top-level</path>
+					<type>Goal</type>
+					<id>322289</id>
+					<description></description>
+				</goal>
+				<goal>
+					<icon>img/goal.png</icon>
+					<name>Define the Lead to Cash mega process</name>
+					<path>Top-level</path>
+					<type>Goal</type>
+					<id>322280</id>
+					<description></description>
+				</goal>
+				<goal>
+					<icon>img/goal.png</icon>
+					<name>Modernize Siebel platform</name>
+					<path>Top-level</path>
+					<type>Goal</type>
+					<id>322309</id>
+					<description></description>
+				</goal>
+				<id>320914</id>
+				<type>Program</type>
+			</program>
+		</strategy>
+		<strategy>
+			<icon>img/strategy.png</icon>
+			<name>Cost Leadership</name>
+			<path>Top-level</path>
+			<type>Strategy</type>
+			<id>322026</id>
+			<description></description>
+			<program>
+				<icon>img/program.png</icon>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>321333</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>0.000000</planned_cost>
+					<name>AM_LA Automated Expense Reports</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>Replace current expense reports solution because the solutions its not working as desired, the UI has major issues, and its not always working. There are also security issues.</description>
+					<manager>Moreno, Sergio</manager>
+					<planned_finish_date>08-Aug-2012</planned_finish_date>
+					<planned_resources>0.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>08-Aug-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>321219</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>10700.000000</planned_cost>
+					<name>Vendor / Contractor agreement system</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>The procurement department need a system to house all agreements that CHEP has with 3rd party vendors, etc. Lease Agreement, property rentals, monthly rentals.  These needs to be investigated first.  Check if it exists in SAP.  This also includes accouting for leased assets</description>
+					<manager>Glennie, Fay</manager>
+					<planned_finish_date>09-Sep-2012</planned_finish_date>
+					<planned_resources>296.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>06-Jun-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>5.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>320959</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>0.000000</planned_cost>
+					<name>AM_LA Client EDI Messages for invoicing</name>
+					<last_modified>2012-08-20T14:15:30.450Z</last_modified>
+					<description>
+						Display EDI Messages and deliver alerts to the responsible invoicing personal to avoid delays in client payments
+						
+					</description>
+					<manager>Moreno, Sergio</manager>
+					<planned_finish_date>08-Aug-2012</planned_finish_date>
+					<planned_resources>0.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>250.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>08-Aug-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>4.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>321103</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>10700.000000</planned_cost>
+					<name>Purchase Requisitions (Workflow)</name>
+					<last_modified>2012-08-20T14:15:30.450Z</last_modified>
+					<description>Improve the workflow.  Why are we not using SRM.  Do we want to do requisitions in SAP.  Feasibility</description>
+					<manager>Glennie, Fay</manager>
+					<planned_finish_date>09-Sep-2012</planned_finish_date>
+					<planned_resources>296.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>200.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>06-Jun-2012</planned_start_date>
+				</project>
+				<name>Supplier Relationship Management (SRM)</name>
+				<path>Top-level</path>
+				<description>SRM</description>
+				<id>320915</id>
+				<type>Program</type>
+			</program>
+			<program>
+				<icon>img/program.png</icon>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>321122</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>0.000000</planned_cost>
+					<name>Llamasoft for MEA </name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>Logistics planning optimization</description>
+					<manager>Glennie, Fay</manager>
+					<planned_finish_date>07-Jul-2012</planned_finish_date>
+					<planned_resources>0.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>07-Jul-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>321233</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>Global Plant Operations Portal (phase 1)</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>
+						Replace/rebuild US Business owned SQL data base with IT owned/supported solution for reporting/metrics for Operations and Plants.
+						
+					</description>
+					<manager>Dean, John</manager>
+					<planned_finish_date>04-Apr-2013</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>04-Apr-2013</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>89</completion_percentage>
+					<actual_start_date>10-Oct-2011</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>1513.000000</actual_resources>
+					<phase>Active</phase>
+					<id>321205</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>102600.000000</planned_cost>
+					<name>FMS Plant Rollout - Europe</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>FMS plant Rollout for Europe.</description>
+					<manager>Schuh, Amy</manager>
+					<planned_finish_date>11-Nov-2012</planned_finish_date>
+					<planned_resources>2084.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>75650.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>10-Oct-2011</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>100</completion_percentage>
+					<actual_start_date>10-Oct-2011</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>1126.750000</actual_resources>
+					<phase>Active</phase>
+					<id>321206</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>40550.000000</planned_cost>
+					<name>FMS Plant Rollout - North America</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>Rollout of FMS equipment to North American locations.</description>
+					<manager>Schuh, Amy</manager>
+					<planned_finish_date>07-Jul-2012</planned_finish_date>
+					<planned_resources>815.000000</planned_resources>
+					<actual_finish_date>07-Jul-2012</actual_finish_date>
+					<actual_cost>56237.500000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>10-Oct-2011</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>321057</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>10750.000000</planned_cost>
+					<name>FMS HW Refresh - ETPM Americas</name>
+					<last_modified>2012-08-20T14:15:30.450Z</last_modified>
+					<description>ETPM SITES</description>
+					<manager>Camacho, Louis</manager>
+					<planned_finish_date>03-Mar-2012</planned_finish_date>
+					<planned_resources>297.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>12-Dec-2011</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>99</completion_percentage>
+					<actual_start_date>01-Jan-2012</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>852.500000</actual_resources>
+					<phase>Live (In PRD)</phase>
+					<id>321262</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>190750.000000</planned_cost>
+					<name>Lean Logistics - MEA</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>We need to do the analysis. Confirmation on Delivery – for on time deliveries.  Also for collections – no return note given to customer.  When do we collect from customer and is he credited</description>
+					<manager>Kalidas, Sajit</manager>
+					<planned_finish_date>10-Oct-2012</planned_finish_date>
+					<planned_resources>295.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>42625.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>01-Jan-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Discovery</phase>
+					<id>322494</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2550.000000</planned_cost>
+					<name>CHEP Global Plant Operations Transactional Data Entry System - Phase 2</name>
+					<last_modified>2012-09-17T14:44:24.178Z</last_modified>
+					<description>
+						Continuation of first CHEP Global Plant Operations Transactional Data Entry System project to include additional once-a-day functions (inventory counts, PIMS, repairs, etc.) and roll out to additional plants.
+						
+					This is a SCRUM project</description>
+					<manager>Fisher, Eric</manager>
+					<planned_finish_date>10-Oct-2012</planned_finish_date>
+					<planned_resources>59.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>09-Sep-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>321071</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>FMS/ETPM HW Refresh - United States</name>
+					<last_modified>2012-08-20T14:15:30.450Z</last_modified>
+					<description>Replacement of aging systems</description>
+					<manager>Camacho, Louis</manager>
+					<planned_finish_date>07-Jul-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>07-Jul-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>321157</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>ME Lean Logistics TMS/Fleet Implementation</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>Expand Lean Logistics implementation into CHEP ME and utilize the Lean Fleet functionality</description>
+					<manager>Dean, John</manager>
+					<planned_finish_date>04-Apr-2013</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>04-Apr-2013</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>861.500000</actual_resources>
+					<phase>Undefined</phase>
+					<id>321129</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>AM_US IFCO CHEP IT Integration (WS3 - E2E): Phase 2</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>Phase1 was the base SAP and S&amp;R functionality and materials/batches.  Phase 2 will encompass the basic integrations between SAP and IFCOLogix.  Phase 3 will expand the integrations E2E (e.g. single order entry system, integrated invoicing).</description>
+					<manager>Cape, Tony</manager>
+					<planned_finish_date>10-Oct-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>43075.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>09-Sep-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>70</completion_percentage>
+					<actual_start_date>01-Jan-2012</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>219.000000</actual_resources>
+					<phase>Active</phase>
+					<id>321208</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>28800.000000</planned_cost>
+					<name>FMS Server Refresh - North America</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>FMS Server refresh for North America.</description>
+					<manager>Schuh, Amy</manager>
+					<planned_finish_date>11-Nov-2012</planned_finish_date>
+					<planned_resources>616.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>10950.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>01-Jan-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>321331</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>6450.000000</planned_cost>
+					<name>SCM US Plant Naming Convention</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>Plant names in the US are in the format of USxx. This limits the number of plant codes to 1296. Due to storage plants, temp space, TPMs &amp; virtual plants, we have run out of plant codes for the region. This project's objective is to create a long term solution for plant codes, implement this solution and makes sure that it does not affect any other systems.</description>
+					<manager>Raulerson, Cappy</manager>
+					<planned_finish_date>11-Nov-2012</planned_finish_date>
+					<planned_resources>222.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>09-Sep-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>83</completion_percentage>
+					<actual_start_date>12-Dec-2011</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>1035.000000</actual_resources>
+					<phase>Active</phase>
+					<id>321446</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>63952.500000</planned_cost>
+					<name>AM_US Master Planning - Automotive </name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>Implementation of the Master Planning tool to support the Automotive team</description>
+					<manager>Meier, Harvey</manager>
+					<planned_finish_date>12-Dec-2012</planned_finish_date>
+					<planned_resources>1341.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>51750.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>12-Dec-2011</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>321099</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>10750.000000</planned_cost>
+					<name>FMS H/W Refresh - ETPM EMEA</name>
+					<last_modified>2012-08-20T14:15:30.450Z</last_modified>
+					<description>ETPM SITES</description>
+					<manager>Camacho, Louis</manager>
+					<planned_finish_date>03-Mar-2012</planned_finish_date>
+					<planned_resources>297.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>12-Dec-2011</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date>10-Oct-2011</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>90.500000</actual_resources>
+					<phase>Undefined</phase>
+					<id>321397</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>54620.000000</planned_cost>
+					<name>EWT II Project</name>
+					<last_modified>2012-09-17T14:44:42.070Z</last_modified>
+					<description>This is phase II of the EWT automation project. After a very successful Phase I of the EWT project the 2nd phase of the is to roll out the new process to the more variable cost Material damages such as to the auto boxes. The system is also to be changed to cater for AP regional requirements.</description>
+					<manager>Olivier, Euronica</manager>
+					<planned_finish_date>01-Jan-2013</planned_finish_date>
+					<planned_resources>0.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>4370.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>08-Aug-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>100</completion_percentage>
+					<actual_start_date>06-Jun-2011</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>21592.500000</actual_resources>
+					<phase>Live (In PRD)</phase>
+					<id>321435</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>723875.000000</planned_cost>
+					<name>Managed Exchange Phase 2</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>Objective is to enhance the level of service provided to Managed Exchange customers to place and manage their orders by allowing them a real-time visibility and booking capability of stocks at retailers.</description>
+					<manager>Eaton, Chris</manager>
+					<planned_finish_date>10-Oct-2012</planned_finish_date>
+					<planned_resources>12596.770000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>1086171.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>06-Jun-2011</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>321069</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>FMS/ETPM HW Refresh - Europe</name>
+					<last_modified>2012-08-20T14:15:30.450Z</last_modified>
+					<description>Replacement of aging systems</description>
+					<manager>Camacho, Louis</manager>
+					<planned_finish_date>07-Jul-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>07-Jul-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>321235</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>Supply Chain Systems Globalization</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>
+						placeholder funds for the centralization/standardization within the Global Ops and Logistics organization that may require IT support and funding
+						
+					</description>
+					<manager>Dean, John</manager>
+					<planned_finish_date>01-Jan-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>01-Jan-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>321240</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>Lean Integration into CHEP Global Customer Portal</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>
+						Integrate/link Lean Logistics views and function into CHEP Portfolio for:
+						
+						
+						
+						Customer appt scheduling
+						
+					Track/Trace functionality</description>
+					<manager>Dean, John</manager>
+					<planned_finish_date>02-Feb-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>01-Jan-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>91</completion_percentage>
+					<actual_start_date>01-Jan-2012</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>3038.000000</actual_resources>
+					<phase>Live (In PRD)</phase>
+					<id>321272</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>68495.830000</planned_cost>
+					<name>CHEP Global Plant Operations Transactional Data Entry System</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>
+						CHEP Global Plant Operations Transactional Data Entry System
+						
+						
+						
+					a.k.a. S&amp;R Replacement</description>
+					<manager>Fisher, Eric</manager>
+					<planned_finish_date>11-Nov-2012</planned_finish_date>
+					<planned_resources>1739.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>151900.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>01-Jan-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Undefined</phase>
+					<id>321126</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>10750.000000</planned_cost>
+					<name>US_AM MULTI STOP/MILK RUN</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>Multi Stop/Milk Run saves transport cost. translatable to Pallet business</description>
+					<manager>Boyd, Jeffrey</manager>
+					<planned_finish_date>12-Dec-2012</planned_finish_date>
+					<planned_resources>297.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>09-Sep-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>100</completion_percentage>
+					<actual_start_date>06-Jun-2012</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>93.000000</actual_resources>
+					<phase>Discovery</phase>
+					<id>321128</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>1350.000000</planned_cost>
+					<name>AM_US Roll out Automotive to Mexico</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>Rolling Automotive business to Mexico. This is an expansion of the Automotive business including SAP, Portal, Siebel,  and EDI. </description>
+					<manager>Halfon, Leon</manager>
+					<planned_finish_date>07-Jul-2012</planned_finish_date>
+					<planned_resources>40.000000</planned_resources>
+					<actual_finish_date>07-Jul-2012</actual_finish_date>
+					<actual_cost>4650.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>06-Jun-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>11.000000</actual_resources>
+					<phase>Discovery</phase>
+					<id>320961</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2550.000000</planned_cost>
+					<name>AM_US - Plant Online Corrections</name>
+					<last_modified>2012-08-20T14:15:30.450Z</last_modified>
+					<description>This project is to automate the storage, approvals, and workflow for the Plant Corrections Process from point of creation through setup being complete by the Plant Transaction Management team.  Reporting should be available at a detailed level, allowing users to track status of requests by Status, Requester, Plant Rep, Plant TM Coordinator, Plant, User Name, correction type, Pending approver, Approve Date, Correction Detail.</description>
+					<manager>Wines, Christopher</manager>
+					<planned_finish_date>10-Oct-2012</planned_finish_date>
+					<planned_resources>59.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>550.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>10-Oct-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>321459</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>AU_CHEP AUTOMOTIVE_LEAN LOGISTICS IMPLEMENTATION</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>Implement/Integrate Lean Logistics TMS into current CHEP AU Automotive 'CALM' environment, replacing the currently used JDA TMS</description>
+					<manager>Dean, John</manager>
+					<planned_finish_date>01-Jan-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>01-Jan-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>71</completion_percentage>
+					<actual_start_date>05-May-2012</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>758.000000</actual_resources>
+					<phase>Active</phase>
+					<id>321282</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>51900.000000</planned_cost>
+					<name>SAP Plant Maintenance</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>
+						The SAP Plant Maintenance Project aims  to implement a pilot of the Plant Maintenance module(standard feature of SAP) in SAP to plan, schedule, release and complete maintenance. The project will consist of mostly the SAP configuration work to cater for the following:
+						
+						 - The ability to manage assets and record financial data, histories and other information systems against them.
+						
+						 - Capability to plan scheduled and ad-hoc maintenance requests (Preventative, Predictive, Breakdown and Corrective)
+						
+						 - Functionality to raise and distribute Work orders and actively manage their progress.
+						
+						 - See reports on assets, maintenance work and work order details.
+						
+						 - Accurately and comprehensively report on all types of work and assets.
+						
+					</description>
+					<manager>Shrestha, Swechchha</manager>
+					<planned_finish_date>12-Dec-2012</planned_finish_date>
+					<planned_resources>161.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>51870.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>05-May-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>94</completion_percentage>
+					<actual_start_date>08-Aug-2011</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>279.500000</actual_resources>
+					<phase>Active</phase>
+					<id>321207</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>11350.000000</planned_cost>
+					<name>FMS Server Refresh - Europe</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>Server refresh for Europe</description>
+					<manager>Schuh, Amy</manager>
+					<planned_finish_date>10-Oct-2012</planned_finish_date>
+					<planned_resources>267.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>13975.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>08-Aug-2011</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>45.000000</actual_resources>
+					<phase>Undefined</phase>
+					<id>320974</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>10700.000000</planned_cost>
+					<name>AM_CA Batch for Canada</name>
+					<last_modified>2012-08-20T14:15:30.450Z</last_modified>
+					<description>Implement Product Batches for Canada</description>
+					<manager>Halfon, Leon</manager>
+					<planned_finish_date>01-Jan-2013</planned_finish_date>
+					<planned_resources>296.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>2250.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>09-Sep-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>321310</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>FMS/ETPM HW Refresh - Global-Business</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>Replacement of aging systems</description>
+					<manager>Camacho, Louis</manager>
+					<planned_finish_date>07-Jul-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>07-Jul-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>320977</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>FMS/ETPM HW Refresh - Middle East-Africa</name>
+					<last_modified>2012-08-20T14:15:30.450Z</last_modified>
+					<description>Replacement of aging systems</description>
+					<manager>Camacho, Louis</manager>
+					<planned_finish_date>07-Jul-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>07-Jul-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>321228</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>FMS Program - CHEP Global Operations</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>FY13 FMS Global Operations Implementation/Expansion</description>
+					<manager>Schuh, Amy</manager>
+					<planned_finish_date>02-Feb-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>01-Jan-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>100</completion_percentage>
+					<actual_start_date>01-Jan-2012</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>36.000000</actual_resources>
+					<phase>Live (In PRD)</phase>
+					<id>321179</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2380.000000</planned_cost>
+					<name>Damage Ratio Report</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>
+						This project is part of a Perfect Trip Project - Damage Ratio Reduction BR.
+						
+					It is too dificult to control damage ratio.  It is necessary to generate many reports and consolidate them.  It is important to have one report with all necessary information to be generated frequently.</description>
+					<manager>Prado, Wender</manager>
+					<planned_finish_date>04-Apr-2012</planned_finish_date>
+					<planned_resources>35.000000</planned_resources>
+					<actual_finish_date>04-Apr-2012</actual_finish_date>
+					<actual_cost>1700.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>01-Jan-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>51</completion_percentage>
+					<actual_start_date>05-May-2011</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>164.000000</actual_resources>
+					<phase>Active</phase>
+					<id>321248</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>8295.000000</planned_cost>
+					<name>HSE VOC Compliance GB Project Plan</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>Paint VOC Compliance project</description>
+					<manager>Colon, Elisa</manager>
+					<planned_finish_date>01-Jan-2013</planned_finish_date>
+					<planned_resources>940.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>12945.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>05-May-2011</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>4.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>321442</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>1650.000000</planned_cost>
+					<name>JDA Modernization</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>Our JDA software and hardware environment has aged. We are at risk and are experiencing preformance and application stability issues. With the implementation of batch last year leading to increased data volumes, the situation has deteriorated. In addition, hardware performance specifications are unable to keep up with the software leading to failing processes. The estimate for this project has increased due to extended timeline. The additional time is needed to mitigate interrupting IFCO integration abd other key initiatives. Also, infrastructure have increased. Scope is global.</description>
+					<manager>Dean, John</manager>
+					<planned_finish_date>02-Feb-2013</planned_finish_date>
+					<planned_resources>115.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>200.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>01-Jan-2013</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>100</completion_percentage>
+					<actual_start_date>06-Jun-2012</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>31.000000</actual_resources>
+					<phase>Live (In PRD)</phase>
+					<id>320960</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>500.000000</planned_cost>
+					<name>AM_LA Ordenes Poolnet Argentina</name>
+					<last_modified>2012-08-20T14:15:30.450Z</last_modified>
+					<description>Implementacion del Módulo de Ordenes</description>
+					<manager>Listorti, Mauro</manager>
+					<planned_finish_date>08-Aug-2012</planned_finish_date>
+					<planned_resources>0.000000</planned_resources>
+					<actual_finish_date>08-Aug-2012</actual_finish_date>
+					<actual_cost>1550.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>06-Jun-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>100</completion_percentage>
+					<actual_start_date>11-Nov-2011</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>226.000000</actual_resources>
+					<phase>Active</phase>
+					<id>321490</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2150.000000</planned_cost>
+					<name>AM_US_Demand Planning Hierarchy</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>Re-develop the existing US Supply Chain hierarchy to forecasting pallet supply and demand at an aggregate level for CHEP  customers and plants.</description>
+					<manager>Rattigan, Dwight</manager>
+					<planned_finish_date>07-Jul-2012</planned_finish_date>
+					<planned_resources>51.000000</planned_resources>
+					<actual_finish_date>07-Jul-2012</actual_finish_date>
+					<actual_cost>11300.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>11-Nov-2011</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>195.500000</actual_resources>
+					<phase>Live (In PRD)</phase>
+					<id>321131</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>AM_US - Customer On-Site (new service)</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>CHEP is beginning to offer a new TPM service to our customers.  In the case of C&amp;S, this service is for their salvage dock operations.  We need the ability to systematically pay our 3rd Party Service providers, and also the ability to invoice the customer.</description>
+					<manager>Cape, Tony</manager>
+					<planned_finish_date>10-Oct-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>9775.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>09-Sep-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>210.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>321191</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>10700.000000</planned_cost>
+					<name>Automotive Managed service logistic optimiser</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>Automate the interfaces between SAP and MSO (Managed Service optimizer) or altenatively MSO retirement</description>
+					<manager>Casado, Daniel</manager>
+					<planned_finish_date>02-Feb-2013</planned_finish_date>
+					<planned_resources>296.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>10500.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>11-Nov-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Rejected</phase>
+					<id>320800</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>Global Plant Preventative Maintenance Program</name>
+					<last_modified>2012-08-20T14:15:27.824Z</last_modified>
+					<description>
+						Work with Global Ops/Engineering to develop/purchase tracking and processes to support Global Plant Systems (motors, controllers, etc. )for repair/replacement
+						
+					</description>
+					<manager>Dean, John</manager>
+					<planned_finish_date>01-Jan-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>01-Jan-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>320801</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>Llamasoft Expansion for Supply Chaini Planning</name>
+					<last_modified>2012-08-20T14:15:27.824Z</last_modified>
+					<description>Review/iimplement expanded functionality with Llamasoft. Replace the current JDA Network Strategy tool, used by CHEP EU</description>
+					<manager>Dean, John</manager>
+					<planned_finish_date>01-Jan-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>01-Jan-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>14.500000</actual_resources>
+					<phase>Rejected</phase>
+					<id>321411</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>1650.000000</planned_cost>
+					<name>Collaborate Solutions</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>Collaboration with customers for Demand Forecasting - SaaS or other online tool for SCM Planning teams</description>
+					<manager>Dean, John</manager>
+					<planned_finish_date>02-Feb-2012</planned_finish_date>
+					<planned_resources>115.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>725.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>01-Jan-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date>08-Aug-2012</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>242.500000</actual_resources>
+					<phase>Active</phase>
+					<id>320815</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>20250.000000</planned_cost>
+					<name>SCM IFCO RPC Freight Brokerage</name>
+					<last_modified>2012-09-17T14:44:42.070Z</last_modified>
+					<description>This project is to create and implement a process between IFCO, Lean Logistics &amp; CHEP, where LeanLogistics will fulfill IFCO's RPC transportation. CHEP will be responsible for invoicing IFCO and paying the transportation carriers.</description>
+					<manager>Raulerson, Cappy</manager>
+					<planned_finish_date>12-Dec-2012</planned_finish_date>
+					<planned_resources>499.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>12125.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>08-Aug-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>320818</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2550.000000</planned_cost>
+					<name>Pallet customer on boarding project</name>
+					<last_modified>2012-08-20T14:15:27.824Z</last_modified>
+					<description>Roll out of the Automotive customer on boarding functionality to the pallet business.</description>
+					<manager>Casado, Daniel</manager>
+					<planned_finish_date>08-Aug-2012</planned_finish_date>
+					<planned_resources>59.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>07-Jul-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>10.500000</actual_resources>
+					<phase>Live (In PRD)</phase>
+					<id>321302</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>10700.000000</planned_cost>
+					<name>AM_CA Shipment Notifications</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>Configure SAP to send Shipment Notifications via email/fax</description>
+					<manager>Halfon, Leon</manager>
+					<planned_finish_date>12-Dec-2012</planned_finish_date>
+					<planned_resources>296.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>525.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>09-Sep-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>49.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>321457</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>Lean Logistics Enhancements</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>Provide for enhanced functionality development and integration into exisiting CHEP US/EU/AU environments with SAP and BW</description>
+					<manager>Dean, John</manager>
+					<planned_finish_date>01-Jan-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>2450.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>01-Jan-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>1.000000</actual_resources>
+					<phase>Discovery</phase>
+					<id>321458</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>AM_CHEP MX_Lean Logistics Implementation</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>Implement Lean Logistics into CHEP MX and replace the currently used JDA TMS</description>
+					<manager>Dean, John</manager>
+					<planned_finish_date>10-Oct-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>50.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>09-Sep-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>320790</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>FMS/ETPM HW Refresh - Australia/NZ</name>
+					<last_modified>2012-08-20T14:15:27.824Z</last_modified>
+					<description>Replacement of aging systems</description>
+					<manager>Camacho, Louis</manager>
+					<planned_finish_date>07-Jul-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>07-Jul-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>353.500000</actual_resources>
+					<phase>Live (In PRD)</phase>
+					<id>321480</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>1650.000000</planned_cost>
+					<name>AM_US Cross Border Moves</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>The business requires the ability to systematically execute movements which cross national (Sales Org) borders.  The current process requires manual intervention at almost every step and can not be sustained as movement volume increases.  A critical aspect of this will be Canadian plants will produce U.S. C stock and U.S. orders will be directly fulfilled from these plants.  This may require process modifications to SAP, Manugistics and BW.</description>
+					<manager>Cape, Tony</manager>
+					<planned_finish_date>10-Oct-2012</planned_finish_date>
+					<planned_resources>115.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>17675.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>09-Sep-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>100</completion_percentage>
+					<actual_start_date>11-Nov-2011</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>1006.500000</actual_resources>
+					<phase>Live (In PRD)</phase>
+					<id>321255</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>144800.830000</planned_cost>
+					<name>AM_CA TMS for Canada</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>Implement CHEP automated logistics systems in Canada replacing the current manual processes.</description>
+					<manager>Raulerson, Cappy</manager>
+					<planned_finish_date>06-Jun-2012</planned_finish_date>
+					<planned_resources>865.000000</planned_resources>
+					<actual_finish_date>06-Jun-2012</actual_finish_date>
+					<actual_cost>50325.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>11-Nov-2011</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>321384</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>FMS/ETPM HW Refresh - Canada</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>Replacement of aging systems</description>
+					<manager>Camacho, Louis</manager>
+					<planned_finish_date>07-Jul-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>07-Jul-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>9.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>321268</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>10700.000000</planned_cost>
+					<name>Inventory Per Unit Loads</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>Automotive business needs stocks per Unit Load (set of materials) versus existing stocks per individual material</description>
+					<manager>Casado, Daniel</manager>
+					<planned_finish_date>02-Feb-2013</planned_finish_date>
+					<planned_resources>296.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>450.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>11-Nov-2012</planned_start_date>
+				</project>
+				<name>Supply Chain Management (SCM)</name>
+				<path>Top-level</path>
+				<description></description>
+				<goal>
+					<icon>img/goal.png</icon>
+					<name>Support the implementation plan as established by Global Procurement Strategy</name>
+					<path>Top-level</path>
+					<type>Goal</type>
+					<id>322311</id>
+					<description></description>
+				</goal>
+				<goal>
+					<icon>img/goal.png</icon>
+					<name>Align Procure to Pay mega process to Global Procurement Strategy</name>
+					<path>Top-level</path>
+					<type>Goal</type>
+					<id>322305</id>
+					<description></description>
+				</goal>
+				<id>320909</id>
+				<type>Program</type>
+			</program>
+		</strategy>
+		<strategy>
+			<icon>img/strategy.png</icon>
+			<name>IT Foundation</name>
+			<path>Top-level</path>
+			<type>Strategy</type>
+			<id>322027</id>
+			<description></description>
+			<program>
+				<icon>img/program.png</icon>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>6</completion_percentage>
+					<actual_start_date>02-Feb-2012</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>531.000000</actual_resources>
+					<phase>Undefined</phase>
+					<id>321288</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>28050.000000</planned_cost>
+					<name>AM_US - Essbase Budget Consolidation US &amp; LATAM</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>Develop cubes to mimic the Hyperion Enterprise budget functionality up to BRACS for both the US and Latin America.</description>
+					<manager>Wines, Christopher</manager>
+					<planned_finish_date>04-Apr-2013</planned_finish_date>
+					<planned_resources>726.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>26550.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>02-Feb-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>46</completion_percentage>
+					<actual_start_date>01-Jan-2012</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>526.000000</actual_resources>
+					<phase>Discovery</phase>
+					<id>321149</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>157700.000000</planned_cost>
+					<name>Retailer Strategy - Dashboard and Reporting</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>Create BI Visualization and Dissemination tool for Retailers in CHEP USA</description>
+					<manager>Raulerson, Cappy</manager>
+					<planned_finish_date>01-Jan-2013</planned_finish_date>
+					<planned_resources>922.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>26300.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>01-Jan-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>100</completion_percentage>
+					<actual_start_date>01-Jan-2012</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>7912.750000</actual_resources>
+					<phase>Complete</phase>
+					<id>321127</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>632441.500000</planned_cost>
+					<name>BW 7.3 Upgrade and Unicode </name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>This project will upgrade or current version of SAP Business Warehouse to be Unicode compliant.</description>
+					<manager>Mullins, Keith</manager>
+					<planned_finish_date>07-Jul-2012</planned_finish_date>
+					<planned_resources>4982.000000</planned_resources>
+					<actual_finish_date>07-Jul-2012</actual_finish_date>
+					<actual_cost>418357.500000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>01-Jan-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>42</completion_percentage>
+					<actual_start_date>12-Dec-2011</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>602.500000</actual_resources>
+					<phase>Active</phase>
+					<id>321479</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>10200.000000</planned_cost>
+					<name>BI – Performance and Presentation Optimization</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>This BI performance and presentation optimization project aims to tune and summarize the backend BW cubes in order to enhance the reporting performance.  It will also focus on introducing tools that will access and transform the data into highly formatted reports for greater insight.  These reports may need to be visual for better decision making and may need to incorporate trends from complex historical data in order to make possible better forecasts.  The reporting needs to be a self service analytical tool that is easily accessible and easy to utilise.</description>
+					<manager>Kalidas, Sajit</manager>
+					<planned_finish_date>02-Feb-2014</planned_finish_date>
+					<planned_resources>286.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>30125.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>12-Dec-2011</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>1.000000</actual_resources>
+					<phase>Discovery</phase>
+					<id>322665</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2550.000000</planned_cost>
+					<name>AM_US_Business Objects Report for Account Closures</name>
+					<last_modified>2012-09-27T07:31:19.450Z</last_modified>
+					<description>Take existing reports run in blueview and create enhanced reporting in Business Objects</description>
+					<manager>Vestal, Tina</manager>
+					<planned_finish_date>10-Oct-2012</planned_finish_date>
+					<planned_resources>59.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>50.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>09-Sep-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Idea</phase>
+					<id>322495</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2550.000000</planned_cost>
+					<name>Upgrade BW PreCalc Servers</name>
+					<last_modified>2012-09-17T14:44:24.178Z</last_modified>
+					<description>
+						We have needed to patch the Business Warehouse application called PreCalculation Server for some time now due to some errors that will be resolved with an upgraded version.  Additionally, with CHEPs shift to MS Office 2010, this has only become more necessary as BW PreCalc has Excel installed locally to build spreadsheets and broadcast those spreadsheets to internal/external customers.  Preliminary scope:
+						
+						
+						
+						1)	Upgrade the PreCalculation Servers to recent version (TBD)
+						
+						2)	Upgrade version of Excel installed to Excel 2010
+						
+					</description>
+					<manager>Beatty, Thomas</manager>
+					<planned_finish_date>09-Sep-2012</planned_finish_date>
+					<planned_resources>59.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>09-Sep-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>1.000000</actual_resources>
+					<phase>Discovery</phase>
+					<id>321337</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2550.000000</planned_cost>
+					<name>Business Objects Report for Account Closures</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>Take existing reports run in blueview and create enhanced reporting in Business Objects</description>
+					<manager>Vestal, Tina</manager>
+					<planned_finish_date>09-Sep-2012</planned_finish_date>
+					<planned_resources>59.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>50.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>09-Sep-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Discovery</phase>
+					<id>322670</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2550.000000</planned_cost>
+					<name>Upgrade BW PreCalc Servers &amp; MS Excel 2010</name>
+					<last_modified>2012-09-27T07:31:19.450Z</last_modified>
+					<description>
+						We are currently out of support for our current precalc server version.  Due to server issues, and lack of support from SAP, we will need to upgrade our precalc servers to the latest version.  Additionally, with the CHEP migration to Office 365, we need to upgrade the version of MS Excel residing on the servers.
+						
+						
+						
+					</description>
+					<manager>Beatty, Thomas</manager>
+					<planned_finish_date>11-Nov-2012</planned_finish_date>
+					<planned_resources>59.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>11-Nov-2012</planned_start_date>
+				</project>
+				<name>Business Intelligence &amp; Analytics</name>
+				<path>Top-level</path>
+				<description>Business Intelligence &amp; Analytics</description>
+				<goal>
+					<icon>img/goal.png</icon>
+					<name>Create BI Strategy (Governance, Master Data, Processes), Platform and Tools Future State</name>
+					<path>Top-level</path>
+					<type>Goal</type>
+					<id>322299</id>
+					<description></description>
+				</goal>
+				<id>320907</id>
+				<type>Program</type>
+			</program>
+			<program>
+				<icon>img/program.png</icon>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>100</completion_percentage>
+					<actual_start_date>08-Aug-2011</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>2173.500000</actual_resources>
+					<phase>Live (In PRD)</phase>
+					<id>321043</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>460988.330000</planned_cost>
+					<name>ReView Implementation (FileNet Replacement)</name>
+					<last_modified>2012-08-20T14:15:30.450Z</last_modified>
+					<description>This project will replace this FileNet application with an outsourced (hosted) application named ReView.  The ReView solution is a better overall fit to the need, reducing cost and shifting some IT support and infrastructure requirements.</description>
+					<manager>Meier, Harvey</manager>
+					<planned_finish_date>12-Dec-2011</planned_finish_date>
+					<planned_resources>9221.770000</planned_resources>
+					<actual_finish_date>12-Dec-2011</actual_finish_date>
+					<actual_cost>108675.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>08-Aug-2011</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Discovery</phase>
+					<id>321209</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>0.000000</planned_cost>
+					<name>CISCO Test Lab</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>This is a telecom test lab to allow testing of all changes to the CISCO system and any affected systems.</description>
+					<manager>Camacho, Louis</manager>
+					<planned_finish_date>09-Sep-2012</planned_finish_date>
+					<planned_resources>0.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>09-Sep-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Active</phase>
+					<id>321297</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2550.000000</planned_cost>
+					<name>FY12 Infrastructure - Local</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>
+						Local Spending including: USA
+						
+						Europe
+						
+						Asia Pac
+						
+						Africa
+						
+						Canada
+						
+						Latin America
+						
+						China
+						
+						India
+						
+						CCC
+						
+					</description>
+					<manager>Zimmerman, Bruce</manager>
+					<planned_finish_date>10-Oct-2012</planned_finish_date>
+					<planned_resources>59.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>09-Sep-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>38</completion_percentage>
+					<actual_start_date>08-Aug-2012</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>52.000000</actual_resources>
+					<phase>Undefined</phase>
+					<id>322501</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>216965.170000</planned_cost>
+					<name>Company Integration Phase 1</name>
+					<last_modified>2012-09-17T14:44:24.178Z</last_modified>
+					<description>Get user accounts, user details and passwords created and synchronized into BramblesGroup.  This will provide us the ability to utilize SSO capabilities and address Distribution List challenges encountered within BramblesGroup. </description>
+					<manager>Colley, Justine</manager>
+					<planned_finish_date>12-Dec-2012</planned_finish_date>
+					<planned_resources>389.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>2600.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>08-Aug-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>3123.750000</actual_resources>
+					<phase>Active</phase>
+					<id>321204</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>0.000000</planned_cost>
+					<name>Infrastructure Outsourcing - Support</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>Project for CHEP IS team to log hours spent supporting IS Infrastructure activities, which fall under Dell's responsibilities</description>
+					<manager>Zimmerman, Bruce</manager>
+					<planned_finish_date>09-Sep-2012</planned_finish_date>
+					<planned_resources>0.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>152492.500000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>09-Sep-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>100</completion_percentage>
+					<actual_start_date>01-Jan-2012</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>103.500000</actual_resources>
+					<phase>Discovery</phase>
+					<id>321273</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2600.000000</planned_cost>
+					<name>SAP Security Role redesign</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>Re-design and re-build of all SAP security roles to follow a global standard</description>
+					<manager>Boyle, John</manager>
+					<planned_finish_date>02-Feb-2012</planned_finish_date>
+					<planned_resources>60.000000</planned_resources>
+					<actual_finish_date>02-Feb-2012</actual_finish_date>
+					<actual_cost>6715.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>01-Jan-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>100</completion_percentage>
+					<actual_start_date>08-Aug-2011</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>887.000000</actual_resources>
+					<phase>Complete</phase>
+					<id>321329</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>69070.000000</planned_cost>
+					<name>Troux Implementation</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>Implement the Troux integrated Strategy, Portfolio, Architecture &amp; Standards Management Suite for strategic IT management of global IT assets.</description>
+					<manager>Colon, Elisa</manager>
+					<planned_finish_date>09-Sep-2012</planned_finish_date>
+					<planned_resources>1118.500000</planned_resources>
+					<actual_finish_date>09-Sep-2012</actual_finish_date>
+					<actual_cost>44633.490000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>08-Aug-2011</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>100</completion_percentage>
+					<actual_start_date>10-Oct-2011</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>16.000000</actual_resources>
+					<phase>Complete</phase>
+					<id>320809</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>1650.000000</planned_cost>
+					<name>Cologne Private Cloud Project</name>
+					<last_modified>2012-08-20T14:15:27.824Z</last_modified>
+					<description>As currently 10 servers are out of warranty and instead replacing server by server, the implementation of virtualized servers and storages follows CHEP IS strategy to Green IT (consolidating data centers) globally.</description>
+					<manager>Horn, Erik</manager>
+					<planned_finish_date>01-Jan-2012</planned_finish_date>
+					<planned_resources>35.000000</planned_resources>
+					<actual_finish_date>01-Jan-2012</actual_finish_date>
+					<actual_cost>800.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>10-Oct-2011</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>6.000000</actual_resources>
+					<phase>Active</phase>
+					<id>320825</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>2550.000000</planned_cost>
+					<name>FY12 Infrastructure - Global</name>
+					<last_modified>2012-08-20T14:15:27.824Z</last_modified>
+					<description>FY12 Infrastructure - Global</description>
+					<manager>Zimmerman, Bruce</manager>
+					<planned_finish_date>10-Oct-2012</planned_finish_date>
+					<planned_resources>59.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>300.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>09-Sep-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date>10-Oct-2011</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>988.500000</actual_resources>
+					<phase>Active</phase>
+					<id>321326</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>0.000000</planned_cost>
+					<name>Infrastructure Outsourcing - Improvement</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>List of task from the Outsourcing project - improvement areas</description>
+					<manager>Zimmerman, Bruce</manager>
+					<planned_finish_date>12-Dec-2012</planned_finish_date>
+					<planned_resources>0.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>47575.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>10-Oct-2011</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>100</completion_percentage>
+					<actual_start_date>09-Sep-2011</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>45.300000</actual_resources>
+					<phase>Live (In PRD)</phase>
+					<id>321181</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>140682.000000</planned_cost>
+					<name>Workstation Refresh - Brazil</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>Replacement of 32 desktos and 41 desktops during FY12 in Brazil. This project is already on going, I'm just registering it on At Task.</description>
+					<manager>Prado, Wender</manager>
+					<planned_finish_date>11-Nov-2011</planned_finish_date>
+					<planned_resources>35.000000</planned_resources>
+					<actual_finish_date>11-Nov-2011</actual_finish_date>
+					<actual_cost>113008.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>09-Sep-2011</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>100</completion_percentage>
+					<actual_start_date>07-Jul-2012</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>20.000000</actual_resources>
+					<phase>Live (In PRD)</phase>
+					<id>321091</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>5000.000000</planned_cost>
+					<name>AM_LA Smart Phone Upgrade</name>
+					<last_modified>2012-08-20T14:15:30.450Z</last_modified>
+					<description>Ensuring the continued use of applications from cell phone</description>
+					<manager>Moreno, Sergio</manager>
+					<planned_finish_date>08-Aug-2012</planned_finish_date>
+					<planned_resources>0.000000</planned_resources>
+					<actual_finish_date>08-Aug-2012</actual_finish_date>
+					<actual_cost>1000.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>07-Jul-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>100</completion_percentage>
+					<actual_start_date>08-Aug-2011</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>501.700000</actual_resources>
+					<phase>Active</phase>
+					<id>320945</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>444224.170000</planned_cost>
+					<name>Recall Network Lockdown (Wall)</name>
+					<last_modified>2012-08-20T14:15:30.450Z</last_modified>
+					<description>Network lockdown of Recall from the Brambles N/W.</description>
+					<manager>Raulerson, Cappy</manager>
+					<planned_finish_date>10-Oct-2012</planned_finish_date>
+					<planned_resources>1919.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>24335.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>11-Nov-2011</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>100</completion_percentage>
+					<actual_start_date>10-Oct-2011</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>74.500000</actual_resources>
+					<phase>Live (In PRD)</phase>
+					<id>320993</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>1650.000000</planned_cost>
+					<name>PGI Audio and Webex Services</name>
+					<last_modified>2012-08-20T14:15:30.450Z</last_modified>
+					<description>Replacing audio conferencing provider (Intercall) and engaging PGI for the same lover of service at a lower cost.  Procuring new services for cloud collaboration (video conferencing, web sharing).</description>
+					<manager>Thai, Ken</manager>
+					<planned_finish_date>11-Nov-2011</planned_finish_date>
+					<planned_resources>35.000000</planned_resources>
+					<actual_finish_date>11-Nov-2011</actual_finish_date>
+					<actual_cost>1660.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>10-Oct-2011</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>100</completion_percentage>
+					<actual_start_date>10-Oct-2011</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>75.500000</actual_resources>
+					<phase>Live (In PRD)</phase>
+					<id>321212</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>27389.000000</planned_cost>
+					<name>CCTV Circuit - Louveira Plant</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>In order to attend Zero Harm iniciatives and plant production demands, will be necessary to replace the current CCTV circuit and add new cameras to the new project. This is an ongoing project I'm just registering it on At Task.</description>
+					<manager>Prado, Wender</manager>
+					<planned_finish_date>05-May-2012</planned_finish_date>
+					<planned_resources>629.000000</planned_resources>
+					<actual_finish_date>05-May-2012</actual_finish_date>
+					<actual_cost>27214.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>10-Oct-2011</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>0</completion_percentage>
+					<actual_start_date />
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>0.000000</actual_resources>
+					<phase>Discovery</phase>
+					<id>321210</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>0.000000</planned_cost>
+					<name>Emergency Responder</name>
+					<last_modified>2012-08-20T14:15:33.916Z</last_modified>
+					<description>This project will provide emergency reponders with a more specific location for anyone dialing 911 from the sites</description>
+					<manager>Camacho, Louis</manager>
+					<planned_finish_date>09-Sep-2012</planned_finish_date>
+					<planned_resources>0.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>0.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>09-Sep-2012</planned_start_date>
+				</project>
+				<project>
+					<icon>img/project.png</icon>
+					<completion_percentage>7</completion_percentage>
+					<actual_start_date>08-Aug-2012</actual_start_date>
+					<monetary_unit>USD</monetary_unit>
+					<actual_resources>413.500000</actual_resources>
+					<phase>Active</phase>
+					<id>320826</id>
+					<resource_unit>Hours</resource_unit>
+					<planned_cost>80750.000000</planned_cost>
+					<name>E-Merge</name>
+					<last_modified>2012-08-20T14:15:27.824Z</last_modified>
+					<description>Investigate and possibly implement the merging of the MEA and European instances of Siebel.  The business is currently at risk due to the hardware housing the MEA Siebel instance being out of warranty.  Should we experience a hardware failure, the MEA region will be without Siebel access for an extended period of time.</description>
+					<manager>Kalidas, Sajit</manager>
+					<planned_finish_date>01-Jan-2013</planned_finish_date>
+					<planned_resources>458.000000</planned_resources>
+					<actual_finish_date />
+					<actual_cost>20675.000000</actual_cost>
+					<type>Project</type>
+					<planned_start_date>08-Aug-2012</planned_start_date>
+				</project>
+				<name>Infrastructure &amp; Applications</name>
+				<path>Top-level</path>
+				<description>Infrastructure &amp; Applications</description>
+				<id>320931</id>
+				<type>Program</type>
+			</program>
+		</strategy>
+	</internal>
+	

@@ -1,0 +1,130 @@
+[24-Mar-2013 18:56:54 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[24-Mar-2013 18:56:54 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[30-Apr-2013 20:21:38 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[30-Apr-2013 20:21:38 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[28-Jun-2013 10:33:18 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[28-Jun-2013 10:33:18 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[03-Jul-2013 07:03:52 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[03-Jul-2013 07:03:52 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[24-Jul-2013 21:55:32 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[24-Jul-2013 21:55:32 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[02-Aug-2013 15:41:29 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[02-Aug-2013 15:41:50 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (110) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[09-Aug-2013 18:22:10 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[09-Aug-2013 18:22:10 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[11-Aug-2013 17:33:00 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[11-Aug-2013 17:33:01 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[13-Aug-2013 05:35:12 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[13-Aug-2013 05:35:12 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[14-Sep-2013 07:26:02 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[14-Sep-2013 07:26:03 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[10-Oct-2013 14:14:20 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[10-Oct-2013 14:14:21 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[28-Oct-2013 05:49:10 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[28-Oct-2013 05:49:11 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[08-Nov-2013 17:21:19 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[08-Nov-2013 17:21:19 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[22-Nov-2013 07:30:04 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[22-Nov-2013 07:30:06 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[02-Dec-2013 06:03:02 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[02-Dec-2013 06:03:02 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[27-Dec-2013 22:31:52 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[27-Dec-2013 22:31:52 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[29-Dec-2013 05:47:34 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[29-Dec-2013 05:47:34 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[16-Mar-2014 12:37:32 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[16-Mar-2014 12:37:32 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[16-Mar-2014 13:45:33 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[16-Mar-2014 13:45:33 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[13-Apr-2014 20:04:17 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[13-Apr-2014 20:04:17 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[07-May-2014 09:57:11 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[07-May-2014 09:57:11 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[11-May-2014 05:01:38 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[11-May-2014 05:01:38 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[16-May-2014 16:28:51 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[16-May-2014 16:28:51 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[20-May-2014 15:44:03 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[20-May-2014 15:44:03 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[26-May-2014 20:52:27 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[26-May-2014 20:52:27 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[14-Jun-2014 20:08:09 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[14-Jun-2014 20:08:09 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[30-Jun-2014 21:52:34 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[30-Jun-2014 21:52:34 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[15-Jul-2014 11:54:03 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[15-Jul-2014 11:54:03 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[17-Jul-2014 12:42:14 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[17-Jul-2014 12:42:14 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[18-Jul-2014 05:43:22 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[18-Jul-2014 05:43:22 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[19-Jul-2014 03:54:24 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[19-Jul-2014 03:54:24 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[23-Jul-2014 05:21:40 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[23-Jul-2014 05:21:40 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[04-Aug-2014 20:28:00 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[04-Aug-2014 20:28:00 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[09-Aug-2014 00:04:06 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[09-Aug-2014 00:04:32 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[11-Aug-2014 06:47:03 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[11-Aug-2014 06:47:03 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[23-Aug-2014 08:40:13 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[23-Aug-2014 08:40:13 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[29-Aug-2014 09:46:17 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[29-Aug-2014 09:46:17 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[10-Sep-2014 01:16:27 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[10-Sep-2014 01:16:27 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[17-Oct-2014 15:01:43 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[17-Oct-2014 15:01:44 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[22-Oct-2014 13:35:36 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[22-Oct-2014 13:35:36 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[04-Nov-2014 08:57:03 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[04-Nov-2014 08:57:03 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[25-Nov-2014 19:24:14 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[25-Nov-2014 19:24:14 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[13-Dec-2014 14:57:39 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[13-Dec-2014 14:57:39 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[16-Dec-2014 16:47:03 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[16-Dec-2014 16:47:03 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[07-Jan-2015 21:39:52 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[07-Jan-2015 21:39:52 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[09-Jan-2015 04:25:28 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[09-Jan-2015 04:25:28 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[23-Jan-2015 11:28:51 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[23-Jan-2015 11:28:51 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[26-Jan-2015 15:45:21 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[26-Jan-2015 15:45:21 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[29-Jan-2015 13:17:05 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[29-Jan-2015 13:17:05 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[08-Feb-2015 21:12:38 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[08-Feb-2015 21:12:38 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[10-Feb-2015 07:43:41 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[10-Feb-2015 07:43:42 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[10-Feb-2015 23:26:45 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[10-Feb-2015 23:26:45 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[13-Feb-2015 01:48:07 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[13-Feb-2015 01:48:07 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[13-Feb-2015 22:42:53 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[13-Feb-2015 22:42:53 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[26-Feb-2015 03:17:10 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[26-Feb-2015 03:17:10 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[28-Feb-2015 08:19:56 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[28-Feb-2015 08:19:56 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[28-Feb-2015 22:41:22 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[28-Feb-2015 22:41:22 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[14-Mar-2015 00:13:23 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[14-Mar-2015 00:13:23 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[19-Apr-2015 12:36:47 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[19-Apr-2015 12:36:47 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[17-May-2015 15:50:40 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[17-May-2015 15:50:41 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[05-Aug-2015 14:37:34 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[05-Aug-2015 14:37:34 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[01-Mar-2016 21:31:38 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[01-Mar-2016 21:31:38 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[18-May-2016 04:35:39 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[18-May-2016 04:35:39 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[21-Aug-2016 20:39:30 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[21-Aug-2016 20:39:30 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6
+[30-Nov-2016 22:19:56 America/Denver] PHP Notice:  Undefined index: ProductID in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 4
+[30-Nov-2016 22:19:56 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/vendit/inc/product.php on line 6

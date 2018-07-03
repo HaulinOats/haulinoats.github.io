@@ -1,0 +1,5 @@
+[07-Aug-2013 12:17:19 America/Denver] PHP Fatal error:  Call to a member function asXML() on a non-object in /home6/brettdav/public_html/apps/proxevents/getArtists.php on line 15
+[16-Feb-2016 20:29:59 America/Denver] PHP Notice:  Undefined index: username in /home6/brettdav/public_html/apps/proxevents/getArtists.php on line 2
+[16-Feb-2016 20:29:59 America/Denver] PHP Notice:  Undefined index: location in /home6/brettdav/public_html/apps/proxevents/getEvents.php on line 2
+[16-Feb-2016 20:29:59 America/Denver] PHP Notice:  Undefined index: name in /home6/brettdav/public_html/apps/proxevents/getEvents.php on line 3
+[16-Feb-2016 20:29:59 America/Denver] PHP Notice:  Undefined index: location in /home6/brettdav/public_html/apps/proxevents/getEvents.php on line 8

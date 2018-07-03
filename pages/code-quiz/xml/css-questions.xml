@@ -1,0 +1,179 @@
+<?xml version='1.0' encoding='us-ascii'?>
+<quiz>
+	<questionItem>
+		<question>What does 'CSS' stand for?</question>
+		<panswer>Creative Style Sheets</panswer>
+		<panswer>Computer Styling Syntax</panswer>
+		<panswer>Cascading Style Sheets</panswer>
+		<panswer>Colorful Style Sheets</panswer>
+		<aanswer>Cascading Style Sheets</aanswer>
+	</questionItem>
+	<questionItem>
+		<question>What is the proper HTML for referring to an external style sheet?</question>
+		<panswer>&lt;link rel='stylesheet' type='text/css' href='mystyle.css'&gt;</panswer>
+		<panswer>&lt;style src='mystyle.css'&gt;</panswer>
+		<panswer>&lt;stylesheet&gt;mystyle.css&lt;/stylesheet&gt;</panswer>
+		<panswer>&lt;script src='mystyle.css'&gt;&lt;/script&gt;</panswer>
+		<aanswer>&lt;link rel='stylesheet' type='text/css' href='mystyle.css'&gt;</aanswer>
+	</questionItem>
+	<questionItem>
+		<question>Where in an HTML document is the correct place to refer to an external style sheet?</question>
+		<panswer>In the 'body' section</panswer>
+		<panswer>At the end of the document</panswer>
+		<panswer>In the 'head' section</panswer>
+		<panswer>At the top of the document</panswer>
+		<aanswer>In the 'head' section</aanswer>
+	</questionItem>
+	<questionItem>
+		<question>Which HTML element is used to define an internal stylesheet?</question>
+		<panswer>&lt;css&gt;</panswer>
+		<panswer>&lt;style&gt;</panswer>
+		<panswer>&lt;script&gt;</panswer>
+		<panswer>&lt;cascade&gt;</panswer>
+		<aanswer>&lt;style&gt;</aanswer>
+	</questionItem>
+	<questionItem>
+		<question>Which HTML attribute is used to define inline styles?</question>
+		<panswer>styles</panswer>
+		<panswer>class</panswer>
+		<panswer>font</panswer>
+		<panswer>style</panswer>
+		<aanswer>style</aanswer>
+	</questionItem>
+	<questionItem>
+		<question>Which is the correct CSS syntax?</question>
+		<panswer>body:color=black;</panswer>
+		<panswer>{body:color=black;}</panswer>
+		<panswer>{body;color:black;}</panswer>
+		<panswer>body {color: black;}</panswer>
+		<aanswer>body {color: black;}</aanswer>
+	</questionItem>
+	<questionItem>
+		<question>How do you insert a comment in a CSS file?</question>
+		<panswer>// this is a comment //</panswer>
+		<panswer>// this is a comment</panswer>
+		<panswer>/* this is a comment */</panswer>
+		<panswer>' this is a comment</panswer>
+		<aanswer>/* this is a comment */</aanswer>
+	</questionItem>
+	<questionItem>
+		<question>Which property is used to change the background color?</question>
+		<panswer>color</panswer>
+		<panswer>background-color</panswer>
+		<panswer>bgcolor</panswer>
+		<panswer>bg-color</panswer>
+		<aanswer>background-color</aanswer>
+	</questionItem>
+	<questionItem>
+		<question>How do you add a background color for all 'h1' elements?</question>
+		<panswer>all.h1 {background-color:#FFFFFF;}</panswer>
+		<panswer>h1.all {background-color:#FFFFFF;}</panswer>
+		<panswer>h1 {background-color:#FFFFFF;}</panswer>
+		<panswer>h1 {bg-color:#FFFFFF;}</panswer>
+		<aanswer>h1 {background-color:#FFFFFF;}</aanswer>
+	</questionItem>
+	<questionItem>
+		<question>Which CSS property is used to change the text color of an element?</question>
+		<panswer>text-color</panswer>
+		<panswer>color</panswer>
+		<panswer>fgcolor</panswer>
+		<panswer>font-color</panswer>
+		<aanswer>color</aanswer>
+	</questionItem>
+	<questionItem>
+		<question>Which CSS property controls the text size?</question>
+		<panswer>text-style</panswer>
+		<panswer>font-size</panswer>
+		<panswer>font-style</panswer>
+		<panswer>text-size</panswer>
+		<aanswer>font-size</aanswer>
+	</questionItem>
+	<questionItem>
+		<question>What is the correct CSS syntax for making all the &lt;p&gt; elements bold?</question>
+		<panswer>&lt;p style="font-size:bold;"&gt;</panswer>
+		<panswer>&lt;p style="text-size:bold;"&gt;</panswer>
+		<panswer>p {text-size:bold;}</panswer>
+		<panswer>p {font-weight:bold;}</panswer>
+		<aanswer>p {font-weight:bold;}</aanswer>
+	</questionItem>
+	<questionItem>
+		<question>How do you display hyperlinks without an underline?</question>
+		<panswer>a {text-decoration:no-underline;}</panswer>
+		<panswer>a {text-decoration:none;}</panswer>
+		<panswer>a {underline:none;}</panswer>
+		<panswer>a {decoration:no-underline;}</panswer>
+		<aanswer>a {text-decoration:none;}</aanswer>
+	</questionItem>
+	<questionItem>
+		<question>How do you make each word in a text start with a capital letter?</question>
+		<panswer>You can't do that with CSS</panswer>
+		<panswer>text-transform:capitalize</panswer>
+		<panswer>text-transform:uppercase</panswer>
+		<panswer>font-style:uppercase</panswer>
+		<aanswer>text-transform:capitalize</aanswer>
+	</questionItem>
+	<questionItem>
+		<question>Which property is used to change the font of an element?</question>
+		<panswer>Both font-family and font can be used</panswer>
+		<panswer>font</panswer>
+		<panswer>font-family</panswer>
+		<panswer>font-type</panswer>
+		<aanswer>font-family</aanswer>
+	</questionItem>
+	<questionItem>
+		<question>How do you make the text bold?</question>
+		<panswer>font-weight:bold;</panswer>
+		<panswer>font:bold;</panswer>
+		<panswer>style:bold;</panswer>
+		<panswer>font-bold:true</panswer>
+		<aanswer>font-weight:bold;</aanswer>
+	</questionItem>
+	<questionItem>
+		<question>How do you display a border like this: The top border = 10 pixels, the bottom border = 5 pixels, the left border = 20 pixels, the right border = 1pixel?</question>
+		<panswer>border-width:10px 1px 5px 20px;</panswer>
+		<panswer>border-width:10px 5px 20px 1px;</panswer>
+		<panswer>border-width:5px 20px 10px 1px;</panswer>
+		<panswer>border-width:10px 20px 5px 1px;</panswer>
+		<aanswer>border-width:10px 1px 5px 20px;</aanswer>
+	</questionItem>
+	<questionItem>
+		<question>Which property is used to change the left margin of an element?</question>
+		<panswer>margin-left</panswer>
+		<panswer>indent</panswer>
+		<panswer>padding-left</panswer>
+		<panswer>left-margin</panswer>
+		<aanswer>margin-left</aanswer>
+	</questionItem>
+	<questionItem>
+		<question>How do you make a list that lists its items with squares?</question>
+		<panswer>list-style-type: square;</panswer>
+		<panswer>list-type: square;</panswer>
+		<panswer>list: square;</panswer>
+		<panswer>list: box</panswer>
+		<aanswer>list-style-type: square;</aanswer>
+	</questionItem>
+	<questionItem>
+		<question>Which CSS property is used to give an element a rounded edge?</question>
+		<panswer>round</panswer>
+		<panswer>border-radius</panswer>
+		<panswer>border-round</panswer>
+		<panswer>box-radius</panswer>
+		<aanswer>border-radius</aanswer>
+	</questionItem>
+	<questionItem>
+		<question>What CSS property is used to give an element a shadow?</question>
+		<panswer>box-shadow</panswer>
+		<panswer>shadow</panswer>
+		<panswer>drop-shadow</panswer>
+		<panswer>box-distance</panswer>
+		<aanswer>box-shadow</aanswer>
+	</questionItem>
+	<questionItem>
+		<question>Which of the following adds transparency to ONLY the background?</question>
+		<panswer>body{visible:.7}</panswer>
+		<panswer>body{transparency:.3}</panswer>
+		<panswer>body{transparent:.5}</panswer>
+		<panswer>body{background:rgba(255,255,255,.5)}</panswer>
+		<aanswer>body{background:rgba(255,255,255,.5)}</aanswer>
+	</questionItem>
+</quiz>

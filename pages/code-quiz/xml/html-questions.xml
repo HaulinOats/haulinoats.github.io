@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='us-ascii'?>
+<quiz>
+	<questionItem>
+		<question>What is the previous version of HTML, prior to HTML5?</question>
+		<panswer>HTML 4.1</panswer>
+		<panswer>HTML 4</panswer>
+		<panswer>HTML 4.01</panswer>
+		<panswer>HTML 4.9</panswer>
+		<aanswer>HTML 4.01</aanswer>
+	</questionItem>
+	<questionItem>
+		<question>Which doctype is correct for HTML5?</question>
+		<panswer>!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 5.0//EN' 'http://www.w3.org/TR/html5/strict.dtd'</panswer>
+		<panswer>!DOCTYPE HTML5</panswer>
+		<panswer>!DOCTYPE html</panswer>
+		<panswer>!DOCTYPE html5.0</panswer>
+		<aanswer>!DOCTYPE html</aanswer>
+	</questionItem>
+	<questionItem>
+		<question>In HTML5, which element is used to group heading elements?</question>
+		<panswer>hgroup</panswer>
+		<panswer>group</panswer>
+		<panswer>headings</panswer>
+		<panswer>header</panswer>
+		<aanswer>header</aanswer>
+	</questionItem>
+	<questionItem>
+		<question>Which of the following elements is no longer supported in HTML5?</question>
+		<panswer>q</panswer>
+		<panswer>menu</panswer>
+		<panswer>font</panswer>
+		<panswer>ins</panswer>
+		<aanswer>font</aanswer>
+	</questionItem>
+	<questionItem>
+		<question>Which of the following elements is no longer supported in HTML5?</question>
+		<panswer>base</panswer>
+		<panswer>cite</panswer>
+		<panswer>acronym</panswer>
+		<panswer>abbr</panswer>
+		<aanswer>acronym</aanswer>
+	</questionItem>
+	<questionItem>
+		<question>In HTML5, onblur and onfocus are:</question>
+		<panswer>Style attributes</panswer>
+		<panswer>HTML elements</panswer>
+		<panswer>Event attributes</panswer>
+		<panswer>Element attributes</panswer>
+		<aanswer>Event attributes</aanswer>
+	</questionItem>
+	<questionItem>
+		<question>What is the correct HTML5 element for playing video files?</question>
+		<panswer>media</panswer>
+		<panswer>video</panswer>
+		<panswer>movie</panswer>
+		<panswer>mpeg4</panswer>
+		<aanswer>video</aanswer>
+	</questionItem>
+	<questionItem>
+		<question>What is the correct HTML5 element for playing audio files?</question>
+		<panswer>mp3</panswer>
+		<panswer>sound</panswer>
+		<panswer>audio</panswer>
+		<panswer>wav</panswer>
+		<aanswer>audio</aanswer>
+	</questionItem>
+	<questionItem>
+		<question>Which attribute for 'script' elements is no longer required in HTML5?</question>
+		<panswer>src</panswer>
+		<panswer>type</panswer>
+		<panswer>href</panswer>
+		<panswer>rel</panswer>
+		<aanswer>type</aanswer>
+	</questionItem>
+	<questionItem>
+		<question>In HTML5, which method is used to get the current location of a user?</question>
+		<panswer>getPosition()</panswer>
+		<panswer>getCurrentPosition()</panswer>
+		<panswer>getUserPosition()</panswer>
+		<panswer>getCoordinates()</panswer>
+		<aanswer>getCurrentPosition()</aanswer>
+	</questionItem>
+	<questionItem>
+		<question>The new HTML5 global attribute, 'contenteditable' is used to:</question>
+		<panswer>Update content from the server</panswer>
+		<panswer>Specifies a context menu for an element. The menu appears when a user right-clicks on the element</panswer>
+		<panswer>Return the position of the first found occurrence of content inside a string</panswer>
+		<panswer>Specify whether the content of an element should be editable or not</panswer>
+		<aanswer>Specify whether the content of an element should be editable or not</aanswer>
+	</questionItem>
+	<questionItem>
+		<question>In HTML5, contextmenu and spellcheck are:</question>
+		<panswer>Event attributes</panswer>
+		<panswer>HTML elements</panswer>
+		<panswer>HTML attributes</panswer>
+		<panswer>Style attributes</panswer>
+		<aanswer>HTML attributes</aanswer>
+	</questionItem>
+	<questionItem>
+		<question>Graphics defined by SVG is in which format?</question>
+		<panswer>HTML</panswer>
+		<panswer>CSS</panswer>
+		<panswer>XML</panswer>
+		<panswer>JSON</panswer>
+		<aanswer>CSS</aanswer>
+	</questionItem>
+	<questionItem>
+		<question>The 'canvas' element in HTML5 is used to:</question>
+		<panswer>create draggable elements</panswer>
+		<panswer>draw graphics</panswer>
+		<panswer>manipulate data in MySQL</panswer>
+		<panswer>display database records</panswer>
+		<aanswer>draw graphics</aanswer>
+	</questionItem>
+	<questionItem>
+		<question>Which built-in HTML5 object is used to draw on the canvas?</question>
+		<panswer>getContent</panswer>
+		<panswer>getCanvas</panswer>
+		<panswer>getContext</panswer>
+		<panswer>getGraphics</panswer>
+		<aanswer>getContext</aanswer>
+	</questionItem>
+	<questionItem>
+		<question>In HTML5, which attribute is used to specify that an input field must be filled out?</question>
+		<panswer>required</panswer>
+		<panswer>formvalidate</panswer>
+		<panswer>validate</panswer>
+		<panswer>placeholder</panswer>
+		<aanswer>required</aanswer>
+	</questionItem>
+	<questionItem>
+		<question>Which input type defines a slider control?</question>
+		<panswer>slider</panswer>
+		<panswer>controls</panswer>
+		<panswer>search</panswer>
+		<panswer>range</panswer>
+		<aanswer>range</aanswer>
+	</questionItem>
+	<questionItem>
+		<question>Which input type defines a week and year control (no time zone)?</question>
+		<panswer>week</panswer>
+		<panswer>date</panswer>
+		<panswer>year</panswer>
+		<panswer>month</panswer>
+		<aanswer>week</aanswer>
+	</questionItem>
+	<questionItem>
+		<question>Which HTML5 element is used to display a scalar measurement within a known range?</question>
+		<panswer>range</panswer>
+		<panswer>gauge</panswer>
+		<panswer>meter</panswer>
+		<panswer>measure</panswer>
+		<aanswer>meter</aanswer>
+	</questionItem>
+</quiz>

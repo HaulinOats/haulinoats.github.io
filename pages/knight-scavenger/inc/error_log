@@ -1,0 +1,40 @@
+[19-Mar-2013 21:47:08 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/knight-scavenger/inc/dbconnect.php on line 2
+[19-Mar-2013 21:47:10 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/knight-scavenger/inc/dbconnect.php on line 2
+[19-Mar-2013 21:47:11 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/knight-scavenger/inc/dbconnect.php on line 2
+[19-Mar-2013 21:47:12 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/knight-scavenger/inc/dbconnect.php on line 2
+[23-Mar-2013 05:50:11 America/Denver] PHP Notice:  Undefined index: nid in /home6/brettdav/public_html/apps/knight-scavenger/inc/login.php on line 3
+[23-Mar-2013 05:50:11 America/Denver] PHP Notice:  Undefined index: password in /home6/brettdav/public_html/apps/knight-scavenger/inc/login.php on line 4
+[23-Mar-2013 09:43:27 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/knight-scavenger/inc/dbconnect.php on line 2
+[23-Mar-2013 20:43:14 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/knight-scavenger/inc/dbconnect.php on line 2
+[23-Mar-2013 23:09:18 America/Denver] PHP Notice:  Undefined index: nid in /home6/brettdav/public_html/apps/knight-scavenger/inc/registration.php on line 2
+[23-Mar-2013 23:09:18 America/Denver] PHP Notice:  Undefined index: password in /home6/brettdav/public_html/apps/knight-scavenger/inc/registration.php on line 3
+[23-Mar-2013 23:09:18 America/Denver] PHP Notice:  Undefined index: password2 in /home6/brettdav/public_html/apps/knight-scavenger/inc/registration.php on line 4
+[23-Mar-2013 23:09:18 America/Denver] PHP Notice:  Undefined index: email in /home6/brettdav/public_html/apps/knight-scavenger/inc/registration.php on line 5
+[24-Mar-2013 00:31:08 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/knight-scavenger/inc/dbconnect.php on line 2
+[17-Apr-2013 12:16:46 America/Denver] PHP Warning:  mysql_connect(): Can't connect to MySQL server on 'brettconnollynet.ipagemysql.com' (111) in /home6/brettdav/public_html/apps/knight-scavenger/inc/dbconnect.php on line 2
+[17-Apr-2013 12:30:09 America/Denver] PHP Warning:  mkdir(): No such file or directory in /home6/brettdav/public_html/apps/knight-scavenger/inc/registration.php on line 28
+[17-Apr-2013 12:49:04 America/Denver] PHP Warning:  mkdir(): No such file or directory in /home6/brettdav/public_html/apps/knight-scavenger/inc/registration.php on line 28
+[17-Apr-2013 12:52:10 America/Denver] PHP Warning:  mkdir(): No such file or directory in /home6/brettdav/public_html/apps/knight-scavenger/inc/registration.php on line 28
+[17-Apr-2013 12:55:40 America/Denver] PHP Warning:  mkdir(): No such file or directory in /home6/brettdav/public_html/apps/knight-scavenger/inc/registration.php on line 28
+[17-Apr-2013 12:58:02 America/Denver] PHP Warning:  mkdir(): No such file or directory in /home6/brettdav/public_html/apps/knight-scavenger/inc/registration.php on line 28
+[17-Apr-2013 13:06:16 America/Denver] PHP Warning:  mkdir(): No such file or directory in /home6/brettdav/public_html/apps/knight-scavenger/inc/registration.php on line 28
+[17-Apr-2013 13:59:40 America/Denver] PHP Notice:  Undefined index: nid in /home6/brettdav/public_html/apps/knight-scavenger/inc/instructions2.php on line 4
+[08-Sep-2013 03:13:15 America/Denver] PHP Notice:  Undefined index: nid in /home6/brettdav/public_html/apps/knight-scavenger/inc/login.php on line 3
+[08-Sep-2013 03:13:15 America/Denver] PHP Notice:  Undefined index: password in /home6/brettdav/public_html/apps/knight-scavenger/inc/login.php on line 4
+[08-Sep-2013 03:17:13 America/Denver] PHP Notice:  Undefined index: nid in /home6/brettdav/public_html/apps/knight-scavenger/inc/instructions.php on line 4
+[08-Sep-2013 05:11:25 America/Denver] PHP Notice:  Undefined index: nid in /home6/brettdav/public_html/apps/knight-scavenger/inc/registration.php on line 2
+[08-Sep-2013 05:11:25 America/Denver] PHP Notice:  Undefined index: password in /home6/brettdav/public_html/apps/knight-scavenger/inc/registration.php on line 3
+[08-Sep-2013 05:11:25 America/Denver] PHP Notice:  Undefined index: password2 in /home6/brettdav/public_html/apps/knight-scavenger/inc/registration.php on line 4
+[08-Sep-2013 05:11:25 America/Denver] PHP Notice:  Undefined index: email in /home6/brettdav/public_html/apps/knight-scavenger/inc/registration.php on line 5
+[08-Sep-2013 07:38:48 America/Denver] PHP Notice:  Undefined index: nid in /home6/brettdav/public_html/apps/knight-scavenger/inc/instructions2.php on line 4
+[10-Sep-2013 14:11:43 America/Denver] PHP Notice:  Undefined index: nid in /home6/brettdav/public_html/apps/knight-scavenger/inc/instructions.php on line 4
+[10-Sep-2013 14:35:57 America/Denver] PHP Notice:  Undefined index: nid in /home6/brettdav/public_html/apps/knight-scavenger/inc/instructions2.php on line 4
+[24-Jan-2014 00:15:39 America/Denver] PHP Notice:  Undefined index: nid in /home6/brettdav/public_html/apps/knight-scavenger/inc/instructions.php on line 4
+[30-Jan-2014 19:26:58 America/Denver] PHP Notice:  Undefined index: nid in /home6/brettdav/public_html/apps/knight-scavenger/inc/login.php on line 3
+[30-Jan-2014 19:26:58 America/Denver] PHP Notice:  Undefined index: password in /home6/brettdav/public_html/apps/knight-scavenger/inc/login.php on line 4
+[03-Mar-2014 02:25:57 America/Denver] PHP Notice:  Undefined index: nid in /home6/brettdav/public_html/apps/knight-scavenger/inc/registration.php on line 2
+[03-Mar-2014 02:25:57 America/Denver] PHP Notice:  Undefined index: password in /home6/brettdav/public_html/apps/knight-scavenger/inc/registration.php on line 3
+[03-Mar-2014 02:25:57 America/Denver] PHP Notice:  Undefined index: password2 in /home6/brettdav/public_html/apps/knight-scavenger/inc/registration.php on line 4
+[03-Mar-2014 02:25:57 America/Denver] PHP Notice:  Undefined index: email in /home6/brettdav/public_html/apps/knight-scavenger/inc/registration.php on line 5
+[09-Mar-2014 18:11:56 America/Denver] PHP Notice:  Undefined index: nid in /home6/brettdav/public_html/apps/knight-scavenger/inc/login.php on line 3
+[09-Mar-2014 18:11:56 America/Denver] PHP Notice:  Undefined index: password in /home6/brettdav/public_html/apps/knight-scavenger/inc/login.php on line 4

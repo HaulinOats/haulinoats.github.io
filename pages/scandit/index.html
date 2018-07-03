@@ -1,0 +1,133 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>Scandit</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+    <script type="text/javascript" src='js/home.js'></script>
+   	<script type="text/javascript" src="js/jquery.fittext.js"></script>
+     <link rel="stylesheet" href="css/jquerycss.css" />
+    <link rel="stylesheet" href='css/styles.css' />
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+   
+
+</head> 
+<body> 
+
+<div data-role="page" data-theme="a" id='home'>
+	<div data-role="header">
+		<h1><a href='index.php'>Scandit</a></h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<div id='loginhome'>
+			<!-- Logo -->
+			<img id='logo' src="images/logo2.png" alt='logo'/>
+
+			<!-- Forms and Login/Register buttons -->
+			<div id="logininfo">
+				<form>
+					<input type="text" id="username" value="" placeholder="Username"/>
+					<input type="password" id="password" value="" placeholder="Password"/>
+					<div id="loginbutton">
+						<input type="submit" id='login_b' data-role="button" value="Login"/>
+					</div>
+				</form>
+				<div id="registerbutton">
+					<a href="#register" data-role="button">Register</a>
+				</div>
+			</div>
+		</div>
+		<!-- Login message display div -->
+		<div class='loginmsg'></div>
+
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+
+<div data-role="page" data-theme="a" id="register">
+
+	<div data-role="header">
+		<h1><a href='index.php'>Scandit</a></h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<div id="registercontent">
+			<h1>Register</h1>
+
+			<label>Username:</label></td><td><input type="text" name="Username" id="rusername" /></td></tr>
+			<tr><td><label>Email:</label></td><td><input type="email" name="email" id="email" /></td></tr>
+			<tr><td><label>Password:</label></td><td><input type="password" name="password" id="rpassword" /></td></tr>
+			<tr><td><label>Confirm PW:</label></td><td><input type="password" name="password2" id="password2" /></td></tr></table>
+			<div id="registerbtn">
+				<input type="submit" name="registration" id="registration" value="Register" />
+			</div>
+		</div>
+	<div id='registerpage'></div>
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+
+<div data-role="page" data-theme="a" id='main'>
+	<div data-role="header" id="header">
+		<div id='logout_div'><a type="submit" id="logout" href="index.php">Logout</a></div>
+		<h1><a href='index.php'>Scandit</a></h1>
+	</div><!-- /header -->
+	<div data-role="content">
+    <div id="ajax_load" style="display:none"><img src="images/ajax-loader.gif" alt="loader" style="width:50%" /><p style="float:left">Loading...</p></div>
+    <div class="scan_modal"></div>
+			<div id="load_modal">
+            	<div id="store_div">
+                	<button class="store" id="walmart" />Walmart
+                    <button class="store" id="target" />Target
+                    <button class="store" id="publix" />Publix
+                    <button class="store" id="winndixie" />Winn Dixie
+                </div>
+            </div>
+			<div id="cart"></div>
+            <div class="cart_msg"></div>
+            <div class="update"></div>
+            <div id="scan_btn"></div>
+            <div class="ui-grid-b cart_options" data-role="footer">
+                <div id="store" class="ui-block-a cart_buttons" data-role='button'>Store</div>
+                <div id="coupon" class="ui-block-b cart_buttons" data-role='button'>Coupons</div>
+                <div id="total" class="ui-block-c cart_buttons"><p style="display:inline" id="cart_total"></p><p style="display:inline" id="pre_tax"></p></div>
+            </div>
+            <div id="sql_response"></div>
+	</div><!-- /content -->
+
+</div>
+
+
+<div data-role="page" data-theme="a" id='scan'>
+
+	<div data-role="header">
+		<h1><a href='index.php'>Scandit</a></h1>
+	</div><!-- /header -->
+	<div data-role="content">
+		<div id='scan_content'>
+			<a><h1>Scan Something</h1></a>
+			<input type="text" id="upc" placeholder="Enter UPC/SKU Code"/><br>
+			<input type='submit' id='scan_send' data-role='button' value="Find It">
+		</div>
+	</div><!-- /content -->
+</div><!-- /page -->
+
+
+<div data-role="page" data-theme="a" id='admin'>
+
+	<div data-role="header">
+		<h1><a href='index.php'>Scandit</a></h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		
+	</div><!-- /content -->
+
+</div><!-- /page -->
+</div>
+</body>
+</html>

@@ -1,0 +1,366 @@
+{
+  "quiz": {
+    "questionItem": [
+      {
+        "question": "How do you join strings together in PHP?",
+        "panswer": [
+          "$var1 = 'a' + 'b';",
+          "$var1 = 'a'.'b';",
+          "$var1 = 'a' JOIN 'b';",
+          "$var1 = 'a'++'b';"
+        ],
+        "aanswer": "$var1 = 'a'.'b';"
+      },
+      {
+        "question": "Which is NOT a valid assignement operator?",
+        "panswer": [
+          "$a -= $a;",
+          "$a <= $a;",
+          "$a *= $a;",
+          "$a += $a;"
+        ],
+        "aanswer": "$a <= $a;"
+      },
+      {
+        "question": "What is the difference between 'include' and 'require'?",
+        "panswer": [
+          "Include only includes the HTML in the file, while require includes the PHP code too.",
+          "Require only includes the HTML in the file, while include imports the HTML and PHP code.",
+          "Require will stop executing as soon as an error is reached, and include will continue executing the code after the error.",
+          "Include will stop executing as soon as an error is reached, and require will continue executing the code after the error."
+        ],
+        "aanswer": "Require will stop executing as soon as an error is reached, and include will continue executing the code after the error."
+      },
+      {
+        "question": "What keyword(s) can you use to add an alternative condition to an if statement that executes different code?",
+        "panswer": [
+          "else if",
+          "and if",
+          "elif",
+          "or if"
+        ],
+        "aanswer": "else if"
+      },
+      {
+        "question": "Which of these is not a valid statement?",
+        "panswer": [
+          "if($a === '7') { }",
+          "if($a != 8) { }",
+          "if($a NEQ 8) { }",
+          "if(!$a) { }"
+        ],
+        "aanswer": "if($a NEQ 8) { }"
+      },
+      {
+        "question": "Which is the correct way to start a function?",
+        "panswer": [
+          "function testFunc()",
+          "function testFunc{}",
+          "function testFunc[]",
+          "def testFunc{}"
+        ],
+        "aanswer": "function testFunc()"
+      },
+      {
+        "question": "Which of the following keywords is used to start a conditional in a PHP switch statement?",
+        "panswer": [
+          "case",
+          "if",
+          "cond",
+          "condition"
+        ],
+        "aanswer": "case"
+      },
+      {
+        "question": "Which of the following is a valid way to start a for loop in PHP that would print out the numbers 0 through 4?",
+        "panswer": [
+          "for($i < 5; $i = 0;)",
+          "for($i = 0; $i < 5; $i++)",
+          "for($i < 5;)",
+          "for( $i < 5; $i = 0; $i++)"
+        ],
+        "aanswer": "for($i = 0; $i < 5; $i++)"
+      },
+      {
+        "question": "How do you create an array?",
+        "panswer": [
+          "$myArray = new array();",
+          "$myArray = Array.create();",
+          "$myArray = array();",
+          "$myArray = create(array);"
+        ],
+        "aanswer": "$myArray = array();"
+      },
+      {
+        "question": "What keyword can you use to exit out of a loop and continue onto the next code after the loop?",
+        "panswer": [
+          "exit();",
+          "continue",
+          "break",
+          "skip"
+        ],
+        "aanswer": "break"
+      },
+      {
+        "question": "Which of the following variables can NOT be used to obtain the form data after a form is submitted?",
+        "panswer": [
+          "$_FORMDATA",
+          "$_REQUEST",
+          "$_GET",
+          "$_POST"
+        ],
+        "aanswer": "$_FORMDATA"
+      },
+      {
+        "question": "What function can you use to get the position of a string or character inside a string?",
+        "panswer": [
+          "string_position",
+          "strrpos",
+          "len",
+          "length"
+        ],
+        "aanswer": "strrpos"
+      },
+      {
+        "question": "What function can you use to break a string with a sentence into an array of words?",
+        "panswer": [
+          "splice",
+          "array_split",
+          "break",
+          "explode"
+        ],
+        "aanswer": "explode"
+      },
+      {
+        "question": "How would you open a file to read from it in PHP?",
+        "panswer": [
+          "$myFile = fopen('r', 'sampleFile.txt');",
+          "$myFile = fopen('sampleFile.txt', 'r');",
+          "$myFile = open('sampleFile.txt', 'r');",
+          "$myFile = open('r', 'sampleFile.txt');"
+        ],
+        "aanswer": "$myFile = fopen('sampleFile.txt', 'r');"
+      },
+      {
+        "question": "How would you read the first 20 characters of a file if the variable $a contains the link to the file?",
+        "panswer": [
+          "$myFileContents = fread($a, 20);",
+          "$myFileContents = fread(20,$a);",
+          "$myFileContents = read(20,$a);",
+          "$myFileContents = read($a, 20);"
+        ],
+        "aanswer": "$myFileContents = fread($a, 20);"
+      },
+      {
+        "question": "How do you write contents to a file?",
+        "panswer": [
+          "output ('some content');",
+          "echo ('some content');",
+          "write('some content');",
+          "fwrite('some content');"
+        ],
+        "aanswer": "fwrite('some content');"
+      },
+      {
+        "question": "What function do you use to delete a file in PHP?",
+        "panswer": [
+          "delete()",
+          "fdelete()",
+          "unlink()",
+          "remove()"
+        ],
+        "aanswer": "unlink()"
+      },
+      {
+        "question": "What function can you use to transfer an uploaded file to a new location?",
+        "panswer": [
+          "transfer()",
+          "move_uploaded_file()",
+          "move_file()",
+          "transfer_file()"
+        ],
+        "aanswer": "move_uploaded_file()"
+      },
+      {
+        "question": "PHP is an acronym for:",
+        "panswer": [
+          "Pre Hypertext Processor",
+          "Post Hypertext Processor",
+          "PHP Hypertext Preprocessor",
+          "Post Hypertext Preprocessor"
+        ],
+        "aanswer": "PHP Hypertext Preprocessor"
+      },
+      {
+        "question": "What type of language is PHP?",
+        "panswer": [
+          "Client side",
+          "Server side",
+          "Windows side",
+          "Controller side"
+        ],
+        "aanswer": "Server side"
+      },
+      {
+        "question": "Which of the following is a valid PHP script tag:",
+        "panswer": [
+          "<PHP PHP>",
+          "<?php php?>",
+          "<php></php>",
+          "<?php ?>"
+        ],
+        "aanswer": "<?php ?>"
+      },
+      {
+        "question": "Which of the following does NOT provide an output to the screen?",
+        "panswer": [
+          "to_screen",
+          "echo",
+          "print_r",
+          "print"
+        ],
+        "aanswer": "to_screen"
+      },
+      {
+        "question": "Which of the following is NOT a valid variable name in PHP?",
+        "panswer": [
+          "$camelCase",
+          "$B_Y_E",
+          "$2cat",
+          "$something"
+        ],
+        "aanswer": "$2cat"
+      },
+      {
+        "question": "Which of the following is NOT a PHP variable scope:",
+        "panswer": [
+          "local",
+          "global",
+          "static",
+          "defined"
+        ],
+        "aanswer": "defined"
+      },
+      {
+        "question": "Which is NOT true about integers in PHP?",
+        "panswer": [
+          "An integer must have at least one digit (0-9)",
+          "An integer can contain comma or blanks",
+          "An integer must not have a decimal point",
+          "An integer can be either positive or negative"
+        ],
+        "aanswer": "An integer can contain comma or blanks"
+      },
+      {
+        "question": "The strlen() function in PHP:",
+        "panswer": [
+          "returns the length of a string, in characters",
+          "searchs for a specified character or text within a string",
+          "returns the number of words in a string",
+          "randomizes order of letters in a string"
+        ],
+        "aanswer": "returns the length of a string, in characters"
+      },
+      {
+        "question": "The strpos() function in PHP:",
+        "panswer": [
+          "returns the length of a string, in characters",
+          "returns the number of words in a string",
+          "randomizes order of letters in a string",
+          "searchs for a specified character or text within a string"
+        ],
+        "aanswer": "searchs for a specified character or text within a string"
+      },
+      {
+        "question": "What function would you use to determine if a variable is empty?",
+        "panswer": [
+          "is_null",
+          "check_value",
+          "empty",
+          "isset"
+        ],
+        "aanswer": "empty"
+      },
+      {
+        "question": "What function counts the lenght of an array?",
+        "panswer": [
+          "count",
+          "arr_sum",
+          "length",
+          "arr_length"
+        ],
+        "aanswer": "count"
+      },
+      {
+        "question": "What would the following statement output to the screen: var str = \"Hello world!\"; var res = str.substr(1,4);",
+        "panswer": [
+          "hello",
+          "rld!",
+          "o wor",
+          "ello"
+        ],
+        "aanswer": "ello"
+      },
+      {
+        "question": "What function converts a string to all lowercase?",
+        "panswer": [
+          "stringToLower",
+          "lowercase",
+          "lower",
+          "strtolower"
+        ],
+        "aanswer": "strtolower"
+      },
+      {
+        "question": "What function prints human-readable information about a variable?",
+        "panswer": [
+          "echo_r",
+          "print_r",
+          "arr_print",
+          "print_hr"
+        ],
+        "aanswer": "print_r"
+      },
+      {
+        "question": "What would this output: echo(floor(-5.1)",
+        "panswer": [
+          "6",
+          "-6",
+          "-5",
+          "5"
+        ],
+        "aanswer": "-6"
+      },
+      {
+        "question": "What does the 'key' function do?",
+        "panswer": [
+          "Computes the difference of arrays using keys for comparison",
+          "Pushes one or more elements onto the end of an array",
+          "Fetches the key of an array",
+          "Filters elements of an array using a callback function"
+        ],
+        "aanswer": "Fetches the key of an array"
+      },
+      {
+        "question": "What function would rearrange an array backwards?",
+        "panswer": [
+          "array_backward",
+          "array_reverse",
+          "array_rekey",
+          "array_diff"
+        ],
+        "aanswer": "array_reverse"
+      },
+      {
+        "question": "Which function is used to return true if a given value exists in an array (and false if it doesn't)?",
+        "panswer": [
+          "array_key_exists",
+          "has_value",
+          "array_value_exists",
+          "in_array"
+        ],
+        "aanswer": "has_value"
+      }
+    ]
+  }
+}
