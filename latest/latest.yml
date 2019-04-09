@@ -1,0 +1,21 @@
+version: 1.0.8
+files:
+  - url: SCT-Multi-User Web Setup 1.0.8.exe
+    sha512: p/CJKCRFKx29ZfouJI+yUMg+oPwAkSZQJiVX+nAmov+GYgsJ3+tcN/GhcQSxcmeWilPpma+uut31Du7SYZuu/Q==
+path: SCT-Multi-User Web Setup 1.0.8.exe
+sha512: p/CJKCRFKx29ZfouJI+yUMg+oPwAkSZQJiVX+nAmov+GYgsJ3+tcN/GhcQSxcmeWilPpma+uut31Du7SYZuu/Q==
+packages:
+  ia32:
+    size: 32702126
+    sha512: mIBrFRPKrqYc5ZcFWHmZLOmUvFKQ+eN6dU+guceKGcOti6xQn2WZkZ3Z1J/hMHYhHzZp7fdheotnphm8uAxiNQ==
+    blockMapSize: 34776
+    path: sct-electron-launcher-1.0.8-ia32.nsis.7z
+    file: sct-electron-launcher-1.0.8-ia32.nsis.7z
+  x64:
+    size: 38709118
+    sha512: kCUWjZZYfOuOxhTuBcNFKlSl84W/ijYxWJ7KZiVbtGVcekX9p5vDmrEq1d8pWLC4gt1w6YDMEoDU4XAL21hwjQ==
+    blockMapSize: 41758
+    path: sct-electron-launcher-1.0.8-x64.nsis.7z
+    file: sct-electron-launcher-1.0.8-x64.nsis.7z
+isAdminRightsRequired: true
+releaseDate: '2019-04-09T16:06:38.763Z'
