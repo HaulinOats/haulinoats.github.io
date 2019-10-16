@@ -134,7 +134,7 @@ $(document).ready(function() {
 
 		$('#project-modal').on('show.bs.modal', function () {
 			$(this).find('h1').text(title);
-			$(this).find('.btn').attr('href',link);
+			$(this).find('.btn').attr('href', link).attr('target', '_blank');
 			$(this).find('.project-descr').html(descr);
 			$(this).find('.image-wrapper').addClass('flexslider').html(slidesHtml);
 			
