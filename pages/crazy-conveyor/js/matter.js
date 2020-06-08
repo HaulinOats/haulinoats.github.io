@@ -151,8 +151,8 @@
                 }
                 World.add(_world, Bodies.polygon(Math.floor(Math.random()*(450 - 200 + 1) + 450), 50, Math.floor(Math.random()*(9 - 4 + 1) + 4),Math.floor(Math.random()*(30 - 20 + 1) + 20), { 
                     friction:.5, 
-                    restitution:.5, 
-                    mass: 2, 
+                    restitution:.7, 
+                    mass: 4, 
                     isGood:isGood, 
                     render: { fillStyle: isGood ? "#6aaf6a" : "#C44D58" }
                 }));
