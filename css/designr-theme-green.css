@@ -893,6 +893,16 @@ header.jumbotron{
     color:#21b799;
     opacity:1;
 }
+.alt-close {
+    border-radius: 50px;
+    border: none;
+    background: #21b799;
+    color: white;
+    font-size: 24px;
+    padding: 5px 15px;
+    box-shadow: 1px 1px 3px black;
+    margin-top: -5px;
+}
 
 .modal-body .left-col,
 .modal-body .right-col{
