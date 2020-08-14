@@ -33,7 +33,8 @@ jQuery(document).ready(function( $ ) {
     	$(this).removeClass('open');
     } else {
     	$('#opener_top').animate({height:0},1000,function(){
-        $("#opener_bottom").addClass('open');
+            $("#top_plus_icon").css('display', 'none');
+            $("#opener_bottom").addClass('open');
         $(title_element).animate({'top':'20px'}, 1000, function(){
     $('#plan_form_cont').show();
         })
@@ -61,6 +62,7 @@ jQuery(document).ready(function( $ ) {
 
     loadXML('http://www.brettdavidconnolly.com/dpnc/data/healthcare_provider.xml', 'hc_provider');
     } else if(element_id == 'plan_cancel'){
+        $("#top_plus_icon").css('display', 'block');
     $('#plan_form_cont').hide();
     $('#opener_top').animate({height:window_height/2}, 1000, function(){
     	$('#opener_bottom .main_title_div').animate({'top':(bottom_h2_position.top/2)-75}, 1000, function(){})
