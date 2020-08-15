@@ -1,0 +1,100 @@
+body {
+  user-select:none;
+  font-family: 'PT Sans', sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  margin:0;
+}
+img {
+  -webkit-user-drag:none;
+}
+#main-page {
+  height:100%;
+}
+.main-page-inner {
+  position:relative;
+  overflow:hidden;
+  height: 50%;
+  padding-left:4%;
+  cursor:pointer;
+}
+.main-title-image{
+  width:5.5%;
+  display:inline-block;
+}
+#main-page h2{
+  text-transform: uppercase;
+  font-size: 7vw;
+  margin-left:2%;
+  display:inline-block;
+  margin:0;
+}
+.main-page-inner-content {
+  position:relative;
+  top:28%;
+  transition:top 1s;
+  flex-basis:100%;
+}
+#hc-provider {
+  background:#f05556;
+}
+#hc-provider h2 {
+  color:white;
+}
+#hc-plan h2 {
+  color:#f05556;
+}
+.main-page-inner-form {
+  opacity: 0;
+  transition:opacity 1.5s;
+  margin-left: 6.2%;
+}
+.main-page-inner-form label,
+.main-page-inner-form input{
+  display:block;
+}
+.main-page-inner-form label {
+  margin-bottom:1%;
+}
+.main-page-inner-form input,
+.main-page-inner-form textarea {
+  border-radius:5px;
+  background:none;
+}
+.main-page-inner-form input,
+.main-page-inner-form textarea {
+  margin-bottom:1.5%;
+  padding: .5%;
+}
+#hc-provider-form {
+  color:white;
+}
+#hc-plan-form {
+  color:#f05556;
+}
+#hc-provider-form input,
+#hc-provider-form textarea {
+  border: solid 2px white;
+}
+#hc-plan-form input,
+#hc-plan-form textarea {
+  border:solid 2px #f05556;
+}
+.prov-name {
+  width:45%;
+}
+.prov-notes {
+  width:80%;
+  min-height:80px;
+}
+.prov-date {
+  width:45%;
+}
+.main-page-buttons-container {
+  width:80%;
+}
+.form-button {
+  float: right;
+  margin-left: 1%;
+  width: 5%;
+}
