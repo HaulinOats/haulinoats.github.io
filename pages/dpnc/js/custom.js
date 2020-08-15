@@ -58,9 +58,9 @@ jQuery(document).ready(function( $ ) {
     name = $('#prov_name').val();
     notes = $('#prov_notes').val();
     notice_date = $('#prov_date').val();
-    formSubmit(name, type, notes, notice_date);
+    // formSubmit(name, type, notes, notice_date);
 
-    loadXML('http://www.brettdavidconnolly.com/dpnc/data/healthcare_provider.xml', 'hc_provider');
+    loadXML('https://bc-node-rest-api.herokuapp.com/dpnc-healthcare-provider', 'hc_provider');
     } else if(element_id == 'plan_cancel'){
         $("#top_plus_icon").css('display', 'block');
     $('#plan_form_cont').hide();
@@ -72,8 +72,8 @@ jQuery(document).ready(function( $ ) {
     name = $('#plan_name').val();
     notes = $('#plan_notes').val();
     notice_date = $('#plan_date').val();
-    formSubmit(name, type, notes, notice_date);
-    loadXML('http://www.brettdavidconnolly.com/dpnc/data/health_plan.xml', 'health_plan');
+    // formSubmit(name, type, notes, notice_date);
+    loadXML('https://bc-node-rest-api.herokuapp.com/dpnc-health-plan', 'health_plan');
     }
 	})
 
@@ -306,69 +306,69 @@ jQuery(document).ready(function( $ ) {
 	}
 
 	function lockScrolling(){
-     // lock scroll position, but retain settings for later
-      var scrollPosition = [
+        // lock scroll position, but retain settings for later
+        var scrollPosition = [
         self.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft,
         self.pageYOffset || document.documentElement.scrollTop  || document.body.scrollTop
-      ];
-      var html = jQuery('html'); // it would make more sense to apply this to body, but IE7 won't have that
-      html.data('scroll-position', scrollPosition);
-      html.data('previous-overflow', html.css('overflow'));
-      html.css('overflow', 'hidden');
-      window.scrollTo(scrollPosition[0], scrollPosition[1]);
+        ];
+        var html = jQuery('html'); // it would make more sense to apply this to body, but IE7 won't have that
+        html.data('scroll-position', scrollPosition);
+        html.data('previous-overflow', html.css('overflow'));
+        html.css('overflow', 'hidden');
+        window.scrollTo(scrollPosition[0], scrollPosition[1]);
 	}
 
 	function footerSlideAnimate(category_id) {
-    if(category_id == 1){
-        $('#category_highlight').animate({"left":"-6px",},1000).css('background-color', 'rgb(240,85,86)');
-    	} else if(category_id == 2){
-        $('#category_highlight').animate({"left":"32.6%",},1000).css('background-color', 'rgb(66,143,177)');
-    	} else if(category_id == 3){
-        $('#category_highlight').animate({"left":"65.9%",},1000).css('background-color', 'rgb(173,212,119)');
-    	} else if(category_id == 'end'){
-        $('#category_highlight').animate({"left":"99%",},1000, function(){
-        $('#category_highlight').css('background-color', 'rgba(240,85,86, 0)');
-        });
+        if(category_id == 1){
+            $('#category_highlight').animate({"left":"-6px",},1000).css('background-color', 'rgb(240,85,86)');
+        } else if(category_id == 2){
+            $('#category_highlight').animate({"left":"32.6%",},1000).css('background-color', 'rgb(66,143,177)');
+        } else if(category_id == 3){
+            $('#category_highlight').animate({"left":"65.9%",},1000).css('background-color', 'rgb(173,212,119)');
+        } else if(category_id == 'end'){
+            $('#category_highlight').animate({"left":"99%",},1000, function(){
+                $('#category_highlight').css('background-color', 'rgba(240,85,86, 0)');
+            });
+        }
     }
-  }
 
-  function ajaxLoading() {
-    //Show loader during ajax request
-    $(document).ajaxStart(function() {
-      $('#ajaxLoader').show();
-    });
+    function ajaxLoading() {
+        //Show loader during ajax request
+        $(document).ajaxStart(function() {
+            $('#ajaxLoader').show();
+        });
 
-    //Hide loader after ajax request
-    $(document).ajaxStop(function() {
-      $( '#ajaxLoader' ).hide();
-    });
+        //Hide loader after ajax request
+        $(document).ajaxStop(function() {
+            $( '#ajaxLoader' ).hide();
+        });
 	}
 
 	function applyFitText(){
-    $('h2').fitText(1.4);
-    $('p').fitText(1.4);
+        $('h2').fitText(1.4);
+        $('p').fitText(1.4);
 	}
 
 	function verticallyCenterOpener(element){
-    $('.main_title_div').each(function(){
-    var parent_height = $(this).parent().height();
-    var element_height = $(this).height();
-    height_diff = parent_height - element_height;
-    height_diff_offset = height_diff/2;
-    $(this).css('top', height_diff_offset);
-    top_h2_position = $('#opener_top .main_title_div').position();
-    bottom_h2_position = $('#opener_bottom .main_title_div').position();
-    })
+        $('.main_title_div').each(function(){
+            var parent_height = $(this).parent().height();
+            var element_height = $(this).height();
+            height_diff = parent_height - element_height;
+            height_diff_offset = height_diff/2;
+            $(this).css('top', height_diff_offset);
+            top_h2_position = $('#opener_top .main_title_div').position();
+            bottom_h2_position = $('#opener_bottom .main_title_div').position();
+        })
 	}
 
 	function formSubmit(name, type, notes, notice_date) {
-    $.post( "./inc/store_info.php",{ 
-    name: name,
-    type: type,
-    notes: notes,
-    notice_date: notice_date
-    }).done(function( data ) {
-    console.log(data)
-    });
+        $.post( "./inc/store_info.php",{ 
+            name: name,
+            type: type,
+            notes: notes,
+            notice_date: notice_date
+        }).done(function( data ) {
+            console.log(data)
+        });
 	}
 });
