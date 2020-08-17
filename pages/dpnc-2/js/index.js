@@ -1,10 +1,13 @@
 //assign elements for reuse
+let homePage = document.getElementById('home-page');
 let hcProviderContainer = document.getElementById("hc-provider");
 let hcProviderFormCancel = document.getElementById('provider-form-cancel');
+let hcProviderConfirm = document.getElementById('provider-confirm');
 // let hcProviderForm = document.getElementById("hc-provider-form");
 // let hcProviderInnerContent = document.getElementById("hc-provider-inner-content");
 let hcPlanContainer = document.getElementById("hc-plan");
 let hcPlanFormCancel = document.getElementById('plan-form-cancel');
+let hcPlanConfirm = document.getElementById('plan-confirm');
 // let hcPlanForm = document.getElementById("hc-plan-form");
 // let hcPlanInnerContent = document.getElementById("hc-plan-inner-content");
 
@@ -13,6 +16,8 @@ hcProviderContainer.addEventListener('click', actionHandler);
 hcPlanContainer.addEventListener('click', actionHandler);
 hcProviderFormCancel.addEventListener('click', actionHandler);
 hcPlanFormCancel.addEventListener('click', actionHandler);
+hcProviderConfirm.addEventListener('click', actionHandler);
+hcPlanConfirm.addEventListener('click', actionHandler);
 // hcProviderContainer.addEventListener('transitionend', actionHandler);
 // hcProviderFormCancel.addEventListener('click', actionHandler);
 
@@ -115,6 +120,12 @@ function actionHandler(el){
             duration:1000
           })
           break;
+        case "provider-confirm":
+        case "plan-confirm":
+          homePage.style.opacity = '0';
+          homePage.style.zIndex = '-1';
+          break;
+        
       }
     
       //Classes

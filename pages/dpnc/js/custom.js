@@ -240,10 +240,6 @@ jQuery(document).ready(function( $ ) {
     //triggered on user swipe
     $(".slide").swipe({
         swipe:function(event, direction, distance, duration, fingerCount) {
-            console.log('sliding...');
-            console.log('direction: ', direction);
-            console.log($(this));
-            console.log($(this).next());
             if(direction == 'left'){
                 next_slide = $(this).next();
                 category_id = $(next_slide).attr('data-category');
@@ -251,6 +247,7 @@ jQuery(document).ready(function( $ ) {
                     $('html, body').animate({
                         scrollLeft: $(next_slide).offset().left
                     }, 1000, function(){
+                        console.log('animation finished');
                         $(next_slide).find('.animation_stage :first-child').fadeIn();
                         $(next_slide).find('.anim_image_1').addClass('animate');
                         $(next_slide).find('.sub_category_cont').fadeIn();
