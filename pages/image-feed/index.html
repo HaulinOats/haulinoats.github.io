@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Feed</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="loading-circle"></div>
+    <div id="settings-container">
+        <div id="settings-container-tab">
+            <img alt="settings icon" src="images/settings-menu-icon.svg">
+        </div>
+        <p id="settings-header">Settings:</p>   
+        <div class="input-div">
+            <label>Number of most recent images to load:</label>
+            <input id="img-count-input" max="30" value="15" type="number" />
+        </div>
+        <div class="input-div">
+            <label>Image delay (in seconds):</label>
+            <input id="img-delay-input" min="3" type="number" />
+        </div>    
+        <div class="input-div">
+          <button id="save-btn">Save</button>  
+        </div>
+        <div id="log-container">
+            <button id="logout-btn" style="display:none">Yammer Logout</button>
+        </div>
+    </div>
+    <div id="feed-container">
+        <div id="main-container-0" class='main-container'>
+        </div>
+        <div id="main-container-1" class='main-container'>
+        </div>
+        <div id="slideshow-controls">
+            <!-- <div class="slideshow-inner-container">
+                <img id="previous-button" src="images/next.svg" alt="previous-button">
+            </div> -->
+            <div class="slideshow-inner-container">
+                <img id="pause-button" class="show" src="images/pause.svg" alt="pause-button">
+                <img id="play-button" src="images/play-button.svg" alt="play-button">
+            </div>
+            <div class="slideshow-inner-container">
+                <img id="next-button" src="images/next.svg" alt="next-button">
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
