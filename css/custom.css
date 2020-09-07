@@ -137,6 +137,30 @@ border-radius:5px;
     font-size:250%;
     line-height: 100%;
 }
+#music {
+}
+#music-header {
+    padding: 4% 0;
+    background: #f5f5f5;
+    margin-bottom: 3%;
+}
+#music-header h1 {
+    margin:0 auto;
+}
+#music-main-container {
+    padding:1%;
+}
+#music-main-container iframe{
+    width:49.8%;
+}
+#music-playlist-container h2 {
+    text-align:center;
+    font-size:150%;
+}
+#music-playlist-container iframe{
+    display:block;
+    margin:0 auto;
+}
 
 /* Chrome, Safari, Opera */
 @-webkit-keyframes point
@@ -209,7 +233,9 @@ padding-top:0;
 }
 
 @media (max-width: 768px) {
-
+    #music-main-container iframe{
+        width:100%;
+    }
 }
 
 @media (max-width: 479px) {
