@@ -9,8 +9,10 @@ $(document).ready(function() {
 			},3000);
 		} else {
 			$.ajax({
-				url:'https://bdc-node-rest-api.herokuapp.com/email',
+				// url:'https://bc-experiments.herokuapp.com/portfolio-mail-submit',
+				url:'http://localhost:8080/portfolio-mail-submit',
 				method:"POST",
+				type:"POST",
 				data:{
 					name:$("#contact-name").val(),
 					email:$("#contact-mail").val(),

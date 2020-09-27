@@ -209,6 +209,18 @@ to {top: 50%;}
     font-size: 140%;
     transition: 1s;
 }
+#contact-inactive-message {
+    background: lightskyblue;
+    font-size: 165%;
+    color: black;
+    padding: 5%;
+}
+#contact-inactive-message a {
+    color: black;
+    text-shadow: none;
+    font-weight: bold;
+    text-decoration: underline;
+}
 
 /*-----------------------
 ------Media Queries------
