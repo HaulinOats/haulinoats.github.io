@@ -65,7 +65,14 @@ $(document).ready(function() {
 		});
 	},{offset:'80%'});
 
+	$('.tech-cont').mouseover(function(){
+		animateTechnologyBars();
+	});
 	$('#technologies').waypoint(function(){
+		animateTechnologyBars();
+	});
+
+	function animateTechnologyBars(){
 		$('.skill-level').each(function(){
 			var skill_level = $(this).attr('data-skill');
 			var element = this;
@@ -87,7 +94,7 @@ $(document).ready(function() {
 			    break;
 			}	
 		});
-	})
+	}
 	
 	/*============================================
 	Project thumbs - Masonry

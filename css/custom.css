@@ -126,8 +126,11 @@ border-radius:5px;
     -webkit-transition:width linear 2s, height linear .5s;
 }
 .skill-text{
-    color:white;
-    margin-left:5px;
+    color: white;
+    margin-left: 5px;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 .right ul li:hover .skill-level{
     height:0;
