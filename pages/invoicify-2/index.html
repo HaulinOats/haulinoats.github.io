@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		
+
+		
+
+		<link rel="modulepreload" href="/_app/start-f192fb14.js">
+		<link rel="modulepreload" href="/_app/chunks/vendor-870f27c7.js">
+		<link rel="modulepreload" href="/_app/pages/__layout.svelte-e1078c7a.js">
+		<link rel="modulepreload" href="/_app/pages/index.svelte-56d30d56.js">
+		<link rel="stylesheet" href="/_app/assets/start-61d1577b.css">
+		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-bfb305c2.css">
+		<link rel="stylesheet" href="/_app/assets/pages/index.svelte-9ae733c3.css">
+
+		<script type="module">
+			import { start } from "/_app/start-f192fb14.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":""},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/_app/pages/__layout.svelte-e1078c7a.js"),
+						import("/_app/pages/index.svelte-56d30d56.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "/",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<div id="svelte">
+
+
+
+
+<main>
+
+<section class="app svelte-199r2xu"><div class="input-form no-print"><h2 class="svelte-199r2xu">Lien Search</h2>
+			<form class="upload-form svelte-199r2xu"><label for="file-upload" class="svelte-199r2xu">Import Excel File:</label>
+				<input type="file" id="file-upload">
+				<button>Upload</button></form>
+			<p></p>
+			<form class="submit-form svelte-199r2xu"><button type="submit">Submit</button></form></div>
+	
+</section></main>
+
+
+
+
+
+			
+		</div>
+	</body>
+</html>
