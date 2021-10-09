@@ -253,7 +253,7 @@
 		<section id="technologies" class="scrollimation scale-in">
 			<div class="tech-cont" id="tech-container">
 				<h2>Languages, Frameworks, and Technologies</h2>
-				<p>Fluency and comfort level on a scale of 1 to 5</p>
+				<p class="tech-text">Fluency and comfort level on a scale of 1 to 5</p>
 				<div class="tech-section">
 					<img src="img/language.png" alt="languages" class="tech-img" />
 					<h3>Languages</h3>
@@ -1147,32 +1147,35 @@
 
 					<form id="contact-form" class="col-sm-7 scrollimation fade-left">
 						<div class="form-group">
-						  <label class="control-label" for="contact-name">Name</label>
+						  <label class="control-label" for="name">Name</label>
 						  <div class="controls">
 							<i class="icon-user"></i>
-							<input id="contact-name" name="contactName" placeholder="My name is..." class="form-control input-lg requiredField" type="text" data-error-empty="Please enter your name">
+							<input id="name" name="name" placeholder="My name is..." class="form-control input-lg requiredField" type="text" data-error-empty="Please enter your name">
 						  </div>
 						</div><!-- End name input -->
 						
 						<div class="form-group">
-						  <label class="control-label" for="contact-mail">Email</label>
+						  <label class="control-label" for="email">Email</label>
 						  <div class=" controls">
 							<i class="icon-envelope"></i>
-							<input id="contact-mail" name="email" placeholder="Please respond at..." class="form-control input-lg requiredField" type="email" data-error-empty="Please enter your email" data-error-invalid="Invalid email address">
+							<input id="email" name="email" placeholder="Please respond at..." class="form-control input-lg requiredField" type="email" data-error-empty="Please enter your email" data-error-invalid="Invalid email address">
 						  </div>
 						</div><!-- End email input -->
 						
 						<div class="form-group">
-						  <label class="control-label" for="contact-message">Message</label>
+						  <label class="control-label" for="message">Message</label>
 							<div class="controls">
 								<i class="icon-comment"></i>
-								<textarea id="contact-message" name="comments"  placeholder="I wanna talk about..." class="form-control input-lg requiredField" rows="5" data-error-empty="Please enter your message"></textarea>
+								<textarea id="message" name="message"  placeholder="I wanna talk about..." class="form-control input-lg requiredField" rows="5" data-error-empty="Please enter your message"></textarea>
 							</div>
 						</div><!-- End textarea -->
 						
-						<!-- <p><button name="submit" type="submit" class="btn btn-theme btn-lg" data-error-message="Error!" data-sending-message="Sending..." data-ok-message="Message Sent"><i class="icon-location-arrow"></i>Send Message</button><b id="contact-sent">Message Sent!</b></p>
-						<input type="hidden" name="submitted" id="submitted" value="true" /> -->
-						<p id="contact-inactive-message">Form is currently inactive. Just email me directly at: <a href="mailto:brett84c@gmail.com">brett84c@gmail.com</a></p>
+						<p>
+							<button name="submit" type="submit" class="btn btn-theme btn-lg"><i class="icon-location-arrow"></i>Send Message</button>
+							<p id="contact-sent">Message Sent!</p>
+							<p id="contact-error">Error sending message. Email me directly at: <a href="mailto:brett84c@gmail.com">Brett84c@gmail.com</a></p>
+						<input type="hidden" name="submitted" id="submitted" value="true" />
+						<!-- <p id="contact-inactive-message">Form is currently inactive. Just email me directly at: <a href="mailto:brett84c@gmail.com">brett84c@gmail.com</a></p> -->
 						
 					</form><!-- End contact-form -->
 				  
@@ -1225,10 +1228,10 @@
 		<script src='js/jquery.masonry.min.js'></script>
 		<script src="js/waypoints.min.js"></script>
 		<script src="js/jquery.easypiechart.js"></script>
-		<script src="js/contact.js"></script>
+		<!-- <script src="js/contact.js"></script> -->
 		<script src="js/designr.js"></script>
 		<script src="js/custom.js"></script>
-	  	</script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 	</body>
 	
 </html>

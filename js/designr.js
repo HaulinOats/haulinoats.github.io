@@ -53,6 +53,7 @@ $(document).ready(function() {
 	var aboutColor = $('#about').css('backgroundColor');
 
 	$('#skills').waypoint(function(){
+		animateTechnologyBars();
 		$('.chart').each(function(){
 		$(this).easyPieChart({
 				size:170,
@@ -65,12 +66,15 @@ $(document).ready(function() {
 		});
 	},{offset:'80%'});
 
-	$('.tech-cont').mouseover(function(){
-		animateTechnologyBars();
-	});
-	$('#technologies').waypoint(function(){
-		animateTechnologyBars();
-	});
+	// $('#technologies').waypoint(function(){
+	// 	animateTechnologyBars();
+	// });
+	// $('.tech-cont').mouseover(function(){
+	// 	animateTechnologyBars();
+	// });
+	// $('#technologies').waypoint(function(){
+	// 	animateTechnologyBars();
+	// });
 
 	function animateTechnologyBars(){
 		$('.skill-level').each(function(){
@@ -283,4 +287,18 @@ $(document).ready(function() {
 		},1000);
 	}
 
+	//Contact form
+	emailjs.init("user_edxN8J1IcxZ58snUCCvmB");
+
+	// Contact Form Submit
+	document.querySelector('#contact-form').addEventListener('submit', function(e){
+    e.preventDefault();
+    emailjs.sendForm('service_brnc745','template_u86d2ao', '#contact-form')
+    .then(resp => {
+      document.querySelector('#contact-sent').style.opacity = '1';
+    })
+    .catch(err =>{
+      document.querySelector('#contact-error').style.opacity = '1';
+    })
+	}); 
 });	

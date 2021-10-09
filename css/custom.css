@@ -11,6 +11,9 @@
 #technologies p{
     text-align: left;
 }
+.tech-text {
+    text-align:center !important;
+}
 .tech-cont{
     width: 100%;
     height: 100%;
@@ -202,15 +205,18 @@ to {top: 50%;}
     width:20%;
     margin-left:10%;
 }
-#contact-sent {
+#contact-sent, 
+#contact-error {
     opacity: 0;
     background: white;
     color: green;
     padding: 3%;
-    margin-left: 10px;
     border-radius: 5px;
     font-size: 140%;
     transition: 1s;
+}
+#contact-error {
+    color:red;
 }
 #contact-inactive-message {
     background: lightskyblue;
