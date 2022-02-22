@@ -252,6 +252,7 @@
 							<li>HTML5</li>
 							<li>CSS3</li>
 							<li>Javascript</li>
+							<li>Typescript</li>
               <li>Node.js</li>
 							<li>PHP</li>
 							<li>MySQL</li>
@@ -274,6 +275,10 @@
 							<li>
 								<div data-skill="5" class="skill-level"></div>
 								<div class="skill-text">Fluent</div>
+							</li>
+							<li>
+								<div data-skill="4" class="skill-level"></div>
+								<div class="skill-text">Advanced</div>
 							</li>
 							<li>
 								<div data-skill="4" class="skill-level"></div>
@@ -517,6 +522,21 @@
 							<p>I primarly work in Javascript, while using HTML and CSS to mimic the mockups created by our designer.  I have personally built 2 modules from scratch (points calendar and weeks calculator) and refactored a previously existing module (the vacation planner) replacing 90% of the previous code with a much improved version allowing for greater code maintainability and run-time efficiency.</p>
 							<p>I have been tasked with coding a wide variety of functionality.  I've created scripts to build a 'print view' in a new window to be PDF compatible.  I have created modules that follow specific and complicated functionality based on strict business rules involving precise calculations from various data sources.  I have built my code to be maintainable and highly efficient, using CSS transitions for animations, whenever possible, and using coding best practices.</p>
 							<p>I also spearheaded the initiative to wrap our application with ElectronJS, which is a software that is used to build desktop applications using the NodeJS runtime for the back-end and HTML, CSS, and Javascript for the front-end. We used this software to bundle our Sales Center Technology application, and also spin off other processes, one of which is a map-tile server for use in our Map modules that use Open Street Maps data for live map navigation based on popular tourist spots.</p>
+						</div>						
+					</a>
+
+					<a class="project-item applications" href="https://www.tcliensearch.com/invoicify/" data-images="img/tcls-logo-blue.jpg">
+						<img class="img-responsive project-image" src="img/tcls-logo-blue.jpg"  alt=""><!--Project thumb -->
+						<div class="hover-mask">
+							<h2 class="project-title">Invoicify</h2><!--Project Title -->
+							<p>SvelteJS App</p><!--Project Subtitle -->
+						</div>
+						<div class="sr-only project-description">
+							<img class="img-responsive img-center" src="img/tcls-logo-blue.svg" style="clear:both;width:50%;" alt="tc lien search logo">
+							<p>An app built for my sister's company TCLienSearch.</p>
+							<p>Invoicify takes in an Excel file and dynamically builds and pre-fills forms with that data. The Excel file becomes the app's single source of truth and allows the administrator to continually update that client's data and print additional forms as that data becomes available.</p>
+							<p>Some forms have unique functionality, like the Invoice form which allows additional line items to be added and calculations will update in real time. The main page contains a global styling component to allow for modifying CSS styles and applying them to all pages and forms. Ultimately, the app is intended to be saved as a PDF via the print dialog and form styling accounts for proper page breaks and even let's the administrator apply them manually on the 'Search Results Form'.</p>
+							<p>Invoicify was built using the Svelte (SvelteKit) Javascript framework with Typescript and uses SheetJS for processing the Excel file. The live application does not require a server, so the static build pages are hosted on the TCLienSearch GitHub Pages repository.</p>
 						</div>						
 					</a>
 					
