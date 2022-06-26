@@ -203,9 +203,12 @@
 #music {
 }
 #music-header {
-  padding: 4% 0;
+  padding: 40px 0;
   background: #f5f5f5;
-  margin-bottom: 3%;
+  margin: 20px 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  background: #eaeaea;
 }
 #music-header h1 {
   margin: 0 auto;
@@ -230,6 +233,25 @@
 #music-playlist-container a {
   text-decoration: underline;
   font-size: 140%;
+}
+#current {
+  margin-bottom: 15px;
+}
+.current-main {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 30px;
+}
+.current-main a {
+  display: block;
+  min-width: 350px;
+  max-width: 480px;
+  width: 40%;
+}
+.current-main img {
+  width: 100%;
 }
 
 /* Chrome, Safari, Opera */
