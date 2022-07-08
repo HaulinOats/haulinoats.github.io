@@ -1,82 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Grid Screensaver - Brett Connolly</title>
-  <style>
-    body {
-      margin:0;
-      overflow:hidden;
-    }
-    .main-container {
-      width:100vw;
-      height:100vh;
-    }
-    .grid-options-container {
-      position: absolute;
-      right: 10px;
-      top: 0;
-      z-index: 2000;
-      background: white;
-      padding: 10px;
-      display: grid;
-      grid-template-columns: 80% 15%;
-      row-gap: 10px;
-      transform: translateY(-101%);
-      transition: transform 0.5s;
-      border-bottom-left-radius: 5px;
-    }
-    .expand {
-      transform:translateY(0);
-    }
-    .grid-options-container p,
-    .grid-options-container input[type='checkbox'] {
-      margin:0;
-    }
-    .grid-options-container > * {
-      white-space: nowrap;
-    }
-    .options-submit {
-      background: steelblue;
-      color: white;
-      border-radius: 5px;
-      border: none;
-      padding: 8px;
-      box-shadow: 2px 2px 2px black;
-    }
-    .options-submit:active {
-      box-shadow: none;
-    }
-    .options-tab {
-      position: absolute;
-      top: 100%;
-      right: 0;
-      background: white;
-      padding: 5px 10px;
-      border-bottom-left-radius: 5px;
-      border-bottom-right-radius: 5px;
-      cursor: pointer;
-      user-select: none;
-    }
-  </style>
-</head>
-<body>
-  <div class="main-container">
-    <div class="grid-options-container">
-      <p>Opacity Duration (in seconds):</p>
-      <input id="opacity-duration-input" value="1" type="number" min="1" max="15" />
-      <p>Page Change Timeout (in seconds):</p>
-      <input id="page-change-timeout-input" value="40" type="number" min="10" max="120" />
-      <p>Allow Ken Burns Scaling:</p>
-      <input id="ken-burns-scaling-input" type="checkbox" checked="true" />
-      <p>Grid Layouts ID (0 - 4):</p>
-      <input id="grid-layouts-id-input" type="number" value="0" min="0" max="4"/>
-      <button class="options-submit">Submit</button>
-      <p class="options-tab">&#9776;</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Screensaver - Brett Connolly</title>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+      }
+      .main-container {
+        width: 100vw;
+        height: 100vh;
+      }
+      .grid-options-container {
+        position: absolute;
+        right: 10px;
+        top: 0;
+        z-index: 2000;
+        background: white;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 80% 15%;
+        row-gap: 10px;
+        transform: translateY(-101%);
+        transition: transform 0.5s;
+        border-bottom-left-radius: 5px;
+      }
+      .expand {
+        transform: translateY(0);
+      }
+      .grid-options-container p,
+      .grid-options-container input[type="checkbox"] {
+        margin: 0;
+      }
+      .grid-options-container > * {
+        white-space: nowrap;
+      }
+      .options-submit {
+        background: steelblue;
+        color: white;
+        border-radius: 5px;
+        border: none;
+        padding: 8px;
+        box-shadow: 2px 2px 2px black;
+      }
+      .options-submit:active {
+        box-shadow: none;
+      }
+      .options-tab {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: white;
+        padding: 5px 10px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        cursor: pointer;
+        user-select: none;
+      }
+      .loading {
+        position: absolute;
+        top: 45%;
+        left: 45%;
+        font-size: 150%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loading">
+      <p>Loading images...</p>
+      <img src="./img/loader.svg" />
     </div>
-  </div>
-  <script src="screensaver.js"></script>
-</body>
+    <div class="main-container">
+      <div class="grid-options-container">
+        <p>Opacity Duration (in seconds):</p>
+        <input
+          id="opacity-duration-input"
+          value="1"
+          type="number"
+          min="1"
+          max="15"
+        />
+        <p>Page Change Timeout (in seconds):</p>
+        <input
+          id="page-change-timeout-input"
+          value="40"
+          type="number"
+          min="10"
+          max="120"
+        />
+        <p>Allow Ken Burns Scaling:</p>
+        <input id="ken-burns-scaling-input" type="checkbox" checked="true" />
+        <p>Grid Layouts ID (0 - 4):</p>
+        <input
+          id="grid-layouts-id-input"
+          type="number"
+          value="0"
+          min="0"
+          max="4"
+        />
+        <button class="options-submit">Submit</button>
+        <p class="options-tab">&#9776;</p>
+      </div>
+    </div>
+    <script src="screensaver.js"></script>
+  </body>
 </html>
