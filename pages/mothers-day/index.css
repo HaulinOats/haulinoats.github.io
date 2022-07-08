@@ -1,0 +1,423 @@
+body {
+  margin:0;
+  padding:0;
+  overflow:hidden;
+}
+.app-container {
+  width:100vw;
+  height:100vh;
+  background:black;
+  display:grid;
+  align-items: center;
+}
+.main {
+  width: 100%;
+  height: 100%;
+  overflow:hidden;
+  position:relative;
+  background-image:url('./img/full-bloom.png');
+  background-repeat:repeat;
+  max-width:625px;
+  margin:0 auto;
+}
+.message-container {
+  position: absolute;
+  left: 10%;
+  width: 80%;
+  height: 50%;
+  border: solid 1px black;
+  background: white;
+  z-index: 6;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transform: translateY(-101%);
+  transition:transform 1.5s;
+}
+.show-message-container {
+  transform: translateY(0%);
+}
+.message-textarea {
+  position: absolute;
+  top: 4%;
+  left: 5%;
+  height: 86%;
+  width: 86%;
+  background: lightgrey;
+  border-radius: 5px;
+  padding: 2%;
+  resize:none;
+}
+.menu-tab {
+  background: white;
+  display: inline-block;
+  font-size: 170%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 0px 5px;
+  box-shadow: 0px 1px 1px;
+  position: absolute;
+  right: 4%;
+  cursor: pointer;
+  z-index: 5;
+  user-select: none;
+  top: 100%;
+}
+.top-text-container {
+  position: relative;
+  font-size: 40px;
+  text-shadow: -4px 2px black;
+  font-weight: bold;
+  font-family: 'Goblin One', cursive;
+}
+.mothers-day-text {
+  width: fit-content;
+  margin: 0 auto;
+}
+.mothers-day-text span{
+  display:inline-block;
+}
+.happy-text-container {
+  padding-top:40px;
+  font-size:100%;
+}
+.mothers-text-container {
+  font-size:90%;
+}
+.day-text-container {
+  font-size:100%;
+}
+.happy-text-container .h{
+  transform: rotate(-29deg);
+  color: #D14140;
+  animation:happyTextHAnim 20s infinite;
+  animation-delay: 5s;
+}
+.happy-text-container .a{
+  transform: rotate(-9deg) translate(4px, -21px);
+  color: #88D140;
+  animation:happyTextAAnim 20s infinite;
+  animation-delay: 5.5s;
+}
+.happy-text-container .p-1{
+  transform: translate(4px, -28px) rotate(0deg);
+  color: #40D0D1;
+  animation:happyTextP1Anim 20s infinite;
+  animation-delay: 6s;
+}
+.happy-text-container .p-2{
+  transform: rotate(11deg) translateY(-20px);
+  color: #8940D1;
+  animation:happyTextP2Anim 20s infinite;
+  animation-delay: 6.5s;
+}
+.happy-text-container .y{
+  transform:rotate(20deg);
+  color: #fbab45;
+  animation:happyTextYAnim 20s infinite;
+  animation-delay: 7s;
+}
+.mothers-text-container .m{
+  color: #40D0D1;
+  animation:motherAnim 20s infinite;
+  animation-delay: 7.5s;
+}
+.mothers-text-container .o{
+  color: #fbab45;
+  animation:motherAnim 20s infinite;
+  animation-delay: 8s;
+}
+.mothers-text-container .t{
+  color: #8940D1;
+  animation:motherAnim 20s infinite;
+  animation-delay: 8.5s;
+}
+.mothers-text-container .h{
+  color: #D14140;
+  animation:motherAnim 20s infinite;
+  animation-delay: 9s;
+}
+.mothers-text-container .e{
+  color: #88D140;
+  animation:motherAnim 20s infinite;
+  animation-delay: 9.5s;
+}
+.mothers-text-container .r{
+  color: #40D0D1;
+  animation:motherAnim 20s infinite;
+  animation-delay: 10s;
+}
+.mothers-text-container .apostrophe {
+  color: #D14140;
+}
+.mothers-text-container .s{
+  color: #8940D1;
+  animation:motherAnim 20s infinite;
+  animation-delay: 10.5s;
+}
+.day-text-container .d{
+  transform: rotate(15deg);
+  color: #88D140;
+  animation:dayTextDAnim 20s infinite;
+  animation-delay: 11s;
+}
+.day-text-container .a{
+  transform: translateY(15px);  
+  animation:dayTextAAnim 20s infinite;
+  animation-delay: 11.5s;
+  color: #fbab45;
+}
+.day-text-container .y{
+  transform: rotate(-19deg) translate(3px, 3px);
+  color: #D14140;
+  animation:dayTextYAnim 20s infinite;
+  animation-delay: 12s;
+}
+.basket-container {
+  position:relative;
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 90px;
+  padding-bottom:15px;
+}
+.basket-img{
+  position:relative;
+  width:100%;
+  z-index:5;
+}
+.flowers-container {
+  position: absolute;
+  width: 100%;
+  bottom: 26%;
+}
+.flower-img {
+  position: absolute;
+  bottom: 0;
+  transform-origin: 50% 100%;
+  animation-timing-function: linear;
+  animation:flower;
+}
+.flower-big {
+  width: 60%;
+}
+.flower-small {
+  width:37%;
+}
+.flower-1 {
+  left:-4%;
+  animation-duration:6s;
+  animation-iteration-count: infinite;
+}
+.flower-2 {
+  left:15%;
+  animation-duration:7s;
+  animation-iteration-count: infinite;
+}
+.flower-3 {
+  left:33%;
+  animation-duration:4s;
+  animation-iteration-count: infinite;
+}
+.flower-4 {
+  left:51%;
+  animation-duration:5.5s;
+  animation-iteration-count: infinite;
+}
+.flower-5 {
+  left: 33%;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+.flower-6 {
+  left: 52%;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+.flower-7 {
+  left: 16%;
+  animation-duration: 5.5s;
+  animation-iteration-count: infinite;
+}
+.flower-8 {
+  left:0%;
+  animation-duration:6.5s;
+  animation-iteration-count: infinite;
+}
+.watering-can {
+  position: absolute;
+  top: 45%;
+  left: -70%;
+  width: 50%;
+  transform: translate(0%, 0%) rotate(0deg);
+  animation: water 20s infinite;
+  z-index: 5;
+}
+.garden-shovel {
+  position: absolute;
+  top: 31%;
+  left: 120%;
+  width: 49%;
+  transform: translate(0%, 0%) rotate(40deg);
+  transform-origin: top left;
+  animation:shovel 20s infinite;
+  z-index:5;
+  animation-delay: 10s;
+}
+/* Media Queries */
+@media only screen and (min-width: 300px) {
+  .top-text-container {
+    font-size:35px;
+  }
+  .basket-container {
+    width:85%;
+  }
+}
+@media only screen and (min-width: 385px) {
+  .top-text-container {
+    font-size:40px;
+  }
+  .basket-container {
+    margin-top: 15px;
+    width:75%;
+  }
+  .watering-can {
+    top:32%;
+  }
+  .garden-shovel {
+    top: 17%;
+    width: 48%;
+  }
+}
+@media only screen and (min-width: 450px) {
+  .basket-container {
+    width:70%;
+    margin-top:40px;
+  }
+  .watering-can {
+    width:48%;
+  }
+  .garden-shovel {
+    width: 42%;
+    top: 20%;
+  }
+}
+@media only screen and (min-width: 500px) {
+  .top-text-container {
+    font-size:55px;
+  }
+  .basket-container {
+    width:70%;
+    margin-top:40px;
+  }
+  .garden-shovel {
+    width:47%;
+  }
+}
+@media only screen and (min-width: 550px) {
+  .top-text-container {
+    font-size:60px;
+  }
+  .basket-container {
+    width:65%;
+    margin-top:30px;
+  }
+  .garden-shovel {
+    width:41%;
+  }
+}
+@keyframes spinBG {
+  0% {transform:rotate(0deg);}
+  100% {transform:rotate(360deg);}
+}
+@keyframes flower{
+  0% {transform: rotate(0deg);}
+  25% {transform: rotate(15deg);}
+  75% {transform: rotate(-15deg);}
+  100% {transform: rotate(0deg);}
+}
+@keyframes water {
+  0%{transform: translate(0%,0%) rotate(0deg);}
+  40%{transform: translate(0%,0%) rotate(0deg);}
+  50%{transform: translate(150%, 15%) rotate(0deg);}
+  60%{transform: translate(150%, 15%) rotate(45deg);}
+  70%{transform: translate(150%, 15%) rotate(0deg);}
+  80%{transform: translate(0%,0%) rotate(0deg);}
+  100%{transform: translate(0%,0%) rotate(0deg);}
+}
+@keyframes shovel {
+  0%{transform: translate(0%,0%) rotate(40deg);}
+  30%{transform: translate(0%,0%) rotate(40deg);}
+  35%{transform: translate(-140%,35%) rotate(10deg);}
+  40%{transform: translate(-150%, 95%) rotate(30deg);}
+  45%{transform: translate(-152%, 92%) rotate(52deg);}
+  50%{transform: translate(-148%, 90%) rotate(25deg);}
+  55%{transform: translate(-151%, 95%) rotate(48deg);}
+  60%{transform: translate(-150%, 93%) rotate(32deg);}
+  65%{transform: translate(-145%, 97%) rotate(50deg);}
+  70%{transform: translate(-153%, 90%) rotate(30deg);}
+  75%{transform: translate(-140%,35%) rotate(10deg);}
+  80%{transform: translate(0%,0%) rotate(40deg);}
+  100%{transform: translate(0%,0%) rotate(40deg);}
+}
+@keyframes happyTextHAnim {
+  0%{transform:scale(1) rotate(-29deg);}
+  49%{transform:scale(1) rotate(-29deg);}
+  50%{transform:scale(1.5) rotate(-29deg);}
+  51%{transform:scale(1) rotate(-29deg);}
+  100%{transform:scale(1) rotate(-29deg);}
+}
+@keyframes happyTextAAnim {
+  0%{transform:scale(1) rotate(-9deg) translate(4px, -21px);}
+  49%{transform:scale(1) rotate(-9deg) translate(4px, -21px);}
+  50%{transform:scale(1.5) rotate(-9deg) translate(4px, -21px);}
+  51%{transform:scale(1) rotate(-9deg) translate(4px, -21px);}
+  100%{transform:scale(1) rotate(-9deg) translate(4px, -21px);}
+}
+@keyframes happyTextP1Anim {
+  0%{transform:scale(1) translate(4px, -28px) rotate(0deg);}
+  49%{transform:scale(1) translate(4px, -28px) rotate(0deg);}
+  50%{transform:scale(1.5) translate(4px, -28px) rotate(0deg);}
+  51%{transform:scale(1) translate(4px, -28px) rotate(0deg);}
+  100%{transform:scale(1) translate(4px, -28px) rotate(0deg);}
+}
+@keyframes happyTextP2Anim {
+  0%{transform:scale(1) rotate(11deg) translateY(-20px);}
+  49%{transform:scale(1) rotate(11deg) translateY(-20px);}
+  50%{transform:scale(1.5) rotate(11deg) translateY(-20px);}
+  51%{transform:scale(1) rotate(11deg) translateY(-20px);}
+  100%{transform:scale(1) rotate(11deg) translateY(-20px);}
+}
+@keyframes happyTextYAnim {
+  0%{transform:scale(1) rotate(20deg);}
+  49%{transform:scale(1) rotate(20deg);}
+  50%{transform:scale(1.5) rotate(20deg);}
+  51%{transform:scale(1) rotate(20deg);}
+  100%{transform:scale(1) rotate(20deg);}
+}
+@keyframes motherAnim {
+  0%{transform:scale(1);}
+  49%{transform:scale(1);}
+  50%{transform:scale(1.5);}
+  51%{transform:scale(1);}
+  100%{transform:scale(1);}
+}
+@keyframes dayTextDAnim {
+  0%{transform:scale(1) rotate(15deg);}
+  49%{transform:scale(1) rotate(15deg);}
+  50%{transform:scale(1.5) rotate(15deg);}
+  51%{transform:scale(1) rotate(15deg);}
+  100%{transform:scale(1) rotate(15deg);}
+}
+@keyframes dayTextAAnim {
+  0%{transform:scale(1) translateY(15px);}
+  49%{transform:scale(1) translateY(15px);}
+  50%{transform:scale(1.5) translateY(15px);}
+  51%{transform:scale(1) translateY(15px);}
+  100%{transform:scale(1) translateY(15px);}
+}
+@keyframes dayTextYAnim {
+  0%{transform:scale(1) rotate(-19deg) translate(0px, 3px);}
+  49%{transform:scale(1) rotate(-19deg) translate(0px, 3px);}
+  50%{transform:scale(1.5) rotate(-19deg) translate(0px, 3px);}
+  51%{transform:scale(1) rotate(-19deg) translate(0px, 3px);}
+  100%{transform:scale(1) rotate(-19deg) translate(0px, 3px);}
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BlackJack</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+  <p id="game-status-text"></p>
+  <div class="top-container">
+    <h1>BlackJack</h1>
+    <p>Click Deck to <b>"Hit"</b></p>
+    <div class="deck-container">
+      <div class="top-card-container"></div>
+      <div class="default-back-container">
+        <img src="img/back.svg" alt="back"/>
+      </div>
+    </div>
+    <button class="stand-btn" disabled>Stand</button>
+    <button class="next-round-btn">Next Round</button>
+  </div>
+  <div class="bottom-container">
+    <div class="cards-container player-cards-container">
+      <div id="player-header" class="player-headers active">
+        <p class="header-text">Player:</p>
+        <p id="player-status"></p>
+      </div>
+    </div>
+    <div class="cards-container dealer-cards-container">
+      <div id="dealer-header" class="player-headers">
+        <p class="header-text">Dealer:</p>
+        <p id="dealer-status"></p>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="index.js"></script>
+</body>
+</html>

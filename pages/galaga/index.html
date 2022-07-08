@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galaga Remake</title>
+  <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+  <div id="main-container">
+    <div id="main-ui-container">
+      <div class="ui-container" id="game-over-container">
+        <h2>Game Over</h2>
+        <h3>Your Score: <i id='your-score'></i></h3>
+        <button id="check-high-scores">Check High Scores</button>
+        <p>Press Enter or Touch Here to Restart</p>
+        <div id="new-high-score-container">
+          <p>New High Score!</p>
+          <div id="high-score-enter-name-container">
+            <label>Enter Your Name:</label>
+            <input type='text' id='score-name-input' />
+          </div>
+          <button id="submit-high-score">Submit High Score</button>
+        </div>
+      </div>
+      <div class="ui-container" id="next-level-container">
+        <h2>Next Level</h2>
+        <p>Press Enter or Touch Here to Continue</p>
+      </div>
+      <div class="ui-container" id="high-scores-container">
+        <h2>High Scores</h2>
+        <span id="high-scores-inner"></span>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/phaser/3.24.1/phaser.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js" integrity="sha512-quHCp3WbBNkwLfYUMd+KwBAgpVukJu5MncuQaWXgCrfgcxCJAq/fo+oqrRKOj+UKEmyMCG3tb8RB63W+EmrOBg==" crossorigin="anonymous"></script>
+  <script type="module" src="index.js"></script>
+</body>
+</html>

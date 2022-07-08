@@ -1,0 +1,110 @@
+body {
+  overscroll-behavior: contain;
+  margin:0;
+  font-size:100%;
+}
+canvas {
+  position: absolute;
+  top:0;
+  left:0;
+  z-index:0;
+}
+#main-container {
+  position:absolute;
+  font-family: Helvetica;
+}
+#main-ui-container {
+  display:none;
+  height:100%;
+  width:100%;
+  z-index:1;
+  position: relative;
+  top:0;
+  left:0;
+  align-items:center;
+  justify-content: center;
+  margin:0 auto;
+  user-select: none;
+}
+#main-ui-container > div {
+  position:relative;
+  cursor:pointer;
+  background:white;
+  color:black;
+  display:none;
+  border-radius:5px;
+  text-align:center;
+  padding:1%;
+}
+.show-ui-container {
+  display:block !important;
+}
+.button-container h2 {
+  font-size:200%;
+}
+#game-over-button h2 {
+  color:red;
+}
+#next-level-button h2 {
+  color:green;
+}
+#new-high-score-container {
+  display:none;
+}
+#new-high-score-container p {
+  font-weight:bold;
+}
+#check-high-scores,
+#submit-high-score {
+  border: none;
+  display: block;
+  margin: 0 auto;
+  background: steelblue;
+  color: white;
+  font-size: 95%;
+  padding: 2%;
+  border-radius: 4px;
+  box-shadow: 2px 2px 3px black;
+}
+#high-score-enter-name-container {
+  margin:2% 0;
+}
+#score-name-input {
+  padding:7px;
+}
+#submit-high-score:active {
+  box-shadow: none;
+}
+#your-score {
+  font-style:unset;
+  font-weight: bold;
+}
+#high-scores-container {
+  width:80%;
+}
+#high-scores-inner {
+  display:block;
+  width:100%;
+}
+#high-scores-inner div {
+  padding:2% 0;
+  border-bottom:solid 1px black;
+}
+#high-scores-inner div:last-child {
+  border:none;
+}
+#high-scores-inner span {
+  display:inline-block;
+  text-align:left;
+  width:48%;
+}
+.score-score {
+  text-align:right !important;
+}
+.close-container {
+  position:absolute;
+  top:0;
+  right:0;
+  padding:0 3% 3% 5%;
+  margin:0;
+}
