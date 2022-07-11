@@ -253,12 +253,16 @@
   display: inline-block;
   height: 200px;
 }
+.current-main-inner a {
+  max-width: 375px;
+}
 .reading-main-inner a {
   height: 350px;
 }
 .current-main-inner img,
 .reading-main-inner img {
   height: 100%;
+  width: 100%;
 }
 
 /* Chrome, Safari, Opera */
