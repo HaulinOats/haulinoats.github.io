@@ -264,6 +264,7 @@
 }
 .games-main img {
   width: 100%;
+  max-width: 380px;
 }
 .books-main img {
   max-height: 400px;
@@ -386,6 +387,7 @@
   #music-main-container iframe {
     width: 100%;
   }
+  .games-main,
   .books-main {
     display: block;
   }
