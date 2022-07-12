@@ -236,33 +236,49 @@
   text-decoration: underline;
   font-size: 140%;
 }
-#current {
+.current {
   margin-bottom: 15px;
 }
 .current-main {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+}
+.current-main > div:nth-child(2) {
+  border-left: solid 1px grey;
+  border-right: solid 1px grey;
+}
+.video-games h2 {
+  text-align: center;
+  font-size: 200%;
+  text-decoration: underline;
   margin-bottom: 30px;
 }
 .current-main-inner,
-.reading-main-inner {
-  display: inline-flex;
-  width: 33%;
+.book-main-inner {
+  padding: 0 5%;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.games-main img {
+  width: 100%;
+}
+.books-main img {
+  max-height: 400px;
+  width: 225px;
+}
+.current-top-ten {
+  display: grid;
+  grid-auto-flow: row;
   justify-content: center;
 }
-.current-main-inner a,
-.reading-main-inner a {
-  display: inline-block;
-  height: 200px;
+.current-top-ten ul {
+  list-style-type: decimal;
 }
-.current-main-inner a {
-  max-width: 375px;
-}
-.reading-main-inner a {
-  height: 350px;
-}
-.current-main-inner img,
-.reading-main-inner img {
-  height: 100%;
-  width: 100%;
+.current-top-ten li {
+  font-size: 120%;
 }
 
 /* Chrome, Safari, Opera */
@@ -370,10 +386,8 @@
   #music-main-container iframe {
     width: 100%;
   }
-  .reading-main-inner {
-    display: flex;
-    width: 100%;
-    margin-bottom: 30px;
+  .books-main {
+    display: block;
   }
 }
 
