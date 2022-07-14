@@ -1,0 +1,22 @@
+h1 {
+  font-family: monospace;
+}
+.post {
+}
+.about {
+  font-style: italic;
+  font-family: helvetica;
+  font-size: 77%;
+}
+.title {
+  font-weight: bold;
+  font-family: helvetica;
+}
+.date {
+  font-size: 90%;
+  font-family: monospace;
+}
+.body {
+  font-family: helvetica;
+  font-size: 90%;
+}
