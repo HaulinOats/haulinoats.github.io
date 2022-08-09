@@ -113,15 +113,11 @@ $(document).ready(function () {
         return `
 				<div class="tech-section-inner-row">
 					<div class="tech-section-inner-row-left">
-            ${
-              item.logo
-                ? `<img
-                  class="tech-icon"
-                  alt="icon"
-                  src="./img/icons/${item.logo}"
-                />`
-                : ``
-            }
+            <img
+              class="tech-icon"
+              alt="icon"
+              src="./img/icons/${item.logo}"
+            />
 						<p>${item.text}</p>
 					</div>
 					<div class="tech-section-inner-row-right">
