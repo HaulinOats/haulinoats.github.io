@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stardew Valley - Realistic Farming Utility</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <h1>Stardew Valley - Realistic Farming Utility</h1>
+    <p>
+      Are you tired of the farming aspect of Stardew Valley being too
+      predictable, knowing you can just resort to posts and articles online that
+      tell you the objectively best crops to maximize profit? This utility will
+      pseudo-randomize all the properties of both seeds and crops to help keep
+      farming balanced but also, randomize crops and seeds values so you'll have
+      to figure out the most efficient crops on your own.
+    </p>
+    <p>
+      This utility it built to work with the Stardew Valley mod
+      <a
+        href="https://www.nexusmods.com/stardewvalley/mods/12900"
+        target="_blank"
+        >Balanced Valley - Realistic Farming</a
+      >
+      courtesy of o0MrPro.
+    </p>
+    <h2>How to use</h2>
+    <p>
+      Upload your the <code>content.json</code> file that exists inside the
+      <code>[CP] Balanced Valley - Realistic Farming</code> mod folder and then
+      click <b>Generate</b>. The file will be updated with new psuedo-randomized
+      crop values (harvest time, sell prices, regrowth capability, etc) so
+      you'll have to figure out the most efficient crops on your own. Then
+      simply place this file back into the
+      <code>[CP] Balanced Valley - Realistic Farming</code> mod folder,
+      overwriting the existing <code>content.json</code> file.
+      <b
+        >*Please ensure you're placing it in the
+        <code>[CP] Balanced Valley - Realistic Farming</code> mod folder and NOT
+        the <code>[STF] Balanced Valley - Realistic Farming</code> mod folder
+        (which handles store-related modifications*</b
+      >
+    </p>
+    <div>
+      <p>
+        Upload the <code>content.json</code> from your
+        <code>[STF] Balanced Valley - Realistic Farming</code> mod folder
+      </p>
+      <input type="file" id="file-upload" />
+      <button id="generate" style="display: none">
+        Generate content.json file
+      </button>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
