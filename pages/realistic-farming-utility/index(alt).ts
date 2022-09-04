@@ -1,14 +1,12 @@
-"use strict";
-
 let contentJSON;
 let itemData = {};
 let fileUpload = document.getElementById("file-upload");
 let generateBtn = document.getElementById("generate");
 
-fileUpload.addEventListener("change", async (e) => {
-  generateBtn.style.display = "";
+fileUpload!.addEventListener("change", async (e) => {
+  generateBtn!.style.display = "";
 
-  contentJSON = await parseJsonFile(e.target.files[0]);
+  contentJSON = await parseJsonFile((e.target as HTMLInputElement).files![0]);
 
   // console.log(contentJSON);
 
@@ -113,26 +111,14 @@ const initUtility = () => {
 
       //dynamically generate growth stages
       let growthTimeRunningTotal = totalGrowthTime;
-      //max grow stage range defaults to 4 for medium crops, then 5 for long-term, and 3 for short-term
-      let growStageMax = 3;
-      if (totalGrowthTime > 15) growStageMax = 5;
-      if (totalGrowthTime < 9) growStageMax = 2;
-
       for (let i = 0; i < growthStagesArr.length; i++) {
         let growthStageDays = generateRandomWhole(1, 4);
-        //if there aren't enough days to randomize up to 5, set max possible value to days left
+        //if there aren't enough days to randomize up to 5, set final value to maximum allowed
         if (growthTimeRunningTotal < 5) {
           growthStageDays = generateRandomWhole(1, growthTimeRunningTotal);
         }
         growthStagesArr[i] = growthStageDays;
         growthTimeRunningTotal -= growthStageDays;
-
-        //if on last iteration (final growth stage), ensure final stage makes up days needed to equal total growth time
-        if (i + 1 === growthStagesArr.length) {
-          let daysSum = 0;
-          let sum = growthStagesArr.reduce((prev, curr) => prev + curr, daysSum);
-          growthStagesArr[i] = Math.abs(sum - totalGrowthTime);
-        }
       }
       item.cropData[0] = growthStagesArr.join(" ");
 
@@ -193,15 +179,15 @@ const initUtility = () => {
   }
 };
 
-generateBtn.addEventListener("click", () => {
+generateBtn!.addEventListener("click", () => {
   saveTemplateAsFile("content.json", contentJSON);
 });
 
-async function parseJsonFile(file) {
+async function parseJsonFile(file: File) {
   return new Promise((resolve, reject) => {
     const fileReader = new FileReader();
     fileReader.onload = (e) => {
-      resolve(JSON.parse(e.target.result.toString()));
+      resolve(JSON.parse(e.target?.result as string));
     };
     fileReader.onerror = (error) => reject(error);
     fileReader.readAsText(file);
