@@ -26,9 +26,6 @@ fileUpload.addEventListener("change", async (e) => {
     entriesCropData[index] = itemData[index].cropData.join("/");
   }
 
-  console.log(entriesCropData);
-  console.log(entriesObjectData);
-
   contentJSON.Changes.map((changeObj) => {
     if (changeObj["When"] && changeObj["When"]["Balance Mode"] === "Dynamic") {
       //insert new object data into 'Entries' for objects
