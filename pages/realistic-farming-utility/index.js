@@ -41,9 +41,18 @@ const initUtility = () => {
   };
 
   //gold per day price multipliers based on if a crop can regrow or not
-  let regularSellPriceMultiplier = generateRandomWhole(12, 18);
-  let regrowthSellPriceMultiplier = generateRandomWhole(6, 10);
+  const priceMultiplier = {
+    regular: {
+      crop: generateRandomWhole(12, 18),
+      seed: generateRandomWhole(2, 5),
+    },
+    regrow: {
+      crop: generateRandomWhole(8, 10),
+      seed: generateRandomWhole(4, 7),
+    },
+  };
 
+  //separate each crop/seed into seasons
   for (const seedIdx in baseData.cropData) {
     baseData.cropData[seedIdx]
       .split("/")[1]
@@ -107,43 +116,27 @@ const initUtility = () => {
       item.totalGrowthDays = totalGrowthTime;
 
       //dynamically generate growth stages
-      let growthTimeRunningTotal = totalGrowthTime;
       let growthStagesArr = item.cropData[0].split(" ");
-      // maximum values that can be in growth stage (default 4 for medium crops)
-      let growthStageMax = 3;
-      if (totalGrowthTime > 15) growthStageMax = 4;
-      if (totalGrowthTime < 9) growthStageMax = 2;
+      let averageGrowthStageDays = Math.floor(totalGrowthTime / growthStagesArr.length);
+      growthStagesArr.map((_val, idx, arr) => (arr[idx] = averageGrowthStageDays));
 
       for (let i = 0; i < growthStagesArr.length; i++) {
-        let growthStageDays = generateRandomWhole(1, growthStageMax);
-        //if there aren't enough days to randomize up to 5, set max possible value to days left
-        if (growthTimeRunningTotal < growthStageMax) {
-          growthStageDays = generateRandomWhole(1, growthTimeRunningTotal);
-        }
-        growthStagesArr[i] = growthStageDays;
-        growthTimeRunningTotal -= growthStageDays;
-
-        //if on last iteration (final growth stage), ensure final stage makes up days needed to equal total growth time
-        if (i + 1 === growthStagesArr.length) {
-          let sum = growthStagesArr.reduce((prev, curr) => prev + curr, 0);
-          // console.log(JSON.parse(JSON.stringify({ growthStagesArr })));
-          // console.log(JSON.parse(JSON.stringify({ growthStagesArrSum: sum })));
-          growthStagesArr[i] = sum > totalGrowthTime ? sum - totalGrowthTime : totalGrowthTime - sum;
-        }
+        growthStagesArr[i] = averageGrowthStageDays;
       }
-      //if total of growth stages is less than total grow time, add the difference to last stage
+
+      //if total of growth stages is less than total grow time, add/remove the difference to/from last stage
       const growthStagesSum = growthStagesArr.reduce((prev, curr) => prev + curr, 0);
-      if (growthStagesSum < totalGrowthTime) growthStagesArr[growthStagesArr.length - 1] += totalGrowthTime - growthStagesSum;
-      //if any growth stages are 0, pull a day from another stage
-      for (let i = 0; i < growthStagesArr.length; i++) {
-        if (growthStagesArr[i] < 1) {
-          growthStagesArr.forEach((stageDays, idx, arr) => {
-            if (stageDays > 1) {
-              arr[idx]--;
-              growthStagesArr[i]++;
-            }
-          });
-        }
+      const lastGrowthStageIdx = growthStagesArr.length - 1;
+      if (growthStagesSum < totalGrowthTime) {
+        growthStagesArr[lastGrowthStageIdx] += totalGrowthTime - growthStagesSum;
+      }
+
+      //if last growth stage is at least 2 days higher than previous day, distribute
+      //excess to 2 other random days
+      const growthDayDiff = growthStagesArr[lastGrowthStageIdx] - growthStagesArr[lastGrowthStageIdx - 1];
+      if (growthDayDiff > 1) {
+        growthStagesArr[lastGrowthStageIdx]--;
+        growthStagesArr[lastGrowthStageIdx - 1]++;
       }
 
       item.cropData[0] = growthStagesArr.join(" ");
@@ -162,22 +155,22 @@ const initUtility = () => {
         //if more crops are allowed to be given regrowth capabilities, set regrowth time to be between 20% - 40% of total grow time.
         item.cropData[4] = Math.ceil(totalGrowthTime * generateRandomFloat(0.3, 0.5));
 
-        //set sell price
-        item.harvestObjectData[1] = totalGrowthTime * regrowthSellPriceMultiplier;
+        //set crop and seed sell prices
+        item.harvestObjectData[1] = totalGrowthTime * priceMultiplier.regrow.crop;
+        item.seedObjectData[1] = totalGrowthTime * priceMultiplier.regrow.seed;
 
         //append season text with regrowth verbiage
         seasonText += `, but keeps producing after that.${isTrellisCrop ? " Grows on a trellis." : ""}`;
-
-        totalRegrowthCrops--;
       } else {
         //if crop is NOT regrowth capable
         //set crop to not regrow
         item.cropData[4] = -1;
 
-        //set sell price
-        item.harvestObjectData[1] = totalGrowthTime * regularSellPriceMultiplier;
+        //set crop and seed sell prices
+        item.harvestObjectData[1] = totalGrowthTime * priceMultiplier.regular.crop;
+        item.seedObjectData[1] = totalGrowthTime * priceMultiplier.regular.seed;
 
-        //append period if season text
+        //append period to season text
         seasonText += `.`;
       }
 
