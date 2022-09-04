@@ -1,0 +1,12 @@
+body {
+  padding: 10px;
+}
+.modifiers-container p {
+  margin-bottom: 3px;
+}
+.modifiers-container input[type="number"] {
+  width: 70px;
+}
+.modifiers-container div {
+  margin-bottom: 25px;
+}

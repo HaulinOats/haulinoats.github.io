@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stardew Valley - Realistic Farming Utility</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
@@ -17,10 +18,70 @@
     </p>
     <p>To view calculations and data output, open the developer console (right click anywhere on the page and select "inspect" then click on "console" panel). You can also reference <a href="https://balsamiq.com/support/faqs/browserconsole/#:~:text=To%20do%20that%2C%20go%20into,shortcut%20Option%20%2B%20%E2%8C%98%20%2B%20C%20." target="_blank">this link</a> if you're having trouble figuring it out.</p>
     <h2>How to use</h2>
+    <p>Upload the <code>content.json</code> file that exists inside the <code>[CP] Balanced Valley - Realistic Farming</code> mod folder and then click the <code>Generate content.json file</code> button. The file will be updated with new psuedo-randomized crop values (harvest time, sell prices, regrowth capability, etc). Simply place this file back into the <code>[CP] Balanced Valley - Realistic Farming</code> mod folder, overwriting the existing <code>content.json</code> file.</p>
     <p>
-      Upload the <code>content.json</code> file that exists inside the <code>[CP] Balanced Valley - Realistic Farming</code> mod folder and then click the <code>Generate content.json file</code> button. The file will be updated with new psuedo-randomized crop values (harvest time, sell prices, regrowth capability, etc). Simply place this file back into the <code>[CP] Balanced Valley - Realistic Farming</code> mod folder, overwriting the existing <code>content.json</code> file.
       <b>** Please ensure you place it in the <code>[CP] Balanced Valley - Realistic Farming</code> mod folder and NOT the <code>[STF] Balanced Valley - Realistic Farming</code> mod folder (which handles store-related modifications) **</b>
     </p>
+    <hr />
+    <hr />
+    <div class="modifiers-container">
+      <h3>Modifiers</h3>
+      <hr />
+      <span>
+        <h4>Total Extra Yield Crops Multiplier</h4>
+        <p>Percentage of how many crops per season are allowed to produce extra yield when harvesting</p>
+        <p><i>Allows for whole or floating points (ex. 15, 12.5, 0.5, etc)</i></p>
+        <input type="number" id="totalExtraYieldCropsMultiplier" min="0" value="15" />
+      </span>
+      <div>
+        <h4>Total Regrowth Crops Multiplier</h4>
+        <p>Percentage of how many crops per season are allowed to have regrowth capability</p>
+        <p><i>Allows for whole or floating points (ex. 15, 12.5, 0.5, etc)</i></p>
+        <input type="number" id="totalRegrowthCropsMultiplier" min="0" value="40" />
+      </div>
+      <div>
+        <h4>Short Crop Maturation Range</h4>
+        <p>Range of days for "short-term" crops to mature (min 4 days)</p>
+        <p><i>Whole numbers only (ex. 4, 5, 8, etc)</i></p>
+        <input type="number" id="shortCropRangeMin" min="4" step="1" value="4" />
+        <input type="number" id="shortCropRangeMax" step="1" value="8" />
+      </div>
+      <div>
+        <h4>Medium Crop Maturation Range</h4>
+        <p>Range of days for "medium-term" crops to mature</p>
+        <p><i>Whole numbers only (ex. 9, 12, 15, etc)</i></p>
+        <input type="number" id="mediumCropRangeMin" step="1" value="9" />
+        <input type="number" id="mediumCropRangeMax" step="1" value="15" />
+      </div>
+      <div>
+        <h4>Long Crop Maturation Range</h4>
+        <p>Range of days for "long-term" crops to mature (max 112 days)</p>
+        <p><i>Whole numbers only (ex. 16, 23, 92, etc)</i></p>
+        <input type="number" id="longCropRangeMin" step="1" value="16" />
+        <input type="number" id="longCropRangeMax" max="112" step="1" value="26" />
+      </div>
+      <hr />
+      <p>These 3 inputs must add up to 100%</p>
+      <div>
+        <h4>Total Short Crops Per Season Multiplier</h4>
+        <p>Percentage of how many crops per season will fall within the "short" maturation time (4 - 8 days)</p>
+        <p><i>Allows for whole or floating points (ex. 5, 12, 15.5, etc)</i></p>
+        <input type="number" id="totalShortCrops" min="0" value="20" />
+      </div>
+      <div>
+        <h4>Total Medium Crops Per Season Multiplier</h4>
+        <p>Percentage of how many crops per season will fall within the "medium" maturation time (9 - 15 days)</p>
+        <p><i>Allows for whole or floating points (ex. 5, 12, 15.5, etc)</i></p>
+        <input type="number" id="totalMediumCrops" min="0" value="60" />
+      </div>
+      <div>
+        <h4>Total Long Crops Per Season Multiplier</h4>
+        <p>Percentage of how many crops per season will fall within the "long" maturation time (16 - 112 days)</p>
+        <p><i>Allows for whole or floating points (ex. 5, 12, 15.5, etc)</i></p>
+        <input type="number" id="totalLongCrops" min="0" value="20" />
+      </div>
+    </div>
+    <hr />
     <div>
       <p>Upload the <code>content.json</code> from your <code>[STF] Balanced Valley - Realistic Farming</code> mod folder</p>
       <input type="file" id="file-upload" />
