@@ -1,0 +1,223 @@
+{
+  "299": {
+    "seedName": "Amaranth Seeds",
+    "itemIdx": "300",
+    "seasons": "summer"
+  },
+  "301": {
+    "seedName": "Grape Starter",
+    "itemIdx": "398",
+    "seasons": "fall"
+  },
+  "302": {
+    "seedName": "Hops Starter",
+    "itemIdx": "304",
+    "seasons": "summer fall"
+  },
+  "347": {
+    "seedName": "Rare Seed",
+    "itemIdx": "417",
+    "seasons": "spring winter"
+  },
+  "425": {
+    "seedName": "Fairy Seeds",
+    "itemIdx": "595",
+    "seasons": "fall"
+  },
+  "427": {
+    "seedName": "Tulip Seeds",
+    "itemIdx": "591",
+    "seasons": "spring"
+  },
+  "429": {
+    "seedName": "Jazz Seeds",
+    "itemIdx": "597",
+    "seasons": "spring"
+  },
+  "431": {
+    "seedName": "Sunflower Seeds",
+    "itemIdx": "421",
+    "seasons": "summer"
+  },
+  "433": {
+    "seedName": "Coffee Bean",
+    "itemIdx": "433",
+    "seasons": "spring summer fall"
+  },
+  "453": {
+    "seedName": "Poppy Seeds",
+    "itemIdx": "376",
+    "seasons": "summer"
+  },
+  "455": {
+    "seedName": "Spangle Seeds",
+    "itemIdx": "593",
+    "seasons": "summer"
+  },
+  "472": {
+    "seedName": "Parsnip Seeds",
+    "itemIdx": "24",
+    "seasons": "spring"
+  },
+  "473": {
+    "seedName": "Bean Starter",
+    "itemIdx": "188",
+    "seasons": "spring"
+  },
+  "474": {
+    "seedName": "Cauliflower Seeds",
+    "itemIdx": "190",
+    "seasons": "spring summer"
+  },
+  "475": {
+    "seedName": "Potato Seeds",
+    "itemIdx": "192",
+    "seasons": "spring"
+  },
+  "476": {
+    "seedName": "Garlic Seeds",
+    "itemIdx": "248",
+    "seasons": "spring winter"
+  },
+  "477": {
+    "seedName": "Kale Seeds",
+    "itemIdx": "250",
+    "seasons": "spring fall"
+  },
+  "478": {
+    "seedName": "Rhubarb Seeds",
+    "itemIdx": "252",
+    "seasons": "spring fall"
+  },
+  "479": {
+    "seedName": "Melon Seeds",
+    "itemIdx": "254",
+    "seasons": "spring summer fall"
+  },
+  "480": {
+    "seedName": "Tomato Seeds",
+    "itemIdx": "256",
+    "seasons": "summer"
+  },
+  "481": {
+    "seedName": "Blueberry Seeds",
+    "itemIdx": "258",
+    "seasons": "summer"
+  },
+  "482": {
+    "seedName": "Pepper Seeds",
+    "itemIdx": "260",
+    "seasons": "summer"
+  },
+  "483": {
+    "seedName": "Wheat Seeds",
+    "itemIdx": "262",
+    "seasons": "spring summer fall winter"
+  },
+  "484": {
+    "seedName": "Radish Seeds",
+    "itemIdx": "264",
+    "seasons": "spring"
+  },
+  "485": {
+    "seedName": "Red Cabbage Seeds",
+    "itemIdx": "266",
+    "seasons": "summer fall"
+  },
+  "486": {
+    "seedName": "Starfruit Seeds",
+    "itemIdx": "268",
+    "seasons": "summer fall"
+  },
+  "487": {
+    "seedName": "",
+    "itemIdx": "270",
+    "seasons": "summer fall"
+  },
+  "488": {
+    "seedName": "Corn Seeds",
+    "itemIdx": "272",
+    "seasons": "summer fall"
+  },
+  "489": {
+    "seedName": "Artichoke Seeds",
+    "itemIdx": "274",
+    "seasons": "spring fall"
+  },
+  "490": {
+    "seedName": "Pumpkin Seeds",
+    "itemIdx": "276",
+    "seasons": "fall"
+  },
+  "491": {
+    "seedName": "Bok Choy Seeds",
+    "itemIdx": "278",
+    "seasons": "spring fall"
+  },
+  "492": {
+    "seedName": "Yam Seeds",
+    "itemIdx": "280",
+    "seasons": "fall"
+  },
+  "493": {
+    "seedName": "Cranberry Seeds",
+    "itemIdx": "282",
+    "seasons": "fall"
+  },
+  "494": {
+    "seedName": "Beet Seeds",
+    "itemIdx": "284",
+    "seasons": "spring fall"
+  },
+  "495": {
+    "seedName": "Spring Seeds",
+    "seasons": "spring"
+  },
+  "496": {
+    "seedName": "Summer Seeds",
+    "seasons": "summer"
+  },
+  "497": {
+    "seedName": "Fall Seeds",
+    "seasons": "fall"
+  },
+  "498": {
+    "seedName": "Winter Seeds",
+    "seasons": "winter"
+  },
+  "499": {
+    "seedName": "Ancient Seeds",
+    "itemIdx": "454",
+    "seasons": "summer fall"
+  },
+  "745": {
+    "seedName": "Strawberry Seeds",
+    "itemIdx": "400",
+    "seasons": "spring summer"
+  },
+  "802": {
+    "seedName": "Cactus Seeds",
+    "itemIdx": "90",
+    "seasons": "summer fall winter"
+  },
+  "831": {
+    "seedName": "Taro Tuber",
+    "itemIdx": "830",
+    "seasons": "summer"
+  },
+  "833": {
+    "seedName": "Pineapple Seeds",
+    "itemIdx": "832",
+    "seasons": "spring summer"
+  },
+  "885": {
+    "seedName": "Fiber Seeds",
+    "itemIdx": "771",
+    "seasons": "spring summer fall winter"
+  },
+  "890": {
+    "seedName": "Qi Bean",
+    "itemIdx": "889",
+    "seasons": "spring summer fall winter"
+  }
+}
