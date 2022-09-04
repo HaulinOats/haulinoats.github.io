@@ -128,7 +128,7 @@ const initUtility = () => {
         if (i + 1 === growthStagesArr.length) {
           let daysSum = 0;
           let sum = growthStagesArr.reduce((prev, curr) => prev + curr, daysSum);
-          growthStagesArr[i] = Math.abs(sum - totalGrowthTime);
+          growthStagesArr[i] = sum > totalGrowthTime ? sum - totalGrowthTime : totalGrowthTime - sum;
         }
       }
       item.cropData[0] = growthStagesArr.join(" ");
