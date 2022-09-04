@@ -110,9 +110,9 @@ const initUtility = () => {
       let growthTimeRunningTotal = totalGrowthTime;
       let growthStagesArr = item.cropData[0].split(" ");
       // maximum values that can be in growth stage (default 4 for medium crops)
-      let growthStageMax = 4;
-      if (totalGrowthTime > 15) growthStageMax = 5;
-      if (totalGrowthTime < 9) growthStageMax = 3;
+      let growthStageMax = 3;
+      if (totalGrowthTime > 15) growthStageMax = 4;
+      if (totalGrowthTime < 9) growthStageMax = 2;
 
       for (let i = 0; i < growthStagesArr.length; i++) {
         let growthStageDays = generateRandomWhole(1, growthStageMax);
@@ -125,13 +125,15 @@ const initUtility = () => {
 
         //if on last iteration (final growth stage), ensure final stage makes up days needed to equal total growth time
         if (i + 1 === growthStagesArr.length) {
-          console.log(i);
           let sum = growthStagesArr.reduce((prev, curr) => prev + curr, 0);
           // console.log(JSON.parse(JSON.stringify({ growthStagesArr })));
           // console.log(JSON.parse(JSON.stringify({ growthStagesArrSum: sum })));
           growthStagesArr[i] = sum > totalGrowthTime ? sum - totalGrowthTime : totalGrowthTime - sum;
         }
       }
+      //if total of growth stages is less than total grow time, add the difference to last stage
+      const growthStagesSum = growthStagesArr.reduce((prev, curr) => prev + curr, 0);
+      if (growthStagesSum < totalGrowthTime) growthStagesArr[growthStagesArr.length - 1] += totalGrowthTime - growthStagesSum;
       //if any growth stages are 0, pull a day from another stage
       for (let i = 0; i < growthStagesArr.length; i++) {
         if (growthStagesArr[i] < 1) {
