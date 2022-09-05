@@ -51,12 +51,12 @@ const initUtility = () => {
   //gold per day price multipliers based on if a crop can regrow or not
   const priceMultiplier = {
     regular: {
-      crop: generateRandomWhole(Number(regularGPDCropPriceMultiplierMinEl.value), Number(regularGPDCropPriceMultiplierMaxEl)),
-      seed: generateRandomWhole(Number(regularGPDSeedPriceMultiplierMinEl.value), Number(regularGPDSeedPriceMultiplierMaxEl)),
+      crop: generateRandomWhole(Number(regularGPDCropPriceMultiplierMinEl.value), Number(regularGPDCropPriceMultiplierMaxEl.value)),
+      seed: generateRandomWhole(Number(regularGPDSeedPriceMultiplierMinEl.value), Number(regularGPDSeedPriceMultiplierMaxEl.value)),
     },
     regrow: {
-      crop: generateRandomWhole(Number(regrowthGPDCropPriceMultiplierMinEl.value), Number(regrowthGPDCropPriceMultiplierMaxEl)),
-      seed: generateRandomWhole(Number(regrowthGPDSeedPriceMultiplierMinEl.value), Number(regrowthGPDSeedPriceMultiplierMaxEl)),
+      crop: generateRandomWhole(Number(regrowthGPDCropPriceMultiplierMinEl.value), Number(regrowthGPDCropPriceMultiplierMaxEl.value)),
+      seed: generateRandomWhole(Number(regrowthGPDSeedPriceMultiplierMinEl.value), Number(regrowthGPDSeedPriceMultiplierMaxEl.value)),
     },
   };
 
@@ -80,9 +80,9 @@ const initUtility = () => {
     const totalSeasonCrops = seasonCropPool.length;
 
     //set number of crops per season that are allowed to regrow or have extra harvest yields
-    const totalExtraYieldCropsMultiplier = parseFloat(totalExtraYieldCropsMultiplierEl.value).toFixed(2);
+    // const totalExtraYieldCropsMultiplier = parseFloat(totalExtraYieldCropsMultiplierEl.value).toFixed(2);
+    // let totalExtraYieldCrops = Math.ceil(totalSeasonCrops * (totalExtraYieldCropsMultiplier * 0.01));
     const totalRegrowthCropsMultiplier = parseFloat(totalRegrowthCropsMultiplierEl.value).toFixed(2);
-    let totalExtraYieldCrops = Math.ceil(totalSeasonCrops * (totalExtraYieldCropsMultiplier * 0.01));
     let totalRegrowthCrops = Math.ceil(totalSeasonCrops * (totalRegrowthCropsMultiplier * 0.01));
 
     //set how many crops per season will fall into short, medium, and long-term harvests

@@ -56,26 +56,18 @@
       </div>
       <hr />
       <div>
-        <h4>Regular Crop Sell Price Multiplier Range</h4>
-        <p>Gold per day range multiplier for crop sell price</p>
-        <p><i>Whole numbers only (ex. 4, 5, 8, etc)</i></p>
-        <input type="number" id="regularGPDCropPriceMultiplierMin" min="1" value="12" />
-        <input type="number" id="regularGPDCropPriceMultiplierMax" value="18" />
-      </div>
-      <div>
-      <div>
-        <h4>Regular Seed Purchase Price Multiplier Range</h4>
+        <h4>Regular Seed Gold Per Day Purchase Price Multiplier Range</h4>
         <p>Gold per day range multiplier for seed purchase price</p>
         <p><i>Whole numbers only (ex. 4, 5, 8, etc)</i></p>
         <input type="number" id="regularGPDSeedPriceMultiplierMin" min="1" value="2" />
         <input type="number" id="regularGPDSeedPriceMultiplierMax" value="5" />
       </div>
       <div>
-        <h4>Regrowth Crop Sell Price Multiplier Range</h4>
-        <p>Gold per day range multiplier for regrowth crop sell price</p>
+        <h4>Regular Crop Gold Per Day Sell Price Multiplier Range</h4>
+        <p>Gold per day range multiplier for crop sell price</p>
         <p><i>Whole numbers only (ex. 4, 5, 8, etc)</i></p>
-        <input type="number" id="regrowthGPDCropPriceMultiplierMin" min="1" value="8" />
-        <input type="number" id="regrowthGPDCropPriceMultiplierMax" value="10" />
+        <input type="number" id="regularGPDCropPriceMultiplierMin" min="1" value="12" />
+        <input type="number" id="regularGPDCropPriceMultiplierMax" value="18" />
       </div>
       <div>
         <h4>Regrowth Seed Purchase Price Multiplier Range</h4>
@@ -84,7 +76,14 @@
         <input type="number" id="regrowthGPDSeedPriceMultiplierMin" min="1" value="4" />
         <input type="number" id="regrowthGPDSeedPriceMultiplierMax" value="7" />
       </div>
-      <hr>
+      <div>
+        <h4>Regrowth Crop Gold Per Day Sell Price Multiplier Range</h4>
+        <p>Gold per day range multiplier for regrowth crop sell price</p>
+        <p><i>Whole numbers only (ex. 4, 5, 8, etc)</i></p>
+        <input type="number" id="regrowthGPDCropPriceMultiplierMin" min="1" value="8" />
+        <input type="number" id="regrowthGPDCropPriceMultiplierMax" value="10" />
+      </div>
+      <hr />
       <p class="pb-2"><b>3 following inputs should add up to 100</b></p>
       <div>
         <h4>Total Short Crops Per Season Multiplier</h4>
@@ -104,7 +103,7 @@
         <p><i>Allows for whole or floating points (ex. 5, 12, 15.5, etc)</i></p>
         <input type="number" id="totalLongCrops" min="0" value="20" />
       </div>
-      <hr>
+      <hr />
       <!-- <div>
         <h4>Total Extra Yield Crops Multiplier</h4>
         <p>Percentage of how many crops per season are allowed to produce extra yield when harvesting</p>
