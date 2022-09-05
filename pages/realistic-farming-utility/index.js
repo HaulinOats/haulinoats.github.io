@@ -13,6 +13,14 @@ const mediumCropRangeMinEl = document.getElementById("mediumCropRangeMin");
 const mediumCropRangeMaxEl = document.getElementById("mediumCropRangeMax");
 const longCropRangeMinEl = document.getElementById("longCropRangeMin");
 const longCropRangeMaxEl = document.getElementById("longCropRangeMax");
+const regularGPDCropPriceMultiplierMinEl = document.getElementById("regularGPDCropPriceMultiplierMin");
+const regularGPDCropPriceMultiplierMaxEl = document.getElementById("regularGPDCropPriceMultiplierMax");
+const regularGPDSeedPriceMultiplierMinEl = document.getElementById("regularGPDSeedPriceMultiplierMin");
+const regularGPDSeedPriceMultiplierMaxEl = document.getElementById("regularGPDSeedPriceMultiplierMax");
+const regrowthGPDCropPriceMultiplierMinEl = document.getElementById("regrowthGPDCropPriceMultiplierMin");
+const regrowthGPDCropPriceMultiplierMaxEl = document.getElementById("regrowthGPDCropPriceMultiplierMax");
+const regrowthGPDSeedPriceMultiplierMinEl = document.getElementById("regrowthGPDSeedPriceMultiplierMin");
+const regrowthGPDSeedPriceMultiplierMaxEl = document.getElementById("regrowthGPDSeedPriceMultiplierMax");
 
 let contentJSON;
 let itemData = {};
@@ -43,12 +51,12 @@ const initUtility = () => {
   //gold per day price multipliers based on if a crop can regrow or not
   const priceMultiplier = {
     regular: {
-      crop: generateRandomWhole(12, 18),
-      seed: generateRandomWhole(2, 5),
+      crop: generateRandomWhole(Number(regularGPDCropPriceMultiplierMinEl.value), Number(regularGPDCropPriceMultiplierMaxEl)),
+      seed: generateRandomWhole(Number(regularGPDSeedPriceMultiplierMinEl.value), Number(regularGPDSeedPriceMultiplierMaxEl)),
     },
     regrow: {
-      crop: generateRandomWhole(8, 10),
-      seed: generateRandomWhole(4, 7),
+      crop: generateRandomWhole(Number(regrowthGPDCropPriceMultiplierMinEl.value), Number(regrowthGPDCropPriceMultiplierMaxEl)),
+      seed: generateRandomWhole(Number(regrowthGPDSeedPriceMultiplierMinEl.value), Number(regrowthGPDSeedPriceMultiplierMaxEl)),
     },
   };
 
@@ -138,8 +146,9 @@ const initUtility = () => {
         growthStagesArr[lastGrowthStageIdx]--;
         growthStagesArr[lastGrowthStageIdx - 1]++;
       }
-
-      item.cropData[0] = growthStagesArr.join(" ");
+      //shuffles array so growth stage positions are randomized
+      item.cropData[0] = shuffleArray(growthStagesArr).join(" ");
+      // item.cropData[0] = growthStagesArr.join(" ");
 
       //set up dynamic description for seeds
       let cropSeasons = item.cropData[1]
@@ -177,17 +186,17 @@ const initUtility = () => {
       item.seedObjectData[5] = seasonText;
 
       //if crop is allowed to have extra chance for multiple harvesting
-      if (totalExtraYieldCrops) {
-        let minHarvest = generateRandomWhole(1, 3);
-        let maxHarvest = generateRandomWhole(minHarvest, 3);
-        let chanceForExtraCrops = generateRandomFloat(0.1, 0.3);
-        item.cropData[6] = `true ${minHarvest} ${maxHarvest} 0 ${chanceForExtraCrops}`;
+      // if (totalExtraYieldCrops) {
+      //   let minHarvest = generateRandomWhole(1, 3);
+      //   let maxHarvest = generateRandomWhole(minHarvest, 3);
+      //   let chanceForExtraCrops = generateRandomFloat(0.1, 0.3);
+      //   item.cropData[6] = `true ${minHarvest} ${maxHarvest} 0 ${chanceForExtraCrops}`;
 
-        //reduce crop sell price due to multiple harvest chance
-        item.harvestObjectData[1] = Math.ceil(item.harvestObjectData[1] * (1 - chanceForExtraCrops));
+      //   //reduce crop sell price due to multiple harvest chance
+      //   item.harvestObjectData[1] = Math.ceil(item.harvestObjectData[1] * (1 - chanceForExtraCrops));
 
-        totalExtraYieldCrops--;
-      }
+      //   totalExtraYieldCrops--;
+      // }
       setItemData(seedIdx, item);
     }
     console.log("----------------------");
