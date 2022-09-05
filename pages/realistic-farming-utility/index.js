@@ -58,8 +58,8 @@ function initUtility() {
     const totalSeasonCrops = seasonCropPool.length;
 
     //set number of crops per season that are allowed to regrow or have extra harvest yields
-    // const totalExtraYieldCropsMultiplier = parseFloat(totalExtraYieldCropsMultiplierEl.value).toFixed(2);
-    // let totalExtraYieldCrops = Math.ceil(totalSeasonCrops * (totalExtraYieldCropsMultiplier * 0.01));
+    const totalExtraYieldCropsMultiplier = parseFloat(totalExtraYieldCropsMultiplierEl.value).toFixed(2);
+    let totalExtraYieldCrops = Math.ceil(totalSeasonCrops * (totalExtraYieldCropsMultiplier * 0.01));
     const totalRegrowthCropsPercentage = Number(totalRegrowthCropsPercentageEl.value);
     let totalRegrowthCrops = Math.ceil(totalSeasonCrops * (totalRegrowthCropsPercentage * 0.01));
 
@@ -165,8 +165,8 @@ function initUtility() {
       item.seedObjectData[5] = seedDescription;
 
       // if crop is allowed to have extra chance for multiple harvesting
-      const randomizeExtraYieldCrops = randomizeExtraYieldCropsEl.checked;
-      if (randomizeExtraYieldCrops && totalExtraYieldCrops) {
+      const allowRandomExtraYields = allowRandomExtraYieldsEl.checked;
+      if (allowRandomExtraYields && totalExtraYieldCrops) {
         let minHarvest = getRandomIntegerInRange(1, 3);
         let maxHarvest = getRandomIntegerInRange(minHarvest, 3);
         let chanceForExtraCrops = getRandomFloatInRange(0.1, 0.3);
@@ -248,7 +248,6 @@ function replaceLast(string, search, replace) {
 //get elements from HTML
 const saveBtn = document.getElementById("saveBtn");
 const fileUpload = document.getElementById("file-upload");
-const totalExtraYieldCropsMultiplierEl = document.getElementById("totalExtraYieldCropsMultiplier");
 const totalRegrowthCropsPercentageEl = document.getElementById("totalRegrowthCropsPercentage");
 const totalShortCropsPercentageEl = document.getElementById("totalShortCropsPercentage");
 const totalMediumCropsPercentageEl = document.getElementById("totalMediumCropsPercentage");
@@ -267,8 +266,9 @@ const regrowthGPDCropPriceMultiplierMinEl = document.getElementById("regrowthGPD
 const regrowthGPDCropPriceMultiplierMaxEl = document.getElementById("regrowthGPDCropPriceMultiplierMax");
 const regrowthGPDSeedPriceMultiplierMinEl = document.getElementById("regrowthGPDSeedPriceMultiplierMin");
 const regrowthGPDSeedPriceMultiplierMaxEl = document.getElementById("regrowthGPDSeedPriceMultiplierMax");
-const randomizeExtraYieldCropsEl = document.getElementById("randomizeExtraYieldCrops");
+const allowRandomExtraYieldsEl = document.getElementById("allowRandomExtraYields");
 const extraYieldContainer = document.getElementById("extraYieldContainer");
+const totalExtraYieldCropsMultiplierEl = document.getElementById("totalExtraYieldCropsMultiplier");
 const outputPreviewContainer = document.getElementById("outputPreviewContainer");
 const outputPreview = document.getElementById("outputPreview");
 const copyToClipboard = document.getElementById("copyToClipboard");
@@ -314,7 +314,7 @@ saveBtn.addEventListener("click", () => {
   saveTemplateAsFile("content.json", JSON.parse(outputPreview.innerText));
 });
 
-randomizeExtraYieldCropsEl.addEventListener("change", (e) => {
+allowRandomExtraYieldsEl.addEventListener("change", (e) => {
   if (e.target.checked) extraYieldContainer.style.display = "block";
   else extraYieldContainer.style.display = "none";
 });
