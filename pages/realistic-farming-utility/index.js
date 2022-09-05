@@ -133,8 +133,8 @@ function initUtility() {
         .split(" ")
         .map((season) => capitalize(season))
         .join(", ");
-      let seasonText = `Plant these in ${replaceLast(cropSeasons, ",", " or")}. `;
-      seasonText += `Takes ${totalGrowthTime} ${totalGrowthTime < 2 ? "day" : "days"} to mature`;
+      let seedDescription = `Plant these in ${replaceLast(cropSeasons, ",", " or")}. `;
+      seedDescription += `Takes ${totalGrowthTime} ${totalGrowthTime < 2 ? "day" : "days"} to mature`;
 
       //if crop is regrowth capable or on a trellis
       const isTrellisCrop = Boolean(item.cropData[7]);
@@ -147,7 +147,7 @@ function initUtility() {
         item.seedObjectData[1] = Math.ceil(totalGrowthTime * priceMultiplier.regrow.seed);
 
         //append season text with regrowth verbiage
-        seasonText += `, but keeps producing after that.${isTrellisCrop ? " Grows on a trellis." : ""}`;
+        seedDescription += `, but keeps producing after that.${isTrellisCrop ? " Grows on a trellis." : ""}`;
       } else {
         //if crop is NOT regrowth capable
         //set crop to not regrow
@@ -158,23 +158,25 @@ function initUtility() {
         item.seedObjectData[1] = Math.ceil(totalGrowthTime * priceMultiplier.regular.seed);
 
         //append period to season text
-        seasonText += `.`;
+        seedDescription += `.`;
       }
 
-      item.seedObjectData[5] = seasonText;
+      //store updated
+      item.seedObjectData[5] = seedDescription;
 
-      //if crop is allowed to have extra chance for multiple harvesting
-      // if (totalExtraYieldCrops) {
-      //   let minHarvest = getRandomIntegerInRange(1, 3);
-      //   let maxHarvest = getRandomIntegerInRange(minHarvest, 3);
-      //   let chanceForExtraCrops = getRandomFloatInRange(0.1, 0.3);
-      //   item.cropData[6] = `true ${minHarvest} ${maxHarvest} 0 ${chanceForExtraCrops}`;
+      // if crop is allowed to have extra chance for multiple harvesting
+      const randomizeExtraYieldCrops = randomizeExtraYieldCropsEl.checked;
+      if (randomizeExtraYieldCrops && totalExtraYieldCrops) {
+        let minHarvest = getRandomIntegerInRange(1, 3);
+        let maxHarvest = getRandomIntegerInRange(minHarvest, 3);
+        let chanceForExtraCrops = getRandomFloatInRange(0.1, 0.3);
+        item.cropData[6] = `true ${minHarvest} ${maxHarvest} 0 ${chanceForExtraCrops}`;
 
-      //   //reduce crop sell price due to multiple harvest chance
-      //   item.harvestObjectData[1] = Math.ceil(item.harvestObjectData[1] * (1 - chanceForExtraCrops));
+        //reduce crop sell price due to multiple harvest chance
+        item.harvestObjectData[1] = Math.ceil(item.harvestObjectData[1] * (1 - chanceForExtraCrops));
 
-      //   totalExtraYieldCrops--;
-      // }
+        totalExtraYieldCrops--;
+      }
       setItemData(seedIdx, item);
     }
     console.log("----------------------");
@@ -182,7 +184,7 @@ function initUtility() {
 
   function setItemData(seedIdx, item) {
     itemData[seedIdx] = item;
-    console.log({ [seedIdx]: item });
+    console.log(seedIdx, ":", item);
   }
 }
 
@@ -232,7 +234,7 @@ function getRandomIntegerInRange(min, max) {
 }
 
 function getRandomFloatInRange(min, max) {
-  return (Math.random() * (max - min) + min).toFixed(2);
+  return parseFloat(Math.random() * (max - min) + min).toFixed(2);
 }
 
 function capitalize(word) {
@@ -244,7 +246,7 @@ function replaceLast(string, search, replace) {
 }
 
 //get elements from HTML
-const generateBtn = document.getElementById("generate");
+const saveBtn = document.getElementById("saveBtn");
 const fileUpload = document.getElementById("file-upload");
 const totalExtraYieldCropsMultiplierEl = document.getElementById("totalExtraYieldCropsMultiplier");
 const totalRegrowthCropsPercentageEl = document.getElementById("totalRegrowthCropsPercentage");
@@ -265,17 +267,19 @@ const regrowthGPDCropPriceMultiplierMinEl = document.getElementById("regrowthGPD
 const regrowthGPDCropPriceMultiplierMaxEl = document.getElementById("regrowthGPDCropPriceMultiplierMax");
 const regrowthGPDSeedPriceMultiplierMinEl = document.getElementById("regrowthGPDSeedPriceMultiplierMin");
 const regrowthGPDSeedPriceMultiplierMaxEl = document.getElementById("regrowthGPDSeedPriceMultiplierMax");
-const randomizeExtraYieldsEl = document.getElementById("randomizeExtraYields");
+const randomizeExtraYieldCropsEl = document.getElementById("randomizeExtraYieldCrops");
+const extraYieldContainer = document.getElementById("extraYieldContainer");
+const outputPreviewContainer = document.getElementById("outputPreviewContainer");
+const outputPreview = document.getElementById("outputPreview");
+const copyToClipboard = document.getElementById("copyToClipboard");
 
 //EVENT LISTENERS
 fileUpload.addEventListener("change", async (e) => {
-  generateBtn.style.display = "";
+  saveBtn.style.display = "";
 
   initUtility();
 
   contentJSON = await parseJsonFile(e.target.files[0]);
-
-  // console.log(contentJSON);
 
   let entriesCropData = {};
   let entriesObjectData = {};
@@ -301,10 +305,22 @@ fileUpload.addEventListener("change", async (e) => {
   });
 
   console.log(contentJSON);
+  outputPreview.innerHTML = JSON.stringify(contentJSON, null, 2);
+  outputPreviewContainer.style.display = "block";
 });
 
-generateBtn.addEventListener("click", () => {
-  saveTemplateAsFile("content.json", contentJSON);
+saveBtn.addEventListener("click", () => {
+  //get final json from output textarea in case any specific fields were updated manually
+  saveTemplateAsFile("content.json", JSON.parse(outputPreview.innerText));
+});
+
+randomizeExtraYieldCropsEl.addEventListener("change", (e) => {
+  if (e.target.checked) extraYieldContainer.style.display = "block";
+  else extraYieldContainer.style.display = "none";
+});
+
+copyToClipboard.addEventListener("click", () => {
+  navigator.clipboard.writeText(outputPreview.innerText);
 });
 
 const baseData = {

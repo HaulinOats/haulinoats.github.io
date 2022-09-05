@@ -10,3 +10,13 @@ body {
 .modifiers-container div {
   margin-bottom: 25px;
 }
+#extraYieldContainer {
+  display: none;
+}
+#outputData {
+  font-family: monospace;
+  width: 100%;
+}
+#outputPreviewContainer {
+  display: none;
+}

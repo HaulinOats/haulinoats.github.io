@@ -119,21 +119,27 @@
         <input type="number" id="regrowthGPDCropPriceMultiplierMax" value="10" />
       </div>
       <hr />
-      <!-- <div>
-        <span><input type="checkbox" id="randomizeExtraYields" /> Allow random crops to have extra yields</span>
-      </div> -->
-      <!-- <div>
+      <div>
+        <span><input type="checkbox" id="randomizeExtraYieldCrops" /> Allow random crops to have extra yields</span>
+      </div>
+      <div id="extraYieldContainer">
         <h4>Total Extra Yield Crops Multiplier</h4>
         <p>Percentage of how many crops per season are allowed to produce extra yield when harvesting</p>
-        <p><i>Allows for whole or floating points (ex. 15, 12.5, 0.5, etc)</i></p>
         <input type="number" id="totalExtraYieldCropsMultiplier" min="0" value="15" />
-      </div> -->
+      </div>
     </div>
     <hr />
     <div>
       <p>Upload the <code>content.json</code> from your <code>[STF] Balanced Valley - Realistic Farming</code> mod folder</p>
       <input type="file" id="file-upload" />
-      <button id="generate" style="display: none">Generate content.json file</button>
+    </div>
+    <hr />
+    <div id="outputPreviewContainer">
+      <p><b>Output Preview</b></p>
+      <p>You can make changes, if desired, and then click the save button to save or copy and paste the output to the content.json file.</p>
+      <button id="copyToClipboard">Copy To Clipboard</button>
+      <button id="saveBtn" style="display: none">Save JSON</button>
+      <pre id="outputPreview" contenteditable></pre>
     </div>
     <script src="./index.js"></script>
   </body>
