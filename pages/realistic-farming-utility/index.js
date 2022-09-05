@@ -1,31 +1,9 @@
 "use strict";
 
-const generateBtn = document.getElementById("generate");
-const fileUpload = document.getElementById("file-upload");
-const totalExtraYieldCropsMultiplierEl = document.getElementById("totalExtraYieldCropsMultiplier");
-const totalRegrowthCropsMultiplierEl = document.getElementById("totalRegrowthCropsMultiplier");
-const totalShortCropsEl = document.getElementById("totalShortCrops");
-const totalMediumCropsEl = document.getElementById("totalMediumCrops");
-const totalLongCropsEl = document.getElementById("totalLongCrops");
-const shortCropRangeMinEl = document.getElementById("shortCropRangeMin");
-const shortCropRangeMaxEl = document.getElementById("shortCropRangeMax");
-const mediumCropRangeMinEl = document.getElementById("mediumCropRangeMin");
-const mediumCropRangeMaxEl = document.getElementById("mediumCropRangeMax");
-const longCropRangeMinEl = document.getElementById("longCropRangeMin");
-const longCropRangeMaxEl = document.getElementById("longCropRangeMax");
-const regularGPDCropPriceMultiplierMinEl = document.getElementById("regularGPDCropPriceMultiplierMin");
-const regularGPDCropPriceMultiplierMaxEl = document.getElementById("regularGPDCropPriceMultiplierMax");
-const regularGPDSeedPriceMultiplierMinEl = document.getElementById("regularGPDSeedPriceMultiplierMin");
-const regularGPDSeedPriceMultiplierMaxEl = document.getElementById("regularGPDSeedPriceMultiplierMax");
-const regrowthGPDCropPriceMultiplierMinEl = document.getElementById("regrowthGPDCropPriceMultiplierMin");
-const regrowthGPDCropPriceMultiplierMaxEl = document.getElementById("regrowthGPDCropPriceMultiplierMax");
-const regrowthGPDSeedPriceMultiplierMinEl = document.getElementById("regrowthGPDSeedPriceMultiplierMin");
-const regrowthGPDSeedPriceMultiplierMaxEl = document.getElementById("regrowthGPDSeedPriceMultiplierMax");
-
 let contentJSON;
 let itemData = {};
 
-const initUtility = () => {
+function initUtility() {
   let seasonCrops = {
     spring: [],
     summer: [],
@@ -51,12 +29,12 @@ const initUtility = () => {
   //gold per day price multipliers based on if a crop can regrow or not
   const priceMultiplier = {
     regular: {
-      crop: generateRandomWhole(Number(regularGPDCropPriceMultiplierMinEl.value), Number(regularGPDCropPriceMultiplierMaxEl.value)),
-      seed: generateRandomWhole(Number(regularGPDSeedPriceMultiplierMinEl.value), Number(regularGPDSeedPriceMultiplierMaxEl.value)),
+      crop: getRandomFloatInRange(parseFloat(regularGPDCropPriceMultiplierMinEl.value).toFixed(2), parseFloat(regularGPDCropPriceMultiplierMaxEl.value).toFixed(2)),
+      seed: getRandomFloatInRange(parseFloat(regularGPDSeedPriceMultiplierMinEl.value).toFixed(2), parseFloat(regularGPDSeedPriceMultiplierMaxEl.value).toFixed(2)),
     },
     regrow: {
-      crop: generateRandomWhole(Number(regrowthGPDCropPriceMultiplierMinEl.value), Number(regrowthGPDCropPriceMultiplierMaxEl.value)),
-      seed: generateRandomWhole(Number(regrowthGPDSeedPriceMultiplierMinEl.value), Number(regrowthGPDSeedPriceMultiplierMaxEl.value)),
+      crop: getRandomFloatInRange(parseFloat(regrowthGPDCropPriceMultiplierMinEl.value).toFixed(2), parseFloat(regrowthGPDCropPriceMultiplierMaxEl.value).toFixed(2)),
+      seed: getRandomFloatInRange(parseFloat(regrowthGPDSeedPriceMultiplierMinEl.value).toFixed(2), parseFloat(regrowthGPDSeedPriceMultiplierMaxEl.value).toFixed(2)),
     },
   };
 
@@ -82,23 +60,23 @@ const initUtility = () => {
     //set number of crops per season that are allowed to regrow or have extra harvest yields
     // const totalExtraYieldCropsMultiplier = parseFloat(totalExtraYieldCropsMultiplierEl.value).toFixed(2);
     // let totalExtraYieldCrops = Math.ceil(totalSeasonCrops * (totalExtraYieldCropsMultiplier * 0.01));
-    const totalRegrowthCropsMultiplier = parseFloat(totalRegrowthCropsMultiplierEl.value).toFixed(2);
-    let totalRegrowthCrops = Math.ceil(totalSeasonCrops * (totalRegrowthCropsMultiplier * 0.01));
+    const totalRegrowthCropsPercentage = Number(totalRegrowthCropsPercentageEl.value);
+    let totalRegrowthCrops = Math.ceil(totalSeasonCrops * (totalRegrowthCropsPercentage * 0.01));
 
     //set how many crops per season will fall into short, medium, and long-term harvests
-    const totalShortCropsMultiplier = (parseFloat(totalShortCropsEl.value) * 0.01).toFixed(2);
-    const totalMediumCropsMultiplier = (parseFloat(totalMediumCropsEl.value) * 0.01).toFixed(2);
-    const totalLongCropsMultiplier = (parseFloat(totalLongCropsEl.value) * 0.01).toFixed(2);
-    let totalShortCrops = Math.ceil(totalSeasonCrops * totalShortCropsMultiplier);
-    let totalMediumCrops = Math.ceil(totalSeasonCrops * totalMediumCropsMultiplier);
-    let totalLongCrops = Math.ceil(totalSeasonCrops * totalLongCropsMultiplier);
+    const totalShortCropsPercentage = Number(totalShortCropsPercentageEl.value) * 0.01;
+    const totalMediumCropsPercentage = Number(totalMediumCropsPercentageEl.value) * 0.01;
+    const totalLongCropsPercentage = Number(totalLongCropsPercentageEl.value) * 0.01;
+    let totalShortCrops = Math.ceil(totalSeasonCrops * totalShortCropsPercentage);
+    let totalMediumCrops = Math.ceil(totalSeasonCrops * totalMediumCropsPercentage);
+    let totalLongCrops = Math.ceil(totalSeasonCrops * totalLongCropsPercentage);
     const totalCropTypeSums = totalShortCrops + totalMediumCrops + totalLongCrops;
 
     //if the sum of calculated harvest categories does not equal actual crops in season
     //remove/add difference from medium harvest length crops
     if (totalCropTypeSums > totalSeasonCrops) totalMediumCrops -= totalCropTypeSums - totalSeasonCrops;
     if (totalCropTypeSums < totalSeasonCrops) totalMediumCrops += totalSeasonCrops - totalCropTypeSums;
-    console.log("season crop type objects: ", { shortCrops: totalShortCrops, mediumCrops: totalMediumCrops, longCrops: totalLongCrops });
+    console.log("season crop type totals: ", { totalShortCrops, totalMediumCrops, totalLongCrops });
     console.log("total crops per season: ", totalShortCrops + totalMediumCrops + totalLongCrops);
 
     //loop through each season
@@ -113,12 +91,12 @@ const initUtility = () => {
       };
 
       //generate random growth (harvest) times for different crops
-      let totalGrowthTime = generateRandomWhole(cropGrowthRanges.medium.min, cropGrowthRanges.medium.max);
+      let totalGrowthTime = getRandomIntegerInRange(cropGrowthRanges.medium.min, cropGrowthRanges.medium.max);
       if (totalShortCrops) {
-        totalGrowthTime = generateRandomWhole(cropGrowthRanges.short.min, cropGrowthRanges.short.max);
+        totalGrowthTime = getRandomIntegerInRange(cropGrowthRanges.short.min, cropGrowthRanges.short.max);
         totalShortCrops--;
       } else if (totalLongCrops) {
-        totalGrowthTime = generateRandomWhole(cropGrowthRanges.long.min, cropGrowthRanges.long.max);
+        totalGrowthTime = getRandomIntegerInRange(cropGrowthRanges.long.min, cropGrowthRanges.long.max);
         totalLongCrops--;
       }
       item.totalGrowthDays = totalGrowthTime;
@@ -132,15 +110,15 @@ const initUtility = () => {
         growthStagesArr[i] = averageGrowthStageDays;
       }
 
-      //if total of growth stages is less than total grow time, add/remove the difference to/from last stage
+      //if total sum of growth stages is less than total grow time, remove the difference from last stage
       const growthStagesSum = growthStagesArr.reduce((prev, curr) => prev + curr, 0);
       const lastGrowthStageIdx = growthStagesArr.length - 1;
       if (growthStagesSum < totalGrowthTime) {
         growthStagesArr[lastGrowthStageIdx] += totalGrowthTime - growthStagesSum;
       }
 
-      //if last growth stage is at least 2 days higher than previous day, distribute
-      //excess to 2 other random days
+      //if last growth stage is at least 2 days higher than previous day,
+      //distribute excess to previous day
       const growthDayDiff = growthStagesArr[lastGrowthStageIdx] - growthStagesArr[lastGrowthStageIdx - 1];
       if (growthDayDiff > 1) {
         growthStagesArr[lastGrowthStageIdx]--;
@@ -159,14 +137,14 @@ const initUtility = () => {
       seasonText += `Takes ${totalGrowthTime} ${totalGrowthTime < 2 ? "day" : "days"} to mature`;
 
       //if crop is regrowth capable or on a trellis
-      const isTrellisCrop = item.seedObjectData[5].toLowerCase().includes("trellis");
+      const isTrellisCrop = Boolean(item.cropData[7]);
       if (totalRegrowthCrops || isTrellisCrop) {
         //if more crops are allowed to be given regrowth capabilities, set regrowth time to be between 20% - 40% of total grow time.
-        item.cropData[4] = Math.ceil(totalGrowthTime * generateRandomFloat(0.3, 0.5));
+        item.cropData[4] = Math.ceil(totalGrowthTime * getRandomFloatInRange(0.3, 0.5));
 
         //set crop and seed sell prices
-        item.harvestObjectData[1] = totalGrowthTime * priceMultiplier.regrow.crop;
-        item.seedObjectData[1] = totalGrowthTime * priceMultiplier.regrow.seed;
+        item.harvestObjectData[1] = Math.ceil(totalGrowthTime * priceMultiplier.regrow.crop);
+        item.seedObjectData[1] = Math.ceil(totalGrowthTime * priceMultiplier.regrow.seed);
 
         //append season text with regrowth verbiage
         seasonText += `, but keeps producing after that.${isTrellisCrop ? " Grows on a trellis." : ""}`;
@@ -176,8 +154,8 @@ const initUtility = () => {
         item.cropData[4] = -1;
 
         //set crop and seed sell prices
-        item.harvestObjectData[1] = totalGrowthTime * priceMultiplier.regular.crop;
-        item.seedObjectData[1] = totalGrowthTime * priceMultiplier.regular.seed;
+        item.harvestObjectData[1] = Math.ceil(totalGrowthTime * priceMultiplier.regular.crop);
+        item.seedObjectData[1] = Math.ceil(totalGrowthTime * priceMultiplier.regular.seed);
 
         //append period to season text
         seasonText += `.`;
@@ -187,9 +165,9 @@ const initUtility = () => {
 
       //if crop is allowed to have extra chance for multiple harvesting
       // if (totalExtraYieldCrops) {
-      //   let minHarvest = generateRandomWhole(1, 3);
-      //   let maxHarvest = generateRandomWhole(minHarvest, 3);
-      //   let chanceForExtraCrops = generateRandomFloat(0.1, 0.3);
+      //   let minHarvest = getRandomIntegerInRange(1, 3);
+      //   let maxHarvest = getRandomIntegerInRange(minHarvest, 3);
+      //   let chanceForExtraCrops = getRandomFloatInRange(0.1, 0.3);
       //   item.cropData[6] = `true ${minHarvest} ${maxHarvest} 0 ${chanceForExtraCrops}`;
 
       //   //reduce crop sell price due to multiple harvest chance
@@ -206,46 +184,7 @@ const initUtility = () => {
     itemData[seedIdx] = item;
     console.log({ [seedIdx]: item });
   }
-};
-
-generateBtn.addEventListener("click", () => {
-  saveTemplateAsFile("content.json", contentJSON);
-});
-
-fileUpload.addEventListener("change", async (e) => {
-  generateBtn.style.display = "";
-
-  initUtility();
-
-  contentJSON = await parseJsonFile(e.target.files[0]);
-
-  // console.log(contentJSON);
-
-  let entriesCropData = {};
-  let entriesObjectData = {};
-
-  //build the 'Entries' json objects
-  for (const index in itemData) {
-    //"Target": "Data/ObjectInformation"
-    let cropItemIdx = itemData[index].cropData[3];
-    entriesObjectData[index] = itemData[index].seedObjectData.join("/");
-    entriesObjectData[cropItemIdx] = itemData[index].harvestObjectData.join("/");
-
-    //"Target": "Data/Crops"
-    entriesCropData[index] = itemData[index].cropData.join("/");
-  }
-
-  contentJSON.Changes.map((changeObj) => {
-    if (changeObj["When"] && changeObj["When"]["Balance Mode"] === "Dynamic") {
-      //insert new object data into 'Entries' for objects
-      if (changeObj.Target === "Data/ObjectInformation") changeObj.Entries = entriesObjectData;
-      //insert new crop data into 'Entries' for crops
-      if (changeObj.Target === "Data/Crops") changeObj.Entries = entriesCropData;
-    }
-  });
-
-  console.log(contentJSON);
-});
+}
 
 async function parseJsonFile(file) {
   return new Promise((resolve, reject) => {
@@ -288,11 +227,11 @@ function shuffleArray(array) {
   return array;
 }
 
-function generateRandomWhole(min, max) {
+function getRandomIntegerInRange(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
-function generateRandomFloat(min, max) {
+function getRandomFloatInRange(min, max) {
   return (Math.random() * (max - min) + min).toFixed(2);
 }
 
@@ -304,53 +243,117 @@ function replaceLast(string, search, replace) {
   return string.replace(new RegExp(search + "([^" + search + "]*)$"), replace + "$1");
 }
 
+//get elements from HTML
+const generateBtn = document.getElementById("generate");
+const fileUpload = document.getElementById("file-upload");
+const totalExtraYieldCropsMultiplierEl = document.getElementById("totalExtraYieldCropsMultiplier");
+const totalRegrowthCropsPercentageEl = document.getElementById("totalRegrowthCropsPercentage");
+const totalShortCropsPercentageEl = document.getElementById("totalShortCropsPercentage");
+const totalMediumCropsPercentageEl = document.getElementById("totalMediumCropsPercentage");
+const totalLongCropsPercentageEl = document.getElementById("totalLongCropsPercentage");
+const shortCropRangeMinEl = document.getElementById("shortCropRangeMin");
+const shortCropRangeMaxEl = document.getElementById("shortCropRangeMax");
+const mediumCropRangeMinEl = document.getElementById("mediumCropRangeMin");
+const mediumCropRangeMaxEl = document.getElementById("mediumCropRangeMax");
+const longCropRangeMinEl = document.getElementById("longCropRangeMin");
+const longCropRangeMaxEl = document.getElementById("longCropRangeMax");
+const regularGPDCropPriceMultiplierMinEl = document.getElementById("regularGPDCropPriceMultiplierMin");
+const regularGPDCropPriceMultiplierMaxEl = document.getElementById("regularGPDCropPriceMultiplierMax");
+const regularGPDSeedPriceMultiplierMinEl = document.getElementById("regularGPDSeedPriceMultiplierMin");
+const regularGPDSeedPriceMultiplierMaxEl = document.getElementById("regularGPDSeedPriceMultiplierMax");
+const regrowthGPDCropPriceMultiplierMinEl = document.getElementById("regrowthGPDCropPriceMultiplierMin");
+const regrowthGPDCropPriceMultiplierMaxEl = document.getElementById("regrowthGPDCropPriceMultiplierMax");
+const regrowthGPDSeedPriceMultiplierMinEl = document.getElementById("regrowthGPDSeedPriceMultiplierMin");
+const regrowthGPDSeedPriceMultiplierMaxEl = document.getElementById("regrowthGPDSeedPriceMultiplierMax");
+const randomizeExtraYieldsEl = document.getElementById("randomizeExtraYields");
+
+//EVENT LISTENERS
+fileUpload.addEventListener("change", async (e) => {
+  generateBtn.style.display = "";
+
+  initUtility();
+
+  contentJSON = await parseJsonFile(e.target.files[0]);
+
+  // console.log(contentJSON);
+
+  let entriesCropData = {};
+  let entriesObjectData = {};
+
+  //build the 'Entries' json objects
+  for (const index in itemData) {
+    //"Target": "Data/ObjectInformation"
+    let cropItemIdx = itemData[index].cropData[3];
+    entriesObjectData[index] = itemData[index].seedObjectData.join("/");
+    entriesObjectData[cropItemIdx] = itemData[index].harvestObjectData.join("/");
+
+    //"Target": "Data/Crops"
+    entriesCropData[index] = itemData[index].cropData.join("/");
+  }
+
+  contentJSON.Changes.map((changeObj) => {
+    if (changeObj["When"] && changeObj["When"]["Balance Mode"] === "Dynamic") {
+      //insert new object data into 'Entries' for objects
+      if (changeObj.Target === "Data/ObjectInformation") changeObj.Entries = entriesObjectData;
+      //insert new crop data into 'Entries' for crops
+      if (changeObj.Target === "Data/Crops") changeObj.Entries = entriesCropData;
+    }
+  });
+
+  console.log(contentJSON);
+});
+
+generateBtn.addEventListener("click", () => {
+  saveTemplateAsFile("content.json", contentJSON);
+});
+
 const baseData = {
   //https://stardewcommunitywiki.com/Modding:Crop_data
   //[0]Growth Stages/[1]Growth Seasons/[2]Sprite Sheet Index/[3]Harvest Item Index/[4]Regrow After Harvest (-1 = no regrow)/[5]Harvest Method (0 = no scythe needed)/[6]Chance For Extra Harvest/[7]Raised Seeds (true if trellis item)/[8]Tint Color
   cropData: {
-    299: "1 1 1 2/summer/39/300/3/1/false/false/false",
-    301: "1 1 2 2 2/fall/38/398/4/0/true 1 1 0 .2/true/false",
-    302: "2 3 3 3 4/summer fall/37/304/3/0/false/true/false",
+    299: "1 2 2 2/summer/39/300/-1/1/false/false/false",
+    301: "1 1 2 3 3/fall/38/398/3/0/true 1 1 0 .2/true/false",
+    302: "1 1 2 3 4/summer fall/37/304/1/0/false/true/false",
+    347: "2 4 6 6 6/spring winter/32/417/-1/0/false/false/false",
     425: "1 4 4 3/fall/31/595/-1/0/false/false/true 187 0 255 119 137 255 71 227 255 255 127 144 205 178 255 140 119 255",
-    427: "2 2 2 2/spring/26/591/-1/0/false/false/true 255 186 255 223 191 255 255 246 0 255 80 0 255 158 193",
+    427: "1 1 2 2/spring/26/591/-1/0/false/false/true 255 186 255 223 191 255 255 246 0 255 80 0 255 158 193",
     429: "1 2 2 2/spring/27/597/-1/0/false/false/true 35 127 255 109 131 255 112 207 255 191 228 255 94 121 255 40 150 255",
-    431: "2 2 2 2/summer/30/421/-1/0/false/false/false",
-    433: "5 5 5 5 6/spring summer fall/40/433/4/0/true 3 3 0 .02/false/false",
+    431: "1 2 3 2/summer/30/421/-1/0/false/false/false",
+    433: "1 2 2 3 2/spring summer fall/40/433/2/0/true 3 3 0 .02/false/false",
     453: "1 2 2 2/summer/28/376/-1/0/false/false/true 255 0 0 254 254 254 255 170 0",
     455: "1 2 3 2/summer/29/593/-1/0/false/false/true 0 208 255 99 255 210 255 212 0 255 144 122 255 0 238 206 91 255",
-    472: "3 4 4 4/spring/0/24/-1/0/true 1 1 0 .2/false/false",
-    473: "1 1 1 1 2/spring/1/188/3/0/false/true/false",
-    474: "3 4 4 5 5/spring summer/2/190/7/0/false/false/false",
-    475: "1 2 2 2 2/spring/3/192/-1/0/true 1 1 0 .2/false/false",
-    476: "6 7 7 7/spring winter/4/248/-1/0/false/false/false",
-    477: "1 2 2 2/spring fall/5/250/5/1/true 1 1 0 .03/false/false",
-    478: "1 2 2 2 2/spring fall/6/252/-1/0/false/false/false",
-    479: "4 4 4 5 5/spring summer fall/7/254/10/0/false/false/false",
-    480: "1 2 2 2 2/summer/8/256/4/0/true 1 1 0 .05/false/false",
-    481: "1 2 2 3 2/summer/9/258/5/0/true 3 3 0 .02/false/false",
-    482: "1 2 4 4 4/summer/10/260/3/0/true 1 1 0 .03/false/false",
-    483: "7 7 7 7/spring summer fall winter/11/262/-1/1/false/false/false",
-    484: "1 1 1 1/spring/12/264/-1/0/true 1 1 0 .2/false/false",
-    485: "1 1 1 2 2/summer fall/13/266/4/0/false/false/false",
-    486: "3 4 4 4 4/summer fall/14/268/-1/0/false/false/false",
-    487: "2 1 1 1 1/summer fall/15/270/-1/0/false/false/false",
+    472: "1 1 1 1/spring/0/24/-1/0/true 1 1 0 .2/false/false",
+    473: "1 1 1 3 4/spring/1/188/3/0/false/true/false",
+    474: "1 2 4 4 1/spring summer/2/190/-1/0/false/false/false",
+    475: "1 1 1 2 1/spring/3/192/-1/0/true 1 1 0 .2/false/false",
+    476: "1 1 1 1/spring winter/4/248/-1/0/false/false/false",
+    477: "1 2 2 1/spring fall/5/250/-1/1/true 1 1 0 .03/false/false",
+    478: "2 2 2 3 4/spring fall/6/252/-1/0/false/false/false",
+    479: "1 2 3 3 3/spring summer fall/7/254/-1/0/false/false/false",
+    480: "2 2 2 2 3/summer/8/256/4/0/true 1 1 0 .05/false/false",
+    481: "1 3 3 4 2/summer/9/258/4/0/true 3 3 0 .02/false/false",
+    482: "1 1 1 1 1/summer/10/260/3/0/true 1 1 0 .03/false/false",
+    483: "1 1 1 1/spring summer fall winter/11/262/-1/1/false/false/false",
+    484: "2 1 2 1/spring/12/264/-1/0/true 1 1 0 .2/false/false",
+    485: "2 1 2 2 2/summer fall/13/266/-1/0/false/false/false",
+    486: "2 3 2 3 3/summer fall/14/268/-1/0/false/false/false",
+    487: "2 3 3 3 3/summer fall/15/270/4/0/false/false/false",
     488: "1 1 1 1 1/summer fall/16/272/5/0/true 1 1 0 .002/false/false",
-    489: "2 2 1 2 1/spring fall/17/274/4/0/false/false/false",
-    490: "1 2 3 3 3/fall/18/276/10/0/false/false/false",
-    491: "1 1 1 1/spring fall/19/278/3/0/false/false/false",
+    489: "2 2 1 2 1/spring fall/17/274/-1/0/false/false/false",
+    490: "1 2 3 4 3/fall/18/276/-1/0/false/false/false",
+    491: "1 1 1 1/spring fall/19/278/-1/0/false/false/false",
     492: "1 3 3 3/fall/20/280/-1/0/true 1 1 0 .1/false/false",
-    493: "1 1 1 1 2/fall/21/282/5/0/true 2 2 0 .1/false/false",
-    494: "1 1 2 2/spring fall/22/284/4/0/true 1 1 0 .2/false/false",
-    347: "2 4 6 6 6/spring winter/32/417/-1/0/false/false/false",
+    493: "1 2 1 1 2/fall/21/282/5/0/true 2 2 0 .1/false/false",
+    494: "1 1 2 2/spring fall/22/284/-1/0/true 1 1 0 .2/false/false",
     495: "3 4/spring/23/16/-1/0/false/false/false",
     496: "3 4/summer/23/396/-1/0/false/false/false",
     497: "3 4/fall/23/404/-1/0/false/false/false",
     498: "3 4/winter/23/412/-1/0/false/false/false",
-    499: "3 6 7 7 5/summer fall/24/454/14/0/false/false/false",
-    745: "1 2 2 2 2/spring summer/36/400/5/0/true 1 1 0 .02/false/false",
-    802: "3 3 3 3 3/summer fall winter/41/90/5/0/false/false/false",
+    499: "2 7 7 7 5/summer fall/24/454/7/0/false/false/false",
+    745: "1 1 2 2 2/spring summer/36/400/4/0/true 1 1 0 .02/false/false",
+    802: "2 2 2 3 3/summer fall winter/41/90/3/0/false/false/false",
     831: "1 2 3 4/summer/42/830/-1/0/true 1 1 0 .2/false/false",
-    833: "2 4 4 4 4/spring summer/43/832/-1/0/false/false/false",
+    833: "1 3 3 4 3/spring summer/43/832/7/0/false/false/false",
   },
   //[0]English Name/[1]Sell Price (Seed Cost)/[2]Edibility/[3]Seed Category/[4]Display Name/[5]Description
   seedObjectData: {
@@ -398,7 +401,7 @@ const baseData = {
     831: "Taro Tuber/20/-300/Seeds -74/Taro Tuber/Grows faster if planted near a body of water.",
     833: "Pineapple Seeds/240/-300/Seeds -74/Pineapple Seeds/",
   },
-  //English Name/Purchase Price/Edibility/Seed Category/Display Name/Description
+  //[0]English Name/[1]Sell Price (Seed Cost)/[2]Edibility/[3]Seed Category/[4]Display Name/[5]Description
   harvestObjectData: {
     16: "Wild Horseradish/50/5/Basic -81/Wild Horseradish/A spicy root found in the spring.",
     18: "Daffodil/30/0/Basic -81/Daffodil/A traditional spring flower that makes a nice gift.",
@@ -448,8 +451,8 @@ const baseData = {
     412: "Winter Root/70/10/Basic -81/Winter Root/A starchy tuber.",
     414: "Crystal Fruit/150/25/Basic -79/Crystal Fruit/A delicate fruit that pops up from the snow.",
     416: "Snow Yam/100/12/Basic -81/Snow Yam/This little yam was hiding beneath the snow.",
-    418: "Crocus/60/0/Basic -80/Crocus/A flower that can bloom in the winter.",
     417: "Sweet Gem Berry/3000/-300/Basic -17/Sweet Gem Berry/It's by far the sweetest thing you've ever smelled.",
+    418: "Crocus/60/0/Basic -80/Crocus/A flower that can bloom in the winter.",
     421: "Sunflower/80/18/Basic -80/Sunflower/A common misconception is that the flower turns so it's always facing the sun.",
     433: "Coffee Bean/15/-300/Seeds -74/Coffee Bean/Plant in spring or summer to grow a coffee plant. Place five beans in a keg to make coffee.",
     454: "Ancient Fruit/550/-300/Basic -79/Ancient Fruit/It's been dormant for eons.",
@@ -457,13 +460,13 @@ const baseData = {
     593: "Summer Spangle/90/18/Basic -80/Summer Spangle/A tropical bloom that thrives in the humid summer air. Has a sweet, tangy aroma.",
     595: "Fairy Rose/290/18/Basic -80/Fairy Rose/An old folk legend suggests that the sweet smell of this flower attracts fairies.",
     597: "Blue Jazz/50/18/Basic -80/Blue Jazz/The flower grows in a sphere to invite as many butterflies as possible.",
+    771: "Fiber/1/-300/Basic -16/Fiber/Raw material sourced from plants.",
     815: "Tea Leaves/50/-300/Basic -75/Tea Leaves/The young leaves of the tea plant. Can be brewed into the popular, energizing beverage.",
     830: "Taro Root/100/15/Basic -75/Taro Root/This starchy root is one of the most ancient crops.",
     832: "Pineapple/300/55/Basic -79/Pineapple/A sweet and tangy tropical treat.",
-    771: "Fiber/1/-300/Basic -16/Fiber/Raw material sourced from plants.",
     889: "Qi Fruit/1/1/Basic -79/Qi Fruit/Mr. Qi has challenged you to ship 500 of these strange melons.",
   },
-  goodsData: {
+  goodObjectData: {
     303: "Pale Ale/300/20/Basic -26/Pale Ale/Drink in moderation./drink/0 0 0 0 0 0 0 0 0 0 0/0",
     340: "Honey/100/-300/Basic -26/Honey/It's a sweet syrup produced by bees.",
     346: "Beer/200/20/Basic -26/Beer/Drink in moderation./drink/0 0 0 0 0 0 0 0 0 0 0/0",
