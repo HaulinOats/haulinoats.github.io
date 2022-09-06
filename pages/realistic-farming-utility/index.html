@@ -28,16 +28,11 @@
       <h3>Modifiers</h3>
       <p><i>Only use whole numbers unless it says otherwise in the field description</i></p>
       <hr />
-      <p class="pb-2"><b>3 following inputs should add up to 100</b></p>
+      <p class="pb-2">Whatever percentage is left over in the following 2 fields is what will be applied to "medium" crops per month percentage. For example: if Total Short Crops Per Season Percentage = 20 and Total Long Crops Per Season Percentage = 25, then Total Medium Crops Per Season Percentage = 55</p>
       <div>
         <h4>Total Short Crops Per Season Percentage</h4>
         <p>Percentage of how many crops per season will fall within the "short" maturation range</p>
         <input type="number" id="totalShortCropsPercentage" min="0" value="20" step="1" />
-      </div>
-      <div>
-        <h4>Total Medium Crops Per Season Percentage</h4>
-        <p>Percentage of how many crops per season will fall within the "medium" maturation range</p>
-        <input type="number" id="totalMediumCropsPercentage" min="0" value="60" />
       </div>
       <div>
         <h4>Total Long Crops Per Season Percentage</h4>
@@ -130,13 +125,13 @@
     </div>
     <hr />
     <div>
-      <p>Upload the <code>content.json</code> from your <code>[STF] Balanced Valley - Realistic Farming</code> mod folder</p>
+      <p>Upload the <code>content.json</code> from your <code>[CP] Balanced Valley - Realistic Farming</code> mod folder</p>
       <input type="file" id="file-upload" />
     </div>
     <hr />
     <div id="outputPreviewContainer">
       <p><b>Output Preview</b></p>
-      <p>You can make changes, if desired, and then click the "save to clipboard" or "save JSON".</p>
+      <p>You can make changes, if desired, and then click "Copy To Clipboard" or "Save JSON".</p>
       <button id="copyToClipboard">Copy To Clipboard</button>
       <button id="saveBtn" style="display: none">Save JSON</button>
       <pre id="outputPreview" contenteditable></pre>

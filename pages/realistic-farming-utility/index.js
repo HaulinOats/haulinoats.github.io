@@ -65,11 +65,13 @@ function initUtility() {
 
     //set how many crops per season will fall into short, medium, and long-term harvests
     const totalShortCropsPercentage = Number(totalShortCropsPercentageEl.value) * 0.01;
-    const totalMediumCropsPercentage = Number(totalMediumCropsPercentageEl.value) * 0.01;
     const totalLongCropsPercentage = Number(totalLongCropsPercentageEl.value) * 0.01;
     let totalShortCrops = Math.ceil(totalSeasonCrops * totalShortCropsPercentage);
-    let totalMediumCrops = Math.ceil(totalSeasonCrops * totalMediumCropsPercentage);
     let totalLongCrops = Math.ceil(totalSeasonCrops * totalLongCropsPercentage);
+    //medium crop percentage will end up being percentage (difference) leftover after removing long and short crop percentages
+    const totalMediumCropsPercentage = 1 - (totalShortCropsPercentage + totalLongCropsPercentage);
+    let totalMediumCrops = Math.ceil(totalSeasonCrops * totalMediumCropsPercentage);
+
     const totalCropTypeSums = totalShortCrops + totalMediumCrops + totalLongCrops;
 
     //if the sum of calculated harvest categories does not equal actual crops in season
@@ -81,19 +83,28 @@ function initUtility() {
 
     //loop through each season
     for (let seasonCropIdx = 0; seasonCropIdx < seasonCropPool.length; seasonCropIdx++) {
+      console.log("_______________________");
       const seedIdx = seasonCropPool[seasonCropIdx];
       const objId = baseData.cropData[seedIdx].split("/")[3];
       let item = {
         cropData: baseData.cropData[seedIdx].split("/"),
         seedObjectData: baseData.seedObjectData[seedIdx].split("/"),
-        harvestObjectData: baseData.harvestObjectData[objId].split("/"),
+        cropObjectData: baseData.cropObjectData[objId].split("/"),
         totalGrowthDays: 1,
       };
 
       //generate random growth (harvest) times for different crops
+      //manually set Parsnip to be a short-term crop since it's the only crop
+      //you have access to start making money from at the start of new game
       let totalGrowthTime = getRandomIntegerInRange(cropGrowthRanges.medium.min, cropGrowthRanges.medium.max);
-      if (totalShortCrops) {
-        totalGrowthTime = getRandomIntegerInRange(cropGrowthRanges.short.min, cropGrowthRanges.short.max);
+      if (totalShortCrops || seedIdx === "472") {
+        //for all crops that are NOT Parsnip
+        if (seedIdx !== "472") {
+          totalGrowthTime = getRandomIntegerInRange(cropGrowthRanges.short.min, cropGrowthRanges.short.max);
+        } else {
+          //for Parsnip
+          totalGrowthTime = 4;
+        }
         totalShortCrops--;
       } else if (totalLongCrops) {
         totalGrowthTime = getRandomIntegerInRange(cropGrowthRanges.long.min, cropGrowthRanges.long.max);
@@ -137,24 +148,26 @@ function initUtility() {
       seedDescription += `Takes ${totalGrowthTime} ${totalGrowthTime < 2 ? "day" : "days"} to mature`;
 
       //if crop is regrowth capable or on a trellis
-      const isTrellisCrop = Boolean(item.cropData[7]);
+      const isTrellisCrop = JSON.parse(item.cropData[7]);
+      console.log({ isTrellisCrop });
       if (totalRegrowthCrops || isTrellisCrop) {
-        //if more crops are allowed to be given regrowth capabilities, set regrowth time to be between 20% - 40% of total grow time.
-        item.cropData[4] = Math.ceil(totalGrowthTime * getRandomFloatInRange(0.3, 0.5));
+        //if more crops are allowed to be given regrowth capabilities, set regrowth time to be between 30% - 40% of total grow time.
+        item.cropData[4] = Math.ceil(totalGrowthTime * getRandomFloatInRange(0.3, 0.4));
 
-        //set crop and seed sell prices
-        item.harvestObjectData[1] = Math.ceil(totalGrowthTime * priceMultiplier.regrow.crop);
+        item.cropObjectData[1] = Math.ceil(totalGrowthTime * priceMultiplier.regrow.crop);
         item.seedObjectData[1] = Math.ceil(totalGrowthTime * priceMultiplier.regrow.seed);
+        //set crop and seed sell prices
+        console.log("crop sell price: ", item.cropObjectData[1]);
+        console.log("seed purchase price: ", item.seedObjectData[1]);
 
         //append season text with regrowth verbiage
         seedDescription += `, but keeps producing after that.${isTrellisCrop ? " Grows on a trellis." : ""}`;
       } else {
-        //if crop is NOT regrowth capable
-        //set crop to not regrow
+        //if crop is NOT regrowth capable, set crop to not regrow
         item.cropData[4] = -1;
 
         //set crop and seed sell prices
-        item.harvestObjectData[1] = Math.ceil(totalGrowthTime * priceMultiplier.regular.crop);
+        item.cropObjectData[1] = Math.ceil(totalGrowthTime * priceMultiplier.regular.crop);
         item.seedObjectData[1] = Math.ceil(totalGrowthTime * priceMultiplier.regular.seed);
 
         //append period to season text
@@ -173,13 +186,13 @@ function initUtility() {
         item.cropData[6] = `true ${minHarvest} ${maxHarvest} 0 ${chanceForExtraCrops}`;
 
         //reduce crop sell price due to multiple harvest chance
-        item.harvestObjectData[1] = Math.ceil(item.harvestObjectData[1] * (1 - chanceForExtraCrops));
+        item.cropObjectData[1] = Math.ceil(item.cropObjectData[1] * (1 - chanceForExtraCrops));
 
         totalExtraYieldCrops--;
       }
       setItemData(seedIdx, item);
     }
-    console.log("----------------------");
+    console.log("------ End Season ------");
   }
 
   function setItemData(seedIdx, item) {
@@ -250,7 +263,6 @@ const saveBtn = document.getElementById("saveBtn");
 const fileUpload = document.getElementById("file-upload");
 const totalRegrowthCropsPercentageEl = document.getElementById("totalRegrowthCropsPercentage");
 const totalShortCropsPercentageEl = document.getElementById("totalShortCropsPercentage");
-const totalMediumCropsPercentageEl = document.getElementById("totalMediumCropsPercentage");
 const totalLongCropsPercentageEl = document.getElementById("totalLongCropsPercentage");
 const shortCropRangeMinEl = document.getElementById("shortCropRangeMin");
 const shortCropRangeMaxEl = document.getElementById("shortCropRangeMax");
@@ -289,7 +301,7 @@ fileUpload.addEventListener("change", async (e) => {
     //"Target": "Data/ObjectInformation"
     let cropItemIdx = itemData[index].cropData[3];
     entriesObjectData[index] = itemData[index].seedObjectData.join("/");
-    entriesObjectData[cropItemIdx] = itemData[index].harvestObjectData.join("/");
+    entriesObjectData[cropItemIdx] = itemData[index].cropObjectData.join("/");
 
     //"Target": "Data/Crops"
     entriesCropData[index] = itemData[index].cropData.join("/");
@@ -374,8 +386,8 @@ const baseData = {
   //[0]English Name/[1]Sell Price (Seed Cost)/[2]Edibility/[3]Seed Category/[4]Display Name/[5]Description
   seedObjectData: {
     299: "Amaranth Seeds/35/-300/Seeds -74/Amaranth Seeds/",
-    301: "Grape Starter/30/-300/Seeds -74/Grape Starter/Grows on a trellis.",
-    302: "Hops Starter/30/-300/Seeds -74/Hops Starter/Grows on a trellis.",
+    301: "Grape Starter/30/-300/Seeds -74/Grape Starter/",
+    302: "Hops Starter/30/-300/Seeds -74/Hops Starter/",
     347: "Rare Seed/200/-300/Seeds -74/Rare Seed/Takes almost all season to grow.",
     425: "Fairy Seeds/100/-300/Seeds -74/Fairy Seeds/",
     427: "Tulip Bulb/10/-300/Seeds -74/Tulip Bulb/",
@@ -385,7 +397,7 @@ const baseData = {
     453: "Poppy Seeds/50/-300/Seeds -74/Poppy Seeds/",
     455: "Spangle Seeds/25/-300/Seeds -74/Spangle Seeds/",
     472: "Parsnip Seeds/10/-300/Seeds -74/Parsnip Seeds/",
-    473: "Bean Starter/30/-300/Seeds -74/Bean Starter/Grows on a trellis.",
+    473: "Bean Starter/30/-300/Seeds -74/Bean Starter/",
     474: "Cauliflower Seeds/40/-300/Seeds -74/Cauliflower Seeds/",
     475: "Potato Seeds/25/-300/Seeds -74/Potato Seeds/",
     476: "Garlic Seeds/20/-300/Seeds -74/Garlic Seeds/",
@@ -418,7 +430,7 @@ const baseData = {
     833: "Pineapple Seeds/240/-300/Seeds -74/Pineapple Seeds/",
   },
   //[0]English Name/[1]Sell Price (Seed Cost)/[2]Edibility/[3]Seed Category/[4]Display Name/[5]Description
-  harvestObjectData: {
+  cropObjectData: {
     16: "Wild Horseradish/50/5/Basic -81/Wild Horseradish/A spicy root found in the spring.",
     18: "Daffodil/30/0/Basic -81/Daffodil/A traditional spring flower that makes a nice gift.",
     20: "Leek/60/16/Basic -81/Leek/A tasty relative of the onion.",
