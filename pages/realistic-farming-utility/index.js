@@ -27,16 +27,16 @@ function initUtility() {
   };
 
   //gold per day price multipliers based on if a crop can regrow or not
-  const priceMultiplier = {
-    regular: {
-      crop: getRandomFloatInRange(parseFloat(regularGPDCropPriceMultiplierMinEl.value).toFixed(2), parseFloat(regularGPDCropPriceMultiplierMaxEl.value).toFixed(2)),
-      seed: getRandomFloatInRange(parseFloat(regularGPDSeedPriceMultiplierMinEl.value).toFixed(2), parseFloat(regularGPDSeedPriceMultiplierMaxEl.value).toFixed(2)),
-    },
-    regrow: {
-      crop: getRandomFloatInRange(parseFloat(regrowthGPDCropPriceMultiplierMinEl.value).toFixed(2), parseFloat(regrowthGPDCropPriceMultiplierMaxEl.value).toFixed(2)),
-      seed: getRandomFloatInRange(parseFloat(regrowthGPDSeedPriceMultiplierMinEl.value).toFixed(2), parseFloat(regrowthGPDSeedPriceMultiplierMaxEl.value).toFixed(2)),
-    },
-  };
+  // const priceMultiplier = {
+  //   regular: {
+  //     crop: getRandomIntegerInRange(Number(regularGPDCropPriceMultiplierMinEl.value), Number(regularGPDCropPriceMultiplierMaxEl.value)),
+  //     seed: getRandomIntegerInRange(Number(regularGPDSeedPriceMultiplierMinEl.value), Number(regularGPDSeedPriceMultiplierMaxEl.value)),
+  //   },
+  //   regrow: {
+  //     crop: getRandomIntegerInRange(Number(regrowthGPDCropPriceMultiplierMinEl.value), Number(regrowthGPDCropPriceMultiplierMaxEl.value)),
+  //     seed: getRandomIntegerInRange(Number(regrowthGPDSeedPriceMultiplierMinEl.value), Number(regrowthGPDSeedPriceMultiplierMaxEl.value)),
+  //   },
+  // };
 
   //separate each crop/seed into seasons
   for (const seedIdx in baseData.cropData) {
@@ -51,6 +51,7 @@ function initUtility() {
   console.log("Seed Indexes Per Season:");
   console.log(seasonCrops);
 
+  //loop through each season
   for (const season in seasonCrops) {
     console.log(season.toUpperCase());
 
@@ -62,6 +63,7 @@ function initUtility() {
     let totalExtraYieldCrops = Math.ceil(totalSeasonCrops * (totalExtraYieldCropsMultiplier * 0.01));
     const totalRegrowthCropsPercentage = Number(totalRegrowthCropsPercentageEl.value);
     let totalRegrowthCrops = Math.ceil(totalSeasonCrops * (totalRegrowthCropsPercentage * 0.01));
+    console.log("Total regrowth crops for season: ", totalRegrowthCrops);
 
     //set how many crops per season will fall into short, medium, and long-term harvests
     const totalShortCropsPercentage = Number(totalShortCropsPercentageEl.value) * 0.01;
@@ -81,7 +83,7 @@ function initUtility() {
     console.log("season crop type totals: ", { totalShortCrops, totalMediumCrops, totalLongCrops });
     console.log("total crops per season: ", totalShortCrops + totalMediumCrops + totalLongCrops);
 
-    //loop through each season
+    //loop through each season array of crop/seed indexes
     for (let seasonCropIdx = 0; seasonCropIdx < seasonCropPool.length; seasonCropIdx++) {
       console.log("_______________________");
       const seedIdx = seasonCropPool[seasonCropIdx];
@@ -92,6 +94,7 @@ function initUtility() {
         cropObjectData: baseData.cropObjectData[objId].split("/"),
         totalGrowthDays: 1,
       };
+      console.log(item.cropObjectData[0]);
 
       //generate random growth (harvest) times for different crops
       //manually set Parsnip to be a short-term crop since it's the only crop
@@ -137,7 +140,6 @@ function initUtility() {
       }
       //shuffles array so growth stage positions are randomized
       item.cropData[0] = shuffleArray(growthStagesArr).join(" ");
-      // item.cropData[0] = growthStagesArr.join(" ");
 
       //set up dynamic description for seeds
       let cropSeasons = item.cropData[1]
@@ -149,26 +151,32 @@ function initUtility() {
 
       //if crop is regrowth capable or on a trellis
       const isTrellisCrop = JSON.parse(item.cropData[7]);
-      console.log({ isTrellisCrop });
       if (totalRegrowthCrops || isTrellisCrop) {
-        //if more crops are allowed to be given regrowth capabilities, set regrowth time to be between 30% - 40% of total grow time.
-        item.cropData[4] = Math.ceil(totalGrowthTime * getRandomFloatInRange(0.3, 0.4));
+        //if more crops are allowed to be given regrowth capabilities, set regrowth time to be between 25% - 35% of total grow time.
+        item.cropData[4] = Math.ceil(totalGrowthTime * getRandomFloatInRange(0.25, 0.35));
 
-        item.cropObjectData[1] = Math.ceil(totalGrowthTime * priceMultiplier.regrow.crop);
-        item.seedObjectData[1] = Math.ceil(totalGrowthTime * priceMultiplier.regrow.seed);
         //set crop and seed sell prices
-        console.log("crop sell price: ", item.cropObjectData[1]);
-        console.log("seed purchase price: ", item.seedObjectData[1]);
+        const seedPriceMultiplier = getRandomIntegerInRange(Number(regrowthGPDSeedPriceMultiplierMinEl.value), Number(regrowthGPDSeedPriceMultiplierMaxEl.value));
+        const cropPriceMultiplier = getRandomIntegerInRange(Number(regrowthGPDCropPriceMultiplierMinEl.value), Number(regrowthGPDCropPriceMultiplierMaxEl.value));
+        item.seedObjectData[1] = Math.ceil(totalGrowthTime * seedPriceMultiplier);
+        item.cropObjectData[1] = Math.ceil(totalGrowthTime * cropPriceMultiplier);
+        console.log(`(Regrow) Seed purchase price = ${totalGrowthTime} total growth time x ${seedPriceMultiplier} gold per day multiplier = ${item.seedObjectData[1]}g`);
+        console.log(`(Regrow) Crop sell price     = ${totalGrowthTime} total growth time x ${cropPriceMultiplier} gold per day multiplier = ${item.cropObjectData[1]}g`);
 
         //append season text with regrowth verbiage
         seedDescription += `, but keeps producing after that.${isTrellisCrop ? " Grows on a trellis." : ""}`;
+        totalRegrowthCrops--;
       } else {
         //if crop is NOT regrowth capable, set crop to not regrow
         item.cropData[4] = -1;
 
         //set crop and seed sell prices
-        item.cropObjectData[1] = Math.ceil(totalGrowthTime * priceMultiplier.regular.crop);
-        item.seedObjectData[1] = Math.ceil(totalGrowthTime * priceMultiplier.regular.seed);
+        const seedPriceMultiplier = getRandomIntegerInRange(Number(regularGPDSeedPriceMultiplierMinEl.value), Number(regularGPDSeedPriceMultiplierMaxEl.value));
+        const cropPriceMultiplier = getRandomIntegerInRange(Number(regularGPDCropPriceMultiplierMinEl.value), Number(regularGPDCropPriceMultiplierMaxEl.value));
+        item.seedObjectData[1] = Math.ceil(totalGrowthTime * seedPriceMultiplier);
+        item.cropObjectData[1] = Math.ceil(totalGrowthTime * cropPriceMultiplier);
+        console.log(`(Regular) Seed purchase price = ${totalGrowthTime} maturity days x ${seedPriceMultiplier} gold per day multiplier = ${item.seedObjectData[1]}g`);
+        console.log(`(Regular) Crop sell price     = ${totalGrowthTime} maturity days x ${cropPriceMultiplier} gold per day multiplier = ${item.cropObjectData[1]}g`);
 
         //append period to season text
         seedDescription += `.`;
