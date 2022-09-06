@@ -92,7 +92,6 @@ function initUtility() {
         cropData: baseData.cropData[seedIdx].split("/"),
         seedObjectData: baseData.seedObjectData[seedIdx].split("/"),
         cropObjectData: baseData.cropObjectData[objId].split("/"),
-        totalGrowthDays: 1,
       };
       console.log(item.cropObjectData[0]);
 
@@ -113,7 +112,7 @@ function initUtility() {
         totalGrowthTime = getRandomIntegerInRange(cropGrowthRanges.long.min, cropGrowthRanges.long.max);
         totalLongCrops--;
       }
-      item.totalGrowthDays = totalGrowthTime;
+      console.log("total growth time: ", totalGrowthTime, " days");
 
       //dynamically generate growth stages
       let growthStagesArr = item.cropData[0].split(" ");
@@ -153,15 +152,18 @@ function initUtility() {
       const isTrellisCrop = JSON.parse(item.cropData[7]);
       if (totalRegrowthCrops || isTrellisCrop) {
         //if more crops are allowed to be given regrowth capabilities, set regrowth time to be between 25% - 35% of total grow time.
-        item.cropData[4] = Math.ceil(totalGrowthTime * getRandomFloatInRange(0.25, 0.35));
+        item.cropData[4] = Math.ceil(totalGrowthTime * getRandomFloatInRange(0.25, 0.42));
+        console.log("regrowth: ", item.cropData[4], "days");
 
         //set crop and seed sell prices
         const seedPriceMultiplier = getRandomIntegerInRange(Number(regrowthGPDSeedPriceMultiplierMinEl.value), Number(regrowthGPDSeedPriceMultiplierMaxEl.value));
         const cropPriceMultiplier = getRandomIntegerInRange(Number(regrowthGPDCropPriceMultiplierMinEl.value), Number(regrowthGPDCropPriceMultiplierMaxEl.value));
         item.seedObjectData[1] = Math.ceil(totalGrowthTime * seedPriceMultiplier);
         item.cropObjectData[1] = Math.ceil(totalGrowthTime * cropPriceMultiplier);
-        console.log(`(Regrow) Seed purchase price = ${totalGrowthTime} total growth time x ${seedPriceMultiplier} gold per day multiplier = ${item.seedObjectData[1]}g`);
-        console.log(`(Regrow) Crop sell price     = ${totalGrowthTime} total growth time x ${cropPriceMultiplier} gold per day multiplier = ${item.cropObjectData[1]}g`);
+        console.log("seed price multiplier: ", seedPriceMultiplier);
+        console.log("crop price multiplier: ", cropPriceMultiplier);
+        console.log(`seed purchase price (total growth time x seed price multiplier): ${item.seedObjectData[1]}g`);
+        console.log(`crop sell price     (total growth time x crop price multiplier): ${item.cropObjectData[1]}g`);
 
         //append season text with regrowth verbiage
         seedDescription += `, but keeps producing after that.${isTrellisCrop ? " Grows on a trellis." : ""}`;
@@ -169,14 +171,17 @@ function initUtility() {
       } else {
         //if crop is NOT regrowth capable, set crop to not regrow
         item.cropData[4] = -1;
+        console.log("no regrowth");
 
         //set crop and seed sell prices
         const seedPriceMultiplier = getRandomIntegerInRange(Number(regularGPDSeedPriceMultiplierMinEl.value), Number(regularGPDSeedPriceMultiplierMaxEl.value));
         const cropPriceMultiplier = getRandomIntegerInRange(Number(regularGPDCropPriceMultiplierMinEl.value), Number(regularGPDCropPriceMultiplierMaxEl.value));
         item.seedObjectData[1] = Math.ceil(totalGrowthTime * seedPriceMultiplier);
         item.cropObjectData[1] = Math.ceil(totalGrowthTime * cropPriceMultiplier);
-        console.log(`(Regular) Seed purchase price = ${totalGrowthTime} maturity days x ${seedPriceMultiplier} gold per day multiplier = ${item.seedObjectData[1]}g`);
-        console.log(`(Regular) Crop sell price     = ${totalGrowthTime} maturity days x ${cropPriceMultiplier} gold per day multiplier = ${item.cropObjectData[1]}g`);
+        console.log("seed price multiplier: ", seedPriceMultiplier);
+        console.log("crop price multiplier: ", cropPriceMultiplier);
+        console.log(`seed purchase price (total growth time x seed price multiplier): ${item.seedObjectData[1]}g`);
+        console.log(`crop sell price     (total growth time x crop price multiplier): ${item.cropObjectData[1]}g`);
 
         //append period to season text
         seedDescription += `.`;
@@ -184,6 +189,7 @@ function initUtility() {
 
       //store updated
       item.seedObjectData[5] = seedDescription;
+      console.log("seed description: ", seedDescription);
 
       // if crop is allowed to have extra chance for multiple harvesting
       const allowRandomExtraYields = allowRandomExtraYieldsEl.checked;
