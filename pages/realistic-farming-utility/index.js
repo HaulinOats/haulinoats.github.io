@@ -295,6 +295,7 @@ const outputPreview = document.getElementById("outputPreview");
 const copyToClipboard = document.getElementById("copyToClipboard");
 const runUtility = document.getElementById("runUtility");
 const rawObjectsOutput = document.getElementById("rawObjectsOutput");
+const resetInputsBtn = document.getElementById("resetInputs");
 
 //EVENT LISTENERS
 runUtility.addEventListener("click", () => {
@@ -362,6 +363,13 @@ allowRandomExtraYieldsEl.addEventListener("change", (e) => {
 
 copyToClipboard.addEventListener("click", () => {
   navigator.clipboard.writeText(outputPreview.innerText);
+});
+
+resetInputsBtn.addEventListener("click", () => {
+  const inputs = document.querySelectorAll("input[type='number']");
+  inputs.forEach((input) => {
+    input.value = input.getAttribute("data-default");
+  });
 });
 
 const baseData = {
