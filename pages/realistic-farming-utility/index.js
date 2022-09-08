@@ -50,8 +50,8 @@ function initUtility() {
     const allowRandomExtraYields = allowRandomExtraYieldsEl.checked;
     const totalExtraYieldCropsMultiplier = parseFloat(totalExtraYieldCropsMultiplierEl.value).toFixed(2);
     let totalExtraYieldCrops = Math.ceil(totalSeasonCrops * (totalExtraYieldCropsMultiplier * 0.01));
-    const totalRegrowthCropsPercentage = Number(totalRegrowthCropsPercentageEl.value);
-    let totalRegrowthCrops = Math.ceil(totalSeasonCrops * (totalRegrowthCropsPercentage * 0.01));
+    const totalRegrowthCropsPercentage = Number(totalRegrowthCropsPercentageEl.value * 0.01);
+    let totalRegrowthCrops = Math.ceil(totalSeasonCrops * totalRegrowthCropsPercentage);
     console.log(`Total regrowth crops for ${season}: ${totalRegrowthCrops}`);
     if (allowRandomExtraYields) console.log(`Total extra yield crops for ${season}: ${totalExtraYieldCrops}`);
 
@@ -89,7 +89,7 @@ function initUtility() {
       //manually set Parsnip to be a short-term crop since it's the only crop
       //you have access to start making money from at the start of new game
       let totalGrowthTime = getRandomIntegerInRange(cropGrowthRanges.medium.min, cropGrowthRanges.medium.max);
-      if (totalShortCrops || seedIdx === "472") {
+      if (totalShortCrops > 0 || seedIdx === "472") {
         //for all crops that are NOT Parsnip
         if (seedIdx !== "472") {
           totalGrowthTime = getRandomIntegerInRange(cropGrowthRanges.short.min, cropGrowthRanges.short.max);
@@ -98,7 +98,7 @@ function initUtility() {
           totalGrowthTime = 4;
         }
         totalShortCrops--;
-      } else if (totalLongCrops) {
+      } else if (totalLongCrops > 0) {
         totalGrowthTime = getRandomIntegerInRange(cropGrowthRanges.long.min, cropGrowthRanges.long.max);
         totalLongCrops--;
       }
@@ -140,7 +140,9 @@ function initUtility() {
 
       //if crop is regrowth capable or on a trellis
       const isTrellisCrop = JSON.parse(item.cropData[7]);
-      if (totalRegrowthCrops || isTrellisCrop) {
+      console.log("totalGrowthCrops: ", totalRegrowthCrops);
+      console.log("isTrellisCrop: ", isTrellisCrop);
+      if (totalRegrowthCrops > 0 || isTrellisCrop) {
         //if more crops are allowed to be given regrowth capabilities, set regrowth time to be between 30% - 42% of total grow time.
         item.cropData[4] = Math.ceil(totalGrowthTime * getRandomFloatInRange(0.3, 0.42));
         console.log("regrowth: ", item.cropData[4], "days");
@@ -183,7 +185,7 @@ function initUtility() {
       console.log("seed description: ", seedDescription);
 
       // if crop is allowed to have extra chance for multiple harvesting
-      if (allowRandomExtraYields && totalExtraYieldCrops) {
+      if (allowRandomExtraYields && totalExtraYieldCrops > 0) {
         let minHarvest = getRandomIntegerInRange(1, 3);
         let maxHarvest = getRandomIntegerInRange(minHarvest, 3);
         let chanceForExtraCrops = getRandomFloatInRange(0.1, 0.2);
