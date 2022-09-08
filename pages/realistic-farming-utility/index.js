@@ -293,8 +293,28 @@ const totalExtraYieldCropsMultiplierEl = document.getElementById("totalExtraYiel
 const outputPreviewContainer = document.getElementById("outputPreviewContainer");
 const outputPreview = document.getElementById("outputPreview");
 const copyToClipboard = document.getElementById("copyToClipboard");
+const runUtility = document.getElementById("runUtility");
+const rawObjectsOutput = document.getElementById("rawObjectsOutput");
 
 //EVENT LISTENERS
+runUtility.addEventListener("click", () => {
+  initUtility();
+  let entriesCropData = {};
+  let entriesObjectData = {};
+
+  //build the 'Entries' json objects
+  for (const index in itemData) {
+    //"Target": "Data/ObjectInformation"
+    let cropItemIdx = itemData[index].cropData[3];
+    entriesObjectData[index] = itemData[index].seedObjectData.join("/");
+    entriesObjectData[cropItemIdx] = itemData[index].cropObjectData.join("/");
+
+    //"Target": "Data/Crops"
+    entriesCropData[index] = itemData[index].cropData.join("/");
+  }
+  rawObjectsOutput.innerHTML = JSON.stringify({ cropData: entriesCropData, objectData: entriesObjectData }, null, 2);
+});
+
 fileUpload.addEventListener("change", async (e) => {
   saveBtn.style.display = "";
 
