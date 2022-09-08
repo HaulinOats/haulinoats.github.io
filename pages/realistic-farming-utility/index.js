@@ -3,6 +3,8 @@
 let contentJSON;
 let itemData = {};
 
+const flowerSeedIndexes = ["425", "427", "429", "453", "455", "431"];
+
 function initUtility() {
   let seasonCrops = {
     spring: [],
@@ -45,9 +47,9 @@ function initUtility() {
 
     const seasonCropPool = shuffleArray(seasonCrops[season]);
     const totalSeasonCrops = seasonCropPool.length;
+    const allowRandomExtraYields = allowRandomExtraYieldsEl.checked;
 
     //set number of crops per season that are allowed to regrow or have extra harvest yields
-    const allowRandomExtraYields = allowRandomExtraYieldsEl.checked;
     const totalExtraYieldCropsMultiplier = parseFloat(totalExtraYieldCropsMultiplierEl.value).toFixed(2);
     let totalExtraYieldCrops = Math.ceil(totalSeasonCrops * (totalExtraYieldCropsMultiplier * 0.01));
     const totalRegrowthCropsPercentage = Number(totalRegrowthCropsPercentageEl.value * 0.01);
@@ -56,11 +58,11 @@ function initUtility() {
     if (allowRandomExtraYields) console.log(`Total extra yield crops for ${season}: ${totalExtraYieldCrops}`);
 
     //set how many crops per season will fall into short, medium, and long-term harvests
+    //medium crop percentage will end up being percentage difference leftover after removing long and short crop percentages from 100%
     const totalShortCropsPercentage = Number(totalShortCropsPercentageEl.value) * 0.01;
     const totalLongCropsPercentage = Number(totalLongCropsPercentageEl.value) * 0.01;
     let totalShortCrops = Math.ceil(totalSeasonCrops * totalShortCropsPercentage);
     let totalLongCrops = Math.ceil(totalSeasonCrops * totalLongCropsPercentage);
-    //medium crop percentage will end up being percentage (difference) leftover after removing long and short crop percentages
     const totalMediumCropsPercentage = 1 - (totalShortCropsPercentage + totalLongCropsPercentage);
     let totalMediumCrops = Math.ceil(totalSeasonCrops * totalMediumCropsPercentage);
 
@@ -140,45 +142,12 @@ function initUtility() {
 
       //if crop is regrowth capable or on a trellis
       const isTrellisCrop = JSON.parse(item.cropData[7]);
-      console.log("totalGrowthCrops: ", totalRegrowthCrops);
-      console.log("isTrellisCrop: ", isTrellisCrop);
-      if (totalRegrowthCrops > 0 || isTrellisCrop) {
-        //if more crops are allowed to be given regrowth capabilities, set regrowth time to be between 30% - 42% of total grow time.
-        item.cropData[4] = Math.ceil(totalGrowthTime * getRandomFloatInRange(0.3, 0.42));
-        console.log("regrowth: ", item.cropData[4], "days");
+      const isFlower = flowerSeedIndexes.includes(seedIdx);
+      const flowersCanRegrow = flowersCanRegrowEl.checked;
 
-        //set crop and seed sell prices
-        const seedPriceMultiplier = getRandomIntegerInRange(Number(regrowthGPDSeedPriceMultiplierMinEl.value), Number(regrowthGPDSeedPriceMultiplierMaxEl.value));
-        const cropPriceMultiplier = getRandomIntegerInRange(Number(regrowthGPDCropPriceMultiplierMinEl.value), Number(regrowthGPDCropPriceMultiplierMaxEl.value));
-        item.seedObjectData[1] = Math.ceil(totalGrowthTime * seedPriceMultiplier);
-        item.cropObjectData[1] = Math.ceil(totalGrowthTime * cropPriceMultiplier);
-        console.log("seed price multiplier: ", seedPriceMultiplier);
-        console.log("crop price multiplier: ", cropPriceMultiplier);
-        console.log(`seed purchase price: ${item.seedObjectData[1]}g`);
-        console.log(`crop sell price    : ${item.cropObjectData[1]}g`);
-        // (total growth time x seed price multiplier):
-
-        //append season text with regrowth verbiage
-        seedDescription += `, but keeps producing after that.${isTrellisCrop ? " Grows on a trellis." : ""}`;
-        totalRegrowthCrops--;
-      } else {
-        //if crop is NOT regrowth capable, set crop to not regrow
-        item.cropData[4] = -1;
-        console.log("no regrowth");
-
-        //set crop and seed sell prices
-        const seedPriceMultiplier = getRandomIntegerInRange(Number(regularGPDSeedPriceMultiplierMinEl.value), Number(regularGPDSeedPriceMultiplierMaxEl.value));
-        const cropPriceMultiplier = getRandomIntegerInRange(Number(regularGPDCropPriceMultiplierMinEl.value), Number(regularGPDCropPriceMultiplierMaxEl.value));
-        item.seedObjectData[1] = Math.ceil(totalGrowthTime * seedPriceMultiplier);
-        item.cropObjectData[1] = Math.ceil(totalGrowthTime * cropPriceMultiplier);
-        console.log("seed price multiplier: ", seedPriceMultiplier);
-        console.log("crop price multiplier: ", cropPriceMultiplier);
-        console.log(`seed purchase price: ${item.seedObjectData[1]}g`);
-        console.log(`crop sell price    : ${item.cropObjectData[1]}g`);
-
-        //append period to season text
-        seedDescription += `.`;
-      }
+      if (totalRegrowthCrops > 0 && isFlower && flowersCanRegrow) applyRegrowValues();
+      else if (totalRegrowthCrops > 0 || isTrellisCrop) applyRegrowValues();
+      else applyRegularValues();
 
       //store updated
       item.seedObjectData[5] = seedDescription;
@@ -200,6 +169,46 @@ function initUtility() {
         totalExtraYieldCrops--;
       }
       setItemData(seedIdx, item);
+
+      function applyRegrowValues() {
+        //if more crops are allowed to be given regrowth capabilities, set regrowth time to be between 30% - 42% of total grow time.
+        item.cropData[4] = Math.ceil(totalGrowthTime * getRandomFloatInRange(0.3, 0.42));
+        console.log("regrowth: ", item.cropData[4], "days");
+
+        //set crop and seed sell prices
+        const seedPriceMultiplier = getRandomIntegerInRange(Number(regrowthGPDSeedPriceMultiplierMinEl.value), Number(regrowthGPDSeedPriceMultiplierMaxEl.value));
+        const cropPriceMultiplier = getRandomIntegerInRange(Number(regrowthGPDCropPriceMultiplierMinEl.value), Number(regrowthGPDCropPriceMultiplierMaxEl.value));
+        item.seedObjectData[1] = Math.ceil(totalGrowthTime * seedPriceMultiplier);
+        item.cropObjectData[1] = Math.ceil(totalGrowthTime * cropPriceMultiplier);
+        console.log("seed price multiplier: ", seedPriceMultiplier);
+        console.log("crop price multiplier: ", cropPriceMultiplier);
+        console.log(`seed purchase price: ${item.seedObjectData[1]}g`);
+        console.log(`crop sell price    : ${item.cropObjectData[1]}g`);
+        // (total growth time x seed price multiplier):
+
+        //append season text with regrowth verbiage
+        seedDescription += `, but keeps producing after that.${isTrellisCrop ? " Grows on a trellis." : ""}`;
+        totalRegrowthCrops--;
+      }
+
+      function applyRegularValues() {
+        //if crop is NOT regrowth capable, set crop to not regrow
+        item.cropData[4] = -1;
+        console.log("no regrowth");
+
+        //set crop and seed sell prices
+        const seedPriceMultiplier = getRandomIntegerInRange(Number(regularGPDSeedPriceMultiplierMinEl.value), Number(regularGPDSeedPriceMultiplierMaxEl.value));
+        const cropPriceMultiplier = getRandomIntegerInRange(Number(regularGPDCropPriceMultiplierMinEl.value), Number(regularGPDCropPriceMultiplierMaxEl.value));
+        item.seedObjectData[1] = Math.ceil(totalGrowthTime * seedPriceMultiplier);
+        item.cropObjectData[1] = Math.ceil(totalGrowthTime * cropPriceMultiplier);
+        console.log("seed price multiplier: ", seedPriceMultiplier);
+        console.log("crop price multiplier: ", cropPriceMultiplier);
+        console.log(`seed purchase price: ${item.seedObjectData[1]}g`);
+        console.log(`crop sell price    : ${item.cropObjectData[1]}g`);
+
+        //append period to season text
+        seedDescription += `.`;
+      }
     }
     console.log("------ End Season ------");
   }
@@ -287,6 +296,7 @@ const regrowthGPDCropPriceMultiplierMinEl = document.getElementById("regrowthGPD
 const regrowthGPDCropPriceMultiplierMaxEl = document.getElementById("regrowthGPDCropPriceMultiplierMax");
 const regrowthGPDSeedPriceMultiplierMinEl = document.getElementById("regrowthGPDSeedPriceMultiplierMin");
 const regrowthGPDSeedPriceMultiplierMaxEl = document.getElementById("regrowthGPDSeedPriceMultiplierMax");
+const flowersCanRegrowEl = document.getElementById("flowersCanRegrow");
 const allowRandomExtraYieldsEl = document.getElementById("allowRandomExtraYields");
 const extraYieldContainer = document.getElementById("extraYieldContainer");
 const totalExtraYieldCropsMultiplierEl = document.getElementById("totalExtraYieldCropsMultiplier");
