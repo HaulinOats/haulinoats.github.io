@@ -26,18 +26,6 @@ function initUtility() {
     },
   };
 
-  //gold per day price multipliers based on if a crop can regrow or not
-  // const priceMultiplier = {
-  //   regular: {
-  //     crop: getRandomIntegerInRange(Number(regularGPDCropPriceMultiplierMinEl.value), Number(regularGPDCropPriceMultiplierMaxEl.value)),
-  //     seed: getRandomIntegerInRange(Number(regularGPDSeedPriceMultiplierMinEl.value), Number(regularGPDSeedPriceMultiplierMaxEl.value)),
-  //   },
-  //   regrow: {
-  //     crop: getRandomIntegerInRange(Number(regrowthGPDCropPriceMultiplierMinEl.value), Number(regrowthGPDCropPriceMultiplierMaxEl.value)),
-  //     seed: getRandomIntegerInRange(Number(regrowthGPDSeedPriceMultiplierMinEl.value), Number(regrowthGPDSeedPriceMultiplierMaxEl.value)),
-  //   },
-  // };
-
   //separate each crop/seed into seasons
   for (const seedIdx in baseData.cropData) {
     baseData.cropData[seedIdx]
@@ -59,11 +47,13 @@ function initUtility() {
     const totalSeasonCrops = seasonCropPool.length;
 
     //set number of crops per season that are allowed to regrow or have extra harvest yields
+    const allowRandomExtraYields = allowRandomExtraYieldsEl.checked;
     const totalExtraYieldCropsMultiplier = parseFloat(totalExtraYieldCropsMultiplierEl.value).toFixed(2);
     let totalExtraYieldCrops = Math.ceil(totalSeasonCrops * (totalExtraYieldCropsMultiplier * 0.01));
     const totalRegrowthCropsPercentage = Number(totalRegrowthCropsPercentageEl.value);
     let totalRegrowthCrops = Math.ceil(totalSeasonCrops * (totalRegrowthCropsPercentage * 0.01));
-    console.log("Total regrowth crops for season: ", totalRegrowthCrops);
+    console.log(`Total regrowth crops for ${season}: ${totalRegrowthCrops}`);
+    if (allowRandomExtraYields) console.log(`Total extra yield crops for ${season}: ${totalExtraYieldCrops}`);
 
     //set how many crops per season will fall into short, medium, and long-term harvests
     const totalShortCropsPercentage = Number(totalShortCropsPercentageEl.value) * 0.01;
@@ -151,8 +141,8 @@ function initUtility() {
       //if crop is regrowth capable or on a trellis
       const isTrellisCrop = JSON.parse(item.cropData[7]);
       if (totalRegrowthCrops || isTrellisCrop) {
-        //if more crops are allowed to be given regrowth capabilities, set regrowth time to be between 25% - 35% of total grow time.
-        item.cropData[4] = Math.ceil(totalGrowthTime * getRandomFloatInRange(0.25, 0.42));
+        //if more crops are allowed to be given regrowth capabilities, set regrowth time to be between 30% - 42% of total grow time.
+        item.cropData[4] = Math.ceil(totalGrowthTime * getRandomFloatInRange(0.3, 0.42));
         console.log("regrowth: ", item.cropData[4], "days");
 
         //set crop and seed sell prices
@@ -162,8 +152,9 @@ function initUtility() {
         item.cropObjectData[1] = Math.ceil(totalGrowthTime * cropPriceMultiplier);
         console.log("seed price multiplier: ", seedPriceMultiplier);
         console.log("crop price multiplier: ", cropPriceMultiplier);
-        console.log(`seed purchase price (total growth time x seed price multiplier): ${item.seedObjectData[1]}g`);
-        console.log(`crop sell price     (total growth time x crop price multiplier): ${item.cropObjectData[1]}g`);
+        console.log(`seed purchase price: ${item.seedObjectData[1]}g`);
+        console.log(`crop sell price    : ${item.cropObjectData[1]}g`);
+        // (total growth time x seed price multiplier):
 
         //append season text with regrowth verbiage
         seedDescription += `, but keeps producing after that.${isTrellisCrop ? " Grows on a trellis." : ""}`;
@@ -180,8 +171,8 @@ function initUtility() {
         item.cropObjectData[1] = Math.ceil(totalGrowthTime * cropPriceMultiplier);
         console.log("seed price multiplier: ", seedPriceMultiplier);
         console.log("crop price multiplier: ", cropPriceMultiplier);
-        console.log(`seed purchase price (total growth time x seed price multiplier): ${item.seedObjectData[1]}g`);
-        console.log(`crop sell price     (total growth time x crop price multiplier): ${item.cropObjectData[1]}g`);
+        console.log(`seed purchase price: ${item.seedObjectData[1]}g`);
+        console.log(`crop sell price    : ${item.cropObjectData[1]}g`);
 
         //append period to season text
         seedDescription += `.`;
@@ -192,16 +183,18 @@ function initUtility() {
       console.log("seed description: ", seedDescription);
 
       // if crop is allowed to have extra chance for multiple harvesting
-      const allowRandomExtraYields = allowRandomExtraYieldsEl.checked;
       if (allowRandomExtraYields && totalExtraYieldCrops) {
         let minHarvest = getRandomIntegerInRange(1, 3);
         let maxHarvest = getRandomIntegerInRange(minHarvest, 3);
-        let chanceForExtraCrops = getRandomFloatInRange(0.1, 0.3);
+        let chanceForExtraCrops = getRandomFloatInRange(0.1, 0.2);
         item.cropData[6] = `true ${minHarvest} ${maxHarvest} 0 ${chanceForExtraCrops}`;
 
-        //reduce crop sell price due to multiple harvest chance
+        //reduce crop sell price due to extra yield chance
         item.cropObjectData[1] = Math.ceil(item.cropObjectData[1] * (1 - chanceForExtraCrops));
 
+        console.log("** EXTRA YIELD **");
+        console.log(item.cropData[6]);
+        console.log(`updated crop sell price: ${item.cropObjectData[1]}`);
         totalExtraYieldCrops--;
       }
       setItemData(seedIdx, item);
@@ -508,12 +501,31 @@ const baseData = {
     832: "Pineapple/300/55/Basic -79/Pineapple/A sweet and tangy tropical treat.",
     889: "Qi Fruit/1/1/Basic -79/Qi Fruit/Mr. Qi has challenged you to ship 500 of these strange melons.",
   },
+  fruitObjectData: {
+    634: "Apricot/50/15/Basic -79/Apricot/A tender little fruit with a rock-hard pit.",
+    635: "Orange/100/15/Basic -79/Orange/Juicy, tangy, and bursting with sweet summer aroma.",
+    636: "Peach/140/15/Basic -79/Peach/It's almost fuzzy to the touch.",
+    637: "Pomegranate/140/15/Basic -79/Pomegranate/Within the fruit are clusters of juicy seeds.",
+    638: "Cherry/80/15/Basic -79/Cherry/It's popular, and ripens sooner than most other fruits.",
+  },
   goodObjectData: {
-    303: "Pale Ale/300/20/Basic -26/Pale Ale/Drink in moderation./drink/0 0 0 0 0 0 0 0 0 0 0/0",
-    340: "Honey/100/-300/Basic -26/Honey/It's a sweet syrup produced by bees.",
+    247: "Oil/100/5/Basic/Oil/All purpose cooking oil./drink/0 0 0 0 0 0 0 0 0 0 0/0",
+    303: "Pale Ale/250/20/Basic -26/Pale Ale/Drink in moderation./drink/0 0 0 0 0 0 0 0 0 0 0/0",
+    306: "Mayonnaise/190/-300/Basic -26/Mayonnaise/It looks spreadable.",
+    307: "Duck Mayonnaise/375/-300/Basic -26/Duck Mayonnaise/It's a rich, yellow mayonnaise.",
+    308: "Void Mayonnaise/275/-30/Basic -26/Void Mayonnaise/A thick, black paste that smells like burnt hair.",
+    340: "Honey/150/-300/Basic -26/Honey/It's a sweet syrup produced by bees.",
     346: "Beer/200/20/Basic -26/Beer/Drink in moderation./drink/0 0 0 0 0 0 0 0 0 0 0/0",
-    395: "Coffee/150/1/Crafting/Coffee/It smells delicious. This is sure to give you a boost./drink/0 0 0 0 0 0 0 0 0 1 0/120",
-    459: "Mead/200/30/Basic -26/Mead/A fermented beverage made from honey. Drink in moderation./drink/0 0 0 0 0 0 0 0 0 0 0/0",
+    395: "Coffee/125/1/Crafting/Coffee/It smells delicious. This is sure to give you a boost./drink/0 0 0 0 0 0 0 0 0 1 0/120",
+    424: "Cheese/230/50/Basic -26/Cheese/It's your basic cheese.",
+    426: "Goat Cheese/400/50/Basic -26/Goat Cheese/Soft cheese made from goat's milk.",
+    428: "Cloth/470/-300/Basic -26/Cloth/A bolt of fine wool cloth.",
+    432: "Truffle Oil/1065/15/Basic -26/Truffle Oil/A gourmet cooking ingredient./drink/0 0 0 0 0 0 0 0 0 0 0/0",
+    440: "Wool/340/-300/Basic -18/Wool/Soft, fluffy wool.",
+    445: "Caviar/500/70/Basic -26/Caviar/The cured roe of a sturgeon fish. Considered to be a luxurious delicacy!",
+    447: "Aged Roe/100/40/Basic -26/Aged Roe/Fish eggs aged in salt to bring out the flavor.",
+    459: "Mead/350/30/Basic -26/Mead/A fermented beverage made from honey. Drink in moderation./drink/0 0 0 0 0 0 0 0 0 0 0/0",
     614: "Green Tea/100/5/Basic -26/Green Tea/A pleasant, energizing beverage made from lightly processed tea leaves./drink/0 0 0 0 0 0 0 30 0 0 0/360",
+    807: "Dinosaur Mayonnaise/800/-300/Basic -26/Dinosaur Mayonnaise/It's thick and creamy, with a vivid green hue. It smells like grass and leather.",
   },
 };
