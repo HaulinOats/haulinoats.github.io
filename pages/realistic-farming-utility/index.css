@@ -11,7 +11,7 @@ body {
   margin-bottom: 25px;
 }
 #extraYieldContainer {
-  display: none;
+  /* display: none; */
 }
 #outputData {
   font-family: monospace;
