@@ -345,7 +345,7 @@ function initUtility() {
       // if crop is allowed to have extra chance for multiple harvesting
       if (totalExtraYieldCrops > 0) {
         //balance out values to prevent high-priced crops from
-        var cropSellPrice = int.Parse(item.cropObjectData[1]);
+        var cropSellPrice = item.cropObjectData[1];
         var maxAllowedHarvest = 1;
         var extraYieldChancePercentageMax = 5;
         if (cropSellPrice <= 50) {
@@ -358,17 +358,17 @@ function initUtility() {
           maxAllowedHarvest = 2;
           extraYieldChancePercentageMax = 10;
         }
-        var minHarvest = Helpers.GetRandomIntegerInRange(1, maxAllowedHarvest);
-        var maxHarvest = Helpers.GetRandomIntegerInRange(minHarvest, maxAllowedHarvest);
-        var chanceForExtraCrops = Helpers.GetRandomIntegerInRange(2, extraYieldChancePercentageMax) * 0.01;
+        var minHarvest = getRandomIntegerInRange(1, maxAllowedHarvest);
+        var maxHarvest = getRandomIntegerInRange(minHarvest, maxAllowedHarvest);
+        var chanceForExtraCrops = getRandomIntegerInRange(2, extraYieldChancePercentageMax) * 0.01;
         item["cropData"][6] = `true ${minHarvest} ${maxHarvest} 0 ${chanceForExtraCrops}`;
 
         //reduce crop sell price due to extra yield chance
-        item["cropObjData"][1] = Math.Ceiling(int.Parse(item["cropObjData"][1]) * (1 - chanceForExtraCrops * 4)).ToString();
+        item.cropObjectData[1] = Math.ceil(item.cropObjectData[1] * (1 - chanceForExtraCrops * 4));
 
         console.log(`** EXTRA YIELD **`);
         console.log(`${item["cropData"][6]}`);
-        console.log(`updated crop sell price: ${item["cropObjData"][1]}`);
+        console.log(`updated crop sell price: ${item.cropObjectData[1]}`);
         totalExtraYieldCrops--;
       } else {
         item.cropData[6] = "false";
