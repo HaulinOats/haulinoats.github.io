@@ -334,7 +334,7 @@ function initUtility() {
         //if crop is regrowth capable or on a trellis
         const isTrellisCrop = JSON.parse(item.cropData[7]);
         const isFlower = flowerSeedIndexes.includes(seedIdx);
-        // const flowersCanRegrow = flowersCanRegrowEl.checked;
+        const flowersCanRegrow = flowersCanRegrowEl.checked;
         console.log("is flower: ", isFlower);
 
         if (totalRegrowthCrops > 0 || isTrellisCrop) applyRegrowValues();
@@ -546,7 +546,7 @@ const regrowthGPDCropPriceMultiplierMinEl = document.getElementById("regrowthGPD
 const regrowthGPDCropPriceMultiplierMaxEl = document.getElementById("regrowthGPDCropPriceMultiplierMax");
 const regrowthGPDSeedPriceMultiplierMinEl = document.getElementById("regrowthGPDSeedPriceMultiplierMin");
 const regrowthGPDSeedPriceMultiplierMaxEl = document.getElementById("regrowthGPDSeedPriceMultiplierMax");
-// const flowersCanRegrowEl = document.getElementById("flowersCanRegrow");
+const flowersCanRegrowEl = document.getElementById("flowersCanRegrow");
 // const allowRandomExtraYieldsEl = document.getElementById("allowRandomExtraYields");
 const extraYieldContainer = document.getElementById("extraYieldContainer");
 const totalExtraYieldCropsMultiplierEl = document.getElementById("totalExtraYieldCropsMultiplier");
