@@ -1,6 +1,451 @@
 "use strict";
 
-const baseData = {
+let baseData;
+let contentJSON;
+let itemData = {};
+
+const flowerSeedIndexes = ["425", "427", "429", "453", "455", "431"];
+
+function initUtility() {
+  const skipUtility = skipUtilityEl.checked;
+
+  let seasonCrops = {
+    spring: [],
+    summer: [],
+    fall: [],
+    winter: [],
+  };
+
+  const cropGrowthRanges = {
+    short: {
+      min: Number(shortCropRangeMinEl.value),
+      max: Number(shortCropRangeMaxEl.value),
+    },
+    medium: {
+      min: Number(mediumCropRangeMinEl.value),
+      max: Number(mediumCropRangeMaxEl.value),
+    },
+    long: {
+      min: Number(longCropRangeMinEl.value),
+      max: Number(longCropRangeMaxEl.value),
+    },
+  };
+
+  //separate each crop/seed into seasons
+  for (const seedIdx in baseData.cropData) {
+    baseData.cropData[seedIdx]
+      .split("/")[1]
+      .split(" ")
+      .forEach((season) => {
+        seasonCrops[season].push(seedIdx);
+      });
+  }
+
+  console.log("Seed Indexes Per Season:");
+  console.log(seasonCrops);
+
+  //loop through each season
+  for (const season in seasonCrops) {
+    console.log(season.toUpperCase());
+
+    let totalSeasonProfitPerPlot = 0;
+    const seasonCropPool = shuffleArray(seasonCrops[season]);
+    const totalSeasonCrops = seasonCropPool.length;
+    const allowRandomExtraYields = true;
+    console.log("allow for randomized extra yield crops: ", allowRandomExtraYields);
+
+    //set number of crops per season that are allowed to regrow or have extra harvest yields
+    const totalExtraYieldCropsMultiplier = parseFloat(totalExtraYieldCropsMultiplierEl.value).toFixed(2);
+    let totalExtraYieldCrops = Math.ceil(totalSeasonCrops * (totalExtraYieldCropsMultiplier * 0.01));
+    const totalRegrowthCropsPercentage = Number(totalRegrowthCropsPercentageEl.value * 0.01);
+    let totalRegrowthCrops = Math.ceil(totalSeasonCrops * totalRegrowthCropsPercentage);
+    console.log(`Total regrowth crops for ${season}: ${totalRegrowthCrops}`);
+    if (allowRandomExtraYields) console.log(`Total extra yield crops for ${season}: ${totalExtraYieldCrops}`);
+
+    //set how many crops per season will fall into short, medium, and long-term harvests
+    //medium crop percentage will end up being percentage difference leftover after removing long and short crop percentages from 100%
+    const totalShortCropsPercentage = Number(totalShortCropsPercentageEl.value) * 0.01;
+    const totalLongCropsPercentage = Number(totalLongCropsPercentageEl.value) * 0.01;
+    let totalShortCrops = Math.ceil(totalSeasonCrops * totalShortCropsPercentage);
+    let totalLongCrops = Math.ceil(totalSeasonCrops * totalLongCropsPercentage);
+    const totalMediumCropsPercentage = 1 - (totalShortCropsPercentage + totalLongCropsPercentage);
+    let totalMediumCrops = Math.ceil(totalSeasonCrops * totalMediumCropsPercentage);
+
+    const totalCropTypeSums = totalShortCrops + totalMediumCrops + totalLongCrops;
+
+    //if the sum of calculated harvest categories does not equal actual crops in season
+    //remove/add difference from medium harvest length crops
+    if (totalCropTypeSums > totalSeasonCrops) totalMediumCrops -= totalCropTypeSums - totalSeasonCrops;
+    if (totalCropTypeSums < totalSeasonCrops) totalMediumCrops += totalSeasonCrops - totalCropTypeSums;
+    console.log("season crop type totals: ", { totalShortCrops, totalMediumCrops, totalLongCrops });
+    console.log("total crops per season: ", totalShortCrops + totalMediumCrops + totalLongCrops);
+
+    //loop through each season array of crop/seed indexes
+    for (let seasonCropIdx = 0; seasonCropIdx < seasonCropPool.length; seasonCropIdx++) {
+      console.log("_______________________");
+      const seedIdx = seasonCropPool[seasonCropIdx];
+      const objId = baseData.cropData[seedIdx].split("/")[3];
+      let item = {
+        cropData: baseData.cropData[seedIdx].split("/"),
+        seedObjectData: baseData.seedObjectData[seedIdx].split("/"),
+        cropObjectData: baseData.cropObjectData[objId].split("/"),
+      };
+      console.log(item.cropObjectData[0]);
+
+      if (!skipUtility) {
+        //generate random growth (harvest) times for different crops
+        //manually set Parsnip to be a short-term crop since it's the only crop
+        //you have access to start making money from at the start of new game
+        let totalGrowthTime = getRandomIntegerInRange(cropGrowthRanges.medium.min, cropGrowthRanges.medium.max);
+        if (totalShortCrops > 0 || seedIdx === "472") {
+          //for all crops that are NOT Parsnip
+          if (seedIdx !== "472") {
+            totalGrowthTime = getRandomIntegerInRange(cropGrowthRanges.short.min, cropGrowthRanges.short.max);
+          } else {
+            //for Parsnip
+            if (totalShortCrops == 0) totalMediumCrops--;
+            totalGrowthTime = 4;
+          }
+          totalShortCrops--;
+        }
+        console.log("total growth time: ", totalGrowthTime, " days");
+
+        //dynamically generate growth stages
+        let growthStagesArr = item.cropData[0].split(" ");
+        let averageGrowthStageDays = Math.floor(totalGrowthTime / growthStagesArr.length);
+        growthStagesArr.map((_val, idx, arr) => (arr[idx] = averageGrowthStageDays));
+
+        for (let i = 0; i < growthStagesArr.length; i++) {
+          growthStagesArr[i] = averageGrowthStageDays;
+        }
+
+        //if total sum of growth stages is less than total grow time, remove the difference from last stage
+        const growthStagesSum = growthStagesArr.reduce((prev, curr) => prev + curr, 0);
+        const lastGrowthStageIdx = growthStagesArr.length - 1;
+        if (growthStagesSum < totalGrowthTime) {
+          growthStagesArr[lastGrowthStageIdx] += totalGrowthTime - growthStagesSum;
+        }
+
+        //if last growth stage is at least 2 days higher than previous day,
+        //distribute excess to previous day
+        const growthDayDiff = growthStagesArr[lastGrowthStageIdx] - growthStagesArr[lastGrowthStageIdx - 1];
+        if (growthDayDiff > 1) {
+          growthStagesArr[lastGrowthStageIdx]--;
+          growthStagesArr[lastGrowthStageIdx - 1]++;
+        }
+        //shuffles array so growth stage positions are randomized
+        item.cropData[0] = shuffleArray(growthStagesArr).join(" ");
+
+        //set up dynamic description for seeds
+        let cropSeasons = item.cropData[1]
+          .split(" ")
+          .map((season) => capitalize(season))
+          .join(", ");
+        let seedDescription = `Plant these in ${replaceLast(cropSeasons, ",", " or")}. `;
+        seedDescription += `Takes ${totalGrowthTime} ${totalGrowthTime < 2 ? "day" : "days"} to mature`;
+
+        //if crop is regrowth capable or on a trellis
+        const isTrellisCrop = JSON.parse(item.cropData[7]);
+        const isFlower = flowerSeedIndexes.includes(seedIdx);
+        const flowersCanRegrow = flowersCanRegrowEl.checked;
+        console.log("is flower: ", isFlower);
+
+        if (totalRegrowthCrops > 0 || isTrellisCrop) applyRegrowValues();
+        else applyRegularValues();
+
+        //store updated
+        item.seedObjectData[5] = seedDescription;
+        console.log("seed description: ", seedDescription);
+
+        // if crop is allowed to have extra chance for multiple harvesting
+        if (totalExtraYieldCrops > 0) {
+          //balance out values to prevent high-priced crops from
+          var cropSellPrice = item.cropObjectData[1];
+          var maxAllowedHarvest = 1;
+          var extraYieldChancePercentageMax = 5;
+          if (cropSellPrice <= 50) {
+            maxAllowedHarvest = 3;
+            extraYieldChancePercentageMax = 20;
+          } else if (cropSellPrice > 50 && cropSellPrice <= 125) {
+            maxAllowedHarvest = 2;
+            extraYieldChancePercentageMax = 15;
+          } else if (cropSellPrice > 125 && cropSellPrice <= 150) {
+            maxAllowedHarvest = 2;
+            extraYieldChancePercentageMax = 10;
+          }
+          var minHarvest = getRandomIntegerInRange(1, maxAllowedHarvest);
+          var maxHarvest = getRandomIntegerInRange(minHarvest, maxAllowedHarvest);
+          var chanceForExtraCrops = getRandomIntegerInRange(2, extraYieldChancePercentageMax) * 0.01;
+          item["cropData"][6] = `true ${minHarvest} ${maxHarvest} 0 ${chanceForExtraCrops}`;
+
+          //reduce crop sell price due to extra yield chance
+          item.cropObjectData[1] = Math.ceil(item.cropObjectData[1] * (1 - chanceForExtraCrops * 4));
+
+          console.log(`** EXTRA YIELD **`);
+          console.log(`${item["cropData"][6]}`);
+          console.log(`updated crop sell price: ${item.cropObjectData[1]}`);
+          totalExtraYieldCrops--;
+        } else {
+          item.cropData[6] = "false";
+        }
+
+        function applyRegrowValues() {
+          //if flower but flowers aren't allowed to regrow, exit regrowth function and apply regular values to flower instead
+          if (isFlower && !flowersCanRegrow) return applyRegularValues();
+
+          //if more crops are allowed to be given regrowth capabilities, set regrowth time to be between 30% - 42% of total grow time.
+          item.cropData[4] = Math.ceil(totalGrowthTime * getRandomFloatInRange(0.3, 0.6));
+          console.log("regrowth: ", item.cropData[4], "days");
+
+          //set crop and seed sell prices
+          const seedPriceMultiplier = getRandomIntegerInRange(Number(regrowthGPDSeedPriceMultiplierMinEl.value), Number(regrowthGPDSeedPriceMultiplierMaxEl.value));
+          const cropPriceMultiplier = getRandomIntegerInRange(Number(regrowthGPDCropPriceMultiplierMinEl.value), Number(regrowthGPDCropPriceMultiplierMaxEl.value));
+          item.seedObjectData[1] = Math.ceil(totalGrowthTime * seedPriceMultiplier);
+          item.cropObjectData[1] = Math.ceil(totalGrowthTime * cropPriceMultiplier);
+          console.log("seed price multiplier: ", seedPriceMultiplier);
+          console.log("crop price multiplier: ", cropPriceMultiplier);
+          console.log(`seed purchase price: ${item.seedObjectData[1]}g`);
+          console.log(`crop sell price    : ${item.cropObjectData[1]}g`);
+          // (total growth time x seed price multiplier):
+
+          //append season text with regrowth verbiage
+          seedDescription += `, but keeps producing after that.${isTrellisCrop ? " Grows on a trellis." : ""}`;
+          totalRegrowthCrops--;
+        }
+
+        function applyRegularValues() {
+          //if crop is NOT regrowth capable, set crop to not regrow
+          item.cropData[4] = -1;
+          console.log("no regrowth");
+
+          //set crop and seed sell prices
+          const seedPriceMultiplier = getRandomIntegerInRange(Number(regularGPDSeedPriceMultiplierMinEl.value), Number(regularGPDSeedPriceMultiplierMaxEl.value));
+          const cropPriceMultiplier = getRandomIntegerInRange(Number(regularGPDCropPriceMultiplierMinEl.value), Number(regularGPDCropPriceMultiplierMaxEl.value));
+          item.seedObjectData[1] = Math.ceil(totalGrowthTime * seedPriceMultiplier);
+          item.cropObjectData[1] = Math.ceil(totalGrowthTime * cropPriceMultiplier);
+          console.log("seed price multiplier: ", seedPriceMultiplier);
+          console.log("crop price multiplier: ", cropPriceMultiplier);
+          console.log(`seed purchase price: ${item.seedObjectData[1]}g`);
+          console.log(`crop sell price    : ${item.cropObjectData[1]}g`);
+
+          //append period to season text
+          seedDescription += `.`;
+        }
+      }
+      setItemData(seedIdx, item);
+
+      //extra calculations
+      let daysToMaturity = item.cropData[0].split(" ").reduce((prev, curr) => Number(prev) + Number(curr), 0);
+      let daysToRegrow = Number(item.cropData[4]);
+      let maxHarvests = 1;
+      let sellPricePerHarvest = Number(item.cropObjectData[1]);
+      let seedPurchasePrice = Number(item.seedObjectData[1]);
+      let extraSeedPurchaseMultiplier = 1;
+      let extraYieldArr = item.cropData[6].split(" ");
+      let growingDays;
+
+      //if regrow capable
+      if (item.cropData[4] > -1) {
+        maxHarvests = (28 - daysToMaturity) / daysToRegrow;
+        growingDays = daysToMaturity + (maxHarvests - 1) * daysToRegrow;
+      } else {
+        maxHarvests = 28 / daysToMaturity;
+        extraSeedPurchaseMultiplier = maxHarvests;
+        growingDays = daysToMaturity + (maxHarvests - 1) * daysToMaturity;
+      }
+      maxHarvests = Math.floor(maxHarvests);
+
+      //if crop has extra yield potential
+      if (item.cropData[6].Length > 6) {
+        sellPricePerHarvest *= Number(extraYieldArr[1]);
+      }
+
+      console.log(`days to maturity: ${daysToMaturity}`);
+      console.log(`max harvests: ${maxHarvests}`);
+      console.log(`days to regrow: ${daysToRegrow}`);
+      let goldPerDay = (maxHarvests * sellPricePerHarvest - seedPurchasePrice * extraSeedPurchaseMultiplier) / growingDays;
+      totalSeasonProfitPerPlot += goldPerDay.toFixed(2) * 27;
+      console.log(`Gold per day (per plot): ${goldPerDay.toFixed(2)}`);
+      console.log(`Gold per season (per plot): ${(goldPerDay.toFixed(2) * 27).toFixed(2)}`);
+    }
+    console.log("**** END SEASON TOTALS ****");
+    console.log(`Total season profit per plot: ${totalSeasonProfitPerPlot.toFixed(2)}`);
+    console.log(`Average season profit per plot: ${(totalSeasonProfitPerPlot / seasonCrops[season].length).toFixed(2)}`);
+    console.log("------ End Season ------");
+  }
+
+  function setItemData(seedIdx, item) {
+    itemData[seedIdx] = item;
+    console.log(seedIdx, ":", item);
+  }
+}
+
+async function parseJsonFile(file) {
+  return new Promise((resolve, reject) => {
+    const fileReader = new FileReader();
+    fileReader.onload = (e) => {
+      resolve(JSON.parse(e.target.result.toString()));
+    };
+    fileReader.onerror = (error) => reject(error);
+    fileReader.readAsText(file);
+  });
+}
+
+const saveTemplateAsFile = (filename, dataObjToWrite) => {
+  const blob = new Blob([JSON.stringify(dataObjToWrite)], {
+    type: "text/json",
+  });
+  const link = document.createElement("a");
+
+  link.download = filename;
+  link.href = window.URL.createObjectURL(blob);
+  link.dataset.downloadurl = ["text/json", link.download, link.href].join(":");
+
+  const evt = new MouseEvent("click", {
+    view: window,
+    bubbles: true,
+    cancelable: true,
+  });
+
+  link.dispatchEvent(evt);
+  link.remove();
+};
+
+function shuffleArray(array) {
+  for (var i = array.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var temp = array[i];
+    array[i] = array[j];
+    array[j] = temp;
+  }
+  return array;
+}
+
+function getRandomIntegerInRange(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+function getRandomFloatInRange(min, max) {
+  return parseFloat(Math.random() * (max - min) + min).toFixed(2);
+}
+
+function capitalize(word) {
+  return word[0].toUpperCase() + word.slice(1).toLowerCase();
+}
+
+function replaceLast(string, search, replace) {
+  return string.replace(new RegExp(search + "([^" + search + "]*)$"), replace + "$1");
+}
+
+//get elements from HTML
+const saveBtn = document.getElementById("saveBtn");
+const fileUpload = document.getElementById("file-upload");
+const totalRegrowthCropsPercentageEl = document.getElementById("totalRegrowthCropsPercentage");
+const totalShortCropsPercentageEl = document.getElementById("totalShortCropsPercentage");
+const totalLongCropsPercentageEl = document.getElementById("totalLongCropsPercentage");
+const shortCropRangeMinEl = document.getElementById("shortCropRangeMin");
+const shortCropRangeMaxEl = document.getElementById("shortCropRangeMax");
+const mediumCropRangeMinEl = document.getElementById("mediumCropRangeMin");
+const mediumCropRangeMaxEl = document.getElementById("mediumCropRangeMax");
+const longCropRangeMinEl = document.getElementById("longCropRangeMin");
+const longCropRangeMaxEl = document.getElementById("longCropRangeMax");
+const regularGPDCropPriceMultiplierMinEl = document.getElementById("regularGPDCropPriceMultiplierMin");
+const regularGPDCropPriceMultiplierMaxEl = document.getElementById("regularGPDCropPriceMultiplierMax");
+const regularGPDSeedPriceMultiplierMinEl = document.getElementById("regularGPDSeedPriceMultiplierMin");
+const regularGPDSeedPriceMultiplierMaxEl = document.getElementById("regularGPDSeedPriceMultiplierMax");
+const regrowthGPDCropPriceMultiplierMinEl = document.getElementById("regrowthGPDCropPriceMultiplierMin");
+const regrowthGPDCropPriceMultiplierMaxEl = document.getElementById("regrowthGPDCropPriceMultiplierMax");
+const regrowthGPDSeedPriceMultiplierMinEl = document.getElementById("regrowthGPDSeedPriceMultiplierMin");
+const regrowthGPDSeedPriceMultiplierMaxEl = document.getElementById("regrowthGPDSeedPriceMultiplierMax");
+const flowersCanRegrowEl = document.getElementById("flowersCanRegrow");
+// const allowRandomExtraYieldsEl = document.getElementById("allowRandomExtraYields");
+const extraYieldContainer = document.getElementById("extraYieldContainer");
+const totalExtraYieldCropsMultiplierEl = document.getElementById("totalExtraYieldCropsMultiplier");
+const outputPreviewContainer = document.getElementById("outputPreviewContainer");
+const outputPreview = document.getElementById("outputPreview");
+const copyToClipboard = document.getElementById("copyToClipboard");
+const runUtility = document.getElementById("runUtility");
+const rawObjectsOutput = document.getElementById("rawObjectsOutput");
+const resetInputsBtn = document.getElementById("resetInputs");
+const skipUtilityEl = document.getElementById("skipUtility");
+
+//EVENT LISTENERS
+runUtility.addEventListener("click", () => {
+  console.log("\n\n****** START UTILITY ******\n\n");
+  initUtility();
+  let entriesCropData = {};
+  let entriesObjectData = {};
+
+  //build the 'Entries' json objects
+  for (const index in itemData) {
+    //"Target": "Data/ObjectInformation"
+    let cropItemIdx = itemData[index].cropData[3];
+    entriesObjectData[index] = itemData[index].seedObjectData.join("/");
+    entriesObjectData[cropItemIdx] = itemData[index].cropObjectData.join("/");
+
+    //"Target": "Data/Crops"
+    entriesCropData[index] = itemData[index].cropData.join("/");
+  }
+  rawObjectsOutput.innerHTML = JSON.stringify({ cropData: entriesCropData, objectData: entriesObjectData }, null, 2);
+});
+
+fileUpload.addEventListener("change", async (e) => {
+  saveBtn.style.display = "";
+
+  initUtility();
+
+  contentJSON = await parseJsonFile(e.target.files[0]);
+
+  let entriesCropData = {};
+  let entriesObjectData = {};
+
+  //build the 'Entries' json objects
+  for (const index in itemData) {
+    //"Target": "Data/ObjectInformation"
+    let cropItemIdx = itemData[index].cropData[3];
+    entriesObjectData[index] = itemData[index].seedObjectData.join("/");
+    entriesObjectData[cropItemIdx] = itemData[index].cropObjectData.join("/");
+
+    //"Target": "Data/Crops"
+    entriesCropData[index] = itemData[index].cropData.join("/");
+  }
+
+  contentJSON.Changes.map((changeObj) => {
+    if (changeObj["When"] && changeObj["When"]["Balance Mode"] === "Dynamic") {
+      //insert new object data into 'Entries' for objects
+      if (changeObj.Target === "Data/ObjectInformation") changeObj.Entries = entriesObjectData;
+      //insert new crop data into 'Entries' for crops
+      if (changeObj.Target === "Data/Crops") changeObj.Entries = entriesCropData;
+    }
+  });
+
+  console.log(contentJSON);
+  outputPreview.innerHTML = JSON.stringify(contentJSON, null, 2);
+  outputPreviewContainer.style.display = "block";
+});
+
+saveBtn.addEventListener("click", () => {
+  //get final json from output textarea in case any specific fields were updated manually
+  saveTemplateAsFile("content.json", JSON.parse(outputPreview.innerText));
+});
+
+// allowRandomExtraYieldsEl.addEventListener("change", (e) => {
+//   if (e.target.checked) extraYieldContainer.style.display = "block";
+//   else extraYieldContainer.style.display = "none";
+// });
+
+copyToClipboard.addEventListener("click", () => {
+  navigator.clipboard.writeText(outputPreview.innerText);
+});
+
+resetInputsBtn.addEventListener("click", () => {
+  const inputs = document.querySelectorAll("input[type='number']");
+  inputs.forEach((input) => {
+    input.value = input.getAttribute("data-default");
+  });
+});
+
+baseData = {
   //https://stardewcommunitywiki.com/Modding:Crop_data
   //[0]Growth Stages/[1]Growth Seasons/[2]Sprite Sheet Index/[3]Harvest Item Index/[4]Regrow After Harvest (-1 = no regrow)/[5]Harvest Method (0 = no scythe needed)/[6]Chance For Extra Harvest/[7]Raised Seeds (true if trellis item)/[8]Tint Color
   cropData: {
@@ -38,10 +483,6 @@ const baseData = {
     492: "1 3 3 3/fall/20/280/-1/0/true 1 1 0 .1/false/false",
     493: "1 2 1 1 2/fall/21/282/5/0/true 2 2 0 .1/false/false",
     494: "1 1 2 2/spring fall/22/284/-1/0/true 1 1 0 .2/false/false",
-    495: "3 4/spring/23/16/-1/0/false/false/false",
-    496: "3 4/summer/23/396/-1/0/false/false/false",
-    497: "3 4/fall/23/404/-1/0/false/false/false",
-    498: "3 4/winter/23/412/-1/0/false/false/false",
     499: "2 7 7 7 5/summer fall/24/454/7/0/false/false/false",
     745: "1 1 2 2 2/spring summer/36/400/4/0/true 1 1 0 .02/false/false",
     802: "2 2 2 3 3/summer fall winter/41/90/3/0/false/false/false",
@@ -187,444 +628,3 @@ const baseData = {
     807: "Dinosaur Mayonnaise/800/-300/Basic -26/Dinosaur Mayonnaise/It's thick and creamy, with a vivid green hue. It smells like grass and leather.",
   },
 };
-
-let contentJSON;
-let itemData = {};
-
-const flowerSeedIndexes = ["425", "427", "429", "453", "455", "431"];
-
-function initUtility() {
-  const skipUtility = false;
-
-  let seasonCrops = {
-    spring: [],
-    summer: [],
-    fall: [],
-    winter: [],
-  };
-
-  const cropGrowthRanges = {
-    short: {
-      min: Number(shortCropRangeMinEl.value),
-      max: Number(shortCropRangeMaxEl.value),
-    },
-    medium: {
-      min: Number(mediumCropRangeMinEl.value),
-      max: Number(mediumCropRangeMaxEl.value),
-    },
-    long: {
-      min: Number(longCropRangeMinEl.value),
-      max: Number(longCropRangeMaxEl.value),
-    },
-  };
-
-  //separate each crop/seed into seasons
-  for (const seedIdx in baseData.cropData) {
-    baseData.cropData[seedIdx]
-      .split("/")[1]
-      .split(" ")
-      .forEach((season) => {
-        seasonCrops[season].push(seedIdx);
-      });
-  }
-
-  console.log("Seed Indexes Per Season:");
-  console.log(seasonCrops);
-
-  //loop through each season
-  for (const season in seasonCrops) {
-    console.log(season.toUpperCase());
-
-    let totalSeasonProfitPerPlot = 0;
-    const seasonCropPool = shuffleArray(seasonCrops[season]);
-    const totalSeasonCrops = seasonCropPool.length;
-    const allowRandomExtraYields = true;
-    console.log("allow for randomized extra yield crops: ", allowRandomExtraYields);
-
-    //set number of crops per season that are allowed to regrow or have extra harvest yields
-    const totalExtraYieldCropsMultiplier = parseFloat(totalExtraYieldCropsMultiplierEl.value).toFixed(2);
-    let totalExtraYieldCrops = Math.ceil(totalSeasonCrops * (totalExtraYieldCropsMultiplier * 0.01));
-    const totalRegrowthCropsPercentage = Number(totalRegrowthCropsPercentageEl.value * 0.01);
-    let totalRegrowthCrops = Math.ceil(totalSeasonCrops * totalRegrowthCropsPercentage);
-    console.log(`Total regrowth crops for ${season}: ${totalRegrowthCrops}`);
-    if (allowRandomExtraYields) console.log(`Total extra yield crops for ${season}: ${totalExtraYieldCrops}`);
-
-    //set how many crops per season will fall into short, medium, and long-term harvests
-    //medium crop percentage will end up being percentage difference leftover after removing long and short crop percentages from 100%
-    const totalShortCropsPercentage = Number(totalShortCropsPercentageEl.value) * 0.01;
-    const totalLongCropsPercentage = Number(totalLongCropsPercentageEl.value) * 0.01;
-    let totalShortCrops = Math.ceil(totalSeasonCrops * totalShortCropsPercentage);
-    let totalLongCrops = Math.ceil(totalSeasonCrops * totalLongCropsPercentage);
-    const totalMediumCropsPercentage = 1 - (totalShortCropsPercentage + totalLongCropsPercentage);
-    let totalMediumCrops = Math.ceil(totalSeasonCrops * totalMediumCropsPercentage);
-
-    const totalCropTypeSums = totalShortCrops + totalMediumCrops + totalLongCrops;
-
-    //if the sum of calculated harvest categories does not equal actual crops in season
-    //remove/add difference from medium harvest length crops
-    if (totalCropTypeSums > totalSeasonCrops) totalMediumCrops -= totalCropTypeSums - totalSeasonCrops;
-    if (totalCropTypeSums < totalSeasonCrops) totalMediumCrops += totalSeasonCrops - totalCropTypeSums;
-    console.log("season crop type totals: ", { totalShortCrops, totalMediumCrops, totalLongCrops });
-    console.log("total crops per season: ", totalShortCrops + totalMediumCrops + totalLongCrops);
-
-    //loop through each season array of crop/seed indexes
-    for (let seasonCropIdx = 0; seasonCropIdx < seasonCropPool.length; seasonCropIdx++) {
-      console.log("_______________________");
-      const seedIdx = seasonCropPool[seasonCropIdx];
-      const objId = baseData.cropData[seedIdx].split("/")[3];
-      let item = {
-        cropData: baseData.cropData[seedIdx].split("/"),
-        seedObjectData: baseData.seedObjectData[seedIdx].split("/"),
-        cropObjectData: baseData.cropObjectData[objId].split("/"),
-      };
-      console.log(item.cropObjectData[0]);
-
-      //generate random growth (harvest) times for different crops
-      //manually set Parsnip to be a short-term crop since it's the only crop
-      //you have access to start making money from at the start of new game
-      let totalGrowthTime = getRandomIntegerInRange(cropGrowthRanges.medium.min, cropGrowthRanges.medium.max);
-      if (totalShortCrops > 0 || seedIdx === "472") {
-        //for all crops that are NOT Parsnip
-        if (seedIdx !== "472") {
-          totalGrowthTime = getRandomIntegerInRange(cropGrowthRanges.short.min, cropGrowthRanges.short.max);
-        } else {
-          //for Parsnip
-          if (totalShortCrops == 0) totalMediumCrops--;
-          totalGrowthTime = 4;
-        }
-        totalShortCrops--;
-      }
-      console.log("total growth time: ", totalGrowthTime, " days");
-
-      //dynamically generate growth stages
-      let growthStagesArr = item.cropData[0].split(" ");
-      let averageGrowthStageDays = Math.floor(totalGrowthTime / growthStagesArr.length);
-      growthStagesArr.map((_val, idx, arr) => (arr[idx] = averageGrowthStageDays));
-
-      for (let i = 0; i < growthStagesArr.length; i++) {
-        growthStagesArr[i] = averageGrowthStageDays;
-      }
-
-      //if total sum of growth stages is less than total grow time, remove the difference from last stage
-      const growthStagesSum = growthStagesArr.reduce((prev, curr) => prev + curr, 0);
-      const lastGrowthStageIdx = growthStagesArr.length - 1;
-      if (growthStagesSum < totalGrowthTime) {
-        growthStagesArr[lastGrowthStageIdx] += totalGrowthTime - growthStagesSum;
-      }
-
-      //if last growth stage is at least 2 days higher than previous day,
-      //distribute excess to previous day
-      const growthDayDiff = growthStagesArr[lastGrowthStageIdx] - growthStagesArr[lastGrowthStageIdx - 1];
-      if (growthDayDiff > 1) {
-        growthStagesArr[lastGrowthStageIdx]--;
-        growthStagesArr[lastGrowthStageIdx - 1]++;
-      }
-      //shuffles array so growth stage positions are randomized
-      item.cropData[0] = shuffleArray(growthStagesArr).join(" ");
-
-      //set up dynamic description for seeds
-      let cropSeasons = item.cropData[1]
-        .split(" ")
-        .map((season) => capitalize(season))
-        .join(", ");
-      let seedDescription = `Plant these in ${replaceLast(cropSeasons, ",", " or")}. `;
-      seedDescription += `Takes ${totalGrowthTime} ${totalGrowthTime < 2 ? "day" : "days"} to mature`;
-
-      //if crop is regrowth capable or on a trellis
-      const isTrellisCrop = JSON.parse(item.cropData[7]);
-      const isFlower = flowerSeedIndexes.includes(seedIdx);
-      const flowersCanRegrow = flowersCanRegrowEl.checked;
-      console.log("is flower: ", isFlower);
-
-      if (totalRegrowthCrops > 0 || isTrellisCrop) applyRegrowValues();
-      else applyRegularValues();
-
-      //store updated
-      item.seedObjectData[5] = seedDescription;
-      console.log("seed description: ", seedDescription);
-
-      // if crop is allowed to have extra chance for multiple harvesting
-      if (totalExtraYieldCrops > 0) {
-        //balance out values to prevent high-priced crops from
-        var cropSellPrice = item.cropObjectData[1];
-        var maxAllowedHarvest = 1;
-        var extraYieldChancePercentageMax = 5;
-        if (cropSellPrice <= 50) {
-          maxAllowedHarvest = 3;
-          extraYieldChancePercentageMax = 20;
-        } else if (cropSellPrice > 50 && cropSellPrice <= 125) {
-          maxAllowedHarvest = 2;
-          extraYieldChancePercentageMax = 15;
-        } else if (cropSellPrice > 125 && cropSellPrice <= 150) {
-          maxAllowedHarvest = 2;
-          extraYieldChancePercentageMax = 10;
-        }
-        var minHarvest = getRandomIntegerInRange(1, maxAllowedHarvest);
-        var maxHarvest = getRandomIntegerInRange(minHarvest, maxAllowedHarvest);
-        var chanceForExtraCrops = getRandomIntegerInRange(2, extraYieldChancePercentageMax) * 0.01;
-        item["cropData"][6] = `true ${minHarvest} ${maxHarvest} 0 ${chanceForExtraCrops}`;
-
-        //reduce crop sell price due to extra yield chance
-        item.cropObjectData[1] = Math.ceil(item.cropObjectData[1] * (1 - chanceForExtraCrops * 4));
-
-        console.log(`** EXTRA YIELD **`);
-        console.log(`${item["cropData"][6]}`);
-        console.log(`updated crop sell price: ${item.cropObjectData[1]}`);
-        totalExtraYieldCrops--;
-      } else {
-        item.cropData[6] = "false";
-      }
-      setItemData(seedIdx, item);
-
-      //extra calculations
-      let daysToMaturity = item.cropData[0].split(" ").reduce((prev, curr) => Number(prev) + Number(curr), 0);
-      let daysToRegrow = Number(item.cropData[4]);
-      let maxHarvests = 1;
-      let sellPricePerHarvest = Number(item.cropObjectData[1]);
-      let seedPurchasePrice = Number(item.seedObjectData[1]);
-      let extraSeedPurchaseMultiplier = 1;
-      let extraYieldArr = item.cropData[6].split(" ");
-      let growingDays;
-
-      //if regrow capable
-      if (item.cropData[4] > -1) {
-        maxHarvests = (28 - daysToMaturity) / daysToRegrow;
-        growingDays = daysToMaturity + (maxHarvests - 1) * daysToRegrow;
-      } else {
-        maxHarvests = 28 / daysToMaturity;
-        extraSeedPurchaseMultiplier = maxHarvests;
-        growingDays = daysToMaturity + (maxHarvests - 1) * daysToMaturity;
-      }
-      maxHarvests = Math.floor(maxHarvests);
-
-      //if crop has extra yield potential
-      if (item.cropData[6].Length > 6) {
-        sellPricePerHarvest *= Number(extraYieldArr[1]);
-      }
-
-      console.log(`days to maturity: ${daysToMaturity}`);
-      console.log(`max harvests: ${maxHarvests}`);
-      console.log(`days to regrow: ${daysToRegrow}`);
-      let goldPerDay = (maxHarvests * sellPricePerHarvest - seedPurchasePrice * extraSeedPurchaseMultiplier) / growingDays;
-      totalSeasonProfitPerPlot += goldPerDay.toFixed(2) * 27;
-      console.log(`Gold per day (per plot): ${goldPerDay.toFixed(2)}`);
-      console.log(`Gold per season (per plot): ${(goldPerDay.toFixed(2) * 27).toFixed(2)}`);
-
-      function applyRegrowValues() {
-        //if flower but flowers aren't allowed to regrow, exit regrowth function and apply regular values to flower instead
-        if (isFlower && !flowersCanRegrow) return applyRegularValues();
-
-        //if more crops are allowed to be given regrowth capabilities, set regrowth time to be between 30% - 42% of total grow time.
-        item.cropData[4] = Math.ceil(totalGrowthTime * getRandomFloatInRange(0.3, 0.6));
-        console.log("regrowth: ", item.cropData[4], "days");
-
-        //set crop and seed sell prices
-        const seedPriceMultiplier = getRandomIntegerInRange(Number(regrowthGPDSeedPriceMultiplierMinEl.value), Number(regrowthGPDSeedPriceMultiplierMaxEl.value));
-        const cropPriceMultiplier = getRandomIntegerInRange(Number(regrowthGPDCropPriceMultiplierMinEl.value), Number(regrowthGPDCropPriceMultiplierMaxEl.value));
-        item.seedObjectData[1] = Math.ceil(totalGrowthTime * seedPriceMultiplier);
-        item.cropObjectData[1] = Math.ceil(totalGrowthTime * cropPriceMultiplier);
-        console.log("seed price multiplier: ", seedPriceMultiplier);
-        console.log("crop price multiplier: ", cropPriceMultiplier);
-        console.log(`seed purchase price: ${item.seedObjectData[1]}g`);
-        console.log(`crop sell price    : ${item.cropObjectData[1]}g`);
-        // (total growth time x seed price multiplier):
-
-        //append season text with regrowth verbiage
-        seedDescription += `, but keeps producing after that.${isTrellisCrop ? " Grows on a trellis." : ""}`;
-        totalRegrowthCrops--;
-      }
-
-      function applyRegularValues() {
-        //if crop is NOT regrowth capable, set crop to not regrow
-        item.cropData[4] = -1;
-        console.log("no regrowth");
-
-        //set crop and seed sell prices
-        const seedPriceMultiplier = getRandomIntegerInRange(Number(regularGPDSeedPriceMultiplierMinEl.value), Number(regularGPDSeedPriceMultiplierMaxEl.value));
-        const cropPriceMultiplier = getRandomIntegerInRange(Number(regularGPDCropPriceMultiplierMinEl.value), Number(regularGPDCropPriceMultiplierMaxEl.value));
-        item.seedObjectData[1] = Math.ceil(totalGrowthTime * seedPriceMultiplier);
-        item.cropObjectData[1] = Math.ceil(totalGrowthTime * cropPriceMultiplier);
-        console.log("seed price multiplier: ", seedPriceMultiplier);
-        console.log("crop price multiplier: ", cropPriceMultiplier);
-        console.log(`seed purchase price: ${item.seedObjectData[1]}g`);
-        console.log(`crop sell price    : ${item.cropObjectData[1]}g`);
-
-        //append period to season text
-        seedDescription += `.`;
-      }
-    }
-    console.log("**** END SEASON TOTALS ****");
-    console.log(`Total season profit per plot: ${totalSeasonProfitPerPlot.toFixed(2)}`);
-    console.log(`Average season profit per plot: ${(totalSeasonProfitPerPlot / seasonCrops[season].length).toFixed(2)}`);
-    console.log("------ End Season ------");
-  }
-
-  function setItemData(seedIdx, item) {
-    itemData[seedIdx] = item;
-    console.log(seedIdx, ":", item);
-  }
-}
-
-async function parseJsonFile(file) {
-  return new Promise((resolve, reject) => {
-    const fileReader = new FileReader();
-    fileReader.onload = (e) => {
-      resolve(JSON.parse(e.target.result.toString()));
-    };
-    fileReader.onerror = (error) => reject(error);
-    fileReader.readAsText(file);
-  });
-}
-
-const saveTemplateAsFile = (filename, dataObjToWrite) => {
-  const blob = new Blob([JSON.stringify(dataObjToWrite)], {
-    type: "text/json",
-  });
-  const link = document.createElement("a");
-
-  link.download = filename;
-  link.href = window.URL.createObjectURL(blob);
-  link.dataset.downloadurl = ["text/json", link.download, link.href].join(":");
-
-  const evt = new MouseEvent("click", {
-    view: window,
-    bubbles: true,
-    cancelable: true,
-  });
-
-  link.dispatchEvent(evt);
-  link.remove();
-};
-
-function shuffleArray(array) {
-  for (var i = array.length - 1; i > 0; i--) {
-    var j = Math.floor(Math.random() * (i + 1));
-    var temp = array[i];
-    array[i] = array[j];
-    array[j] = temp;
-  }
-  return array;
-}
-
-function getRandomIntegerInRange(min, max) {
-  return Math.floor(Math.random() * (max - min + 1) + min);
-}
-
-function getRandomFloatInRange(min, max) {
-  return parseFloat(Math.random() * (max - min) + min).toFixed(2);
-}
-
-function capitalize(word) {
-  return word[0].toUpperCase() + word.slice(1).toLowerCase();
-}
-
-function replaceLast(string, search, replace) {
-  return string.replace(new RegExp(search + "([^" + search + "]*)$"), replace + "$1");
-}
-
-//get elements from HTML
-const saveBtn = document.getElementById("saveBtn");
-const fileUpload = document.getElementById("file-upload");
-const totalRegrowthCropsPercentageEl = document.getElementById("totalRegrowthCropsPercentage");
-const totalShortCropsPercentageEl = document.getElementById("totalShortCropsPercentage");
-const totalLongCropsPercentageEl = document.getElementById("totalLongCropsPercentage");
-const shortCropRangeMinEl = document.getElementById("shortCropRangeMin");
-const shortCropRangeMaxEl = document.getElementById("shortCropRangeMax");
-const mediumCropRangeMinEl = document.getElementById("mediumCropRangeMin");
-const mediumCropRangeMaxEl = document.getElementById("mediumCropRangeMax");
-const longCropRangeMinEl = document.getElementById("longCropRangeMin");
-const longCropRangeMaxEl = document.getElementById("longCropRangeMax");
-const regularGPDCropPriceMultiplierMinEl = document.getElementById("regularGPDCropPriceMultiplierMin");
-const regularGPDCropPriceMultiplierMaxEl = document.getElementById("regularGPDCropPriceMultiplierMax");
-const regularGPDSeedPriceMultiplierMinEl = document.getElementById("regularGPDSeedPriceMultiplierMin");
-const regularGPDSeedPriceMultiplierMaxEl = document.getElementById("regularGPDSeedPriceMultiplierMax");
-const regrowthGPDCropPriceMultiplierMinEl = document.getElementById("regrowthGPDCropPriceMultiplierMin");
-const regrowthGPDCropPriceMultiplierMaxEl = document.getElementById("regrowthGPDCropPriceMultiplierMax");
-const regrowthGPDSeedPriceMultiplierMinEl = document.getElementById("regrowthGPDSeedPriceMultiplierMin");
-const regrowthGPDSeedPriceMultiplierMaxEl = document.getElementById("regrowthGPDSeedPriceMultiplierMax");
-const flowersCanRegrowEl = document.getElementById("flowersCanRegrow");
-// const allowRandomExtraYieldsEl = document.getElementById("allowRandomExtraYields");
-const extraYieldContainer = document.getElementById("extraYieldContainer");
-const totalExtraYieldCropsMultiplierEl = document.getElementById("totalExtraYieldCropsMultiplier");
-const outputPreviewContainer = document.getElementById("outputPreviewContainer");
-const outputPreview = document.getElementById("outputPreview");
-const copyToClipboard = document.getElementById("copyToClipboard");
-const runUtility = document.getElementById("runUtility");
-const rawObjectsOutput = document.getElementById("rawObjectsOutput");
-const resetInputsBtn = document.getElementById("resetInputs");
-
-//EVENT LISTENERS
-runUtility.addEventListener("click", () => {
-  console.clear();
-  initUtility();
-  let entriesCropData = {};
-  let entriesObjectData = {};
-
-  //build the 'Entries' json objects
-  for (const index in itemData) {
-    //"Target": "Data/ObjectInformation"
-    let cropItemIdx = itemData[index].cropData[3];
-    entriesObjectData[index] = itemData[index].seedObjectData.join("/");
-    entriesObjectData[cropItemIdx] = itemData[index].cropObjectData.join("/");
-
-    //"Target": "Data/Crops"
-    entriesCropData[index] = itemData[index].cropData.join("/");
-  }
-  rawObjectsOutput.innerHTML = JSON.stringify({ cropData: entriesCropData, objectData: entriesObjectData }, null, 2);
-});
-
-fileUpload.addEventListener("change", async (e) => {
-  saveBtn.style.display = "";
-
-  initUtility();
-
-  contentJSON = await parseJsonFile(e.target.files[0]);
-
-  let entriesCropData = {};
-  let entriesObjectData = {};
-
-  //build the 'Entries' json objects
-  for (const index in itemData) {
-    //"Target": "Data/ObjectInformation"
-    let cropItemIdx = itemData[index].cropData[3];
-    entriesObjectData[index] = itemData[index].seedObjectData.join("/");
-    entriesObjectData[cropItemIdx] = itemData[index].cropObjectData.join("/");
-
-    //"Target": "Data/Crops"
-    entriesCropData[index] = itemData[index].cropData.join("/");
-  }
-
-  contentJSON.Changes.map((changeObj) => {
-    if (changeObj["When"] && changeObj["When"]["Balance Mode"] === "Dynamic") {
-      //insert new object data into 'Entries' for objects
-      if (changeObj.Target === "Data/ObjectInformation") changeObj.Entries = entriesObjectData;
-      //insert new crop data into 'Entries' for crops
-      if (changeObj.Target === "Data/Crops") changeObj.Entries = entriesCropData;
-    }
-  });
-
-  console.log(contentJSON);
-  outputPreview.innerHTML = JSON.stringify(contentJSON, null, 2);
-  outputPreviewContainer.style.display = "block";
-});
-
-saveBtn.addEventListener("click", () => {
-  //get final json from output textarea in case any specific fields were updated manually
-  saveTemplateAsFile("content.json", JSON.parse(outputPreview.innerText));
-});
-
-// allowRandomExtraYieldsEl.addEventListener("change", (e) => {
-//   if (e.target.checked) extraYieldContainer.style.display = "block";
-//   else extraYieldContainer.style.display = "none";
-// });
-
-copyToClipboard.addEventListener("click", () => {
-  navigator.clipboard.writeText(outputPreview.innerText);
-});
-
-resetInputsBtn.addEventListener("click", () => {
-  const inputs = document.querySelectorAll("input[type='number']");
-  inputs.forEach((input) => {
-    input.value = input.getAttribute("data-default");
-  });
-});
