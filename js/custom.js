@@ -23,19 +23,17 @@ $(document).ready(function () {
   emailjs.init("user_edxN8J1IcxZ58snUCCvmB");
 
   // Contact Form Submit
-  document
-    .querySelector("#contact-form")
-    .addEventListener("submit", function (e) {
-      e.preventDefault();
-      emailjs
-        .sendForm("service_brnc745", "template_u86d2ao", "#contact-form")
-        .then((resp) => {
-          document.querySelector("#contact-sent").style.opacity = "1";
-        })
-        .catch((err) => {
-          document.querySelector("#contact-error").style.opacity = "1";
-        });
-    });
+  document.querySelector("#contact-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+    emailjs
+      .sendForm("service_brnc745", "template_u86d2ao", "#contact-form")
+      .then((resp) => {
+        document.querySelector("#contact-sent").style.opacity = "1";
+      })
+      .catch((err) => {
+        document.querySelector("#contact-error").style.opacity = "1";
+      });
+  });
 
   //populate skills section
   const skills = {
@@ -48,11 +46,13 @@ $(document).ready(function () {
       { text: "PHP", level: 3, logo: "PHP_logo.svg" },
       { text: "SQL", level: 3, logo: "MySQL_logo.png" },
       { text: "Ruby/Rails", level: 3, logo: "Ruby_logo.svg" },
+      { text: "C#", level: 2, logo: "c-sharp.svg" },
       { text: "Java", level: 2, logo: "Java_logo.svg" },
       { text: "Python", level: 2, logo: "Python_logo.svg" },
     ],
     frameworks: [
       { text: "React", level: 5, logo: "React_logo.svg" },
+      { text: "NextJS", level: 4, logo: "nextjs.svg" },
       { text: "Svelte", level: 4, logo: "Svelte_logo.svg" },
       { text: "MeteorJS", level: 4, logo: "Meteor_logo.svg" },
       { text: "Express", level: 4, logo: "Express_logo.png" },
@@ -71,6 +71,7 @@ $(document).ready(function () {
       { text: "REST APIs", level: 4, logo: "REST_logo.svg" },
       { text: "Git/SVN", level: 4, logo: "Git_logo.svg" },
       { text: "JSON/XML", level: 4, logo: "JSON_logo.svg" },
+      { text: "Visual Studio", level: 3, logo: "visual_studio.svg" },
       { text: "Active Record", level: 3, logo: "Rails_logo.png" },
       { text: "Object-Oriented", level: 3, logo: "OOP_logo.svg" },
       { text: "Command Line", level: 3, logo: "Terminal_logo.svg" },
