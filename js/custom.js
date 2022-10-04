@@ -56,7 +56,7 @@ $(document).ready(function () {
       { text: "Svelte", level: 4, logo: "Svelte_logo.svg" },
       { text: "MeteorJS", level: 4, logo: "Meteor_logo.svg" },
       { text: "Express", level: 4, logo: "Express_logo.png" },
-      { text: "Electron", level: 4, logo: "Electron_logo.svg" },
+      { text: "Electron", level: 3, logo: "Electron_logo.svg" },
       { text: "Laravel", level: 3, logo: "Laravel_logo.svg" },
       { text: "Vue", level: 3, logo: "Vue_logo.svg" },
       { text: "Webpack", level: 3, logo: "Webpack_logo.svg" },
