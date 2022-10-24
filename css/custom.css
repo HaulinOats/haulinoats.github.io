@@ -53,6 +53,9 @@
 #other-section .tech-section-inner-row-left {
   min-width: 230px;
 }
+.tech-section-inner-row-left:hover img {
+  filter: drop-shadow(2px 2px 1px black);
+}
 .tech-section-inner-row-left:hover {
   background: #21b799;
   color: white;

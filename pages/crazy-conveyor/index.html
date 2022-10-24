@@ -1,74 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Crazy Conveyor - Brett Connolly</title>
-	<script type="text/javascript" src="js/matter-0.8.0.js"></script>
-	<script type="text/javascript" src="js/matter.js"></script>
-	<link href='http://fonts.googleapis.com/css?family=Archivo+Narrow:400,700' rel='stylesheet' type='text/css'>
-	<style>
-		body {
-			font-family: 'Archivo Narrow', sans-serif;
-		}
-		#conveyorGame_container {
-			position:relative;
-			width:1200px;
-			height:800px;
-			margin:0 auto;
-		}
-		#conveyorGame_pointsBox {
-			position: absolute;
-			top: 0px;
-			left: 20px;
-			font-size:30px;
-		}
-		#conveyorGame_display {
-			padding: 2%;
-			position: absolute;
-			background: #222;
-			color: white;
-			border-radius: 5px;
-			width: 60%;
-			margin-left: 270px;
-			top: 300px;
-		}
-		#conveyorGame_display h2{
-			text-align: center;
-		}
-		#conveyorGame_display button {
-			margin: 0 auto;
-			display: block;
-			border-radius: 5px;
-			padding: 10px;
-			cursor:pointer;
-			margin-top:40px;
-		}
-		#conveyorGame_loadingGif {
-			display:none;
-			position:absolute;
-			top:18%;
-			left:49%;
-		}
-	</style>
-</head>
-<body>
-	<div id="conveyorGame_container">
-		<div id="conveyorGame_pointsBox">
-			<p>Score: <b id="conveyorGame_score">0</b></p>
-		</div>
-	    <div id="canvas-container"></div>
-	    <input id="demo-reset" value="Reset" type="submit">
-	    <div id="conveyorGame_display" style="">
-			<h2>Crazy Conveyor - Rules</h2>
-			<ul>
-				<li><p>Your job is to make sure that only <b style="color:#6aaf6a">high-quality</b> items make it to the end of the conveyor belts</p></li>
-				<li><p>Throw away the <b style="color:#C44D58">defective</b> items before they reach the end</p></li>
-				<li><p>Make sure not to accidentally throw <b style="color:#6aaf6a">high-quality</b> items off the line</p></li>
-				<li><p>If more than 5 defective items make it through, it's <b>GAME OVER</b></p></li>
-			</ul>
-			<button id="conveyor_startGame">Start Game</button>
-	    </div>
-	    <img id="conveyorGame_loadingGif" src="img/loader.gif" alt="loading" />
-	</div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Crazy Conveyor - Brett Connolly</title>
+    <script type="text/javascript" src="js/matter-0.8.0.js"></script>
+    <script type="text/javascript" src="js/matter.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Archivo+Narrow:400,700" rel="stylesheet" type="text/css" />
+    <style>
+      body {
+        font-family: "Archivo Narrow", sans-serif;
+      }
+      #conveyorGame_container {
+        position: relative;
+        width: 1200px;
+        height: 800px;
+        margin: 0 auto;
+      }
+      #conveyorGame_pointsBox {
+        position: absolute;
+        top: 0px;
+        left: 20px;
+        font-size: 30px;
+      }
+      #conveyorGame_display {
+        padding: 2%;
+        position: absolute;
+        background: #222;
+        color: white;
+        border-radius: 5px;
+        width: 60%;
+        margin-left: 270px;
+        top: 300px;
+      }
+      #conveyorGame_display h2 {
+        text-align: center;
+      }
+      #conveyorGame_display button {
+        margin: 0 auto;
+        display: block;
+        border-radius: 5px;
+        padding: 10px;
+        cursor: pointer;
+        margin-top: 40px;
+      }
+      #conveyorGame_loadingGif {
+        display: none;
+        position: absolute;
+        top: 18%;
+        left: 49%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="conveyorGame_container">
+      <div id="conveyorGame_pointsBox">
+        <p>Score: <b id="conveyorGame_score">0</b></p>
+      </div>
+      <div id="canvas-container"></div>
+      <input id="demo-reset" value="Reset" type="submit" />
+      <div id="conveyorGame_display">
+        <h2>Crazy Conveyor - Rules</h2>
+        <ul>
+          <li>
+            <p>Your job is to make sure that only <b style="color: #6aaf6a">high-quality</b> items make it to the end of the conveyor belts</p>
+          </li>
+          <li>
+            <p>Throw away the <b style="color: #c44d58">defective</b> items before they reach the end</p>
+          </li>
+          <li>
+            <p>Make sure not to accidentally throw <b style="color: #6aaf6a">high-quality</b> items off the line</p>
+          </li>
+          <li>
+            <p>If more than 5 defective items make it through, it's <b>GAME OVER</b></p>
+          </li>
+        </ul>
+        <button id="conveyor_startGame">Start Game</button>
+      </div>
+      <img id="conveyorGame_loadingGif" src="./img/loader.gif" alt="loading" />
+    </div>
+  </body>
 </html>
