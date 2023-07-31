@@ -279,7 +279,6 @@
   justify-content: center;
 }
 .current-top-ten ul {
-  list-style-type: decimal;
 }
 .current-top-ten li {
   font-size: 120%;
